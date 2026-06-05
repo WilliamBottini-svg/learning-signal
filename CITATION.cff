@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use Learning Signal Check, please cite it as below."
+title: "Learning Signal Check"
+abstract: >-
+  A portable AI skill for checking whether assessments still reveal meaningful
+  evidence of student learning in the age of AI, then suggesting a targeted
+  redesign only when the learning signal is weakened. Its diagnostic procedure
+  operationalizes Kane's validity argument, walking the assessment evidence chain
+  (construct, scoring, generalization, extrapolation, implications) and repairing
+  the earliest weakened inference.
+type: software
+authors:
+  - given-names: William
+    family-names: Bottini
+version: 0.1.0
+date-released: "2026-06-04"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/WilliamBottini-svg/learning-signal"
+keywords:
+  - assessment design
+  - validity
+  - argument-based validity
+  - generative AI
+  - medical education
+  - programmatic assessment

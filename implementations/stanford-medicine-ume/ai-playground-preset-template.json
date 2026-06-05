@@ -1,0 +1,33 @@
+{
+  "_comment": "Learning Signal Check — Stanford Medicine UME preset for the AI Playground. EXPORT of core/ + UME behavior; only platform setup differs from the canonical skill, never the diagnostic logic. This file is public-bound: every Stanford-specific value is [PLACEHOLDER] and must be filled in your private instance. The exact AI Playground preset schema may differ — keys marked [PLACEHOLDER] are schema-specific and must be mapped to your instance's actual field names. See setup-guide.md.",
+  "name": "Learning Signal Check (Stanford Medicine UME)",
+  "description": "Assessment-design coach for UME faculty. Checks whether an assessment still produces a trustworthy learning signal under likely AI use, and recommends a proportionate redesign only when the evidence chain is weakened. Not an AI-proofing tool; not a cheating detector.",
+  "version": "0.1",
+  "model": "[PLACEHOLDER: the model available in the Stanford AI Playground, e.g. the most capable general model]",
+  "temperature": 0.3,
+  "_temperature_note": "Low on purpose. The diagnostic walk is deterministic — the same case should reach the same primary diagnosis. Keep ~0.2–0.4; do not raise for 'creativity'.",
+  "memory": "off",
+  "_memory_note": "Off on purpose. Each assessment is diagnosed fresh on its own facts; cross-conversation memory risks carrying one case's framing into another.",
+  "web_search": "off",
+  "_web_search_note": "Off on purpose. The coach gives design advice from its instructions and defers policy/accreditation/legal questions to local guidance (Gate 4). Enable only if explicitly testing a policy-lookup workflow.",
+  "system_instructions": {
+    "_pointer": "Paste the FULL custom-instructions block from ai-playground-custom-instructions.md into the instance's instructions field. That block is a faithful export of core/skill-core.md + core/diagnostic-procedure.md + core/safety-guardrails.md + core/response-pattern.md + the UME domain pack and UME governance.",
+    "value": "[PLACEHOLDER: paste the custom-instructions text here, or reference it in the instance's instructions field]"
+  },
+  "_stanford_specific_placeholders": {
+    "_note": "Fill these in your PRIVATE instance only; keep this public-bound file generic. They also appear in the custom instructions text — fill both consistently.",
+    "governance_contact": "[PLACEHOLDER: Stanford Medicine UME governance contact / committee / assessment leadership]",
+    "policy_links": "[PLACEHOLDER: Stanford assessment office · academic-integrity policy · LCME/accreditation liaison · privacy & compliance office links]",
+    "ai_playground_url": "[PLACEHOLDER: Stanford AI Playground URL]",
+    "sso_login_steps": "[PLACEHOLDER: any Stanford SSO / login steps]",
+    "instance_name": "[PLACEHOLDER: Stanford AI Playground instance / workspace name]"
+  },
+  "_schema_specific_keys": {
+    "_note": "AI Playground instances vary. Locate these settings in the Stanford instance and set them to the indicated values; the literal key NAMES are [PLACEHOLDER] until confirmed against the instance's preset/export schema.",
+    "[PLACEHOLDER: top_p key name]": "[PLACEHOLDER: leave default or set conservatively]",
+    "[PLACEHOLDER: max_output_tokens key name]": "[PLACEHOLDER: large enough for a short diagnosis + an optional draft, e.g. 1500]",
+    "[PLACEHOLDER: tools/plugins enable key name]": "[PLACEHOLDER: disable web/browse/retrieval tools unless explicitly testing policy lookup]",
+    "[PLACEHOLDER: saved/starter prompt key name]": "[PLACEHOLDER: attach the intake prompt from ai-playground-prompt.md if the instance supports starter prompts]",
+    "[PLACEHOLDER: sharing/visibility key name]": "[PLACEHOLDER: set to the intended sharing scope, e.g. Stanford Medicine UME faculty group]"
+  }
+}

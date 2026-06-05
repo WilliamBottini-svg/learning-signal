@@ -1,0 +1,17 @@
+# Internal working docs — not for the public repo
+0-admin/
+
+# Local Claude Code settings (keep shared settings.json if added)
+.claude/settings.local.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+.*.swp
+.idea/
+.vscode/
+
+# Scratch / logs
+*.log
+.scratch/
