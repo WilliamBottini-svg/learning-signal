@@ -72,16 +72,20 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
 
 - **Claude Skill** — [`platforms/claude-skill/`](platforms/claude-skill/). The `SKILL.md` auto-triggers
   when you ask whether an assessment still shows student learning under AI, or to redesign one. Its
-  `references/` are verbatim exports of `core/`.
+  `references/` include five byte-identical exports of `core/` plus one curated UME digest exported from
+  `domains/undergraduate-medical-education/`.
 - **AI Playground (Stanford or any)** — generic export in
-  [`platforms/stanford-ai-playground/`](platforms/stanford-ai-playground/); a local deployment example
-  in [`implementations/stanford-medicine-ume/`](implementations/stanford-medicine-ume/) (fill the
-  `[PLACEHOLDER]`s for your institution).
+  [`platforms/stanford-ai-playground/`](platforms/stanford-ai-playground/). This folder gives the generic
+  setup pattern: a preset template/checklist, a reusable intake prompt, and instructions for pasting the
+  full custom instructions. A local deployment example lives in
+  [`implementations/stanford-medicine-ume/`](implementations/stanford-medicine-ume/) (fill the
+  `[PLACEHOLDER]`s for your institution). Importing a preset JSON alone is not enough unless your AI
+  Playground instance also imports the full custom/system instructions.
 - **ChatGPT Custom GPT** — [`platforms/chatgpt-custom-gpt/`](platforms/chatgpt-custom-gpt/) (instructions
   field + knowledge manifest + starters). **Gemini Gem** —
   [`platforms/gemini-gem/`](platforms/gemini-gem/) (Persona/Task/Context/Format instructions + setup).
-  Both upload the **same 6 `claude-skill/references/` files** as their knowledge — one knowledge set,
-  every platform.
+  Both upload the **same 6 `claude-skill/references/` files** as their knowledge: the five exact core
+  exports and the UME digest. One knowledge set, every platform.
 - **Codex / Perplexity testing playbook** — [`platforms/codex/`](platforms/codex/): how to run the test
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.

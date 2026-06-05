@@ -31,8 +31,10 @@ needed* — is a valid, tested output.
 > This file is the **Claude Skill export** of the canonical spine
 > [`core/skill-core.md`](../../core/skill-core.md). It is a table of contents: it states the behavior and
 > points to `references/` for the executable detail. The five `references/` procedure files are
-> **verbatim exports of `core/`** (the repo's `core/` directory is the single source of truth). If the
-> procedure must change, change it in `core/` and re-export — never fork it here.
+> **verbatim exports of `core/`** (the repo's `core/` directory is the single source of truth). The UME
+> reference is a curated digest exported from `domains/undergraduate-medical-education/`, not a byte-copy
+> of one source file. If the procedure must change, change it in `core/` and re-export — never fork it
+> here.
 
 ---
 
