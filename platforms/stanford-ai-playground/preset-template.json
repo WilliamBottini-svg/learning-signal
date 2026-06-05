@@ -1,0 +1,25 @@
+{
+  "_comment": "Learning Signal Check — shareable AI Playground preset (generic export). This is an EXPORT of core/ + UME behavior; only platform syntax/setup differs from the canonical skill, never the diagnostic logic. The exact AI Playground preset schema may differ from this file — keys marked [PLACEHOLDER] are schema-specific and must be mapped to your instance's actual field names before import. See import-instructions.md.",
+  "name": "Learning Signal Check",
+  "description": "Assessment-design coach. Checks whether an assessment still produces a trustworthy learning signal under likely AI use, and recommends a proportionate redesign only when the evidence chain is weakened. Not an AI-proofing tool; not a cheating detector.",
+  "version": "0.1",
+  "model": "[PLACEHOLDER: select the model available in your AI Playground instance, e.g. the most capable general model]",
+  "temperature": 0.3,
+  "_temperature_note": "Low on purpose. The diagnostic walk is deterministic — same case should reach the same primary diagnosis. Keep this low (~0.2–0.4); do not raise it for 'creativity'.",
+  "memory": "off",
+  "_memory_note": "Off on purpose. Each assessment is diagnosed fresh on its own facts; cross-conversation memory risks carrying one case's framing into another and is unnecessary.",
+  "web_search": "off",
+  "_web_search_note": "Off by default. The coach gives assessment-DESIGN advice from its instructions; it does not look up institutional policy or accreditation rulings (Gate 4 — it defers those to local guidance). Only enable web search if you are explicitly testing a policy-lookup workflow.",
+  "system_instructions": {
+    "_pointer": "Paste the full custom/system instructions from the Learning Signal Check custom-instructions export into your instance's instructions field. The generic instruction body lives in the implementation export at implementations/stanford-medicine-ume/ai-playground-custom-instructions.md (faithful export of core/skill-core.md + core/diagnostic-procedure.md + core/safety-guardrails.md + core/response-pattern.md + the UME domain pack). For a non-UME deployment, omit the UME governance section and keep the core behavior.",
+    "value": "[PLACEHOLDER: paste the custom-instructions text here, or reference it in your instance's instructions field]"
+  },
+  "_schema_specific_keys": {
+    "_note": "AI Playground instances vary. The keys below are commonly-present settings you should locate in your instance and set to the indicated values; the literal key NAMES are [PLACEHOLDER] until you confirm them against your instance's preset/export schema.",
+    "[PLACEHOLDER: top_p key name]": "[PLACEHOLDER: leave default, or set conservatively]",
+    "[PLACEHOLDER: max_output_tokens key name]": "[PLACEHOLDER: a value large enough for a short diagnosis + an optional draft, e.g. 1500]",
+    "[PLACEHOLDER: tools/plugins enable key name]": "[PLACEHOLDER: disable web/browse/retrieval tools unless explicitly testing policy lookup]",
+    "[PLACEHOLDER: conversation-starters / saved-prompt key name]": "[PLACEHOLDER: attach the intake prompt from prompt-template.md if your instance supports saved starter prompts]",
+    "[PLACEHOLDER: sharing/visibility key name]": "[PLACEHOLDER: set to the sharing scope you intend, e.g. team/organization]"
+  }
+}
