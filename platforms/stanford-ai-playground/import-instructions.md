@@ -16,7 +16,7 @@ instance once, then the flow is the same.
 
 | File | What it is | Where it goes in AI Playground |
 |------|------------|-------------------------------|
-| [`preset-template.json`](preset-template.json) | Shareable settings (model, low temperature, memory off, web off) + a pointer to the instructions. | Imported as a preset, or used as a checklist to set fields by hand. |
+| [`preset-template.json`](preset-template.json) | Shareable settings (model, low temperature, memory off, web off) + a pointer to the instructions. It is a setup template/checklist, not a complete assistant by itself unless your instance imports the full custom instructions field too. | Imported as a preset, or used as a checklist to set fields by hand. |
 | [`prompt-template.md`](prompt-template.md) | The intake prompt (the questions) + a short behavior statement. | Pasted into the conversation, or saved as a reusable/starter prompt. |
 | (custom instructions) | The full coach behavior — a faithful export of `core/` (+ UME behavior). Lives at [`../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md`](../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md). | Pasted into the custom/system instructions field. |
 
@@ -32,6 +32,12 @@ instance once, then the flow is the same.
      JSON: `model`, `temperature`, `memory`, `web_search` (next steps).
    - The JSON keys marked `[PLACEHOLDER]` are schema-specific — match them to your instance's actual
      field names; the **values** (low temperature, memory off, web off) are what matter.
+   - **Do not stop here.** In most AI Playground instances, importing a preset only sets parameters. The
+     coach behavior comes from the custom/system instructions in the next step, and the intake experience
+     comes from the saved prompt in step 8.
+   - **Do not stop here.** In most AI Playground instances, importing a preset only sets parameters. The
+     coach behavior comes from the custom/system instructions in the next step, and the intake experience
+     comes from the saved prompt in step 8.
 4. **Paste the custom instructions.** Open `[PLACEHOLDER: "Custom instructions" / "System prompt" /
    "Instructions" field name]` and paste the full text from
    [`../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md`](../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md).

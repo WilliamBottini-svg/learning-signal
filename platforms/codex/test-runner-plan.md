@@ -72,9 +72,11 @@ knowledge set):
   and [`../claude-skill/references/ume-domain-pack.md`](../claude-skill/references/ume-domain-pack.md).
 
 > Equivalent: feed [`../../core/skill-core.md`](../../core/skill-core.md) + the five `core/` procedure
-> files + the UME pack — the `references/` set is a **byte-identical export** of `core/` (verify with the
-> consistency check in [`system-prompt.md`](system-prompt.md) Task C). Pick the Claude `references/` set
-> when testing *that* wrapper specifically; pick `core/` when testing the canonical content directly.
+> files + the UME pack. The Claude `references/` set contains five **byte-identical exports** of `core/`
+> plus one curated UME digest exported from `domains/undergraduate-medical-education/` (verify with the
+> consistency check in [`system-prompt.md`](system-prompt.md) Task C or `scripts/check-consistency.py`).
+> Pick the Claude `references/` set when testing *that* wrapper specifically; pick `core/` when testing
+> the canonical content directly.
 
 ### M1.2 — Assemble the base condition (the control)
 
@@ -123,9 +125,9 @@ scoring order, recording) is identical to Mode (1); only the substrate differs.
   issue, not a logic issue).
 - **Pre-flight (recommended): confirm the deployment is current.** Before a live run, verify the hosted
   wrapper reflects the `core/` commit you intend to test — i.e., the consistency check
-  ([`system-prompt.md`](system-prompt.md) Task C) is clean and any changed `references/` files have been
-  re-uploaded (Task B). A live run against a **stale** upload tests an old build; note the deployed
-  version explicitly.
+  ([`system-prompt.md`](system-prompt.md) Task C or `scripts/check-consistency.py`) is clean and any
+  changed `references/` files have been re-uploaded (Task B). A live run against a **stale** upload tests
+  an old build; note the deployed version explicitly.
 
 ---
 
