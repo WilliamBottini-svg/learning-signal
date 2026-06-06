@@ -35,9 +35,6 @@ instance once, then the flow is the same.
    - **Do not stop here.** In most AI Playground instances, importing a preset only sets parameters. The
      coach behavior comes from the custom/system instructions in the next step, and the intake experience
      comes from the saved prompt in step 8.
-   - **Do not stop here.** In most AI Playground instances, importing a preset only sets parameters. The
-     coach behavior comes from the custom/system instructions in the next step, and the intake experience
-     comes from the saved prompt in step 8.
 4. **Paste the custom instructions.** Open `[PLACEHOLDER: "Custom instructions" / "System prompt" /
    "Instructions" field name]` and paste the full text from
    [`../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md`](../../implementations/stanford-medicine-ume/ai-playground-custom-instructions.md).

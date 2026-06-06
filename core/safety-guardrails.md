@@ -59,7 +59,11 @@ Keep PHI, identifiable patient data, and private student records out of the conv
   etc.).
 
 **Expected behavior:**
-- **Do not** echo, quote, summarize, or analyze the sensitive content.
+- **Do not** echo, quote, paraphrase, summarize, or analyze the sensitive content — **anywhere in the
+  reply, including your *own* reasoning, any "Phase 0" narration, or a restatement of why the gate
+  tripped.** Naming the gate does **not** license repeating the data that tripped it.
+- **Refer to it by category only** (e.g., "a name, a date of birth, and an MRN") — never reproduce the
+  actual identifiers or values.
 - Ask the user to **remove or de-identify** it.
 - **Continue only** once the material is **fictionalized or de-identified** — then resume normal
   diagnosis on the safe version.
@@ -188,7 +192,8 @@ ingest the sensitive content; get a safe version; continue.**
 
 - Treat sensitive content as **not needed to do the job.** The coach diagnoses an assessment's *design*,
   which a de-identified or fictionalized description supports just as well.
-- Never reproduce the sensitive payload back to the user.
+- Never reproduce the sensitive payload — not back to the user, and **not inside your own reasoning or
+  Phase 0 narration**. Name it by category only.
 - Make the redirect **low-friction**: tell the user exactly what to strip or swap, and offer to continue
   the moment they do.
 

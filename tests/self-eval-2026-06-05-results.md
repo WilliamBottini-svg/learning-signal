@@ -90,7 +90,8 @@ skill-vs-base evaluation. **This is an internal self-eval, not expert-ratified**
 - [ ] Expert-ratify G09, G15, G07/G11 ([`expert-target-template.md`](expert-target-template.md)).
 - [x] Resolve the G09 Construct-vs-Scoring boundary — **done 2026-06-05**: added a *"Construct vs
   Scoring — the boundary test"* callout to `core/diagnostic-procedure.md` (re-exported to the skill
-  references) that explicitly sorts an honestly-completed post → **Scoring**. (This run was scored on the
-  pre-fix procedure; a targeted re-run to confirm the fix is a remaining check.)
+  references) that explicitly sorts an honestly-completed post → **Scoring**. (**Confirmed 2026-06-05**
+  in [`results/full-mode-1-eval-2026-06-05.md`](results/full-mode-1-eval-2026-06-05.md): post-fix, the
+  skill lands G09 → **Scoring**, D1=5, PASS, and it is stable across 3 variance repeats.)
 - [ ] Re-run at scale on Perplexity Computer (full matrix, a genuinely weaker base model, multiple runs,
   cross-family judge) per [`test-results-template.md`](test-results-template.md).

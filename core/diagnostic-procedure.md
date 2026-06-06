@@ -48,7 +48,7 @@ minimal criteria, inlined so this file is self-sufficient:
 
 | Trip (→ gate in `safety-guardrails.md`) | If the request… | Do instead |
 |------|------------------|------------|
-| **Sensitive data** (Gate 1) | contains PHI, identifiable patient data, or private student records / grades / disciplinary records | ask for de-identified or fictionalized material; offer to continue once removed |
+| **Sensitive data** (Gate 1) | contains PHI, identifiable patient data, or private student records / grades / disciplinary records | **refer to it by category only — never restate the actual identifiers, even in your own reasoning**; ask for de-identified or fictionalized material; offer to continue once removed |
 | **AI detection / misconduct** (Gate 2) | asks you to determine whether a student used AI or cheated | refuse the determination; redirect to assessment design + institutional process + human review |
 | **Consequential decision from AI output** (Gate 3) | asks you to make/justify a progression, promotion, remediation, competency, licensing, or disciplinary decision based on AI output | refuse; require triangulated evidence + qualified human review |
 | **Policy / legal overclaim** (Gate 4) | asks for a definitive legal, accreditation, or institutional-policy ruling | distinguish design advice from policy; recommend checking current local guidance |
