@@ -166,6 +166,16 @@ Each format is expanded below with the *why* and the sequencing of secondary fin
 | **First repair** | **§2.2 Scoring**: add an **individual-accountability component** — a brief individual oral or written element tied to *that student's* specific contribution and reasoning ([`../../core/repair-taxonomy.md`](../../core/repair-taxonomy.md)). |
 | **Secondary finding** | **Generalization (Link 3)** — one artifact over-read as broad individual competence — and **Implications (Link 5)** if individual grades ride on the group product. Both come **after** attribution is handled (group-work order). TBL's individual readiness-assurance tests (IRATs) are themselves an attribution-strengthening design; see [`domain-pack.md`](domain-pack.md). |
 
+> **Branch on the claim — team-level constructs flip this.** The row above assumes an **individual**
+> claim resting on a shared product. When the certified claim is genuinely **team-level** (e.g., **EPA 9
+> — "collaborate as a member of an interprofessional team"**: the team can negotiate and defend a shared
+> management plan, with a group grade intended to count), the **unit of analysis is the team** — a
+> **Construct (Link 1)** decision, not a Scoring-attribution defect. Scoring then asks whether the work is
+> attributable to *that team*, and the **individual-accountability component is not required** — forcing
+> one would *damage* the collaboration construct (it measures solo work, not the team property the EPA
+> certifies). Decide individual-claim vs team-claim **before** applying the individual-attribution
+> default (keystone Edge cases: group work).
+
 ---
 
 ## 8. Journal club / EBM critical appraisal

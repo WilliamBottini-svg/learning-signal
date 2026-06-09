@@ -31,6 +31,8 @@ scores now comes from access, not from the construct.
 > (Implications / Decision)**: a decision rule whose *consequences* fall unequally for reasons unrelated
 > to the construct (adverse / differential impact). Access→CIV is **upstream** (Construct, owned here);
 > adverse impact of a decision is **downstream** (Implications, owned by the procedure). Keep them apart.
+> (Access is a flag to **weigh**, not an automatic Construct severing — see below; where it skews the
+> score *distribution* a decision rule acts on, read that at Link 5, not as a forced task redesign.)
 
 This does **not** mean every access disparity severs Link 1. It is a flag to **raise and weigh**, read
 at the case's actual stakes (the keystone's one severity knob). A small disparity on a formative task
@@ -61,6 +63,11 @@ repair:
 - **AI fluency becomes the construct by accident.** The task starts rewarding prompt-craft / tool
   fluency itself — which correlates with prior access and exposure — instead of the intended learning
   (CIV again).
+- **A secure / attribution repair imposes disparate *non-AI* burden.** A proctored sitting, fixed-time
+  checkpoint, oral viva, or observed demonstration — the engine's most common Scoring repairs — can
+  fall harder on caregivers, disabled students, non-native speakers, or remote/working students. This
+  is the **Link 5 adverse-impact** side of equity (the repair's *format*, not the learning, disadvantages
+  some students), surfaced as the same Watch-out and read at the case's stakes.
 
 If **none** of these apply, do not manufacture an equity flag. Silence is the correct output when
 access is not in play.
@@ -92,6 +99,11 @@ Variants — pick the one matching the trigger:
 > assessment isn't measuring access to accommodations rather than the learning. Loop in disability
 > services if in doubt.
 
+> **Secure-repair burden:** The attribution fix here (a proctored sitting / fixed-time checkpoint / oral
+> viva) may not be equally feasible for every student — caregivers, disabled students, non-native
+> speakers, or remote/working students can be disadvantaged by the *format*, not the learning. Offer a
+> flexible window, an alternative attributable format, or an accommodation path.
+
 Keep it to **one short flag**. It names the risk and points at a mitigation — it does not lecture.
 
 ---
@@ -113,7 +125,9 @@ So, when a recommended repair depends on student-side AI access:
 
 Then raise the matching flag from the template above. The repair menu and the access-aware framing of
 these moves live in [`repair-taxonomy.md`](repair-taxonomy.md); this file owns *when the access flag
-fires and why*, that file owns *the repairs themselves*.
+fires and why*, that file owns *the repairs themselves*. Concretely: **this file owns the trigger
+*definitions*** (the full list above, including the secure-repair non-AI burden); `repair-taxonomy.md`
+carries the *per-repair inline* flag that points back here.
 
 > **Rule of thumb:** if your "best next move" requires the student to bring an AI tool, it inherits an
 > access assumption. Either neutralize that assumption or flag it — never ship the repair silent on

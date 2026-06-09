@@ -9,7 +9,7 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> ⚠️ **v0.1 is in active development.** Interfaces and content may change.
+> ⚠️ **v0.2 is in active development.** Interfaces and content may change.
 
 ---
 
@@ -29,8 +29,10 @@ breaks. That earliest broken link is the **primary diagnosis**, and the recommen
 
 ## How it works — the evidence chain
 
-The coach operationalizes **Kane's validity argument** as an ordered diagnostic. It walks five linked
-inferences and halts at the earliest weakened one:
+The coach operationalizes an **argument-based validity walk** — Kane's four inferences (Scoring →
+Generalization → Extrapolation → Implications) with an explicit construct-definition premise (Messick's
+construct underrepresentation / construct-irrelevant variance) surfaced as Step 1 (Construct). It walks
+five linked inferences and halts at the earliest weakened one:
 
 | # | Link | Plain-language question |
 |---|------|--------------------------|
@@ -100,7 +102,7 @@ variance / underrepresentation (Messick 1989, 1995); Miller's pyramid (1990); th
 programmatic assessment (van der Vleuten 1996; van der Vleuten & Schuwirth 2005); the AI Assessment
 Scale (Perkins, Furze, Roe & MacVaugh); the University of Sydney two-lane model; TEQSA and QAA
 assessment-reform guidance; and the AAMC principles for the responsible use of AI in and for medical
-education. Full citations will accompany the v0.1 release.
+education. Full citations live in [`references/`](references/).
 
 ## Contributing
 

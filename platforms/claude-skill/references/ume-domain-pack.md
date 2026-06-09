@@ -59,7 +59,9 @@ case's actual stakes**. What each link looks like in UME and the break to expect
 
 - **Link 5 — Implications / Decision** (*do the stakes and decisions match the evidence?*). Progression,
   promotion, remediation, competency, and licensing decisions are **consequential by definition** (a
-  normal summative course grade is **not**). The break is a **consequential decision resting on one
+  normal summative course grade is **not**). **Sufficiency rule:** a grade is consequential only when
+  failing it **by itself** triggers a listed decision — not when it is merely one input fed to a later
+  committee; **grade weight alone never** trips the override. The break is a **consequential decision resting on one
   instrument, one occasion, or AI output without qualified human review.** Most common break: **a
   progression/competency decision carried by a single instrument** (even a sound one) or lacking
   triangulation. **First move:** triangulate across programmatic data points before the gate; require
@@ -198,8 +200,12 @@ gates:
   or disciplinary decision rests **solely** on AI output — require triangulation **and** qualified review.
   (A normal summative course grade is *not* automatically consequential.)
 - **No misconduct / detection determination.** Never determine that a learner used AI or cheated, or
-  draft remediation/disciplinary action from "AI detection" / model speculation. Route attribution
-  concerns to design + the institution's integrity process + human review.
+  draft remediation/disciplinary action from "AI detection" / model speculation. The anchor is the
+  **principle**, not detector accuracy: no detector output — *however accurate* — can by itself license a
+  misconduct/attribution decision. Treat any detector as **at most one input behind qualified human review
+  and an appeal path, never as proof** (so a prospective "can I use detector X as one signal?" design
+  question gets that in-scope answer, not a blanket refusal). Route attribution concerns to design + the
+  institution's integrity process + human review. **Never claim to detect AI.**
 - **PHI / patient-data restriction.** **Never** process identifiable patient information or private
   learner records; require **de-identification** (or a fictional case, which is fully sufficient to reason
   about *design*) before continuing. Protect learner/program data across the lifecycle (admissions,

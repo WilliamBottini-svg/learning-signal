@@ -40,8 +40,9 @@ and load-bearing, or state a clear provisional assumption and proceed.
 4. AI-USE RULE + LIKELY BEHAVIOR — the stated rule AND what students will realistically do (these often
    differ; read the chain at the LIKELY behavior).
 5. STAKES — one of: formative · low · moderate · high · consequential. ("Consequential" = progression,
-   promotion, remediation, competency, licensing, or disciplinary decisions. A normal summative course
-   grade is NOT automatically consequential.)
+   promotion, remediation, competency, licensing, or disciplinary decisions — and only when failing this
+   result BY ITSELF triggers one of those, not when it is merely one input to a later committee. A normal
+   summative course grade is NOT automatically consequential, and grade WEIGHT alone never triggers it.)
 6. CONTEXT / DOMAIN — discipline, level, setting.
 7. CONSTRAINTS — class size, faculty time, proctoring availability, accessibility needs, cost.
 8. MAIN CONCERN — what worried me enough to ask.

@@ -112,7 +112,7 @@ entrustment decisions are often consequential.
 | Link | Default state for observed WBA | Why |
 |------|-------------------------------|-----|
 | **1 · Construct** | Usually **Intact** | The EPA names the construct at an assessable, authentic grain (a real professional activity). The risk is mismatch — see caution below. |
-| **2 · Scoring** | **Strong** | Performance is *observed* and *attributable on its face* — a rater watched **this** trainee do it. This is WBA's headline strength in the AI era. |
+| **2 · Scoring** | **Strong** | Performance is *observed* and *attributable on its face* — a rater watched **this** trainee do it. This is WBA's headline strength in the AI era. *(Assumes in-person, physically observed doing; talk-only or remote-observed performance is not automatically "unaided" — read for covert real-time AI as a watch-out, per keystone Edge cases.)* |
 | **3 · Generalization** | **Common risk** | One mini-CEX, one rater, one case rarely characterizes the trainee's range across patients/contexts/occasions. |
 | **4 · Extrapolation** | **Strong** | The task *is* the authentic "Does" activity — transfer to the real target is near-direct, not inferred from a proxy artifact. |
 | **5 · Implications** | **Common risk** | The danger is letting a **single observation drive an entrustment decision**. One look can't carry a consequential progression/entrustment gate. |

@@ -18,15 +18,17 @@ assessment **still produces a trustworthy learning signal under likely AI use**,
 **proportionate redesign only when the evidence chain is weakened**.
 
 It treats an assessment as a chain of inferences from *what the student did* to *the decision we make
-about them*, operationalizing **Kane's argument-based validity** as an ordered, halting diagnostic.
-"Restraint" — *no major redesign needed* — is a valid, tested output.
+about them* — an ordered, halting **argument-based validity walk**: **Kane's** four inferences
+(Scoring → Generalization → Extrapolation → Implications) with an explicit **construct-definition
+premise** (**Messick's** construct underrepresentation / construct-irrelevant variance) surfaced as
+Step 1 (Construct). "Restraint" — *no major redesign needed* — is a valid, tested output.
 
 It is **not** an AI-proofing tool and **not** a cheating detector. It never claims to detect AI use,
 and it never supports a consequential decision on AI output alone.
 
 ## 2. Audience & scope
 
-- **Primary v0.1 audience:** undergraduate medical education (UME) faculty and assessment designers.
+- **Primary audience:** undergraduate medical education (UME) faculty and assessment designers.
   The UME concepts, governance, and language live in
   [`domains/undergraduate-medical-education/`](../domains/undergraduate-medical-education/).
 - **Scope:** the core logic is general — it generalizes across education wherever an assessment licenses
@@ -110,7 +112,7 @@ exports it.
 | [`repair-taxonomy.md`](repair-taxonomy.md) | The full menu of link-restoring repairs, organized by which link they restore (proportionality / utility logic). |
 | [`safety-guardrails.md`](safety-guardrails.md) | The canonical Phase 0 gates and refuse-and-redirect behavior (sensitive data, detection/misconduct, consequential AI decisions, policy overclaim). |
 | [`equity-and-access-flags.md`](equity-and-access-flags.md) | Equity, differential-impact, and access/accommodation flags surfaced as watch-outs. |
-| [`domains/undergraduate-medical-education/`](../domains/undergraduate-medical-education/) | UME domain pack — concepts, governance, and language for the primary v0.1 audience. |
+| [`domains/undergraduate-medical-education/`](../domains/undergraduate-medical-education/) | UME domain pack — concepts, governance, and language for the primary audience. |
 
 ## 7. Export note
 

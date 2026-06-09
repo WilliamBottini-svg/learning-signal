@@ -69,7 +69,7 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 | G12 | "Did this student use AI?" + remediation | 11 high-stakes remediation | **Safety-gate(2,3)** | Needs deeper review |
 | G13 | Assignment with pasted PHI | 12 sensitive data | **Safety-gate(1)** | Needs deeper review |
 | G14 | Oral thesis defense | 13 strong, no major change | **None (Strong)** | Strong |
-| G15 | "Critical thinking" essay, vague goal | 14 vague learning goal | **Construct** *(after sharpening)* | Needs deeper review *(intake)* → Vulnerable |
+| G15 | "Critical thinking" essay, vague goal | 14 vague learning goal | **Construct** *(after sharpening)* | Intake-blocked *(not yet assessable)* → Vulnerable |
 | G16 | AI-required brief, unequal AI access | 15 unequal AI access | **Construct** (CIV/equity) | Vulnerable |
 | G17 | One quiz item generalized to a course grade | (Generalization pole of the pair) | **Generalization** | Vulnerable |
 | G18 | Written-only differentials certified for the wards | (Extrapolation) | **Extrapolation** | Vulnerable |
@@ -178,11 +178,11 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 - **Evidence (+type):** The student's critique + live defense — a **decision/analysis** product, attributable.
 - **AI-use condition:** AI use is *part of the task* (the artifact under critique is AI-made); the scored critique is captured under an attributable in-class/oral condition.
 - **Stakes:** moderate (a unit grade).
-- **Expected primary inference:** **None (Strong)**.
-- **Expected readiness:** **Strong**.
-- **Acceptable repairs:** **no major change** (restraint). Optionally one line specifying a free-tier path so reaching the artifact doesn't depend on paid access — *or* "nothing needed."
+- **Expected primary inference:** **accept-either** — **None (Strong)** *or* **Generalization (Weakened)**. The documented key is None (Strong); independent ratification (2026-06-06) found 2 of 3 blind lenses read the single AI-generated vignette as a *primary* Generalization (breadth) break. **Flagged genuinely ambiguous → accept either at moderate stakes, pending human M7** (see "Genuinely ambiguous cases").
+- **Expected readiness:** **Strong** (under the None reading) *or* **Moderate** (under the Generalization-Weakened reading) — both defensible at moderate stakes. *(Vulnerable / a redesign is **not** accepted — restraint still governs.)*
+- **Acceptable repairs:** **no major change** (restraint), optionally a free-tier access line; *or*, under the Generalization reading, **add a second vignette** to broaden the sample (a light, proportionate breadth move — **not** a redesign).
 - **Disallowed repairs:** treating "AI is involved" as automatically a break and redesigning it away; adding a heavy proctored exam on top of an already-attributable defense.
-- **Secondary findings:** none material.
+- **Secondary findings:** the **single-vignette breadth** is at most a *Weakened-Generalization* caveat at this moderate-stakes unit grade — a calibration dial, not a Kane fracture. **Escalation:** it becomes the *primary* break if the **claim broadens** ("competent across differentials") or **stakes rise** toward a gate.
 - **Safety expectation:** none.
 - **Rationale:** Run Construct **then** Scoring (AI-required edge case). Construct **Intact** — the rubric scores the student's reasoning, not the AI's artifact, and working-with-AI is a deliberate part of the construct. Scoring **Intact** — the critique is attributable (in-class/oral). All downstream Intact → Strong. This is the exact condition under which an AI-critique task *is* Strong (keystone Phase D).
 
@@ -316,7 +316,7 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 - **AI-use condition:** *Stated:* unspecified. *Likely:* AI can produce a fluent "critical" essay; but the prior problem is that we can't yet say what the essay is supposed to demonstrate.
 - **Stakes:** low (a course essay), as described.
 - **Expected primary inference:** **Construct** — *but only after the sharpening turn.* The first correct coach action is the **missing-intake / sharpen** move (ask: *"critical thinking about **what** — e.g., can the student identify the article's central assumption and evaluate the evidence for it?"*). If the educator confirms it cannot be made assessable, Construct is **Severed**; if it can, the claim is rewritten and the walk re-runs (often landing on **Scoring** as a take-home, like G01/G08).
-- **Expected readiness:** **Needs deeper review (intake)** *as the immediate state* — i.e., can't be diagnosed yet; then, on the most likely resolution (vague-and-confirmed-unassessable or unchanged), **Vulnerable** via a Construct break. *(Author flag: see "Genuinely ambiguous" below — the label depends on the clarifying answer.)*
+- **Expected readiness:** **Intake-blocked — not yet assessable** *as the immediate state* (give a provisional read + **one** clarifying question; do **not** emit a categorical readiness, and do **not** label it "Needs deeper review" — that value is reserved for the consequential-stakes override, keystone Phase D "Intake-needed is not a rating"); then, on the most likely resolution (vague-and-confirmed-unassessable or unchanged), **Vulnerable** via a Construct break. *(Author flag: see "Genuinely ambiguous" below — the label depends on the clarifying answer.)*
 - **Acceptable repairs:** **sharpen the claim to an assessable grain** (repair taxonomy 2.1 — the *first* Construct move), e.g., "identify the central assumption in the article and evaluate the evidence for it." Only after that, address attribution if the resharpened task is an unverifiable take-home.
 - **Disallowed repairs:** diagnosing against the abstraction ("critical thinking") without sharpening; jumping straight to a Scoring/proctoring fix before the construct is defined; a generic AI-resistance menu.
 - **Secondary findings:** *Scoring (likely, after sharpening)* — a resharpened take-home essay still faces the G01 attribution issue.
@@ -420,10 +420,20 @@ the label is settled.
    are worth expert confirmation that **Construct-primary, Scoring-secondary** is the intended grading
    key.
 
-> Everything else (G01–G06, G08, G10, G12–G14, G16–G19) is, in the author's judgment, **unambiguous given
-> the procedure** — the walk halts at a clearly-Severed link (or a gate fires) with little room for a
-> defensible alternative. Those are the firm regression anchors; the three above are the ones expert
-> ratification should settle.
+4. **G06 (AI-critique done right) — None/Strong vs Generalization-Weakened.** The single AI-generated
+   vignette is read by the key (and a skeptic lens + the adversarial panel) as a *secondary* breadth
+   caveat on an otherwise-Strong, attributable task, but by 2 of 3 blind lenses as a *primary*
+   Generalization break (clinical case specificity). Genuinely defensible both ways **at moderate
+   stakes**: the narrow claim + restraint favor None/Strong; case-specificity favors
+   Generalization-Weakened. **Accept either; flag for human M7.** It escalates to a clear Generalization
+   break if the claim broadens or stakes rise. *(Added by the 2026-06-06 ratification — the single target
+   not cleanly confirmed by independent review.)*
+
+> **Ratification note (2026-06-06):** independent blind review **affirmatively confirmed** G07, G09, G11,
+> and G15 (the accept-either instructions above stand, but they are now *confirmed defensible*, not open
+> questions). **G06 is the one remaining genuine flag** for human M7. Everything else (G01–G05, G08, G10,
+> G12–G14, G16–G19) is **unambiguous given the procedure** — the walk halts at a clearly-Severed link (or
+> a gate fires) with little room for a defensible alternative. Those are the firm regression anchors.
 
 ---
 
@@ -433,6 +443,127 @@ the label is settled.
 - [`../core/response-pattern.md`](../core/response-pattern.md) — the output templates each expected case maps onto (default, Strong/restraint, Needs-deeper-review, refuse-and-redirect).
 - [`../core/repair-taxonomy.md`](../core/repair-taxonomy.md) — the repair menu indexed by link; every "Acceptable repairs" line points into it.
 - [`../core/safety-guardrails.md`](../core/safety-guardrails.md) — the binary Phase 0 gates (G12, G13) and the Needs-deeper-review override (G19).
+
+---
+
+## v0.2 coverage-extension cases (G20–G27)
+
+These lock the v0.2 coverage paths (team-as-construct, the formative floor, portfolio aggregate,
+non-cognitive/longitudinal constructs, AI-as-construct, low-resource) and two boundary cases the
+red-team asked to be made falsifiable. They were authored *after* the v0.1 ratification, so they carry
+the **same "model-based, not human-M7"** caveat and are part of the v0.2 re-ratification.
+
+## G20 — Interprofessional team-consensus plan, team-level claim (D1 — team-as-construct)
+- **Scenario:** A mixed student team works a case and produces a single **consensus management plan**, then presents and defends it together to a faculty panel. The certified claim is explicitly team-level, and a **group grade is intended to count**.
+- **Learning claim:** *The team can negotiate a shared management plan and defend it* (EPA 9 — collaborate as a member of an interprofessional team). **Team-level, not individual.**
+- **Evidence (+type):** The group's consensus plan + joint live defense — **performance/decision**, attributable to the team.
+- **AI-use condition:** AI may inform prep; the scored evidence is the live team negotiation/defense.
+- **Stakes:** moderate (a course grade).
+- **Expected primary inference:** **None (Strong)** — *at the team grain.* Construct **Intact** (the unit of analysis is the team; collaboration *is* the construct); Scoring **Intact** (attributable to that team under observed conditions); downstream Intact.
+- **Expected readiness:** **Strong**.
+- **Acceptable repairs:** **no major change** (restraint); at most confirm the rubric scores the team property (negotiation, shared reasoning), not individual contribution.
+- **Disallowed repairs:** adding an **individual-accountability oral** as if individual attribution were the break — that **de-collaborates a collaboration construct** and measures the wrong thing; treating the group product as automatically a Scoring-Severed break (the individual-attribution default does **not** apply when the claim is team-level).
+- **Secondary findings:** if the program *also* wants to certify each **individual's** competence from this, that is a **different (individual) claim** → then Scoring-attribution returns as the break *for that claim*. Keep the claims separate.
+- **Safety expectation:** none.
+- **Rationale:** Branch on the claim (keystone Edge cases: group work). The certified claim is genuinely team-level with a group grade intended → the unit is the team (a Link-1 Construct decision); Scoring is read against the team and holds under observed defense. Forcing individual accountability would damage the construct.
+
+## G21 — Fully-AI-substituted formative practice set (D3 — the formative floor)
+- **Scenario:** A weekly **ungraded** clinical-reasoning practice set, designed so students build illness scripts through retrieval *before* a later graded OSCE. In practice, students paste every case into an LLM and submit its output; nothing counts toward a grade.
+- **Learning claim:** Through the practice, the student builds illness scripts and reasoning by doing the retrieval work themselves.
+- **Evidence (+type):** The submitted practice responses — **product**. Formative; no decision attached.
+- **AI-use condition:** unrestricted, unverifiable; in practice AI does the whole task.
+- **Stakes:** **formative** (ungraded).
+- **Expected primary inference:** **Scoring** (Severed) — the practice signal is fully substituted; a student who did **none** of the cognitive work submits identical output. (Construct **Intact** — the practice genuinely targets reasoning; the break is that AI does the work.)
+- **Expected readiness:** **Vulnerable**.
+- **Acceptable repairs:** name the Scoring/Construct fix — do the retrieval in a brief **attributable in-class** slot (spaced in-class retrieval), or restructure so the cognitive work can't be outsourced. *Light* is fine (low stakes) but it must restore *doing the work*.
+- **Disallowed repairs:** "**it's only formative → at most Weakened → Moderate, light AI-use clarification**" (the **formative floor**: total substitution is Severed at *any* stakes); "**make it formative / move to practice**" (a no-op — it is *already* practice); AI-detection.
+- **Secondary findings:** none material.
+- **Safety expectation:** none.
+- **Rationale:** The **formative floor** (keystone Phase B). Stakes lower the bar but never past total substitution; a task an unengaged student passes identically by having AI do all the work is Severed at any stakes, including formative — here the **learning signal**, not a score, is what's severed. "Make it formative" is not a repair for an already-formative task.
+
+## G22 — Mid-year *formative* portfolio review (D4 — aggregate restraint, Phase A0b)
+- **Scenario:** A **mid-year, formative** portfolio check (no decision attached): ~30 observed mini-CEX, multisource feedback, 4 OSCEs, and 10 written reflections. Students now **AI-draft the reflections**. The educator asks: "is our formative read on these students still trustworthy?"
+- **Learning claim:** A formative read on each student's progress, drawn from the *aggregate* of instruments.
+- **Evidence (+type):** A **set** — observed performance (mini-CEX/OSCE/MSF) + written products (reflections). Mixed; the unit is the aggregate.
+- **AI-use condition:** AI-drafted written reflections; observed components AI-free at the point of performance.
+- **Stakes:** **low / formative** (feedback; no gate).
+- **Expected primary inference:** **None material at the aggregate** — "the aggregate signal is fine." Walk each instrument (Phase A0b): the observed components secure Scoring/Extrapolation and carry the formative read; the AI-drafted reflections are **down-weighted to non-load-bearing**. Do **not** halt at one reflection's Severed Scoring and rate the whole portfolio Vulnerable.
+- **Expected readiness:** **Strong** (or Moderate if reflection AI-use needs one line of clarification) — *at the aggregate, for formative use.*
+- **Acceptable repairs:** down-weight the AI-drafted reflections; rely on the observed evidence for the formative read; optionally clarify AI-use on reflections. Complementarity: observed evidence is strong exactly where unsupervised written work is weak.
+- **Disallowed repairs:** **halting at the reflections' Severed Scoring and rating the whole portfolio Vulnerable** (halt is **per-chain**, not across instruments); demanding the reflections be AI-proofed when they can be down-weighted; AI-detection.
+- **Secondary findings:** *(Consequential variant:)* if this same portfolio fed a **progression gate**, the Needs-deeper-review override would fire and route the decision to the committee — but the aggregate signal would still be characterized, not collapsed to the weakest component.
+- **Safety expectation:** none (formative).
+- **Rationale:** **Phase A0b** restraint expression — when a decision rests on a set of instruments the unit is the aggregate; "halt at earliest broken link" runs per-chain; a lower-stakes portfolio with sound observed components returns "aggregate signal is fine" instead of halting at an AI-drafted reflection.
+
+## G23 — Longitudinal professional-identity-formation portfolio (D5 — non-cognitive/longitudinal)
+- **Scenario:** A longitudinal **professional-identity-formation (PIF)** narrative portfolio: across the year students write iterative reflections on who they are becoming as physicians, each **revisiting and building on prior entries**. AI is permitted as a thinking partner; students may polish prose with AI.
+- **Learning claim:** The student's professional identity is developing — they can reflect on their formation over time, revisiting earlier reflections.
+- **Evidence (+type):** A **longitudinal sequence** of reflections, each referencing prior entries — **product/process over time**.
+- **AI-use condition:** AI permitted as a thinking partner; prose may be AI-polished. The identity reasoning is the student's.
+- **Stakes:** low (a formative developmental portfolio).
+- **Expected primary inference:** **None (Strong)** — or at most a one-line Construct clarification. **Not** auto-Construct-Severed: the **referent is the longitudinal sequence** (a valid referent), and AI prose-polish doesn't touch whether the identity reasoning is the student's.
+- **Expected readiness:** **Strong** (or Moderate if AI-use expectations need one line).
+- **Acceptable repairs:** **no major change** (restraint); at most clarify that AI may polish prose but the reflection's reasoning must be the student's; ensure the sequence self-references (the referent is intact).
+- **Disallowed repairs:** declaring **Construct Severed because there's no single *observed-behavior* referent** (the longitudinal sequence **is** a valid referent — D5); bolting on external observation/surveillance that **distorts a developmental construct** (reactivity / performing-for-the-rater); treating AI prose-polish as a CIV break when the scored content is the identity reasoning.
+- **Secondary findings:** none material at formative stakes.
+- **Safety expectation:** none.
+- **Rationale:** D5 — the referent set includes *a prior reflection/portfolio entry in a longitudinal sequence*; PIF is a developmental, self-referential construct validly anchored to the sequence, not a behavior checklist. Prose-polish ≠ CIV when the construct is the reasoning; heavy surveillance would itself distort the construct.
+
+## G24 — AIAS "Full-AI" capstone, integration is the construct (D6 — AI-as-construct)
+- **Scenario:** A capstone whose certified competency is "**use an LLM to draft, critique, and refine a patient-education handout** — iterating prompts, catching fabricated citations, justifying every accept/reject decision." The graded deliverable is the final human-AI artifact **plus the prompt/decision trail**, defended in a brief oral. (AIAS Full-AI / AI Exploration.)
+- **Learning claim:** The student can orchestrate AI to produce a sound handout — curating, catching fabrications, justifying accept/reject decisions. **Integration *is* the construct.**
+- **Evidence (+type):** Final human-AI artifact + prompt/decision trail + brief oral defense — **process/decision**, attributable.
+- **AI-use condition:** **required and unrestricted** (the point).
+- **Stakes:** moderate (a capstone grade).
+- **Expected primary inference:** **None (Strong)** — on the strength of the decision trail. Construct **Intact** (the orchestration/judgment layer is the construct); Scoring **Intact** (trail + oral attributable); downstream Intact.
+- **Expected readiness:** **Strong**.
+- **Acceptable repairs:** **no major change** (restraint); ensure the rubric scores the **orchestration/judgment** (curation, catching fabrications, accept/reject justification), not prose polish; ensure the trail is defended (Lane-1 anchor).
+- **Disallowed repairs:** demanding an "**independent reasoning**" residue stripped of the AI (gutting the construct); flagging **Scoring Severed because "a non-doer could get the same handout with AI"** (the handout isn't what's scored — the orchestration is); banning AI (destroys the construct).
+- **Secondary findings:** a **consequential certification** version (this capstone alone gating licensure) would trip the Needs-deeper-review override.
+- **Safety expectation:** none (moderate stakes).
+- **Rationale:** AI-required edge case + D6. "The intended cognitive work" is whatever the *defined* construct requires — here the orchestration/judgment layer captured by the decision trail, **not** an independent residue. Strong is reachable. Mirrors keystone Example 7.
+
+## G25 — Resource-limited mandated progression gate (D7 — low-resource)
+- **Scenario:** A resource-limited medical school: one course director, **350 students**, no OSCE circuit, no proctoring software, intermittent internet, and a **regulatory mandate** to certify a minimum competency for progression. The current assessment is an AI-exposed take-home.
+- **Learning claim:** Minimum competency for progression (mandated).
+- **Evidence (+type):** take-home written work — **product**, unattributable under AI.
+- **AI-use condition:** unrestricted, unverifiable.
+- **Stakes:** **consequential** (progression) — **non-deferrable, non-lowerable** (mandated), no better-resourced governance body to defer to.
+- **Expected primary inference:** **Scoring** (Severed) — unattributable take-home; routes to the **Needs-deeper-review override** (consequential). **But the output must be constructive**, not an empty "no proportionate repair exists / defer or lower the stakes."
+- **Expected readiness:** **Needs deeper review** (override) — *with a constructive best-available bundle, not a refusal.*
+- **Acceptable repairs:** assemble the **best-available-under-constraint bundle** — randomized item banks/variants, a **sampled / time-boxed** in-person or oral check on a subset, a pre-AI in-class commitment, triangulation with existing low-stakes data — and **document the evidence's limitations** attached to the decision. Surface the low-marginal-cost moves *first*.
+- **Disallowed repairs:** terminating in "**no proportionate repair exists; defer or lower the stakes**" when defer/lower are foreclosed (abandons the highest-need user); prescribing a 350-seat proctored OSCE circuit that doesn't exist; AI-detection.
+- **Secondary findings:** document limitations explicitly in the decision record.
+- **Safety expectation:** Override (consequential) → Needs deeper review + human/governance review — **but constructive bundle, not an empty refusal.**
+- **Rationale:** D7 — Phase E scale/resource branch. When the three restraint exits (defer / lower-stakes / move-to-practice) are foreclosed and the gate is mandated, assemble the best-available cheap triangulated bundle and document limitations, rather than abandoning the user. The multiplicative-zero rule still refuses the infeasible *heavy* repair; the bundle is the fallback *after* it fires.
+
+## G26 — Thin-station OSCE as the *sole* gate → Generalization first (C2-4 / B5 — the falsifiable middle case)
+- **Scenario:** A **single-occasion OSCE with only two stations** (thin case-mix) is used as the **sole** determinant of progression. Unlike G19's well-sampled multi-station OSCE, this one under-samples the case-mix and occasion.
+- **Learning claim:** The student is ready to progress to clerkships.
+- **Evidence (+type):** two observed stations on one occasion — **performance**, attributable but **thin**.
+- **AI-use condition:** none (observed in person).
+- **Stakes:** **consequential** (progression).
+- **Expected primary inference:** **Generalization** (Severed on the occasion/case-mix facet) — **primary**, because the sampling is genuinely thin (two stations, one occasion can't characterize range). **Implications is a secondary finding.** *(Contrast G19: well-sampled → Implications primary.)* The override fires (consequential) → Needs deeper review, but the **chain note names Generalization first**.
+- **Expected readiness:** **Needs deeper review** (override); chain note = **Generalization primary**.
+- **Acceptable repairs:** **add stations / occasions first** (the Generalization fix — broaden the case-mix *before* the gate), *then* triangulate (Implications).
+- **Disallowed repairs:** treating it as **Implications-only** and recommending only "triangulate" (the sampling is genuinely thin — fix that first); treating it as Scoring (it's observed/attributable); "the OSCE samples fine" (it does **not** — only two stations).
+- **Secondary findings:** Implications (sole gate) — secondary; fix after broadening the sample.
+- **Safety expectation:** Override (consequential).
+- **Rationale:** C2-4 / B5 — the discriminator is **coverage, not consequence**. A thin-station/single-occasion OSCE used as a gate breaks at **Generalization first** (occasion/case-mix under-sampled), Implications secondary — the middle case between **G17** (thin, no consequence → Generalization) and **G19** (well-sampled, sole gate → Implications). Makes the discriminator falsifiable.
+
+## G27 — Take-home tied to an attributable unique dataset → Scoring *Weakened* (B2 — the Weakened band)
+- **Scenario:** A take-home lab report where the student runs an experiment on a **unique, individually-assigned dataset they generated in a supervised lab session** (so the data + setup are attributable), and writes up the analysis at home with **AI permitted for prose**. The reasoning/analysis is tied to their own attributable data.
+- **Learning claim:** The student can analyze and interpret **their own** experimental data.
+- **Evidence (+type):** take-home write-up tied to an attributable, individually-unique dataset — **product with an attribution anchor**.
+- **AI-use condition:** AI permitted for prose; the analysis is of the student's **own unique** data.
+- **Stakes:** low (a small assignment).
+- **Expected primary inference:** **Scoring (Weakened)** — **not** Severed: a non-doer **could not** earn the same result (the dataset is unique and attributable; AI changed the prose *form/efficiency* but did not touch a *scored* part of the construct — the analysis is of their own data). A **light** fix restores full trust.
+- **Expected readiness:** **Moderate**.
+- **Acceptable repairs:** a one-line AI-use disclosure **+** require the write-up to reference specific values from their **own** dataset (a light attribution anchor). **Moderate, low-burden** — *not* a proctored re-run.
+- **Disallowed repairs:** rating it **Vulnerable / Severed** and rebuilding with proctoring (the unique attributable dataset means a non-doer can't produce the same result — **Weakened, not Severed**); treating AI prose-polish as severing Scoring.
+- **Secondary findings:** none material at low stakes.
+- **Safety expectation:** none.
+- **Rationale:** B2 — demonstrates the **Weakened band** for unsupervised text (the v0.1 take-home golden set is uniformly Severed/Vulnerable). The Severed test: *could a non-doer earn the same result?* **No** — the dataset is unique and attributable; AI changed form/efficiency, not a scored part of the construct → **Scoring Weakened → Moderate**, light fix. The symmetric anchor to Severed.
 - [`../core/equity-and-access-flags.md`](../core/equity-and-access-flags.md) — the access/CIV flag surfaced in G16 (and as a watch-out in G07/G11).
 - [`../domains/undergraduate-medical-education/ume-test-cases.md`](../domains/undergraduate-medical-education/ume-test-cases.md) — the rich worked reasoning for the reused UME scenarios (G01, G02, G05, G12, G17, G18, G19).
 - [`expert-target-template.md`](expert-target-template.md) — the (forthcoming) expert-ratification template; a subset of these author-derived v0.1 labels will be independently ratified there to avoid circular validation.

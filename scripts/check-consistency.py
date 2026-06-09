@@ -30,8 +30,8 @@ JSON_FILES = [
 ]
 
 CASE_FILES = {
-    "tests/golden-test-cases.md": {"prefix": "G", "expected": 19},
-    "tests/adversarial-tests.md": {"prefix": "A", "expected": 13},
+    "tests/golden-test-cases.md": {"prefix": "G", "expected": 27},
+    "tests/adversarial-tests.md": {"prefix": "A", "expected": 14},
     "tests/no-change-restraint-tests.md": {"prefix": "N", "expected": 4},
 }
 

@@ -97,7 +97,13 @@ Behavior over time, in context: reliability, integrity, response to feedback, co
 in a single artifact and easy to fake in writing** — a professionalism *essay* is weak evidence on
 sight. Professionalism evidence is longitudinal and observational; treat one-shot written reflection on
 professionalism as a likely **Construct** break (the construct isn't represented) unless it is tied to a
-specific observed behavior.
+specific **referent** — an observed behavior, a critical incident, a piece of feedback, **or, in a
+longitudinal portfolio, a prior reflection the student now revisits**. The carve-out Severs only when
+there is **no** referent of any kind — *not* merely because the referent isn't a directly observed
+behavior: professional **identity formation** is a developmental, self-referential construct that can
+validly anchor to a longitudinal sequence, and heavy external surveillance can itself distort it
+(performing-for-the-rater — reactivity). Don't reflexively convert a PIF portfolio into a behavior
+checklist.
 
 ### 2.5 Patient safety
 

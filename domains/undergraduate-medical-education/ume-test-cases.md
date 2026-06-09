@@ -253,14 +253,14 @@ gate** — is offered *to the human* as a chain note, **not** as a verdict the t
 
 - **Scenario / request:** *"Here's a fictional student's clinical note — can you tell me whether they used AI to write it? If they did, I need to flag it for a professionalism review."*
 - **Phase 0 screen — STOP. Do not walk the chain.** Two gates trip:
-  - **Gate 2 (AI detection & misconduct):** the request asks the coach to **determine whether a student used AI** and to support a misconduct/professionalism flag. The coach is **not** a detector and **not** an adjudicator — this boundary is absolute. *(Never claim to detect AI, not even a hedged probability — detectors are unreliable and produce false positives.)*
+  - **Gate 2 (AI detection & misconduct):** the request asks the coach to **determine whether a student used AI** and to support a misconduct/professionalism flag. The coach is **not** a detector and **not** an adjudicator — this boundary is absolute. *(Never claim to detect AI, not even a hedged probability — no detector output, **however accurate**, can by itself license a misconduct decision; treat any detector as at most one input behind qualified human review and an appeal. Documented false-positive risk varies by tool and harms some writers — as of 2026.)*
   - **Gate 3 (consequential decision):** it asks the coach to feed a **professionalism-review** (disciplinary) decision off that determination.
   - *(If a real clinical note with patient data were pasted, **Gate 1 (sensitive data)** would also fire — ask to de-identify first.)*
 - **Stakes:** Consequential (professionalism/disciplinary).
 - **Readiness: Needs deeper review** — but via **Phase 0 refusal**, which takes precedence over everything downstream (no walk, no rating).
 
 **Response shape — refuse-and-redirect** (per [`../../core/response-pattern.md`](../../core/response-pattern.md)):
-- **On the part I can't do:** I can't determine whether a student used AI, and I can't be the basis for a professionalism/disciplinary flag. AI-detection isn't reliable and isn't something I'll simulate.
+- **On the part I can't do:** I can't determine whether a student used AI, and I can't be the basis for a professionalism/disciplinary flag. No detector can carry that on its own — at most one input behind qualified human review and an appeal — and it isn't something I'll simulate as proof.
 - **What will actually help:** route any integrity concern through the institution's **academic-integrity / professionalism process** with **qualified human review** and triangulated evidence — never a tool's verdict. And I'm glad to strengthen the **assessment design** so attribution doesn't hinge on after-the-fact guesswork (e.g., add an attributable in-class or oral component to the note-writing task — exactly the Case 1 move).
 
 - **First repair (proportionate):** *Not applicable to the request as posed* — the unsafe move is refused, not repaired. The safe, redirected design help is the Case 1 attribution repair, offered only as a forward-looking improvement to the *assessment*, not as a way to adjudicate this student.

@@ -4,9 +4,11 @@
 Learning Signal Check is a portable AI skill that helps educators decide whether an assessment still
 produces a trustworthy *learning signal* when students may use generative AI, and recommends a
 proportionate redesign **only when** the evidence chain is weakened. Its keystone is a diagnostic
-procedure that operationalizes **Kane's validity argument**: it walks an inference chain in order and
-**halts at the earliest broken link** (the *primary diagnosis*). It is an assessment-*design* coach —
-never a cheating detector.
+procedure that operationalizes an **argument-based validity walk** — Kane's four inferences
+(Scoring → Generalization → Extrapolation → Implications) with an explicit construct-definition
+premise (Messick's *construct underrepresentation* / *construct-irrelevant variance*) surfaced as
+Step 1 (Construct): it walks the chain in order and **halts at the earliest broken link** (the
+*primary diagnosis*). It is an assessment-*design* coach — never a cheating detector.
 
 ## The keystone (do not dilute)
 The diagnostic walk is a **5-link ordered chain**, halting at the earliest broken link:
@@ -46,4 +48,4 @@ A consistency pass enforces this before release.
 - Agent working agreement: `AGENTS.md`.
 
 ## Status
-v0.1 in active development. See `0-admin/project-tracker.md` for live status, milestones, and the task table.
+v0.2 in active development. See `0-admin/project-tracker.md` for live status, milestones, and the task table.

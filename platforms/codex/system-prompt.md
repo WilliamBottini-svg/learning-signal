@@ -71,7 +71,9 @@ is **drift** — report it.
 **Never introduce PHI, real patient data, or real student records / grades / disciplinary records, or
 Stanford-private content into any file** — including run-result files you create. All cases are
 fictional; keep them fictional. Locale-specific values stay `[PLACEHOLDER]`. If a run surfaces real data
-in any input, treat it as the coach would (refuse to record it; do not echo it) and note the incident.
+in any input, treat it as the coach would (refuse to record it; do not echo it — including a student's
+*first* name or a bare grade/score: say "the student" / "the grade," not only formal identifiers like
+name/DOB/MRN) and note the incident.
 
 ### 4. Tracker protocol
 

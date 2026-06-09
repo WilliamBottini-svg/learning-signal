@@ -36,7 +36,7 @@ the **complete** menu and for **how to choose** among repairs.
 | **What it is** | One line — the move itself. |
 | **Restores** | Which link it re-establishes (almost always *this* section's link; a few are cross-cutting and noted). |
 | **Use when / not when** | The cases it fits, and the cases where it is the wrong tool. |
-| **Feasibility & cost** | Faculty time, scale (class size), proctoring/space, turnaround. The acceptability/cost factors in van der Vleuten's utility index. |
+| **Feasibility & cost** | Faculty time, scale (class size), proctoring/space, turnaround. Maps to the **feasibility** factor in van der Vleuten's utility index — **cost is its inverse** (higher cost lowers feasibility); *acceptability* (will faculty/students actually run it?) is a separate factor. |
 | **Equity flag** | Present only if the repair assumes resources/access (devices, paid AI tiers, accommodations, scheduling). Points to [`equity-and-access-flags.md`](equity-and-access-flags.md). |
 
 ---
@@ -83,11 +83,16 @@ inaccurate/inconsistent (rater error). Scoring is *attribution + administration 
 | **Student-generated reasoning trace** | Ask for a short artifact exposing the *thinking* (annotated decisions, a "show your reasoning" addendum, a decision log) that an unexplained product hides. | Scoring (attribution); supports Extrapolation | **Use** when the product is polished but the reasoning is invisible. **Not** when the trace itself is easily AI-generated without doing the work — pair with an oral or in-class element. | Low–moderate authoring; moderate to grade. | — |
 | **Individual-accountability component (group work)** | Add a brief individual oral or written element tied to *that student's* specific contribution and reasoning. | Scoring (attribution in groups) | **Use** first for group products where individual contribution is indeterminable (keystone: suspect Scoring before Generalization in group work). **Not** as the *only* fix if you also over-interpret one artifact as broad competence (then Generalization is a secondary repair). | Low–moderate per student; scales with group count. | — |
 | **Observed demonstration** | Have the student *do* the thing in front of a rater (perform, run the procedure, defend live) rather than submit a product. | Scoring (attribution + conditions); strong on Extrapolation | **Use** when the doing is observable and attribution + transfer both matter. **Not** when the construct is genuinely a written/asynchronous product (don't force performance where it doesn't belong). | High: rater time, scheduling, possibly space/simulation. | Flag: scheduling and physical-presence demands; ensure accommodations. |
-| **AI-use disclosure tied to interpretation (not punishment)** | Require students to declare what AI they used and how, used to *interpret* the evidence — never as a misconduct trap. | Scoring (clarifies conditions) | **Use** to make the AI-use condition legible and reduce ambiguity. **Not** as a detection or enforcement mechanism — that trips the safety gate (see [`safety-guardrails.md`](safety-guardrails.md)). | Near-zero: a prompt line + a disclosure field. | Flag: punitive-feeling disclosure can **chill** legitimate use unequally — frame as interpretive, see [`equity-and-access-flags.md`](equity-and-access-flags.md). |
+| **AI-use disclosure tied to interpretation (not punishment)** | Require students to declare what AI they used and how, used to *interpret* the evidence — never as a misconduct trap. | Scoring (clarifies conditions) | **Use** to make the AI-use condition legible and reduce ambiguity. **Not** as a detection or enforcement mechanism — that trips the safety gate (see [`safety-guardrails.md`](safety-guardrails.md)). **Not** when framing it as interpretive still can't remove the chilling risk for an already-marginalized cohort — then the disclosure *itself* distorts the evidence; demote it and prefer a non-punitive interpretive note or another Scoring repair. | Near-zero: a prompt line + a disclosure field. | Flag: punitive-feeling disclosure can **chill** legitimate use unequally — frame as interpretive, see [`equity-and-access-flags.md`](equity-and-access-flags.md). |
 | **Rater training / norming** | Calibrate raters on the rubric (anchor papers, a norming session, double-marking a sample) so evaluation of *what was submitted* is consistent. | Scoring (evaluation accuracy) | **Use** when the break is rater inconsistency/untrained scoring, not attribution. **Not** when the rubric measures the wrong thing — fix that at Construct first. | Low–moderate: a session + sampled double-marking. | — |
 
 > **Group-work order (keystone Edge cases).** Suspect **Scoring (attribution)** first; **Generalization**
 > (individual variation across tasks) is the primary break only once attribution is already handled.
+
+> **Oral / observed / proctored repairs import their own obligations** — they are not terminal endpoints.
+> Re-walk the repaired design for **Link 2** (rater consistency — sample/norm raters) and **Link 3**
+> (single occasion — sample occasions), and remember "observed" is not automatically "unaided" (covert
+> real-time AI in remote/talk-only formats). See keystone Phase E ("re-walk after repair").
 
 ---
 
@@ -171,9 +176,13 @@ only when useful (or when the educator asks for the underlying framework — see
 
 ### 3.1 AI Assessment Scale (AIAS) — pick the AI-use rule
 
-Five **non-hierarchical, equal-merit** levels (no level is "more advanced"). Use AIAS to decide **what
-AI-use rule the repaired task should adopt** — most directly when the **Construct** decision is "is AI
-part of the construct or noise?" (2.1), and when a Scoring or Implications repair needs an explicit rule.
+Five **non-hierarchical** levels — no level is inherently "more advanced" or universally better, but
+**merit is construct-relative**: the right level is whichever fits *your* construct (for a construct of
+independent reasoning, "Full AI" injects construct-irrelevant variance and is *less* valid here, not
+equal). As published, AIAS is ordered by *amount of AI permitted* — a design parameter, not a quality
+ranking. Use AIAS to decide **what AI-use rule the repaired task should adopt** — most directly when the
+**Construct** decision is "is AI part of the construct or noise?" (2.1), and when a Scoring or
+Implications repair needs an explicit rule.
 
 | AIAS level | What students may do | Fits a repaired task when… |
 |------------|----------------------|----------------------------|
@@ -181,7 +190,7 @@ part of the construct or noise?" (2.1), and when a Scoring or Implications repai
 | **AI Planning** | AI for ideation/planning only; the assessed work is the student's. | Early-stage AI help is fine but the certified reasoning must be the student's. |
 | **AI Collaboration** | AI as a working partner, with the student's contribution identifiable and assessed. | Working-with-AI is part of the task but you still need to see the student's own thinking (pair with a reasoning trace). |
 | **Full AI** | AI used freely throughout; assessed on the outcome and on using AI well. | The construct legitimately *includes* effective AI use; you're certifying that. |
-| **AI Exploration** | AI use is itself the object of study (critique, compare, stress-test AI output). | The construct is evaluating/critiquing AI — confirm the *scored* evidence is the student's reasoning, not the AI's artifact (keystone AI-required-task edge case). |
+| **AI Exploration** | AI use is itself the object of study (critique, compare, stress-test AI output). | The construct is evaluating/critiquing AI — confirm the *scored* evidence is the student's judgment / orchestration (the decision trail), not the AI's artifact (keystone AI-required-task edge case). |
 
 > **Restraint cue:** "No AI" is a legitimate, often-correct design — do **not** push AI integration into a
 > secure, knowledge-anchored exam (keystone Edge cases). **Equity cue:** any level above "No AI" that
@@ -204,6 +213,11 @@ task — you need the **programme** to carry at least one assured Lane-1 signal.
 > Feasibility: Lane-1 components carry proctoring/scheduling cost and the equity flags noted on those
 > repairs. Don't add a Lane-1 sitting where a lighter attribution fix (disclosure, reasoning trace)
 > suffices at the stakes.
+>
+> **"Secure" is not automatically "unaided."** A remote or talk-only Lane-1 component can still admit
+> covert real-time AI (earpiece, second screen, off-camera prompt). For higher-stakes secure components,
+> name that residual threat as a **watch-out** (not a re-diagnosis) and prefer in-person/observed
+> conditions — see keystone Edge cases.
 
 ### 3.3 Miller's pyramid — move evidence up for Extrapolation
 
@@ -234,6 +248,12 @@ triangulate across accumulated evidence before the gate. This is the design rati
 and "repeated low-stakes observations." It is a **programme-level** investment, not an edit to one
 assignment — note the cost honestly (data capture, committees, longitudinal tracking).
 
+> **Complementarity (the aggregate principle).** Observed / in-person evidence is strong *exactly where*
+> unsupervised written work is weak under AI. So a portfolio decision can lean on the attributable,
+> transfer-valid components and **down-weight** AI-contaminated written ones to non-load-bearing — the
+> **aggregate** signal can be sound even when one component's Scoring is Severed (keystone Phase A0b,
+> aggregate / portfolio decisions). This is a general capability, not UME-only.
+
 ---
 
 ## 4. Restraint / no-change guidance
@@ -242,13 +262,18 @@ Sometimes the right repair is **none** — or a much lighter move than the break
 is a *tested behavior*, not a cop-out (keystone Phase E; [`safety-guardrails.md`](safety-guardrails.md)
 restraint gate). Pressure-test every candidate repair against **van der Vleuten's multiplicative utility**:
 
-> **utility = validity × reliability × educational impact × acceptability × cost** — it's *multiplicative*,
-> so any factor near zero zeros the whole product.
+> **utility = validity × reliability × educational impact × acceptability × feasibility** (read **cost as
+> an inverse** — higher cost *lowers* utility) — it's *multiplicative*, so any factor near zero drags the
+> whole product toward zero. This is van der Vleuten's **heuristic** (1996; & Schuwirth 2005) with
+> context-dependent weights — **not** a validated arithmetic calculation.
 
 **The multiplicative-zero rule (from the keystone):** if the **lightest link-restoring repair** still
-scores near-zero on **acceptability** (faculty won't run it) or **cost** (infeasible at this scale), do
-**not** recommend the heavy repair anyway. The correct output is to say **no proportionate repair exists**
-and choose a restraint move instead.
+scores near-zero on **acceptability** (faculty won't run it) or **feasibility** (infeasible at this
+scale), do **not** recommend the heavy repair anyway. The correct output is to say **no proportionate
+repair exists** and choose a restraint move instead. **Guard:** "lower the stakes" restores only the
+**Implications** link — do not apply it to a Severed *upstream* link (Construct/Scoring/Generalization/
+Extrapolation), where it merely relabels an invalid score; renegotiate acceptability, defer, move the AI
+work to practice, or decline the inference instead (keystone Phase E).
 
 When to choose a restraint output instead of a repair:
 
@@ -257,8 +282,9 @@ When to choose a restraint output instead of a repair:
 | No link breaks under likely AI use | **No major change.** Acknowledge the strength; at most one one-line clarification. | Forcing a redesign on a strong assessment is a failure mode (keystone Edge cases; Example 3). Use the *Strong assessment* response variant. |
 | The only ambiguity is the AI-use rule | **Clarify AI-use language only.** Pick an AIAS level ([3.1](#31-ai-assessment-scale-aias--pick-the-ai-use-rule)) and state it; change nothing else. | A *Weakened* link from unclear expectations is closed by a sentence, not a rebuild (→ Moderate readiness). |
 | AI work is pedagogically valuable but shouldn't carry the decision | **Move the AI-supported work into practice.** Keep it formative; assess the decision elsewhere. | Preserves educational impact without overloading the summative evidence (see 2.5 split). |
-| The lightest restoring repair tanks acceptability/cost | **Lower the stakes** (or defer). | Multiplicative-zero rule: a heavy repair faculty won't run has zero utility. Lowering stakes restores defensibility cheaply. |
+| The lightest restoring repair tanks acceptability/cost | **Lower the stakes** (or defer). | Multiplicative-zero rule: a heavy repair faculty won't run has zero utility. Lowering stakes restores defensibility cheaply — **but only for a Weakened link or a genuine Implications break**; on a *Severed upstream* link it just relabels an invalid score, so defer / renegotiate / move the AI work to practice instead. |
 | Stakes/sensitivity exceed a single educator's remit | **Defer to governance.** Route to assessment leadership; give the safe design help you can. | Consequential/governance-heavy cases → Needs deeper review; the human owns the decision (keystone Phase D; safety gates). |
+| Large cohort, no proctoring/sim, **non-deferrable mandated gate** (all three usual restraint exits — defer / lower-stakes / move-to-practice — foreclosed) | **Assemble the best-available cheap triangulated bundle and document its limitations.** | When the three usual restraint exits are unavailable, an empty "no proportionate repair exists" abandons the highest-need user. Combine low-marginal-cost moves — randomized item banks/variants (2.3), sampled/time-boxed vivas (2.2), triangulation with existing data (2.3), scenario variation (2.4), pre-AI commitment (2.2) — and **document evidence limitations** (2.5). Keystone Phase E scale branch. |
 
 **Anti-patterns this section exists to prevent** (keystone Phase E): a generic menu of redesign ideas; a
 sophisticated downstream repair while an upstream link is severed; **always** recommending pre-AI

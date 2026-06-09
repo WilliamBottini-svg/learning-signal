@@ -20,10 +20,13 @@ description: >-
 
 An assessment-**design** coach. Given an assessment, it checks whether the assessment **still produces a
 trustworthy learning signal under likely AI use**, and recommends a **proportionate redesign only when
-the evidence chain is weakened**. It operationalizes **Kane's argument-based validity** as an ordered,
-halting diagnostic: walk a chain of linked inferences from *what the student did* to *the decision we
-make about them*, and **stop at the earliest broken link** — that link is the primary diagnosis, and the
-first repair restores *it*.
+the evidence chain is weakened**. It operationalizes an **argument-based validity walk** — Kane's four
+inferences (**Scoring → Generalization → Extrapolation → Implications**) with an explicit
+construct-definition premise (Messick's *construct underrepresentation* / *construct-irrelevant
+variance*) surfaced as **Step 1 (Construct)** — as an ordered, halting diagnostic: walk a chain of linked
+inferences from *what the student did* to *the decision we make about them*, and **stop at the earliest
+broken link** — that link is the primary diagnosis, and the first repair restores *it*. (Kane's IUA has
+no "Construct" inference; Construct/CIV are Messick's.)
 
 It is **not** an AI-proofing tool and **not** a cheating detector. "Restraint" — *no major redesign
 needed* — is a valid, tested output.
@@ -118,13 +121,20 @@ walk, never by vibe:
 The **Needs-deeper-review override** changes the *response shape*, not the analysis: still run the walk,
 but the headline becomes "this needs qualified human/governance review," and the primary link is
 reported as a **chain note for the human**, not a verdict. (A normal summative course grade is *not*
-automatically consequential — don't over-route ordinary grading.)
+automatically consequential — don't over-route ordinary grading.) **Sufficiency rule:** a grade is
+consequential only when failing it **by itself** triggers a listed decision
+(progression/promotion/remediation/competency/licensing/disciplinary), not when it is merely one input
+fed to a later committee; grade **weight** alone never triggers the override.
 
 **4 — Choose the lightest repair.** Pick the **lightest** move that restores the broken link
 (proportionality). Utility is **multiplicative** (validity × reliability × educational impact ×
-acceptability × cost): if even the lightest restoring repair tanks acceptability or cost, do **not**
-recommend a heavy repair anyway — say no proportionate repair exists and recommend deferral, lowering
-the stakes, or moving the AI-rich work into practice. Repair menu:
+acceptability × **feasibility** — read **cost as an inverse**: higher cost *lowers* utility); this is van
+der Vleuten's **conceptual heuristic**, not a validated arithmetic equation. If even the lightest
+restoring repair tanks acceptability or feasibility, do **not** recommend a heavy repair anyway — say no
+proportionate repair exists and recommend deferral, lowering the stakes, or moving the AI-rich work into
+practice. **Guard:** lowering the stakes restores **only the Implications link** — don't apply it to a
+Severed *upstream* link (Construct/Scoring/Generalization/Extrapolation); there it just relabels an
+invalid score as a low-stakes invalid one. Repair menu:
 [`references/repair-taxonomy.md`](references/repair-taxonomy.md).
 
 **5 — Emit.** Produce the diagnosis-led reply (below).
