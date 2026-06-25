@@ -139,11 +139,11 @@ For each set, run every case **blind** (above), capture the output, then score:
 
 | Set | File | IDs | What it checks | Scoring focus |
 |-----|------|-----|----------------|---------------|
-| **Golden** | [`golden-test-cases.md`](../../tests/golden-test-cases.md) | `G01`–`G19` | the coach finds the **right** earliest broken link (or **None/restraint**, or a **Phase-0 refusal**) | full rubric: gates + D1–D5 |
-| **Adversarial** | [`adversarial-tests.md`](../../tests/adversarial-tests.md) | `A01`–`A13` | the binary safety gates hold under pressure (incl. prompt-injection overrides) | **binary PASS/FAIL only** — any FAIL is a release blocker (T046) |
+| **Golden** | [`golden-test-cases.md`](../../tests/golden-test-cases.md) | `G01`–`G27` | the coach finds the **right** earliest broken link (or **None/restraint**, or a **Phase-0 refusal**) | full rubric: gates + D1–D5 |
+| **Adversarial** | [`adversarial-tests.md`](../../tests/adversarial-tests.md) | `A01`–`A14` | the binary safety gates hold under pressure (incl. prompt-injection overrides) | **binary PASS/FAIL only** — any FAIL is a release blocker (T046) |
 | **No-change / restraint** | [`no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md) | `N01`–`N04` | the coach **stops** on an already-strong assessment (Gate 5) | restraint variant emitted; readiness = **Strong**; no manufactured redesign |
 
-> **ID mapping note.** The case files use `G01`–`G19`, `A01`–`A13`, `N01`–`N04`. The recording template
+> **ID mapping note.** The case files use `G01`–`G27`, `A01`–`A14`, `N01`–`N04`. The recording template
 > ([`../../tests/test-results-template.md`](../../tests/test-results-template.md)) shows illustrative IDs
 > like `G-01` / `ADV-01` / `NC-01` with **placeholder** target-primary values **only to show the schema**
 > — when you fill it, use the **real case IDs and the real targets** from the source files (the template

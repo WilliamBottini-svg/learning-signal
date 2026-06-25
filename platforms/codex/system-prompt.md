@@ -93,8 +93,8 @@ Follow [`../../AGENTS.md`](../../AGENTS.md) for the exact protocol.
 
 ### Task A — Run the test suite (+ skill-vs-base)
 
-Execute the **golden** ([`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md), `G01`–`G19`),
-**adversarial** ([`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md), `A01`–`A13`),
+Execute the **golden** ([`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md), `G01`–`G27`),
+**adversarial** ([`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md), `A01`–`A14`),
 and **no-change/restraint** ([`../../tests/no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md),
 `N01`–`N04`) case sets against a model under a stated **condition** (`skill-enabled` vs `base prompt`),
 score with [`../../tests/scoring-rubric.md`](../../tests/scoring-rubric.md), and record in a filled copy of

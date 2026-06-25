@@ -4,7 +4,7 @@
 
 - **Run ID:** `perplexity-review-2026-06-05`
 - **Reviewer:** Perplexity Computer
-- **Repository path:** `/Users/williambottini/Documents/GitHub/learning-signal`
+- **Repository path:** local checkout (path redacted for public release)
 - **Branch:** `v0.1-build`
 - **Scope:** Review-first maintenance pass after user approval to make consistency and documentation
   changes.

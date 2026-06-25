@@ -62,6 +62,12 @@ Two prior filled runs show the exact target shape — **replicate their structur
   limitations → follow-ups).
 - [`../../tests/usability-eval-2026-06-05-results.md`](../../tests/usability-eval-2026-06-05-results.md) —
   the usability/red-team round (method → headline → changes → re-test → limitation).
+- [`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md) —
+  frontier GPT + Gemini Pro subset (Mode 1).
+
+**v0.3 (weak-tier + UX):** [`../../tests/v0.3-validation-plan.md`](../../tests/v0.3-validation-plan.md) is
+the current validation roadmap. For **manual Cursor runs** (switch models in the IDE, fresh chat per case),
+use the blind prompt pack [`../../tests/cursor-manual-run-prompts.md`](../../tests/cursor-manual-run-prompts.md).
 
 ---
 
@@ -90,9 +96,9 @@ gates) is quality and safety *around* that signal. See
 - **Rules:** [`../../AGENTS.md`](../../AGENTS.md) (non-negotiables + canonical-source rule),
   [`../../CLAUDE.md`](../../CLAUDE.md) (architecture + keystone),
   [`../../core/skill-core.md`](../../core/skill-core.md) §7 (the export note).
-- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (19, `G01`–`G19`,
-  with answer key), [`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md) (13,
-  `A01`–`A13`), [`../../tests/no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md)
+- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (27, `G01`–`G27`,
+  with answer key), [`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md) (14,
+  `A01`–`A14`), [`../../tests/no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md)
   (4, `N01`–`N04`).
 - **Scoring & recording:** [`../../tests/scoring-rubric.md`](../../tests/scoring-rubric.md) (D1–D5 +
   binary gates + v0.1 pass bar), [`../../tests/test-results-template.md`](../../tests/test-results-template.md)

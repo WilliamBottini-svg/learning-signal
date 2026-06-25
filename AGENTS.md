@@ -1,7 +1,9 @@
 # AGENTS.md — working agreement for agents on Learning Signal Check
 
 **Read first:** `0-admin/project-tracker.md` (status + tasks), `CLAUDE.md` (architecture + keystone),
-and the spec `0-admin/learning-signal-check-handoff-plan.md`.
+and the spec `0-admin/learning-signal-check-handoff-plan.md`. *(Note: `0-admin/` is gitignored —
+maintainer-private coordination files. In a public clone those files are absent; `CLAUDE.md` and this
+file carry everything an external contributor needs.)*
 
 ## Non-negotiables
 1. **Canonical-source rule.** Author content only in `core/` and `domains/`. Everything under

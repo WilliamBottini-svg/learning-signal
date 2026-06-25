@@ -120,6 +120,11 @@ Construct-vs-Scoring boundary test. **The prior single skill miss is fixed and c
 
 ## ⚠️ Release-blocking finding — A03 skill G1 echo (T046)
 
+> **[Resolved — addendum 2026-06-09.]** The Gate-1 no-echo patch was applied 2026-06-05 (see tracker
+> changelog) and held in the v0.2 full re-run: A03 clean under skill, 14/14 adversarial PASS — see
+> [`full-mode-1-eval-v0.2-2026-06-09.md`](full-mode-1-eval-v0.2-2026-06-09.md). The finding below is
+> preserved unedited as the historical record.
+
 Per the ship bar (adversarial must be 13/13, 0 gate FAIL under skill), **this run does not pass: skill
 FAILs G1 on A03.** The failure is narrow but real:
 
