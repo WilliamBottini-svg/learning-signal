@@ -318,10 +318,12 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 >   elicits the wrong thing or has no valid referent → **Construct**. (An untethered "reflection" with no
 >   referent fails here.)
 >
-> **Precedence:** if the task was **weak evidence for the claim even before AI** (a pre-existing
-> underrepresentation — Phase A / Edge cases), that is a **Construct** break *regardless* of the boundary
-> test. Low stakes or completion grading do **not** by themselves make it a Construct break — they change
-> the *repair severity*, not the link.
+> **Precedence (Construct only):** call **Construct** only when the task **does not elicit the claimed
+> skill even when done honestly** — no valid referent, wrong skill elicited, or rubric pays for
+> construct-irrelevant features (Phase A carve-out; Example 2). **Do not** call Construct when the task
+> validly measures a **narrower slice**, attribution works, but **one thin sample** licenses a **broader
+> domain claim** — that is **Generalization** (Example 8). Low stakes or completion grading do **not** by
+> themselves make it a Construct break — they change the *repair severity*, not the link.
 
 ### Link 3 — Generalization
 *From "this one task" to "the student's competence across the domain of such tasks."*
@@ -343,6 +345,17 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 - **Representative repairs:** multiple cases/prompts; item banks or randomized variants; sampling across
   contexts; repeated low-stakes observations; triangulation with other assessments; blueprinting
   against the learning goals; individual-accountability components in group work.
+
+> **Construct vs Generalization — the boundary test (use when "claim too broad for the evidence" could be
+> either).** First confirm **Construct** and **Scoring** are **Intact** (the task elicits the right skill
+> for *some* honest performance, and attribution holds). Then ask: *is the problem that the task measures
+> the wrong thing, or that **one thin sample** is being used to license a **broader** claim?*
+> - **The task doesn't elicit the claimed skill even when done honestly** (wrong referent, wrong skill,
+>   rubric pays for polish) → **Construct** (Link 1).
+> - **The task validly measures a narrower slice** (e.g., one proctored item on marginal cost), attribution
+>   is fine, but the **label or use over-generalizes** to domain-wide competence → **Generalization**
+>   (Link 3): sample the domain or narrow the claim. *(Contrast Example 8 with Example 2 — untethered
+>   reflection has no referent → Construct; one sound item generalized to a course → Generalization.)*
 
 ### Link 4 — Extrapolation
 *From "competence on the assessment" to "capability in the real-world / clinical / future target."*
@@ -713,6 +726,48 @@ Each shows: claim → evidence → ordered walk → primary diagnosis → first 
 - **Note:** "a non-doer could get the same handout with AI" does **not** sever Scoring here, because the
   *handout* is not what's scored — the orchestration is. A **consequential certification** version (this
   capstone alone gating licensure) would trip the Needs-deeper-review override.
+
+### Example 8 — One quiz item generalized to a course grade (Generalization pole)
+- **Claim:** Student is competent across **microeconomics** (the broad domain). **Evidence:** one
+  proctored, in-class multiple-choice item on **one** concept (marginal cost) — attributable, but a
+  single sliver. **AI-use:** none (proctored). **Stakes:** low (a gradebook line; no gate).
+- **Walk:** Construct **Intact** (the item validly measures marginal-cost reasoning) → Scoring **Intact**
+  (invigilated, attributable) → **Generalization Severed** (one item cannot characterize competence
+  across the domain — even at low stakes). Extrapolation / Implications not reached.
+- **Primary:** Generalization inference failure. **Readiness:** Vulnerable.
+- **First repair:** sample the domain (item bank / blueprinted set) **or** relabel the gradebook line to
+  match what was actually sampled. *Do not* call this Construct — the task is not measuring the wrong
+  thing; the sample is too thin for the broad claim. *(Contrast G19: well-sampled OSCE, sole gate →
+  Implications.)*
+
+### Example 9 — Written-only differentials certified for the wards (Extrapolation pole)
+- **Claim:** Student can exercise **clinical reasoning in the clinical encounter** — gather, weigh, adapt
+  in the moment. **Evidence:** several proctored, in-class **written** differentials across vignettes —
+  attributable and well-sampled, but all after-the-fact products. **AI-use:** none during the task.
+  **Stakes:** moderate (unit grade feeding a readiness narrative).
+- **Walk:** Construct **Intact** (writing a differential is a real, represented skill) → Scoring
+  **Intact** → Generalization **Intact** (multiple vignettes) → **Extrapolation Severed** (a polished
+  written end-state does not demonstrate judgment-in-the-moment in the encounter the claim certifies).
+- **Primary:** Extrapolation inference failure. **Readiness:** Vulnerable.
+- **First repair:** add a judgment-in-context probe (oral reasoning probe or "what would change your
+  mind?" on the same cases). *Do not* call this Construct — the task is not measuring the wrong thing;
+  the gap is **transfer** to the bedside target. *(If the program only cared about written differentials,
+  narrow the over-stated claim instead.)*
+
+### Example 10 — Designed AI-collaboration task with proctored defense (restraint after Construct + Scoring)
+- **Claim:** Student can **critically evaluate** an AI-generated artifact (errors found, corrections
+  justified). **Evidence:** the student's evaluative reasoning, scored from a **proctored / in-class
+  defense** on a *fresh* AI-generated artifact — not the take-home artifact. **AI-use:** required by
+  design (artifact under critique is AI-made). **Stakes:** moderate (unit grade).
+- **Walk (run Construct then Scoring before crediting Strong):** Construct **Intact** — what is scored is
+  the student's independent evaluative reasoning, not the AI artifact's polish; working with AI is part of
+  the construct. → Scoring **Intact** — the scored critique is attributable (proctored defense). →
+  Generalization / Extrapolation / Implications **Intact**.
+- **Primary:** none. **Readiness:** Strong.
+- **Output:** restraint — no major redesign; at most one lightweight clarification. *Do not* manufacture a
+  Scoring or Generalization break by ignoring the proctored defense, and *do not* rate Strong without
+  running the Construct-then-Scoring check first. *(The take-home mirror of this task — no attribution
+  anchor — is Scoring Severed; see UME Case 7 / repair taxonomy AI Exploration.)*
 
 ---
 

@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-06-26T15:53:07.619931+00:00",
+  "aggregate": {
+    "applicable": 257,
+    "passed": 252,
+    "pct": 98.05447470817121,
+    "by_check": {
+      "length_band": [
+        46,
+        47
+      ],
+      "one_move": [
+        21,
+        23
+      ],
+      "primary_findable": [
+        46,
+        47
+      ],
+      "readiness_canonical": [
+        22,
+        23
+      ],
+      "refuse_shape": [
+        24,
+        24
+      ],
+      "structure_sections": [
+        23,
+        23
+      ],
+      "variant_fit": [
+        47,
+        47
+      ],
+      "watchouts_ok": [
+        23,
+        23
+      ]
+    },
+    "by_model": {
+      "gemini-2.5-flash-lite": {
+        "applicable": 129,
+        "passed": 129,
+        "rows": 24
+      },
+      "gpt-5-mini": {
+        "applicable": 128,
+        "passed": 123,
+        "rows": 23
+      }
+    }
+  },
+  "failures": [
+    {
+      "case_id": "A04",
+      "model": "gpt-5-mini",
+      "source": "tests/results/runs/2026-06-25-gpt-5-mini-gates.jsonl",
+      "fails": [
+        "length_band: 325 words (refuse max 320)"
+      ]
+    },
+    {
+      "case_id": "A14",
+      "model": "gpt-5-mini",
+      "source": "tests/results/runs/2026-06-25-gpt-5-mini-gates.jsonl",
+      "fails": [
+        "primary_findable: no primary/readiness in first screen",
+        "one_move: 7 bullet items \u2014 possible menu",
+        "readiness_canonical: no Readiness: line found"
+      ]
+    },
+    {
+      "case_id": "G17",
+      "model": "gpt-5-mini",
+      "source": "tests/results/runs/2026-06-25-gpt-5-mini-discipline-retest.jsonl",
+      "fails": [
+        "one_move: 4 bullet items \u2014 possible menu"
+      ]
+    }
+  ],
+  "inputs": [
+    "tests/results/runs/2026-06-25-gemini-25-flash-lite-gates-v2.jsonl",
+    "tests/results/runs/2026-06-25-gemini-25-flash-lite-goldens.jsonl",
+    "tests/results/runs/2026-06-25-gpt-5-mini-gates.jsonl",
+    "tests/results/runs/2026-06-25-gpt-5-mini-goldens.jsonl",
+    "tests/results/runs/2026-06-25-gpt-5-mini-discipline-retest.jsonl"
+  ]
+}

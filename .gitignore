@@ -16,3 +16,22 @@ Thumbs.db
 *.log
 .scratch/
 .perplexity-update.patch
+
+# Eval harness secrets and run artifacts
+.env
+.env.*
+!.env.example
+secrets/
+**/secrets.toml
+local-secrets/
+tests/harness/runs/
+tests/harness/prompts-*.json
+tests/results/runs/*.jsonl
+
+# Private Stanford AI Gateway operator docs (if copied locally from another repo)
+**/STANFORD_AI_GATEWAY*.md
+**/STANFORD_AI_MIGRATION*.md
+
+# Python
+__pycache__/
+*.py[cod]

@@ -98,7 +98,8 @@ Cross-family frontier results (June 2026) live in
 [`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md). The
 **v0.3 program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is specified in
 [`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md). Pre-stripped blind prompts for manual
-runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md).
+runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md). **Automated Mode 1 runs**
+via Stanford AI Gateway: [`tests/harness/README.md`](tests/harness/README.md) (`scripts/run_mode1_eval.py`).
 
 To see the method in action, read the worked demonstrations in [`examples/`](examples/); to read the
 engine itself, see [`core/diagnostic-procedure.md`](core/diagnostic-procedure.md).
