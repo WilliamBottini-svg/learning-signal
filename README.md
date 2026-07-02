@@ -9,7 +9,7 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> ⚠️ **v0.2 is in active development.** Interfaces and content may change.
+> **v0.4.0** — first public release. Validation is **model-based**; human expert (M7) ratification is pending.
 
 ---
 
@@ -72,10 +72,19 @@ needed."* The coach is designed (and tested) to say so.
 
 Learning Signal Check ships as portable wrappers that all run the same core diagnostic:
 
-- **Claude Skill** — [`platforms/claude-skill/`](platforms/claude-skill/). The `SKILL.md` auto-triggers
+- **Claude Skill / Claude Code plugin** — [`platforms/claude-skill/`](platforms/claude-skill/). The `SKILL.md` auto-triggers
   when you ask whether an assessment still shows student learning under AI, or to redesign one. Its
   `references/` include five byte-identical exports of `core/` plus one curated UME digest exported from
   `domains/undergraduate-medical-education/`.
+
+  **Install as a Claude Code plugin:**
+
+  ```
+  /plugin marketplace add WilliamBottini-svg/learning-signal
+  /plugin install learning-signal-check@learning-signal
+  ```
+
+  Manual fallback: point Claude at [`platforms/claude-skill/SKILL.md`](platforms/claude-skill/SKILL.md).
 - **AI Playground (Stanford or any)** — generic export in
   [`platforms/stanford-ai-playground/`](platforms/stanford-ai-playground/). This folder gives the generic
   setup pattern: a preset template/checklist, a reusable intake prompt, and instructions for pasting the
@@ -92,14 +101,20 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.
 
-### Validation (v0.3 in progress)
+### Validation (v0.4.0)
 
 Cross-family frontier results (June 2026) live in
 [`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md). The
-**v0.3 program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is specified in
-[`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md). Pre-stripped blind prompts for manual
+**v0.3 validation program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is
+specified in [`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md) and **executed** (see
+[`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md),
+[`tests/results/ux-persona-v0.3-2026-06-26.md`](tests/results/ux-persona-v0.3-2026-06-26.md)). Pre-stripped blind prompts for manual
 runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md). **Automated Mode 1 runs**
 via Stanford AI Gateway: [`tests/harness/README.md`](tests/harness/README.md) (`scripts/run_mode1_eval.py`).
+
+**Honesty caveat:** all published eval results are **model-based**, not human-expert (M7) ratified. Golden
+targets remain author-derived until faculty ratification. The skill refuses unsafe requests and routes
+PHI — but a hard guarantee of 0% PHI echo requires a platform PII boundary, not instruction alone.
 
 To see the method in action, read the worked demonstrations in [`examples/`](examples/); to read the
 engine itself, see [`core/diagnostic-procedure.md`](core/diagnostic-procedure.md).
