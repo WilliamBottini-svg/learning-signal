@@ -2,7 +2,7 @@
   "_comment": "Learning Signal Check — shareable AI Playground preset (generic export). This is an EXPORT of core/ + UME behavior; only platform syntax/setup differs from the canonical skill, never the diagnostic logic. The exact AI Playground preset schema may differ from this file — keys marked [PLACEHOLDER] are schema-specific and must be mapped to your instance's actual field names before import. See import-instructions.md.",
   "name": "Learning Signal Check",
   "description": "Assessment-design coach. Checks whether an assessment still produces a trustworthy learning signal under likely AI use, and recommends a proportionate redesign only when the evidence chain is weakened. Not an AI-proofing tool; not a cheating detector.",
-  "version": "0.2",
+  "version": "0.4.0",
   "model": "[PLACEHOLDER: select the model available in your AI Playground instance, e.g. the most capable general model]",
   "temperature": 0.3,
   "_temperature_note": "Low on purpose. The diagnostic walk is deterministic — same case should reach the same primary diagnosis. Keep this low (~0.2–0.4); do not raise it for 'creativity'.",

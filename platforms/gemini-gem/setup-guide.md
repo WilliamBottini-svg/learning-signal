@@ -83,7 +83,7 @@ nothing about the diagnostic logic, which is the canonical engine exported into
 
    ```
    Exported from core/ commit: 530b492 (run `git -C <repo> rev-parse --short HEAD` to confirm)
-   Gem version: v0.2
+   Gem version: v0.4.0
    ```
 
    When `core/` changes: re-export [`gem-instructions.md`](gem-instructions.md), refresh the 6 knowledge
