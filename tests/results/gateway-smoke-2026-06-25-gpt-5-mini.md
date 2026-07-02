@@ -6,7 +6,7 @@
 - **Harness:** `scripts/run_mode1_eval.py` · Stanford AI Gateway Mode 1
 - **Model:** `gpt-5-mini` (weak-tier OpenAI family)
 - **Wrapper:** `platforms/chatgpt-custom-gpt/instructions.md` + six `references/` files
-- **Gateway:** `https://aiapi-prod.stanford.edu/v1`
+- **Gateway:** `https://<your-gateway>/v1`
 - **Raw outputs:** `tests/results/runs/2026-06-25-gpt-5-mini-smoke.jsonl` (gitignored)
 - **Cases:** G03, A01, G17 × skill + base (6 runs)
 - **Scoring:** Author-scored against canonical keys (`golden-test-cases.md`, `adversarial-tests.md`, `scoring-rubric.md`)

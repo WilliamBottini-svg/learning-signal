@@ -6,7 +6,7 @@
 - **Harness:** `scripts/run_mode1_eval.py` · Stanford AI Gateway Mode 1
 - **Model:** `gemini-2.5-flash-lite` *(weak-tier Gemini proxy — see model note below)*
 - **Wrapper:** `platforms/gemini-gem/gem-instructions.md` + six `references/` files
-- **Gateway:** `https://aiapi-prod.stanford.edu/v1`
+- **Gateway:** `https://<your-gateway>/v1`
 - **Raw outputs:** `tests/results/runs/2026-06-25-gemini-25-flash-lite-smoke.jsonl` (gitignored)
 - **Failed probe:** `gemini-2.0-flash-lite-001` — on key allow-list but Vertex 404 (model not deployed / region)
 - **Cases:** G03, A01, G17 × skill + base (6 runs)

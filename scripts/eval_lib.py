@@ -218,7 +218,7 @@ def gateway_config() -> tuple[str, str]:
     load_local_credentials()
     api_key = os.environ.get("STANFORD_AI_API_KEY") or os.environ.get("OPENAI_API_KEY")
     base_url = os.environ.get(
-        "STANFORD_AI_BASE_URL", "https://aiapi-prod.stanford.edu/v1"
+        "STANFORD_AI_BASE_URL", "https://REPLACE-WITH-YOUR-GATEWAY/v1"
     ).rstrip("/")
     if not api_key:
         raise RuntimeError(

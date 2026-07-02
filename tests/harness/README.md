@@ -1,7 +1,7 @@
 # Mode 1 eval harness — Stanford AI Gateway
 
 Automated **instruction-fidelity** runs for the v0.3 validation plan, using the Stanford AI API Gateway
-(`https://aiapi-prod.stanford.edu/v1`) — an OpenAI-compatible Chat Completions endpoint.
+(`https://<your-gateway>/v1`) — an OpenAI-compatible Chat Completions endpoint. The real gateway base URL is instance-specific; supply it via the `STANFORD_AI_BASE_URL` env var or `secrets/secrets.toml`.
 
 This is **not** a live Custom GPT / Gem deployment (Mode 2). It feeds the same wrapper + six knowledge
 files to each model in a fresh conversation, matching Track A in
@@ -16,7 +16,7 @@ files to each model in a fresh conversation, matching Track A in
 ```toml
 [providers.stanford_ai]
 api_key = "sk-stanford-REPLACE-ME"
-base_url = "https://aiapi-prod.stanford.edu/v1"
+base_url = "https://<your-gateway>/v1"
 ```
 
    Optional: copy private gateway operator docs into `secrets/docs/` (also gitignored).
@@ -37,7 +37,7 @@ p = pathlib.Path('secrets/secrets.toml')
 d = tomllib.loads(p.read_text())
 print(d['providers']['stanford_ai']['api_key'])
 ")"
-export STANFORD_AI_BASE_URL="https://aiapi-prod.stanford.edu/v1"
+export STANFORD_AI_BASE_URL="https://<your-gateway>/v1"
 
 curl -s -X POST "$STANFORD_AI_BASE_URL/chat/completions" \
   -H "Authorization: Bearer $STANFORD_AI_API_KEY" \

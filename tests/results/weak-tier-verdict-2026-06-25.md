@@ -1,7 +1,7 @@
 # Weak-tier verdict — Stanford AI Gateway Mode 1 (interim)
 
 **Date:** 2026-06-25  
-**Harness:** `scripts/run_mode1_eval.py` · `https://aiapi-prod.stanford.edu/v1`  
+**Harness:** `scripts/run_mode1_eval.py` · `https://<your-gateway>/v1`  
 **Scope:** Phase A0 smoke + Phase A1 gate sweep + Phase A2 golden tier-stress (G01–G03, G17–G19). Track B UX pending.
 
 ---
