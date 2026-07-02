@@ -4,7 +4,7 @@
 **Branch:** `release/v0.4.0`  
 **Recommended verdict:** **GO** once Blockers B1–B3 below are fixed on this branch (assigned to Tasks 2–5 of the release runbook). No open Blockers remain after those fixes + plugin validation.
 
-**Owner adjudication (R12):** William Bottini — classify findings below; flip only when Blockers are closed.
+**Owner adjudication (R12):** William Bottini — **GO confirmed 2026-07-01.** Cut list **approved and executed.**
 
 ---
 
@@ -104,7 +104,7 @@ Keystone (5-link ordered chain, halt at earliest break) aligned across all wrapp
 
 **Note:** `weak-tier-verdict-2026-06-25.md` links to several cut candidates. If approved, those links must be repointed to summary text or removed (verdict retains the rollup).
 
-**Action:** No deletions until owner approves this list.
+**Action:** Owner approved 2026-07-01 — 11 files removed; `weak-tier-verdict-2026-06-25.md` and `tests/harness/README.md` links repointed to inline summaries.
 
 ---
 
@@ -113,7 +113,7 @@ Keystone (5-link ordered chain, halt at earliest break) aligned across all wrapp
 | Severity | Count | Status |
 |----------|-------|--------|
 | Blocker | 3 | B1–B3 assigned to release branch tasks |
-| Should-fix | 5 | S3–S4 fixed in version/README tasks; S5 user rotation; S1–S2 optional |
+| Should-fix | 5 | S1–S2 fixed; S3–S4 fixed in version/README tasks; S5 user rotation |
 | Nice-to-have | 2 | Deferred |
 
 **Recommended owner verdict:** GO after B1–B3 + plugin validate + version bump + pre-flip checklist.

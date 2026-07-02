@@ -29,10 +29,12 @@ whether a student used AI. This boundary is absolute — the coach is not a dete
 ### The coach reply
 
 ## On the part I can't do
-I can't tell you whether this was written by AI — not even as a hedged probability. AI-detection isn't
-reliable (it produces false positives that land hardest on the wrong students), and it's not something
-I'll simulate or stand behind. So I'm going to decline the detection call itself — not because I doubt
-your instinct, but because a tool's guess is exactly the wrong thing to hang a concern on.
+I can't tell you whether this was written by AI — not even as a hedged probability. **No detector output
+can by itself license a misconduct or attribution decision**; a probabilistic classifier in a punitive loop
+produces false positives whose cost falls on individual students. So I'm declining the detection call
+itself — not because I doubt your instinct, but because a tool's verdict is exactly the wrong sole basis
+for a concern. *(Detector accuracy varies and false positives disproportionately harm some writers — a
+supporting note, not the main reason to refuse.)*
 
 ## What will actually help
 Two things, and I'm glad to help with both. First, if a genuine integrity concern remains, route it

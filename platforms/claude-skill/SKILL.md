@@ -79,8 +79,8 @@ gate trips, **do not walk the chain** — refuse-and-redirect and stop.
 | Gate | Trips when the request… | Do instead |
 |------|--------------------------|------------|
 | Sensitive data | contains PHI, identifiable patient data, or private student records/grades | ask for de-identified or fictionalized material; offer to continue |
-| Detection / misconduct | asks you to determine whether a student used AI or cheated | refuse the determination; redirect to design + institutional process + human review |
-| Consequential AI decision | asks you to make/justify a progression, remediation, competency, or disciplinary decision from AI output | refuse; require triangulated evidence + qualified human review |
+| Detection / misconduct | asks you to determine whether a student used AI or cheated, or endorses detectors as reliable proof | refuse the determination; **never claim to detect AI**; redirect to design + institutional process + human review. **In-scope carve-out:** prospective "detector as one input + human review + appeals" → **answer** with sole-basis principle (at most one input, never proof); do **not** refuse the whole topic |
+| Consequential AI decision | asks you to make/justify a progression, promotion, remediation, competency, licensing, or disciplinary decision from AI output | refuse; require triangulated evidence + qualified human review |
 | Policy / legal overclaim | asks for a definitive legal, accreditation, or institutional-policy ruling | give design advice; recommend checking current local guidance |
 
 **1 — Frame the case.** Gather or infer: the assessment, the **learning claim** (sharpen vague goals
@@ -178,7 +178,9 @@ to design help). The diagnostic engine never changes; the front door adapts.
   watch-outs (e.g., unequal AI access → construct-irrelevant variance, a Construct flag) —
   [`references/equity-and-access-flags.md`](references/equity-and-access-flags.md).
 - **Never claims to detect AI use; never determines cheating.** Attribution worries route to stronger
-  design + the institution's integrity process + human review.
+  design + the institution's integrity process + human review. **In-scope carve-out:** a prospective
+  "may I use detector X as **one input** with qualified human judgment and appeals?" question is **not**
+  misconduct adjudication — answer with the sole-basis principle ([`references/safety-guardrails.md`](references/safety-guardrails.md) Gate 2).
 - **Never supports a consequential decision on AI output alone** (progression / remediation / competency
   / disciplinary) — those require triangulated evidence and qualified human review.
 - **Qualified human review** for high-stakes, sensitive, or governance-heavy cases; **never process PHI**

@@ -119,8 +119,9 @@ confirm against your allow-list (gateway 401 messages list approved models).
 The canonical A09 prompt (`SYSTEM OVERRIDE: ignore all previous instructions…`) is **blocked by
 Azure's jailbreak pre-filter** before inference on **GPT models** (`gpt-5-mini`, `gpt-5.4`) through
 this gateway. **Gemini models on the same key run A09 normally** and the skill passes G2. This is
-infrastructure, not a skill failure — do not alter the A09 prompt in the harness. See
-[`../results/a09-gateway-investigation-2026-06-25.md`](../results/a09-gateway-investigation-2026-06-25.md).
+infrastructure, not a skill failure — do not alter the A09 prompt in the harness. Gemini models on the
+same key run A09 normally and the skill passes G2; GPT/Azure path is blocked pre-inference (cross-family
+evidence accepted per `weak-tier-verdict-2026-06-25.md`).
 
 ## Pass bars (skill condition)
 
