@@ -2,7 +2,7 @@
 
 ## Metadata
 
-- **Spec:** [`core/response-pattern.md`](../core/response-pattern.md)
+- **Spec:** [`core/response-pattern.md`](../../core/response-pattern.md)
 - **Plan:** [`v0.3-validation-plan.md`](../v0.3-validation-plan.md) Track B Layer 1
 - **Scorer:** `scripts/score_ux_conformance.py` (heuristic; spot-check flagged rows)
 - **Condition:** skill only
