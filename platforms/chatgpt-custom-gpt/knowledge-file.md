@@ -1,5 +1,7 @@
 # ChatGPT Custom GPT — Knowledge (manifest + setup guide)
 
+> **Platform overview & model tiers:** [`README.md`](README.md)
+
 This is the **build manifest** for the "Learning Signal Check" Custom GPT — what to upload as Knowledge,
 the public description, and the privacy rules. It is **not** a generated bundle: you upload the existing
 canonical export files as-is.

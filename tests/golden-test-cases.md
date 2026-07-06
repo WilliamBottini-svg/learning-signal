@@ -14,11 +14,11 @@ produces, **the procedure wins** and the case is the bug. The other suite files 
 adversarial set, the response templates) **consume this case schema**; this is the source of the answer
 key, not a re-derivation of the method.
 
-**Author-derived v0.1 — not yet expert-ratified.** These labels are *author-derived targets*, produced
-by one author applying the keystone. A subset will later be independently **expert-ratified** (see
-[`expert-target-template.md`](expert-target-template.md)) so that the evaluation answer key does not come
-from the same source as the skill it grades — i.e., to avoid circular validation. Until then, treat these
-as **v0.1 targets**: stable enough to regression-test against, but flagged for expert review where noted.
+**Author-derived v0.1 with expert-ratified subset.** Most labels are *author-derived targets*, produced
+by one author applying the keystone. **G06 is expert-ratified** (human M7, 2026-07-06 — see
+[`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md)).
+Other cases remain author-derived until independently ratified via
+[`expert-target-template.md`](expert-target-template.md).
 
 **De-identification.** All cases are fictionalized. No PHI, no real students, no real institutions. The
 medical cases use generic clinical details only; the general-education cases use invented courses. The set
@@ -178,8 +178,8 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 - **Evidence (+type):** The student's critique + live defense — a **decision/analysis** product, attributable.
 - **AI-use condition:** AI use is *part of the task* (the artifact under critique is AI-made); the scored critique is captured under an attributable in-class/oral condition.
 - **Stakes:** moderate (a unit grade).
-- **Expected primary inference:** **accept-either** — **None (Strong)** *or* **Generalization (Weakened)**. The documented key is None (Strong); independent ratification (2026-06-06) found 2 of 3 blind lenses read the single AI-generated vignette as a *primary* Generalization (breadth) break. **Flagged genuinely ambiguous → accept either at moderate stakes, pending human M7** (see "Genuinely ambiguous cases").
-- **Expected readiness:** **Strong** (under the None reading) *or* **Moderate** (under the Generalization-Weakened reading) — both defensible at moderate stakes. *(Vulnerable / a redesign is **not** accepted — restraint still governs.)*
+- **Expected primary inference:** **Generalization (Weakened)** — **expert-ratified (M7, 2026-07-06):** 3/3 independent experts converged on Generalization as the earliest break; Construct and Scoring Intact. Prior `accept-either` with None/Strong closed. See [`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md).
+- **Expected readiness:** **Moderate** — expert-ratified. Light repair (second vignette or single-sample caveat); no major redesign.
 - **Acceptable repairs:** **no major change** (restraint), optionally a free-tier access line; *or*, under the Generalization reading, **add a second vignette** to broaden the sample (a light, proportionate breadth move — **not** a redesign).
 - **Disallowed repairs:** treating "AI is involved" as automatically a break and redesigning it away; adding a heavy proctored exam on top of an already-attributable defense.
 - **Secondary findings:** the **single-vignette breadth** is at most a *Weakened-Generalization* caveat at this moderate-stakes unit grade — a calibration dial, not a Kane fracture. **Escalation:** it becomes the *primary* break if the **claim broadens** ("competent across differentials") or **stakes rise** toward a gate.
@@ -420,20 +420,16 @@ the label is settled.
    are worth expert confirmation that **Construct-primary, Scoring-secondary** is the intended grading
    key.
 
-4. **G06 (AI-critique done right) — None/Strong vs Generalization-Weakened.** The single AI-generated
-   vignette is read by the key (and a skeptic lens + the adversarial panel) as a *secondary* breadth
-   caveat on an otherwise-Strong, attributable task, but by 2 of 3 blind lenses as a *primary*
-   Generalization break (clinical case specificity). Genuinely defensible both ways **at moderate
-   stakes**: the narrow claim + restraint favor None/Strong; case-specificity favors
-   Generalization-Weakened. **Accept either; flag for human M7.** It escalates to a clear Generalization
-   break if the claim broadens or stakes rise. *(Added by the 2026-06-06 ratification — the single target
-   not cleanly confirmed by independent review.)*
+4. **G06 (AI-critique done right) — resolved by human M7 (2026-07-06).** Three independent experts
+   converged on **Generalization (Weakened)** → **Moderate**, with restraint (no major redesign). The
+   single-vignette breadth concern is the reconciled primary; None/Strong was a defensible minority read
+   but is no longer the documented key. Public summary:
+   [`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md)
+   (detailed session records maintained offline, not in this repository).
 
-> **Ratification note (2026-06-06):** independent blind review **affirmatively confirmed** G07, G09, G11,
-> and G15 (the accept-either instructions above stand, but they are now *confirmed defensible*, not open
-> questions). **G06 is the one remaining genuine flag** for human M7. Everything else (G01–G05, G08, G10,
-> G12–G14, G16–G19) is **unambiguous given the procedure** — the walk halts at a clearly-Severed link (or
-> a gate fires) with little room for a defensible alternative. Those are the firm regression anchors.
+> **Ratification note (2026-07-06):** **G06 closed** by human M7 (3/3 Generalization/Weakened). Prior
+> model-based ratification (2026-06-06) **affirmatively confirmed** G07, G09, G11, and G15. Everything
+> else (G01–G05, G08, G10, G12–G14, G16–G19, G20–G28) remains **author-derived** unless later ratified.
 
 ---
 
@@ -449,9 +445,10 @@ the label is settled.
 ## v0.2 coverage-extension cases (G20–G27)
 
 These lock the v0.2 coverage paths (team-as-construct, the formative floor, portfolio aggregate,
-non-cognitive/longitudinal constructs, AI-as-construct, low-resource) and two boundary cases the
-red-team asked to be made falsifiable. They were authored *after* the v0.1 ratification, so they carry
-the **same "model-based, not human-M7"** caveat and are part of the v0.2 re-ratification.
+non-cognitive/longitudinal constructs, AI-as-construct, low-resource) and boundary cases the red-team
+asked to be made falsifiable — including **G28** (B3 consequential transmission). They were authored
+*after* the v0.1 ratification, so they carry the **same "model-based, not human-M7"** caveat and are
+part of the v0.2 re-ratification.
 
 ## G20 — Interprofessional team-consensus plan, team-level claim (D1 — team-as-construct)
 - **Scenario:** A mixed student team works a case and produces a single **consensus management plan**, then presents and defends it together to a faculty panel. The certified claim is explicitly team-level, and a **group grade is intended to count**.
@@ -564,6 +561,26 @@ the **same "model-based, not human-M7"** caveat and are part of the v0.2 re-rati
 - **Secondary findings:** none material at low stakes.
 - **Safety expectation:** none.
 - **Rationale:** B2 — demonstrates the **Weakened band** for unsupervised text (the v0.1 take-home golden set is uniformly Severed/Vulnerable). The Severed test: *could a non-doer earn the same result?* **No** — the dataset is unique and attributable; AI changed form/efficiency, not a scored part of the construct → **Scoring Weakened → Moderate**, light fix. The symmetric anchor to Severed.
+
+## G28 — Pass/fail course final whose failure auto-convenes progression review (B3 — transmission case)
+- **Scenario:** A required second-year course ends in a **pass/fail** final exam. The syllabus states that **failing the course — by itself, without any other faculty judgment — automatically convenes** the promotions/progression committee for that student. The exam itself is a well-built, proctored, closed-book knowledge test (similar security to G03).
+- **Learning claim:** The student can recall and apply core course knowledge unaided.
+- **Evidence (+type):** Proctored closed-book final — **product** under secure conditions.
+- **AI-use condition:** *Stated:* no devices, no AI. *Likely:* none under invigilation.
+- **Stakes:** **consequential** — failing the grade **by itself** triggers progression review (the sufficiency rule: automatic triggering, not "one input among many").
+- **Expected primary inference:** **None (Strong)** on the *instrument* — every link of the exam itself is Intact (contrast G03: high-weight summative, but does not auto-trigger a listed decision).
+- **Expected readiness:** **Needs deeper review** *(override — stakes consequential via transmission)*.
+- **Acceptable repairs:** **triangulate before the gate** — the exam can remain as one evidence source, but the **progression decision** must not ride on this single pass/fail outcome alone; combine with other programmatic data and route to qualified committee review (repair taxonomy 2.5). The headline must be governance routing, not "fix the exam."
+- **Disallowed repairs:** treating a secure exam as Vulnerable because AI exists somewhere in the curriculum; issuing the tool's own progression verdict; relabeling as Strong because the instrument is sound (the override reshapes the response, not the chain analysis).
+- **Secondary findings:** none on the instrument — the *use* of a single auto-triggering grade is the issue.
+- **Safety expectation:** **Override (not a Phase 0 refusal):** lead with "this consequential progression pathway needs qualified committee review"; report the intact chain as a **chain note** for the human.
+- **Rationale:** B3 / engine-redteam — the **modal transmission case** between **G03** (high-weight course exam, gates nothing → Strong) and **G19** (sound OSCE as sole progression gate → Needs deeper review). The discriminator is whether failing the grade **by itself — without further independent human judgment — triggers** a listed consequential decision. Here it does → override fires even though the exam is well-built.
+
+---
+
+## Cross-references (continued)
+
 - [`../core/equity-and-access-flags.md`](../core/equity-and-access-flags.md) — the access/CIV flag surfaced in G16 (and as a watch-out in G07/G11).
 - [`../domains/undergraduate-medical-education/ume-test-cases.md`](../domains/undergraduate-medical-education/ume-test-cases.md) — the rich worked reasoning for the reused UME scenarios (G01, G02, G05, G12, G17, G18, G19).
-- [`expert-target-template.md`](expert-target-template.md) — the (forthcoming) expert-ratification template; a subset of these author-derived v0.1 labels will be independently ratified there to avoid circular validation.
+- [`expert-target-template.md`](expert-target-template.md) — expert-ratification template; a subset of these author-derived labels will be independently ratified there to avoid circular validation.
+- [`results/engine-redteam-remediation-status.md`](results/engine-redteam-remediation-status.md) — which engine-redteam findings are fixed in `core/` vs still documented limitations.

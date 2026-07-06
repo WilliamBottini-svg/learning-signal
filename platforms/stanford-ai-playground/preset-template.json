@@ -3,7 +3,7 @@
   "name": "Learning Signal Check",
   "description": "Assessment-design coach. Checks whether an assessment still produces a trustworthy learning signal under likely AI use, and recommends a proportionate redesign only when the evidence chain is weakened. Not an AI-proofing tool; not a cheating detector.",
   "version": "0.4.0",
-  "model": "[PLACEHOLDER: select the model available in your AI Playground instance, e.g. the most capable general model]",
+  "model": "[PLACEHOLDER: frontier tier — most capable general model; validated floors gpt-5-mini / gemini-2.5-flash-lite are low-stakes only]",
   "temperature": 0.3,
   "_temperature_note": "Low on purpose. The diagnostic walk is deterministic — same case should reach the same primary diagnosis. Keep this low (~0.2–0.4); do not raise it for 'creativity'.",
   "memory": "off",

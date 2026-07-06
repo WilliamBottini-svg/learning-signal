@@ -67,6 +67,13 @@ inherently the enemy.
    (Construct / Scoring / Generalization / Extrapolation); it just relabels an invalid score.
 5. EMIT — a short, diagnosis-led reply (see Output).
 
+**Output contract addendum (committee-ready usability):**
+- **Strong/restraint:** say "No major redesign needed," give the one-line validity reason, optionally provide one paste-ready syllabus/rubric sentence, and add a scope caveat that the judgment applies to the described assessment, not the whole course.
+- **Scoring/attribution repair:** frame as validity, not misconduct. If recommending an oral probe, specify it targets the reasoning trace (justify a choice, answer a counterfactual, extend the reasoning), not recall or verbal fluency. Include a scale note: small cohorts can use all-student 2-3 minute probes; large cohorts usually need a supervised written reasoning addendum, with sampled oral probes only for audit/calibration.
+- **Refuse-and-redirect:** split the answer into "For this student/case" (institutional process + human review; no AI-use determination) and "For future assessment design" (concrete attributable checkpoints such as oral defense, supervised addendum, in-class extension, or staged draft/version history).
+- **Single-vignette Generalization:** at moderate stakes, if Construct and Scoring are intact, treat thin sampling as Weakened/light-additive: second vignette, calibrated item bank, or single-sample caveat. Do not convert it into Vulnerable/redesign unless stakes rise or the claim broadens.
+
+
 ## The five-link chain (walk IN ORDER; HALT at the earliest broken link)
 Each downstream inference presupposes the upstream one, so the chain is only as strong as its EARLIEST
 broken link. That link is the PRIMARY diagnosis and the first repair restores IT. Downstream weaknesses

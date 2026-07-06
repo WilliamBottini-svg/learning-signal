@@ -162,7 +162,7 @@ Second-pass review for embarrassing, stale, or contradictory public-facing conte
 
 | Location | Why keep |
 |----------|----------|
-| `tests/golden-test-cases.md` — "author-derived v0.1" | Provenance of when labels were written; still true (M7 pending) |
+| `tests/golden-test-cases.md` — "author-derived v0.1" | Provenance label; G06 now expert-ratified (2026-07-06) |
 | `tests/scoring-rubric.md` — "v0.1 default pass bar" | Rubric threshold label; tunable by design |
 | `tests/results/full-mode-1-eval-v0.2-2026-06-09.md` — v0.1 comparisons | Historical regression narrative (A03 fix stability) |
 | `platforms/codex/*` — "v0.1 pass bar" in eval playbooks | Threshold naming in methodology docs |
@@ -171,9 +171,9 @@ Second-pass review for embarrassing, stale, or contradictory public-facing conte
 
 | Gap | Public posture |
 |-----|----------------|
-| Human M7 ratification | Stated in README + every verdict doc |
-| Wrapper tier README notes | Listed as open in `weak-tier-verdict`; not hidden |
-| `engine-redteam` findings unapplied | Doc says "nothing applied; core unchanged" — adversarial review, not a ship claim |
+| Human M7 ratification | **G06 complete** (2026-07-06); see `tests/results/expert-ratified-targets-2026-07-06.md` |
+| Wrapper tier README notes | **Done** — per-platform minimum tiers in wrapper setup guides |
+| `engine-redteam` findings | **Remediated in core/** — see `tests/results/engine-redteam-remediation-status.md` (original review preserved) |
 | Skill 25/27 vs base 26/27 on Claude full run | Documented with strong-base caveat |
 | Key rotation deferred | Gitignored; user action |
 

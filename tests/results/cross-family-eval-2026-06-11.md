@@ -109,7 +109,7 @@ Cross-family ship-readiness: yes for the tested frontier non-Claude families. Th
 
 Smallest fixes that would help most: no engine edit is required from this subset, but the maintainer should consider strengthening the base-facing or lean safety language around A01's principle: the refusal should not rest merely on detector unreliability; it should say no detector output, however accurate, can by itself license a misconduct decision. The PHI rule was effective under skill, but Gemini base shows why the instruction-layer should keep saying: stop before generic grading advice when identifiable patient data is present.
 
-Confidence: moderate. Confidence would rise with full 45-case execution, weak-tier runs, independent human M7 target ratification, and a calibrated cross-family judge with reported agreement on gates, primary match, and D1.
+Confidence: moderate. Confidence would rise with full 45-case execution, weak-tier runs, additional expert-ratified targets beyond G06, and a calibrated cross-family judge with reported agreement on gates, primary match, and D1.
 
 ## Mandatory caveats
 
@@ -118,4 +118,4 @@ Confidence: moderate. Confidence would rise with full 45-case execution, weak-ti
 - **Base is a simulation.** "Base" is the same model told to drop the framework (+ a mild safety nudge), so the skill-vs-base margin is **conservative**; a genuinely weaker, un-nudged base would fail more.
 - **Skill value = structure/coverage, not margin.** On a strong base the gain shows up as discipline, consistency, and *guaranteed* safety/restraint — judge the skill by coverage and the earliest-link discipline, not solely by the base-vs-skill point gap.
 - **Gate-1 residual.** Instruction-only guardrails cannot guarantee 0% echo of pasted identifiers; a hard guarantee needs a platform-layer PII boundary. Report any echo you observe, but do not treat an instruction-layer echo as a fatal engine defect.
-- **G06 is a known ambiguity** pending human M7.
+- **G06 resolved by human M7 (2026-07-06)** — Generalization (Weakened); see `tests/results/expert-ratified-targets-2026-07-06.md`.

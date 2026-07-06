@@ -27,6 +27,7 @@ local-secrets/
 tests/harness/runs/
 tests/harness/prompts-*.json
 tests/results/runs/*.jsonl
+tests/results/faculty-validation-*/
 
 # Private Stanford AI Gateway operator docs (if copied locally from another repo)
 **/STANFORD_AI_GATEWAY*.md

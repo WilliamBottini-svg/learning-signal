@@ -9,7 +9,7 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> **v0.4.0** — first public release. Validation is **model-based**; human expert (M7) ratification is pending.
+> **v0.4.0** — first public release. **G06 expert-ratified (M7, 2026-07-06);** other golden targets remain author-derived. Model-based evals + Layer 3 UX (5 educators, UX SHIP WITH CAVEATS).
 
 ---
 
@@ -112,9 +112,25 @@ specified in [`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md) an
 runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md). **Automated Mode 1 runs**
 via Stanford AI Gateway: [`tests/harness/README.md`](tests/harness/README.md) (`scripts/run_mode1_eval.py`).
 
-**Honesty caveat:** all published eval results are **model-based**, not human-expert (M7) ratified. Golden
-targets remain author-derived until faculty ratification. The skill refuses unsafe requests and routes
-PHI — but a hard guarantee of 0% PHI echo requires a platform PII boundary, not instruction alone.
+**Honesty caveat:** Model-based eval results cover instruction-fidelity and cross-family robustness.
+**G06 is expert-ratified** (human M7, 2026-07-06); remaining golden targets are author-derived. Layer 3
+educator think-aloud: UX SHIP WITH CAVEATS (5 educators). Summary:
+[`tests/results/expert-ratified-targets-2026-07-06.md`](tests/results/expert-ratified-targets-2026-07-06.md)
+(session records not published). Faculty kit:
+[`tests/M7-faculty-ratification-kit.md`](tests/M7-faculty-ratification-kit.md). The skill refuses unsafe
+requests and routes PHI — but a hard guarantee of 0% PHI echo requires a platform PII boundary, not
+instruction alone.
+
+### Minimum model tiers (summary)
+
+| Platform | Recommended | Validated floor | Verdict |
+|----------|-------------|-----------------|---------|
+| ChatGPT Custom GPT | Frontier GPT (`gpt-5.4` class) | `gpt-5-mini` | SHIP WITH CAVEATS |
+| Gemini Gem | Gemini Pro class | `gemini-2.5-flash-lite` | SHIP WITH CAVEATS |
+| Claude Skill | Frontier Claude | Haiku not tested | SHIP WITH CAVEATS |
+| AI Playground | Instance frontier model | See wrapper docs | Instance-dependent |
+
+Details in each platform's setup guide. Evidence: [`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md).
 
 To see the method in action, read the worked demonstrations in [`examples/`](examples/); to read the
 engine itself, see [`core/diagnostic-procedure.md`](core/diagnostic-procedure.md).

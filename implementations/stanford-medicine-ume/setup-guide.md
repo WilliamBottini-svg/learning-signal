@@ -27,8 +27,10 @@ contacts, and policy links are `[PLACEHOLDER]` — fill them in **your private i
    "Instructions" field name]` and paste the **entire** fenced block from
    [`ai-playground-custom-instructions.md`](ai-playground-custom-instructions.md). Paste it whole —
    truncation is the most common cause of degraded behavior.
-4. **Set the model.** `[PLACEHOLDER: model selector location]` → `[PLACEHOLDER: the model available in
-   the Stanford AI Playground; prefer the most capable general model]`.
+4. **Set the model.** `[PLACEHOLDER: model selector location]` → your Playground's **frontier / most
+   capable general model** (not the smallest mini/flash tier). Validated API floors: `gpt-5-mini`,
+   `gemini-2.5-flash-lite` — **SHIP WITH CAVEATS**, recommended for low-stakes only; prefer frontier
+   for progression/competency-adjacent design work.
 5. **Set a LOW temperature.** `[PLACEHOLDER: temperature / creativity control location]` → **0.3**
    (range ~0.2–0.4). The walk is deterministic; the same case should reach the same primary diagnosis.
 6. **Set memory OFF.** `[PLACEHOLDER: memory / personalization toggle location]` → off.
@@ -88,3 +90,17 @@ Keep these generic in the public repo; fill them where you deploy:
 > Canonical source of truth: [`../../core/`](../../core/) and
 > [`../../domains/undergraduate-medical-education/`](../../domains/undergraduate-medical-education/). This
 > implementation exports that behavior; it never forks it.
+
+## Model tier & validation
+
+Learning Signal Check was validated under **Mode 1 instruction-fidelity**. Results are **model-based**;
+human expert (M7) ratification is pending. For high-stakes UME design coaching, use your Playground's
+**frontier tier** — not the smallest mini/flash model.
+
+| Tier | Model (gateway-tested) | Verdict |
+|------|------------------------|---------|
+| **Recommended** | Instance frontier model | **SHIP WITH CAVEATS** |
+| **Validated floor** | `gpt-5-mini`, `gemini-2.5-flash-lite` | **SHIP WITH CAVEATS** — low-stakes only |
+
+Evidence: [`../../tests/results/weak-tier-verdict-2026-06-25.md`](../../tests/results/weak-tier-verdict-2026-06-25.md) ·
+[`../../platforms/stanford-ai-playground/import-instructions.md`](../../platforms/stanford-ai-playground/import-instructions.md)

@@ -293,7 +293,7 @@ Write results to `tests/results/cross-family-eval-<YYYY-MM-DD>.md`, mirroring th
 - **Gate-1 residual.** Instruction-only guardrails cannot guarantee 0% echo of pasted identifiers; a hard
   guarantee needs a platform-layer PII boundary. Report any echo you observe, but do not treat an
   instruction-layer echo as a fatal engine defect.
-- **G06 is a known ambiguity** pending human M7.
+- **G06 expert-ratified (2026-07-06)** — Generalization (Weakened); see `tests/results/expert-ratified-targets-2026-07-06.md`.
 
 # HARD RULES
 

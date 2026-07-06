@@ -4,7 +4,7 @@
 **Harness:** `scripts/run_mode1_eval.py` · `https://<your-gateway>/v1`  
 **Scope:** Phase A0 smoke + Phase A1 gate sweep + Phase A2 golden tier-stress (G01–G03, G17–G19). Track B UX (Layers 1–2) completed separately — see below.
 
-**Consolidated under v0.4.0.** Model-based, author-derived targets; not human M7-ratified.
+**Consolidated under v0.4.0.** G06 expert-ratified (M7, 2026-07-06); other targets author-derived.
 
 ---
 
@@ -76,11 +76,11 @@ as a skill gate failure.
 |-------|--------|
 | Track A — weak-tier (smoke + gates + goldens) | **Complete** (this doc) |
 | Track B — UX Layers 1–2 | **Complete** (see above) |
-| Wrapper tier README notes | **Open** — per-platform minimum-tier caveats not yet in wrapper READMEs |
+| Wrapper tier README notes | **Done** — per-platform minimum-tier sections in wrapper setup guides (2026-07-06) |
 | Track C — full 45-case weak-tier (optional) | **Deferred** |
 
 ---
 
 ## Mandatory caveats
 
-Author-derived targets; Mode 1 API harness; not live Custom GPT / Gem deployment. Human expert (M7) ratification pending.
+Author-derived targets (G06 expert-ratified); Mode 1 API harness; not live Custom GPT / Gem deployment.

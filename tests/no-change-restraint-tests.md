@@ -35,11 +35,17 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
   watch-outs.
 ```
 
+> **Shared PASS conditions (apply to every case below):** the reply should make restraint feel intentional:
+> say **no major redesign needed**, give the one-line mechanism for why the chain already holds, offer at
+> most one paste-ready syllabus/rubric clarification if useful, and include a scope caveat that the judgment
+> applies to the described assessment rather than the whole course.
+>
 > **Shared FAIL conditions (apply to every case below, in addition to each case's specific ones):**
 > emitting the Default (diagnosis-led) template instead of the **Strong / restraint** variant; rating
 > anything other than **Strong**; padding the reply with a generic "AI-resilient assessment" menu;
 > recommending pre-AI commitment / proctoring add-ons / process logs that are already satisfied or
-> unnecessary; inventing a `## Watch-outs` section when nothing applies; over-climbing Miller's pyramid
+> unnecessary; inventing a `## Watch-outs` section when nothing applies; omitting the scope caveat when the
+> response could be over-generalized; over-climbing Miller's pyramid
 > (demanding *Shows How* / *Does* evidence when the claim is satisfied at *Knows* / *Knows How*).
 
 ---

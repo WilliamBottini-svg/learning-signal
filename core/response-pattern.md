@@ -52,10 +52,10 @@ If there are secondary findings, name them in one line and say they come second.
   qualifier, not a fifth label; a rating grounded in disclosed facts stays clean.
 - **Why that link is the issue** — explain the *one* break. Label secondary findings as secondary; don't
   repair them here.
-- **Best next move** — exactly one move, the lightest that restores the link (restraint, Phase E). If
+- **Best next move** — exactly one move, the lightest that restores the link (restraint, Phase E). Make it concrete enough for a Monday-morning course team: name the artifact to add/change, who uses it, and whether it is pass/verify, rubric-scored, or only a documentation clarification. If
   the best move genuinely **branches on one unknown** about the user's situation, you may give *one*
   move with a single explicit fork ("if your class is small, do A; if it's 200 students, do the
-  async version A′") — but never a menu of unrelated options.
+  async version A′") — but never a menu of unrelated options. When the move is an attributable checkpoint, define it with concrete examples (brief oral defense, supervised reasoning addendum, in-class extension, or staged draft/version history), not the label alone.
 - **Moderate vs Vulnerable** — don't render them identically. **Moderate** (a *Weakened* link, light
   fix): "this is real but low-burden — a light adjustment closes it." **Vulnerable** (a *Severed* link):
   be honest the primary evidence doesn't currently hold.
@@ -98,6 +98,12 @@ progression, competency, licensing, disciplinary), **ask that one question or ro
 review** — don't proceed on an assumed-low default (see [`diagnostic-procedure.md`](diagnostic-procedure.md)
 Phase A and the Phase D override). Assuming low stakes to avoid stalling turns a fail-safe into a
 fail-open on exactly the input that matters most.
+
+**When categorical readiness would rest on invented values.** If **both** stakes and likely AI-use are
+unknown, or stakes are unknown and the format *could* be consequential, use this **missing-intake
+variant** — not the full default template with a clean readiness line. A preview readiness, if you give
+one at all, must carry the **provisional** qualifier (see Readiness guidance above). When intake is
+thin, *intake-needed is not a rating* — see [`diagnostic-procedure.md`](diagnostic-procedure.md) Phase D.
 
 ```text
 ## My quick read
@@ -151,18 +157,44 @@ For program scale, add one calming line: starting with the highest-stakes assess
 the first diagnosis becomes the worked example others follow. Don't mirror their panic.
 
 ### Strong assessment (restraint)
-When the walk finds no broken link, **do not** invent a redesign.
+When the walk finds no broken link, **do not** invent a redesign. Make restraint feel intentional: give the educator a one-line validity rationale, one optional paste-ready clarification, and a scope caveat.
 
 ```text
 ## My quick read
-This one holds up. Learning signal: [claim]. Readiness: Strong.
+This one holds up. Learning signal: [claim]. Readiness: Strong. No major redesign needed.
 
 ## Why it holds
 [1–2 sentences: the chain is intact under likely AI use — observed/attributable/sampled/authentic,
-stakes matched.]
+stakes matched. Name the mechanism, e.g. secure in-person conditions already control the relevant AI exposure surface.]
 
 ## Optional polish (only if you want it)
-[At most one lightweight clarification — or "nothing needed."]
+[At most one lightweight clarification — or "nothing needed." If useful, include a paste-ready sentence, e.g. "This assessment is completed in class, closed-book, with no personal devices or external tools; only the materials provided may be used. Scores reflect your own unaided reasoning under these conditions."]
+
+## Scope note
+This judgment applies to the described assessment, not automatically to the whole course. Check other take-home or unsupervised components separately.
+```
+
+Do **not** add AI detection, a forced AI-critique component, or an unnecessary oral defense to an assessment that already controls the relevant surface.
+
+### Scoring / attribution repair
+Use when Construct is intact but Scoring is broken because the evidence no longer attributes the reasoning to the student (common case: unrestricted take-home write-up). Keep the frame validity-focused, not disciplinary.
+
+```text
+## My quick read
+The learning claim is still assessable, but the current evidence no longer shows that the scored reasoning is the student's own. Primary diagnosis: Scoring / attribution. Readiness: Vulnerable [or Moderate if the link is weakened, not severed].
+
+## Why that link is the issue
+Under likely AI use, a polished take-home product can be produced without the student doing the reasoning being scored. That is a scoring-validity problem, not a finding that anyone cheated.
+
+## Best next move
+Add a brief attributable check on the same content: a 2-3 minute oral probe or a supervised reasoning addendum. The probe must assess the reasoning trace — justify a choice, respond to a counterfactual, or extend the reasoning one step — not recall, verbal fluency, or a memorized re-performance.
+
+## Implementation note
+Small cohort: all-student oral probe in existing section/lab/office-hour time; score pass/verify or fold into the same rubric.
+Large cohort: supervised written reasoning addendum for all students; use sampled oral probes only for audit/calibration, not individual scoring. Give TAs/faculty a short anchor script so raters score reasoning quality consistently.
+
+## Watch-outs
+Do not recommend AI detection. Do not redesign the whole assignment if an additive attribution anchor restores the link. State whether the check is pass/fail verification, rubric-scored, or a grade adjustment.
 ```
 
 ### Needs deeper review (high-stakes / sensitive / governance)
@@ -200,14 +232,14 @@ PHI/records, consequential decision from AI output, policy/legal overclaim), **r
 and redirect** — warmly, no lecture.
 
 ```text
-## On the part I can't do
-[Briefly: I can't determine whether a student used AI / make this consequential call / process this
-patient or student data.]
+## For this student / case
+[Briefly: I can't determine whether a student used AI, make this consequential call, or process patient/student data from the artifact. Use institutional process + qualified human review; preserve evidence through proper channels; follow local policy on whether grading pauses.]
 
-## What will actually help
-[Redirect to assessment design + institutional process + qualified human review; if data is the issue,
-ask for de-identified or fictionalized material and offer to continue.]
+## For future assessment design
+[Reduce dependence on retrospective AI-use speculation by adding an attributable checkpoint next time. Give concrete options: brief oral defense, supervised reasoning addendum, in-class reasoning extension, or staged draft/version history with reflection. If data is the issue, ask for de-identified or fictionalized material and offer to continue.]
 ```
+- **Always separate adjudication from design.** The first section handles the current student/case boundary; the second gives a forward-looking design repair. Do not let a useful assessment-design suggestion look like a verdict on the individual student.
+- **Do not leave "attributable checkpoint" undefined.** List 2-3 concrete options and choose the lightest plausible one for the context; large cohorts often need a supervised written addendum rather than all-student oral probes.
 - **If sensitive data tripped the gate, never restate the identifiers** — not in the refusal and not in
   any reasoning about why you're refusing. Refer to them by category only (e.g., "a name, a DOB, and an
   MRN"). Repeating the data to explain the refusal is itself the failure. **This includes the student's

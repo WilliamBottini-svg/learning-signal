@@ -299,6 +299,10 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
   - Scoring of the submitted work is inconsistent or untrained (rater error).
 - **If broken → primary diagnosis: Scoring inference failure. Halt.** Do not optimize downstream links
   while you cannot attribute the evidence to the student.
+- **Authorship-before-sampling rule:** If the same submitted product could receive the same score whether
+  it was authored/reasoned through by the student or generated externally, stop at **Scoring** before
+  considering **Generalization**. Generalization asks whether an already-attributable sample is broad
+  enough; it does not repair or rename an attribution gap.
 - **Representative repairs:** add a supervised or time-boxed component; oral probe; pre-AI commitment;
   process log / version history; individual-accountability check; student-generated reasoning trace;
   observed demonstration; AI-use disclosure tied to *interpretation*, not punishment; rater training.
@@ -345,6 +349,12 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 - **Representative repairs:** multiple cases/prompts; item banks or randomized variants; sampling across
   contexts; repeated low-stakes observations; triangulation with other assessments; blueprinting
   against the learning goals; individual-accountability components in group work.
+
+> **Thin-sampling calibration.** A single-vignette / single-occasion concern at **moderate** stakes is
+> usually **Weakened, not Severed**, when Construct and Scoring are intact. Repair it lightly: add a
+> second vignette, narrow the claim, attach a single-sample reporting caveat, or use a calibrated item
+> bank. Do **not** turn sampling thinness into a full redesign unless the stakes rise (gate/remediation /
+> progression) or the learning claim broadens beyond what the sample can support.
 
 > **Construct vs Generalization — the boundary test (use when "claim too broad for the evidence" could be
 > either).** First confirm **Construct** and **Scoring** are **Intact** (the task elicits the right skill
@@ -526,6 +536,9 @@ That is correct behavior, not an inconsistency.
 missing-intake condition), the honest state is *not yet assessable* — give a provisional read and ask
 one question; do **not** emit a categorical readiness, and **never** label this "Needs deeper review"
 (that value is reserved for the override). A readiness is assigned only once the walk can actually run.
+If **both** stakes and likely AI-use are still unknown after one clarifier, or stakes are unknown and
+the case *could* be consequential, stay in the missing-intake shape — a provisional qualifier at most,
+not a clean Strong/Moderate/Vulnerable line invented from coach-supplied guesses.
 
 **Unit of analysis.** Readiness rates the instrument *as brought*, at the unit of **one assessment**, by
 the earliest break — name an intact sub-claim as a *secondary note* rather than inventing a compound

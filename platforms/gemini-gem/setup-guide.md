@@ -5,6 +5,31 @@ nothing about the diagnostic logic, which is the canonical engine exported into
 [`gem-instructions.md`](gem-instructions.md). The Gem is a **wrapper, not an authoring surface**: when
 `core/` changes, re-export and re-test (see step 7).
 
+## Model tier & validation
+
+Learning Signal Check was validated under **Mode 1 instruction-fidelity** (wrapper instructions +
+six knowledge files). Results are **model-based**; human expert (M7) ratification is pending. Golden
+targets are author-derived. Instruction-layer safety reduces PHI risk but cannot guarantee 0% echo —
+use de-identified cases and your platform's PII controls.
+
+Gemini does not let you pin a model on a Gem today; tier guidance applies to **which Gemini model you
+use when previewing** and **what you tell colleagues** about capability expectations.
+
+| Tier | Model slug (gateway-tested) | Verdict | When to use |
+|------|----------------------------|---------|-------------|
+| **Recommended (production / high-stakes)** | Gemini Pro–class (e.g. `gemini_3_1_pro` in cross-family eval) | **SHIP WITH CAVEATS** | High-stakes, governance-heavy, or UME consequential design questions |
+| **Validated floor** | `gemini-2.5-flash-lite` | **SHIP WITH CAVEATS** | Low-stakes coaching; full gate sweep + 6/6 goldens on harness — prefer Pro for high-stakes |
+
+**Note:** `gemini-2.0-flash-lite-001` may 404 on some Vertex keys; use `gemini-2.5-flash-lite` when
+Flash-Lite is required.
+
+Evidence: [`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md) ·
+[`../../tests/results/weak-tier-verdict-2026-06-25.md`](../../tests/results/weak-tier-verdict-2026-06-25.md) ·
+[`../../tests/results/ux-persona-v0.3-2026-06-26.md`](../../tests/results/ux-persona-v0.3-2026-06-26.md)
+
+If the model's context is **< ~60k tokens** and outputs look generic or truncated, treat as
+**[CONTEXT-LIMITED]** — use a larger model or a frontier tier for high-stakes design work.
+
 > **Describe controls by function, not by pixel/menu location** — the Gemini UI moves between releases.
 
 ## Steps
