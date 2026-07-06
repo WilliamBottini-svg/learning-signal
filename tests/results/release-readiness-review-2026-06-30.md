@@ -25,7 +25,7 @@
 | Check | Result |
 |-------|--------|
 | `scripts/check-consistency.py` | **PASS** |
-| `git grep aiapi-prod` | **none** |
+| `git grep aiapi-prod` (tracked HEAD) | **none** after redteam jsonl redaction; hostname may remain in older git history |
 | `git grep` live API keys | **none** (placeholder only in harness README) |
 | Tracked `secrets/` / `0-admin/` | **none** |
 | `claude plugin validate .` | **PASS** (1 metadata warning) |

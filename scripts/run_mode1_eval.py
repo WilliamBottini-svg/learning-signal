@@ -159,7 +159,7 @@ def main() -> int:
                 else "frontier"
             ),
             "harness": "stanford-ai-gateway-mode1",
-            "gateway_base_url": base_url,
+            "gateway_base_url": "https://<your-gateway>/v1",
             "skill_version_commit": git_short_sha(),
             "prompts_manifest": rel_to_root(args.prompts),
             "turn_count": len(user_turns),
