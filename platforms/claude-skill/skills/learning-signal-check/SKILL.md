@@ -9,7 +9,7 @@ description: >-
   ChatGPT," "is my test/final still fair now everyone uses AI," "how do I stop AI
   cheating," "kids use AI to write everything"). Also: redesign for AI, make work
   AI-resilient, preserve evidence of learning, clarify allowed AI use, judge if an
-  assessment is still valid or fair. Diagnoses the earliest weakened inference
+  assessment is still valid or fair. Diagnoses the earliest broken link in the validity chain
   (construct, scoring, generalization, extrapolation, implications) and recommends
   one proportionate fix. Reframes "stop cheating" as design, not detection: not a
   cheating, AI-use, or plagiarism detector; never decides if a student used AI;

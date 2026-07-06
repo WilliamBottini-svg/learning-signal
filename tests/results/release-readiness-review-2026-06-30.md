@@ -2,52 +2,65 @@
 
 **Reviewer:** Cursor agent (deterministic checks + focused subagent review)  
 **Branch:** `release/v0.4.0`  
-**Recommended verdict:** **GO** once Blockers B1–B3 below are fixed on this branch (assigned to Tasks 2–5 of the release runbook). No open Blockers remain after those fixes + plugin validation.
+**Recommended verdict:** **GO** — all Blockers closed on `release/v0.4.0` (2026-07-01 re-scan).
 
-**Owner adjudication (R12):** William Bottini — **GO confirmed 2026-07-01.** Cut list **approved and executed.**
+**Owner adjudication (R12):** William Bottini — **GO confirmed 2026-07-01.** Cut list **approved and executed.** Polish pass 2026-07-01.
 
 ---
 
-## Deterministic gates
+## Deterministic gates (initial review — 2026-06-30)
 
-| Check | Result | Notes |
-|-------|--------|-------|
-| `scripts/check-consistency.py` | **FAIL** | Broken link in `tests/results/ux-conformance-2026-06-25.md:5`; gitignored `secrets/docs/` scanned (see B1) |
-| Git history secret scan | **PASS** | `git log --all -p \| grep` — no live secrets; only placeholder `sk-stanford-REPLACE-ME` in harness README |
-| `secrets/` / `0-admin/` in history | **PASS** | Never committed |
-| Tracked sensitive files | **PASS** | No `secrets/`, `.env`, or `.DS_Store` tracked |
-| Internal hostname in tracked files | **FAIL** | 7 hits across 5 files — see B2 |
-| Plugin scaffolding | **FAIL** | `.claude-plugin/` absent — see B3 |
-| `gh auth status` | **N/A (user)** | Token invalid — blocks flip/push/Release only |
+| Check | Result at review | Resolved |
+|-------|------------------|----------|
+| `scripts/check-consistency.py` | FAIL (B1) | **Yes** — PASS on branch |
+| Git history secret scan | PASS | — |
+| `secrets/` / `0-admin/` in history | PASS | — |
+| Tracked sensitive files | PASS | — |
+| Internal hostname in tracked files | FAIL (B2) | **Yes** — redacted |
+| Plugin scaffolding | FAIL (B3) | **Yes** — `.claude-plugin/` + validate PASS |
+| `gh auth status` | N/A (user) | User action for flip |
+
+## Deterministic gates (re-scan — 2026-07-01)
+
+| Check | Result |
+|-------|--------|
+| `scripts/check-consistency.py` | **PASS** |
+| `git grep aiapi-prod` | **none** |
+| `git grep` live API keys | **none** (placeholder only in harness README) |
+| Tracked `secrets/` / `0-admin/` | **none** |
+| `claude plugin validate .` | **PASS** (1 metadata warning) |
+| Markdown links | **PASS** |
 
 ---
 
 ## Punch list
 
-### Blockers (must fix before public flip)
+### Blockers — all closed
 
-| ID | Finding | Location | Fix task |
-|----|---------|----------|----------|
-| **B1** | `check-consistency.py` fails — broken relative link + scans gitignored dirs | `tests/results/ux-conformance-2026-06-25.md:5`; `scripts/check-consistency.py:178` | Task 2: fix link; skip `secrets/` and `0-admin/` in link scan |
-| **B2** | Internal Stanford prod hostname in tracked files | `scripts/eval_lib.py:221`; `tests/harness/README.md:4,19,40`; `tests/results/gateway-smoke-2026-06-25-{gemini-25-flash-lite,gpt-5-mini}.md:9`; `tests/results/weak-tier-verdict-2026-06-25.md:4` | Task 3: redact to placeholder (R11) |
-| **B3** | Claude Code plugin unbuilt | (missing `.claude-plugin/`) | Task 5: author manifests, validate, local install smoke |
+| ID | Finding | Status |
+|----|---------|--------|
+| **B1** | `check-consistency.py` link scan | **Fixed** |
+| **B2** | Internal Stanford hostname | **Redacted** |
+| **B3** | Claude Code plugin | **Built + validated** |
 
-### Should-fix (not flip blockers per R5/R12; fix if time allows)
+### Should-fix — status
 
-| ID | Finding | Location |
-|----|---------|----------|
-| **S1** | Example anchors Gate 2 refusal on detector unreliability instead of sole-basis principle | `examples/unsafe-request-examples.md:32-35` |
-| **S2** | Claude `SKILL.md` missing G2 in-scope carve-out (A14 path) present in ChatGPT/Gemini | `platforms/claude-skill/SKILL.md:79-84,180-181` |
-| **S3** | README still says "v0.2 in active development" / "v0.3 in progress" | `README.md:12,95-100` |
-| **S4** | `tests/v0.3-validation-plan.md` header stale ("not yet executed") | `tests/v0.3-validation-plan.md:3` |
-| **S5** | On-disk live-looking key in gitignored `secrets/secrets.toml` — rotate before flip | User action (R14) |
+| ID | Finding | Status |
+|----|---------|--------|
+| **S1** | Gate 2 example wording | **Fixed** |
+| **S2** | Claude G2 carve-out | **Fixed** |
+| **S3** | README version banner | **Fixed** (v0.4.0) |
+| **S4** | v0.3 plan header | **Fixed** |
+| **S5** | Key rotation | **Deferred** (user; gitignored key) |
 
-### Nice-to-have
+### Polish pass (2026-07-01)
 
-| ID | Finding | Location |
-|----|---------|----------|
-| N1 | Claude frontmatter says "weakened" vs keystone "broken" | `platforms/claude-skill/SKILL.md:12-13` |
-| N2 | Codex system-prompt still labels ChatGPT/Gemini as STUBs | `platforms/codex/system-prompt.md:170-171` |
+| ID | Finding | Status |
+|----|---------|--------|
+| **P1** | Codex `system-prompt.md` STUB claim (ChatGPT/Gemini) | **Fixed** |
+| **P2** | `weak-tier-verdict` interim/pending contradictions | **Fixed** |
+| **P3** | `cross-family-eval` stale v0.1 baseline reference | **Fixed** |
+| **P4** | Claude SKILL frontmatter "weakened inference" | **Fixed** → "broken link" |
 
 ---
 
@@ -112,8 +125,58 @@ Keystone (5-link ordered chain, halt at earliest break) aligned across all wrapp
 
 | Severity | Count | Status |
 |----------|-------|--------|
-| Blocker | 3 | B1–B3 assigned to release branch tasks |
-| Should-fix | 5 | S1–S2 fixed; S3–S4 fixed in version/README tasks; S5 user rotation |
-| Nice-to-have | 2 | Deferred |
+| Blocker | 3 | **All closed** |
+| Should-fix | 5 | S1–S4 fixed; S5 deferred (user) |
+| Polish | 4 | **All fixed** (2026-07-01) |
 
-**Recommended owner verdict:** GO after B1–B3 + plugin validate + version bump + pre-flip checklist.
+**Owner verdict:** **GO** for public flip.
+
+---
+
+## Scrutiny re-scan (2026-07-01)
+
+Second-pass review for embarrassing, stale, or contradictory public-facing content.
+
+### Clean (no action)
+
+| Area | Verdict |
+|------|---------|
+| Secrets / hostnames / tracked sensitive | **Clean** |
+| Broken markdown links | **PASS** (`check-consistency.py`) |
+| Plugin packaging | **PASS** (`claude plugin validate`) |
+| ChatGPT / Gemini wrappers | **Fully authored** — no STUB banners |
+| Examples / test fixtures | **Fictionalized**; PHI used only as gate-test categories |
+| Stanford deploy files | **`[PLACEHOLDER]` only** — intentional pattern |
+
+### Fixed in polish pass
+
+| Item | Fix |
+|------|-----|
+| Codex STUB claim | Removed false stub language |
+| `weak-tier-verdict` contradictions | Reconciled Track A/B status; removed "interim" / "UX pending" |
+| Cross-family v0.1 baseline | Points to v0.2 full eval |
+| SKILL frontmatter | "broken link" aligns with keystone |
+| README / Gemini audience strings | De-staled v0.1 self-description |
+
+### Intentional historical references (not errors)
+
+| Location | Why keep |
+|----------|----------|
+| `tests/golden-test-cases.md` — "author-derived v0.1" | Provenance of when labels were written; still true (M7 pending) |
+| `tests/scoring-rubric.md` — "v0.1 default pass bar" | Rubric threshold label; tunable by design |
+| `tests/results/full-mode-1-eval-v0.2-2026-06-09.md` — v0.1 comparisons | Historical regression narrative (A03 fix stability) |
+| `platforms/codex/*` — "v0.1 pass bar" in eval playbooks | Threshold naming in methodology docs |
+
+### Open gaps (honest, not embarrassing)
+
+| Gap | Public posture |
+|-----|----------------|
+| Human M7 ratification | Stated in README + every verdict doc |
+| Wrapper tier README notes | Listed as open in `weak-tier-verdict`; not hidden |
+| `engine-redteam` findings unapplied | Doc says "nothing applied; core unchanged" — adversarial review, not a ship claim |
+| Skill 25/27 vs base 26/27 on Claude full run | Documented with strong-base caveat |
+| Key rotation deferred | Gitignored; user action |
+
+### Residual quotables (defensible)
+
+A hostile reader could still quote engine-redteam High findings or weak-tier GPT-mini caveats. Both are **paired with honest framing** in the same repo. Not removal candidates.

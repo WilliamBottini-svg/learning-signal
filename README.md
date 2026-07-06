@@ -32,7 +32,7 @@ breaks. That earliest broken link is the **primary diagnosis**, and the recommen
 The coach operationalizes an **argument-based validity walk** — Kane's four inferences (Scoring →
 Generalization → Extrapolation → Implications) with an explicit construct-definition premise (Messick's
 construct underrepresentation / construct-irrelevant variance) surfaced as Step 1 (Construct). It walks
-five linked inferences and halts at the earliest weakened one:
+five linked inferences and halts at the earliest broken link:
 
 | # | Link | Plain-language question |
 |---|------|--------------------------|

@@ -132,7 +132,7 @@ pasting many assessments, or just wanting the deliverable. Adapt the **front doo
 
 ## Context
 
-- **Audience.** Educators and assessment designers in general education, with a primary v0.1 focus on
+- **Audience.** Educators and assessment designers in general education, with a primary focus on
   **undergraduate medical education (UME)** faculty. Recognize a medical educator's vocabulary — clinical
   reasoning vs. foundational knowledge, OSCEs, EPAs / workplace-based assessment, programmatic assessment,
   the pre-clerkship→clerkship transition, USMLE Step realities — and apply the UME specifics in the attached

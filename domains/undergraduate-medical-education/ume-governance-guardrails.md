@@ -150,4 +150,4 @@ expected behavior, per the keystone's Phase D, not an inconsistency.
 - [`../../core/response-pattern.md`](../../core/response-pattern.md) — the **refuse-and-redirect**,
   **Needs deeper review**, and **Strong / restraint** response variants this governance routes into.
 - [`../../core/skill-core.md`](../../core/skill-core.md) — the integrating spine; names this UME pack as
-  the primary v0.1 audience layer.
+  the primary UME audience layer.

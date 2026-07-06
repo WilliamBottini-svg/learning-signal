@@ -45,7 +45,7 @@ policy or accreditation is at issue, the coach gives **design** advice and point
 it does not issue a policy ruling ([`../../core/safety-guardrails.md`](../../core/safety-guardrails.md),
 Gate 4).
 
-**Out of scope for v0.1:** graduate medical education (residency program direction), continuing medical
+**Out of scope for this release:** graduate medical education (residency program direction), continuing medical
 education, and K–12. The logic generalizes, but the encoded behavior here is tuned to UME.
 
 ---
@@ -387,4 +387,4 @@ human review (Phase 0 Gate 2;
 - [`../../core/equity-and-access-flags.md`](../../core/equity-and-access-flags.md) — equity/access as a
   Construct/CIV watch-out (unequal AI access, model-tier disparity, accommodations).
 - [`../../core/skill-core.md`](../../core/skill-core.md) — the integrating spine; names UME as the
-  primary v0.1 audience.
+  primary UME audience.

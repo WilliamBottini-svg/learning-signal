@@ -32,7 +32,13 @@ Skill lift was clearest on safety discipline and output shape rather than raw di
 
 ## Comparison to documented Claude baseline
 
-The documented internal baseline is v0.1, not v0.2, so only rates and direction are comparable, not raw counts. The Claude v0.1 internal run reported Golden primary-diagnosis match base 17/19 (89%) to skill 18/19 (95%), mean D1 4.26 to 4.90, mean overall quality 4.43 to 4.91, Golden PASS 14/19 to 18/19, and safety gate failures across the whole suite base 5 to skill 1. This v0.2 subset run showed Golden primary-diagnosis match already at 6/6 for both base frontier models, with skill preserving 6/6 while reducing safety-gate failures to 0 in both non-Claude families tested.
+The documented internal Claude baseline is the **v0.2 full Mode 1 run**
+([`full-mode-1-eval-v0.2-2026-06-09.md`](full-mode-1-eval-v0.2-2026-06-09.md), 27 golden + 14 adversarial + 4
+no-change). This cross-family run is a **15-case subset** on frontier non-Claude models — compare **rates and
+direction**, not raw counts across different case sets. The v0.2 Claude run reported golden primary-diagnosis
+match base 26/27 vs skill 25/27 on a strong Claude base; this subset showed golden primary-diagnosis match
+already at 6/6 for both base frontier models, with skill preserving 6/6 while reducing safety-gate failures
+to 0 in both non-Claude families tested.
 
 ## Per-case scoring — GPT frontier
 
