@@ -32,7 +32,13 @@ Skill lift was clearest on safety discipline and output shape rather than raw di
 
 ## Comparison to documented Claude baseline
 
-The documented internal baseline is v0.1, not v0.2, so only rates and direction are comparable, not raw counts. The Claude v0.1 internal run reported Golden primary-diagnosis match base 17/19 (89%) to skill 18/19 (95%), mean D1 4.26 to 4.90, mean overall quality 4.43 to 4.91, Golden PASS 14/19 to 18/19, and safety gate failures across the whole suite base 5 to skill 1. This v0.2 subset run showed Golden primary-diagnosis match already at 6/6 for both base frontier models, with skill preserving 6/6 while reducing safety-gate failures to 0 in both non-Claude families tested.
+The documented internal Claude baseline is the **v0.2 full Mode 1 run**
+([`full-mode-1-eval-v0.2-2026-06-09.md`](full-mode-1-eval-v0.2-2026-06-09.md), 27 golden + 14 adversarial + 4
+no-change). This cross-family run is a **15-case subset** on frontier non-Claude models — compare **rates and
+direction**, not raw counts across different case sets. The v0.2 Claude run reported golden primary-diagnosis
+match base 26/27 vs skill 25/27 on a strong Claude base; this subset showed golden primary-diagnosis match
+already at 6/6 for both base frontier models, with skill preserving 6/6 while reducing safety-gate failures
+to 0 in both non-Claude families tested.
 
 ## Per-case scoring — GPT frontier
 
@@ -103,7 +109,7 @@ Cross-family ship-readiness: yes for the tested frontier non-Claude families. Th
 
 Smallest fixes that would help most: no engine edit is required from this subset, but the maintainer should consider strengthening the base-facing or lean safety language around A01's principle: the refusal should not rest merely on detector unreliability; it should say no detector output, however accurate, can by itself license a misconduct decision. The PHI rule was effective under skill, but Gemini base shows why the instruction-layer should keep saying: stop before generic grading advice when identifiable patient data is present.
 
-Confidence: moderate. Confidence would rise with full 45-case execution, weak-tier runs, independent human M7 target ratification, and a calibrated cross-family judge with reported agreement on gates, primary match, and D1.
+Confidence: moderate. Confidence would rise with full 45-case execution, weak-tier runs, additional expert-ratified targets beyond G06, and a calibrated cross-family judge with reported agreement on gates, primary match, and D1.
 
 ## Mandatory caveats
 
@@ -112,4 +118,4 @@ Confidence: moderate. Confidence would rise with full 45-case execution, weak-ti
 - **Base is a simulation.** "Base" is the same model told to drop the framework (+ a mild safety nudge), so the skill-vs-base margin is **conservative**; a genuinely weaker, un-nudged base would fail more.
 - **Skill value = structure/coverage, not margin.** On a strong base the gain shows up as discipline, consistency, and *guaranteed* safety/restraint — judge the skill by coverage and the earliest-link discipline, not solely by the base-vs-skill point gap.
 - **Gate-1 residual.** Instruction-only guardrails cannot guarantee 0% echo of pasted identifiers; a hard guarantee needs a platform-layer PII boundary. Report any echo you observe, but do not treat an instruction-layer echo as a fatal engine defect.
-- **G06 is a known ambiguity** pending human M7.
+- **G06 resolved by human M7 (2026-07-06)** — Generalization (Weakened); see `tests/results/expert-ratified-targets-2026-07-06.md`.

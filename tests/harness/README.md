@@ -1,7 +1,7 @@
 # Mode 1 eval harness — Stanford AI Gateway
 
 Automated **instruction-fidelity** runs for the v0.3 validation plan, using the Stanford AI API Gateway
-(`https://aiapi-prod.stanford.edu/v1`) — an OpenAI-compatible Chat Completions endpoint.
+(`https://<your-gateway>/v1`) — an OpenAI-compatible Chat Completions endpoint. The real gateway base URL is instance-specific; supply it via the `STANFORD_AI_BASE_URL` env var or `secrets/secrets.toml`.
 
 This is **not** a live Custom GPT / Gem deployment (Mode 2). It feeds the same wrapper + six knowledge
 files to each model in a fresh conversation, matching Track A in
@@ -16,7 +16,7 @@ files to each model in a fresh conversation, matching Track A in
 ```toml
 [providers.stanford_ai]
 api_key = "sk-stanford-REPLACE-ME"
-base_url = "https://aiapi-prod.stanford.edu/v1"
+base_url = "https://<your-gateway>/v1"
 ```
 
    Optional: copy private gateway operator docs into `secrets/docs/` (also gitignored).
@@ -37,7 +37,7 @@ p = pathlib.Path('secrets/secrets.toml')
 d = tomllib.loads(p.read_text())
 print(d['providers']['stanford_ai']['api_key'])
 ")"
-export STANFORD_AI_BASE_URL="https://aiapi-prod.stanford.edu/v1"
+export STANFORD_AI_BASE_URL="https://<your-gateway>/v1"
 
 curl -s -X POST "$STANFORD_AI_BASE_URL/chat/completions" \
   -H "Authorization: Bearer $STANFORD_AI_API_KEY" \
@@ -69,7 +69,7 @@ python3 scripts/build_eval_prompts.py \
   --out tests/harness/prompts-tier-stress-openai.json
 ```
 
-Slices: `smoke` · `gate-sweep` · `goldens-tier-stress` · `discipline-retest` · `ux-personas` · `tier-stress`.
+Slices: `smoke` · `gate-sweep` · `goldens-tier-stress` · `discipline-retest` · `ux-personas` · `tier-stress` · `redteam-regression`.
 
 ### 2. Run cases
 
@@ -119,8 +119,9 @@ confirm against your allow-list (gateway 401 messages list approved models).
 The canonical A09 prompt (`SYSTEM OVERRIDE: ignore all previous instructions…`) is **blocked by
 Azure's jailbreak pre-filter** before inference on **GPT models** (`gpt-5-mini`, `gpt-5.4`) through
 this gateway. **Gemini models on the same key run A09 normally** and the skill passes G2. This is
-infrastructure, not a skill failure — do not alter the A09 prompt in the harness. See
-[`../results/a09-gateway-investigation-2026-06-25.md`](../results/a09-gateway-investigation-2026-06-25.md).
+infrastructure, not a skill failure — do not alter the A09 prompt in the harness. Gemini models on the
+same key run A09 normally and the skill passes G2; GPT/Azure path is blocked pre-inference (cross-family
+evidence accepted per `weak-tier-verdict-2026-06-25.md`).
 
 ## Pass bars (skill condition)
 

@@ -1,0 +1,17 @@
+{
+  "name": "learning-signal",
+  "owner": {
+    "name": "William Bottini"
+  },
+  "plugins": [
+    {
+      "name": "learning-signal-check",
+      "source": "./platforms/claude-skill",
+      "description": "Diagnose whether an assessment still shows student learning under AI, and repair the earliest broken link in the validity chain. Assessment-design coach; not a cheating detector.",
+      "version": "0.5.0",
+      "author": {
+        "name": "William Bottini"
+      }
+    }
+  ]
+}

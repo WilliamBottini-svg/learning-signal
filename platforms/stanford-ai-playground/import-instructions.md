@@ -79,3 +79,16 @@ custom instructions were pasted (truncation is the usual cause) and that tempera
   exact keys.
 - **Keep it an export.** Any future change to the coach's behavior happens in `core/` first, then
   re-exports here. Never fork the procedure inside the preset or instructions.
+
+## Model tier & validation
+
+When filling `[PLACEHOLDER: model]`, choose your instance's **most capable general model** (frontier
+tier). Weak-tier validation (`gemini-2.5-flash-lite`, `gpt-5-mini`) was run on API harness only —
+not on every Playground deployment. For high-stakes UME design coaching, do not default to the
+smallest available model.
+
+Keep **temperature ~0.3**, **memory off**, **web search off** (already in preset). Re-run the three
+smoke tests after changing model or instructions.
+
+Evidence: [`../../tests/results/weak-tier-verdict-2026-06-25.md`](../../tests/results/weak-tier-verdict-2026-06-25.md) ·
+[`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md)

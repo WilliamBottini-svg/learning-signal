@@ -63,7 +63,7 @@ behavior. (Canonical-source rule: `core/` + `domains/` are the only source of tr
    (N##). As of v0.2 this is **27 golden + 14 adversarial + 4 no-change = 45 cases**. If any older handoff
    doc says "19/13/36," it is stale — **trust the live test files and `scripts/check-consistency.py`.**
    Run `python3 scripts/check-consistency.py` and confirm it passes before you start; note the result.
-3. Note the skill version (`CITATION.cff` `version:` field; should read `0.2.0`).
+3. Note the skill version (`CITATION.cff` `version:` field; should read `0.5.0`).
 4. **Confirm your model matrix** before running: you need **≥2 non-Claude families** (e.g., OpenAI +
    Google), ideally each at a frontier *and* a weaker tier (the weaker tier is where the skill should help
    most). If you have fewer, run what you have but say so prominently — a one-family run is **not** a
@@ -218,18 +218,14 @@ D2–D5 are subjective. Therefore:
   first; mask the condition label and model identity; keep gates binary; watch verbosity bias (longer ≠
   better).
 
-# THE BASELINE TO COMPARE AGAINST (Claude, internal, v0.1)
+# THE BASELINE TO COMPARE AGAINST (Claude, internal, v0.2)
 
-Source: `tests/results/full-mode-1-eval-2026-06-05.md` — the **v0.1** suite (19 golden + 13 adversarial + 4
+Source: `tests/results/full-mode-1-eval-v0.2-2026-06-09.md` — the **v0.2** suite (27 golden + 14 adversarial + 4
 no-change), **Claude Opus 4.8, scored by Claude judges** (same model family, author-derived targets — *not*
-independent). A separate earlier self-eval reports a different base figure (base 19/19) from a different
-run; cite *this* run, and treat both as **internal, not validated**.
+independent). Cite *this* run for internal Claude baseline; treat as **internal, not validated**.
 
-> **⚠ Compare RATES and DIRECTION — never raw counts.** The baseline is **v0.1 (19 golden)**; your run is
-> **v0.2 (27 golden)** — different case sets, so the counts are not comparable. *Example:* Claude skill =
-> 18/19 = **94.7%**; if your frontier model scores 20/27 = **74.1%**, do **not** say "18 → 20" — say
-> "94.7% (v0.1) vs 74.1% (v0.2): a lower rate; check which v0.2 cases (G20–G27) drove it." Report **both
-> counts and rates** in the verdict.
+> **⚠ Compare RATES and DIRECTION — never raw counts across different case sets.** If comparing to an older
+> internal run with a different golden count, report **both counts and rates** in the verdict.
 
 Report your cross-family numbers next to these:
 
@@ -247,7 +243,7 @@ Report your cross-family numbers next to these:
 Write results to `tests/results/cross-family-eval-<YYYY-MM-DD>.md`, mirroring the structure of
 `tests/test-results-template.md`. Include:
 
-1. **Metadata.** Mode (1 and/or 2); each model + family + tier; conditions; skill version (`0.2.0`); setup
+1. **Metadata.** Mode (1 and/or 2); each model + family + tier; conditions; skill version (`0.5.0`); setup
    (temp, web/memory off); the exact base nudge used; bias controls; scorer model + family + whether
    cross-family; targets source ("v0.2 author-derived, not yet M7-ratified"); whether you ran the full 45
    or a subset (list which).
@@ -297,7 +293,7 @@ Write results to `tests/results/cross-family-eval-<YYYY-MM-DD>.md`, mirroring th
 - **Gate-1 residual.** Instruction-only guardrails cannot guarantee 0% echo of pasted identifiers; a hard
   guarantee needs a platform-layer PII boundary. Report any echo you observe, but do not treat an
   instruction-layer echo as a fatal engine defect.
-- **G06 is a known ambiguity** pending human M7.
+- **G06 expert-ratified (2026-07-06)** — Generalization (Weakened); see `tests/results/expert-ratified-targets-2026-07-06.md`.
 
 # HARD RULES
 

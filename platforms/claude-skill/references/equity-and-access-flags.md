@@ -33,6 +33,11 @@ scores now comes from access, not from the construct.
 > adverse impact of a decision is **downstream** (Implications, owned by the procedure). Keep them apart.
 > (Access is a flag to **weigh**, not an automatic Construct severing — see below; where it skews the
 > score *distribution* a decision rule acts on, read that at Link 5, not as a forced task redesign.)
+>
+> **Design choice (Critic#10).** Routing access→CIV at **Construct** is intentional: Messick frames
+> unequal tool access as variance in what the task measures, not as a downstream decision rule alone.
+> Implications still owns adverse impact of the *decision*; Construct owns when the *score* partly
+> reflects access. Do not relocate access CIV to Scoring or Implications by default.
 
 This does **not** mean every access disparity severs Link 1. It is a flag to **raise and weigh**, read
 at the case's actual stakes (the keystone's one severity knob). A small disparity on a formative task

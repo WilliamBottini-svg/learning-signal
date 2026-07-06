@@ -2,7 +2,9 @@
 
 > **Model-based adversarial review, NOT human-expert ratification.** Same model family wrote the
 > engine and ran this red-team, so this cannot certify the engine — it surfaces issues and proposes
-> resolutions to triage. Nothing here was applied; `core/` is unchanged. Human review (M7) still required.
+> resolutions to triage. **Snapshot at adjudication (2026-06-06):** `core/` had not yet received v0.2
+> seam fixes. **Post-release status:** see [`engine-redteam-remediation-status.md`](engine-redteam-remediation-status.md)
+> (includes Medium audit, 2026-07-06). G06 expert-ratified — see [`expert-ratified-targets-2026-07-06.md`](expert-ratified-targets-2026-07-06.md).
 
 ## Method
 

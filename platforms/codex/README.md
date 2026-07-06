@@ -57,17 +57,29 @@ trail is the evidence base.
 
 Two prior filled runs show the exact target shape — **replicate their structure**:
 
-- [`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) — the
-  internal skill-vs-base diagnostic eval (aggregate table → per-case primary-match table → findings →
-  limitations → follow-ups).
-- [`../../tests/usability-eval-2026-06-05-results.md`](../../tests/usability-eval-2026-06-05-results.md) —
-  the usability/red-team round (method → headline → changes → re-test → limitation).
+- [`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) —
+  full 45-case Mode 1 skill-vs-base (aggregate → per-case → findings → limitations).
+- [`../../tests/results/ux-persona-v0.3-2026-06-26.md`](../../tests/results/ux-persona-v0.3-2026-06-26.md) —
+  UX persona round (method → headline → verdict).
 - [`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md) —
   frontier GPT + Gemini Pro subset (Mode 1).
 
 **v0.3 (weak-tier + UX):** [`../../tests/v0.3-validation-plan.md`](../../tests/v0.3-validation-plan.md) is
 the current validation roadmap. For **manual Cursor runs** (switch models in the IDE, fresh chat per case),
 use the blind prompt pack [`../../tests/cursor-manual-run-prompts.md`](../../tests/cursor-manual-run-prompts.md).
+
+---
+
+## Model tier matrix (maintainer reference)
+
+| Wrapper | Frontier (SHIP WITH CAVEATS) | Validated floor (SHIP WITH CAVEATS) | Untested |
+|---------|------------------------------|-------------------------------------|----------|
+| `chatgpt-custom-gpt/` | `gpt_5_5` / `gpt-5.4` class | `gpt-5-mini` — production: `gpt-5.4-mini`+ | Live Custom GPT |
+| `gemini-gem/` | `gemini_3_1_pro` | `gemini-2.5-flash-lite` | Live Gem |
+| `claude-skill/` | Claude Fable 5 (full 45) | Haiku | — |
+| AI Playground | Map to instance frontier model | — | Instance-specific |
+
+Update wrapper READMEs when re-running Track A. See [`../../tests/v0.3-validation-plan.md`](../../tests/v0.3-validation-plan.md) pass bars and per-wrapper setup guides.
 
 ---
 
@@ -96,7 +108,7 @@ gates) is quality and safety *around* that signal. See
 - **Rules:** [`../../AGENTS.md`](../../AGENTS.md) (non-negotiables + canonical-source rule),
   [`../../CLAUDE.md`](../../CLAUDE.md) (architecture + keystone),
   [`../../core/skill-core.md`](../../core/skill-core.md) §7 (the export note).
-- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (27, `G01`–`G27`,
+- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (28, `G01`–`G28`,
   with answer key), [`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md) (14,
   `A01`–`A14`), [`../../tests/no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md)
   (4, `N01`–`N04`).

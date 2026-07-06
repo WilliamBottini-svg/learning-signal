@@ -92,8 +92,10 @@ what you won't get to.
 2. **Order by stakes, then exposure.** Highest-**stakes** assessment first; break ties by which is most
    **AI-exposed** (an unsupervised written *product* outranks an observed *performance*).
 3. **Diagnose the first one fully** (Phases A–F). Frame it as the **worked example** the rest will follow.
-4. **Queue the rest** with a one-line "likely issue" each — *a hypothesis to confirm when you walk it,
-   not a finding* — to be diagnosed next on request, not in depth now.
+4. **Queue the rest** with a one-line **intake hypothesis (not yet walked)** each — format/stakes/exposure
+   only (e.g., "unsupervised written product, moderate stakes — needs full walk") — to be diagnosed next
+   on request, not in depth now. **Do not** use link names (Construct, Scoring, Generalization,
+   Extrapolation, Implications) in queue lines; those are walk findings, not pre-walk hypotheses.
 5. **If the user can't or won't pick one**, don't loop — propose the highest-stakes item as the default
    and proceed.
 
@@ -299,6 +301,10 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
   - Scoring of the submitted work is inconsistent or untrained (rater error).
 - **If broken → primary diagnosis: Scoring inference failure. Halt.** Do not optimize downstream links
   while you cannot attribute the evidence to the student.
+- **Authorship-before-sampling rule:** If the same submitted product could receive the same score whether
+  it was authored/reasoned through by the student or generated externally, stop at **Scoring** before
+  considering **Generalization**. Generalization asks whether an already-attributable sample is broad
+  enough; it does not repair or rename an attribution gap.
 - **Representative repairs:** add a supervised or time-boxed component; oral probe; pre-AI commitment;
   process log / version history; individual-accountability check; student-generated reasoning trace;
   observed demonstration; AI-use disclosure tied to *interpretation*, not punishment; rater training.
@@ -345,6 +351,12 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 - **Representative repairs:** multiple cases/prompts; item banks or randomized variants; sampling across
   contexts; repeated low-stakes observations; triangulation with other assessments; blueprinting
   against the learning goals; individual-accountability components in group work.
+
+> **Thin-sampling calibration.** A single-vignette / single-occasion concern at **moderate** stakes is
+> usually **Weakened, not Severed**, when Construct and Scoring are intact. Repair it lightly: add a
+> second vignette, narrow the claim, attach a single-sample reporting caveat, or use a calibrated item
+> bank. Do **not** turn sampling thinness into a full redesign unless the stakes rise (gate/remediation /
+> progression) or the learning claim broadens beyond what the sample can support.
 
 > **Construct vs Generalization — the boundary test (use when "claim too broad for the evidence" could be
 > either).** First confirm **Construct** and **Scoring** are **Intact** (the task elicits the right skill
@@ -526,11 +538,18 @@ That is correct behavior, not an inconsistency.
 missing-intake condition), the honest state is *not yet assessable* — give a provisional read and ask
 one question; do **not** emit a categorical readiness, and **never** label this "Needs deeper review"
 (that value is reserved for the override). A readiness is assigned only once the walk can actually run.
+If **both** stakes and likely AI-use are still unknown after one clarifier, or stakes are unknown and
+the case *could* be consequential, stay in the missing-intake shape — a provisional qualifier at most,
+not a clean Strong/Moderate/Vulnerable line invented from coach-supplied guesses.
 
 **Unit of analysis.** Readiness rates the instrument *as brought*, at the unit of **one assessment**, by
 the earliest break — name an intact sub-claim as a *secondary note* rather than inventing a compound
 label. Two-lane / split-construct repairs are **programme-level** recommendations: re-rate each
-resulting component on its own walk, not as a single blended rating. *(Exception: when the **decision
+resulting component on its own walk, not as a single blended rating. When the user brings **both lanes
+at once** (e.g., a secure in-class exam plus a take-home essay in one grade), express readiness in one
+sentence: *"Readiness: [worst defensible headline] — secure lane [rating]; open lane [rating] until
+[fix]."* The headline is the worst defensible lane at stated stakes (see [`response-pattern.md`](response-pattern.md)).
+*(Exception: when the **decision
 itself** rests on a portfolio / programme of instruments rather than one assessment, the unit of the
 **decision** is the aggregate — walk each instrument, then characterize the aggregate signal; see Phase
 A0b. This "one assessment, not blended" rule governs the **repair components of a single instrument**;
@@ -768,6 +787,17 @@ Each shows: claim → evidence → ordered walk → primary diagnosis → first 
   Scoring or Generalization break by ignoring the proctored defense, and *do not* rate Strong without
   running the Construct-then-Scoring check first. *(The take-home mirror of this task — no attribution
   anchor — is Scoring Severed; see UME Case 7 / repair taxonomy AI Exploration.)*
+
+### Example 11 — Two-lane course grade (secure + take-home) — per-lane readiness
+- **Claim:** The student can apply course concepts in writing and under exam conditions. **Evidence:**
+  (Lane A) a proctored in-class short-answer exam (40%); (Lane B) a take-home essay (60%). **AI-use:**
+  none in Lane A; unrestricted and unverifiable in Lane B. **Stakes:** moderate course grade.
+- **Walk (per lane):** Lane A — all links **Intact** → **Strong**. Lane B — Construct **Intact** →
+  Scoring **Severed** (unattributable take-home product) → halt at Scoring for that lane.
+- **Readiness (compound grammar):** *"Moderate — secure lane Strong; open lane Vulnerable until an
+  attributable checkpoint on the essay (e.g., supervised reasoning addendum or brief oral probe)."*
+  Headline = worst defensible lane at stated stakes.
+- **First repair:** fix Lane B attribution — do not redesign the already-sound proctored exam.
 
 ---
 

@@ -21,9 +21,10 @@ SLICES = {
     "ux-personas": ["U1", "U2", "U3", "U4", "U5", "U6"],
     "tier-stress": (
         ["G01", "G02", "G03", "G17", "G18", "G19"]
-        + [f"N{i:02d}" for i in range(1, 5)]
+        + [f"N{i:02d}" for i in range(1, 6)]
         + [f"A{i:02d}" for i in range(1, 15)]
     ),
+    "redteam-regression": ["G28", "G29", "G30", "G31", "N05"],
 }
 
 

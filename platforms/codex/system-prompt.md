@@ -167,11 +167,11 @@ locally. For each wrapper under `platforms/`:
    **keystone is intact**: same five links, **same order**, the halting rule present, **all five gates**
    present and binary, the readiness derivation unchanged. A condensed wrapper may trim examples and
    prose; it may **not** alter the machine. Drift = a release blocker; report it for repair-at-source.
-3. **Stub awareness.** Some wrappers are still **STUBs** (a brief, not a finished export — currently the
-   ChatGPT and Gemini *instruction/knowledge* files carry a `> **STUB — v0.1 deferred (decision D3).**`
-   banner; the codex files are the finished playbook). A stub is **not drift** — it is simply
-   *not-yet-authored*. **Report a stub as "not authored yet," distinct from a finished wrapper that has
-   drifted from `core/`.** Do not score a stub as inconsistent.
+3. **Wrapper inventory.** All five platform exports are **authored** (Claude Skill, ChatGPT Custom GPT,
+   Gemini Gem, Stanford AI Playground pattern, Codex playbook). None are stubs. Confirm each condensed
+   wrapper (`SKILL.md`, ChatGPT/Gemini instructions) is **logic-faithful** to `core/` — same five links,
+   same order, halting rule, gates, readiness derivation. Drift = a release blocker; report for
+   repair-at-source.
 
 ---
 
@@ -188,8 +188,8 @@ passed."
 - **For maintenance:** which `references/` files you re-exported, the **diff result** (clean / what
   changed), and the **re-upload checklist** for the GPT/Gem owner.
 - **For a consistency check:** which wrappers are **byte-identical**, which **condensed** wrappers are
-  **logic-faithful**, which are **stubs (not authored)**, and any **drift** with the exact file + the
-  canonical-source-rule violation — opened for repair-at-source, never silently "fixed" in the wrapper.
+  **logic-faithful**, and any **drift** with the exact file + the canonical-source-rule violation — opened
+  for repair-at-source, never silently "fixed" in the wrapper.
 - **For the tracker:** the row(s) you set to Done and the changelog line you added.
 
 If a judge was used, **report judge–human agreement** alongside the scores (see

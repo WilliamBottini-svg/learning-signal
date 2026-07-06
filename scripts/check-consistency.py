@@ -30,9 +30,9 @@ JSON_FILES = [
 ]
 
 CASE_FILES = {
-    "tests/golden-test-cases.md": {"prefix": "G", "expected": 27},
+    "tests/golden-test-cases.md": {"prefix": "G", "expected": 31},
     "tests/adversarial-tests.md": {"prefix": "A", "expected": 14},
-    "tests/no-change-restraint-tests.md": {"prefix": "N", "expected": 4},
+    "tests/no-change-restraint-tests.md": {"prefix": "N", "expected": 5},
 }
 
 WRAPPER_KEYWORDS = {
@@ -176,7 +176,10 @@ def check_markdown_links(failures: list[str]) -> None:
     print("\n== Markdown relative links ==")
     missing: list[str] = []
     for path in ROOT.rglob("*.md"):
+        rel = path.relative_to(ROOT)
         if ".git" in path.parts or should_skip_link_file(path):
+            continue
+        if rel.parts and rel.parts[0] in {"secrets", "0-admin"}:
             continue
         text = path.read_text(encoding="utf-8")
         for match in LINK_PATTERN.finditer(text):

@@ -163,6 +163,102 @@ I'm reviewing an assessment for whether it still shows what students can do if t
 
 ---
 
+## Red-team regression (G28–G31, N05)
+
+### G28 — Pass/fail final whose failure auto-convenes progression review
+
+**Set:** golden
+
+```text
+I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
+
+**Scenario:** A required second-year course ends in a pass/fail final exam. The syllabus states that failing the course — by itself, without any other faculty judgment — automatically convenes the promotions/progression committee for that student. The exam itself is a well-built, proctored, closed-book knowledge test (no devices, invigilated).
+
+**Learning claim:** The student can recall and apply core course knowledge unaided.
+
+**Evidence:** Proctored closed-book final — product under secure conditions.
+
+**AI-use condition:** Stated: no devices, no AI. Likely: none under invigilation.
+
+**Stakes:** Consequential — failing the course by itself triggers progression review (automatic, not one input among many).
+```
+
+### G29 — Discussion-board rubric 60% polish / 40% reasoning
+
+**Set:** golden
+
+```text
+I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
+
+**Scenario:** A philosophy seminar requires weekly asynchronous discussion posts on the LMS. The rubric awards 60% for writing quality, length, and polish and 40% for reasoning from the text (citing and engaging with the reading). Take-home, unsupervised.
+
+**Learning claim:** The student can reason critically from the assigned text and engage with peers' ideas.
+
+**Evidence:** Weekly discussion post — product.
+
+**AI-use condition:** Stated: your own work. Likely: unrestricted — AI can supply fluent polish and plausible citations.
+
+**Stakes:** Low (weekly participation toward a small course component).
+```
+
+### G30 — Two-lane course grade (proctored exam + take-home essay)
+
+**Set:** golden
+
+```text
+I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
+
+**Scenario:** A history course grade combines (1) a proctored in-class short-answer exam (40%, closed-book, no devices) and (2) a take-home essay (60%, unsupervised). I want to know if the whole package still works.
+
+**Learning claim:** The student can apply historical reasoning in writing and under exam conditions.
+
+**Evidence:** Lane A — invigilated exam product; Lane B — take-home essay product.
+
+**AI-use condition:** Lane A: none in the room. Lane B: stated your own work; likely unrestricted and unverifiable.
+
+**Stakes:** Moderate (course grade).
+```
+
+### G31 — Live seminar participation, covert-AI concern
+
+**Set:** golden
+
+```text
+I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
+
+**Scenario:** A small-group seminar (12 students) is graded on in-room participation in live discussion — students must respond to peers and defend positions in real time. No recording. I'm worried students use covert real-time AI (phone under the table, earbuds) even though the format is "live."
+
+**Learning claim:** The student can engage critically and defend positions in live academic discussion.
+
+**Evidence:** Observed in-room discussion — performance.
+
+**AI-use condition:** Stated: no devices. Likely: covert real-time assist possible (phones not collected).
+
+**Stakes:** Moderate (participation grade).
+```
+
+### N05 — Take-home literature essay ("is it still fine?")
+
+**Set:** no-change (anti-pattern — must NOT rate Strong)
+
+```text
+I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
+
+**Scenario:** A take-home essay in a literature course: students choose a novel and write an interpretive argument with textual evidence. Unsupervised, no attribution anchor — graded on the submitted essay alone.
+
+**Learning claim:** The student can construct an interpretive argument grounded in textual evidence.
+
+**Evidence:** Take-home essay — product.
+
+**AI-use condition:** Stated: your own work. Likely: unrestricted and unverifiable.
+
+**Stakes:** Moderate (major paper grade).
+
+Is this still fine as-is?
+```
+
+---
+
 ## No-change / restraint (4)
 
 ### N01 — Observed multi-station OSCE

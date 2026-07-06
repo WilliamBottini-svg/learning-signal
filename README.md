@@ -9,7 +9,7 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> ⚠️ **v0.2 is in active development.** Interfaces and content may change.
+> **v0.5.0** — first public release. **G06 expert-ratified (M7, 2026-07-06);** other golden targets remain author-derived. Model-based evals + Layer 3 UX (5 educators, UX SHIP WITH CAVEATS). Red-team Medium audit: [`tests/results/engine-redteam-remediation-status.md`](tests/results/engine-redteam-remediation-status.md).
 
 ---
 
@@ -32,7 +32,7 @@ breaks. That earliest broken link is the **primary diagnosis**, and the recommen
 The coach operationalizes an **argument-based validity walk** — Kane's four inferences (Scoring →
 Generalization → Extrapolation → Implications) with an explicit construct-definition premise (Messick's
 construct underrepresentation / construct-irrelevant variance) surfaced as Step 1 (Construct). It walks
-five linked inferences and halts at the earliest weakened one:
+five linked inferences and halts at the earliest broken link:
 
 | # | Link | Plain-language question |
 |---|------|--------------------------|
@@ -72,10 +72,19 @@ needed."* The coach is designed (and tested) to say so.
 
 Learning Signal Check ships as portable wrappers that all run the same core diagnostic:
 
-- **Claude Skill** — [`platforms/claude-skill/`](platforms/claude-skill/). The `SKILL.md` auto-triggers
+- **Claude Skill / Claude Code plugin** — [`platforms/claude-skill/`](platforms/claude-skill/). The `SKILL.md` auto-triggers
   when you ask whether an assessment still shows student learning under AI, or to redesign one. Its
   `references/` include five byte-identical exports of `core/` plus one curated UME digest exported from
   `domains/undergraduate-medical-education/`.
+
+  **Install as a Claude Code plugin:**
+
+  ```
+  /plugin marketplace add WilliamBottini-svg/learning-signal
+  /plugin install learning-signal-check@learning-signal
+  ```
+
+  Manual fallback: point Claude at [`platforms/claude-skill/SKILL.md`](platforms/claude-skill/SKILL.md).
 - **AI Playground (Stanford or any)** — generic export in
   [`platforms/stanford-ai-playground/`](platforms/stanford-ai-playground/). This folder gives the generic
   setup pattern: a preset template/checklist, a reusable intake prompt, and instructions for pasting the
@@ -92,14 +101,36 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.
 
-### Validation (v0.3 in progress)
+### Validation (v0.5.0)
 
 Cross-family frontier results (June 2026) live in
 [`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md). The
-**v0.3 program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is specified in
-[`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md). Pre-stripped blind prompts for manual
+**v0.3 validation program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is
+specified in [`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md) and **executed** (see
+[`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md),
+[`tests/results/ux-persona-v0.3-2026-06-26.md`](tests/results/ux-persona-v0.3-2026-06-26.md)). Pre-stripped blind prompts for manual
 runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md). **Automated Mode 1 runs**
 via Stanford AI Gateway: [`tests/harness/README.md`](tests/harness/README.md) (`scripts/run_mode1_eval.py`).
+
+**Honesty caveat:** Model-based eval results cover instruction-fidelity and cross-family robustness.
+**G06 is expert-ratified** (human M7, 2026-07-06); remaining golden targets are author-derived. Layer 3
+educator think-aloud: UX SHIP WITH CAVEATS (5 educators). Summary:
+[`tests/results/expert-ratified-targets-2026-07-06.md`](tests/results/expert-ratified-targets-2026-07-06.md)
+(session records not published). Faculty kit:
+[`tests/M7-faculty-ratification-kit.md`](tests/M7-faculty-ratification-kit.md). The skill refuses unsafe
+requests and routes PHI — but a hard guarantee of 0% PHI echo requires a platform PII boundary, not
+instruction alone.
+
+### Minimum model tiers (summary)
+
+| Platform | Recommended | Validated floor | Verdict |
+|----------|-------------|-----------------|---------|
+| ChatGPT Custom GPT | Frontier GPT (`gpt-5.4` class) | `gpt-5-mini` | SHIP WITH CAVEATS |
+| Gemini Gem | Gemini Pro class | `gemini-2.5-flash-lite` | SHIP WITH CAVEATS |
+| Claude Skill | Frontier Claude | Haiku not tested | SHIP WITH CAVEATS |
+| AI Playground | Instance frontier model | See wrapper docs | Instance-dependent |
+
+Details in each platform's setup guide. Evidence: [`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md).
 
 To see the method in action, read the worked demonstrations in [`examples/`](examples/); to read the
 engine itself, see [`core/diagnostic-procedure.md`](core/diagnostic-procedure.md).
