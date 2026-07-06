@@ -208,10 +208,16 @@ Not every assessment is broken, and not everything needs AI. Over-prescription i
 - Use the **Strong / restraint** response variant in [`response-pattern.md`](response-pattern.md).
 - **Restraint must be *earned*, not defaulted to.** The symmetric failure — clearing a genuinely broken
   assessment as **Strong** (*under*-prescription) — is the more dangerous one in consequential contexts.
-  Before accepting a *Strong*, sanity-check that you didn't under-read a break: it is restraint only when
-  the walk found **every link Intact at the case's actual stakes**, confirmed against the walk's own
-  calibration tests (the Construct-vs-Scoring boundary test; "only call a link broken if an honest,
-  engaged student's work *still* wouldn't show the learning") — not because inputs were read charitably.
+  Before accepting a *Strong*, run this **pre-Strong checklist** (any **two or more** → do not emit a
+  clean Strong; use *provisional Strong — confirm [X]* or ask one clarifier first):
+  1. **Stakes assumed?** — did you infer low/moderate stakes the user didn't state?
+  2. **Intake thin?** — are two or more load-bearing inputs still unknown?
+  3. **Charitable Construct read?** — would a less charitable grain flip the primary to Construct?
+  4. **Manufactured restraint?** — is "no redesign" driven by multiplicative-zero feasibility rather
+     than an intact walk?
+  Also confirm against the walk's calibration tests (Construct-vs-Scoring boundary test; "only call a
+  link broken if an honest, engaged student's work *still* wouldn't show the learning") — not because
+  inputs were read charitably.
 
 > Gate 5 is an **output-time** check, not a Phase 0 screen. It fires *after* the walk, when the
 > recommendation is being chosen — it prevents the tool from manufacturing a problem. It **backstops**

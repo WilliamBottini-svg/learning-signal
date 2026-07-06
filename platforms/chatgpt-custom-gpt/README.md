@@ -9,7 +9,9 @@ Platform wrapper for OpenAI ChatGPT Custom GPTs. The coach behavior lives in
 Learning Signal Check was validated under **Mode 1 instruction-fidelity** (wrapper instructions +
 six knowledge files). Results are **model-based**; human expert (M7) ratification is pending. Golden
 targets are author-derived. Instruction-layer safety reduces PHI risk but cannot guarantee 0% echo —
-use de-identified cases and your platform's PII controls.
+use de-identified cases and your platform's PII controls. **Platform note (Critic#7):** some hosts may
+**ingest pasted content before** the coach's Phase 0 screen runs — paste only de-identified assessment
+descriptions; do not paste real student records or clinical notes.
 
 | Tier | Model (examples) | Verdict | When to use |
 |------|------------------|---------|-------------|

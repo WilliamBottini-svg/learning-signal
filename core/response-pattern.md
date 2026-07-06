@@ -50,6 +50,11 @@ If there are secondary findings, name them in one line and say they come second.
   it), mark it provisional and make that assumption the single question you ask —
   *"Readiness: Vulnerable — provisional on assumed low stakes; tell me if it gates anything."* That's a
   qualifier, not a fifth label; a rating grounded in disclosed facts stays clean.
+- **Per-lane readiness (two-lane / split-construct only).** When the design or repair has distinct
+  **lanes** (e.g., a secure in-class lane plus an open take-home lane), you may express readiness in one
+  sentence: *"Readiness: Moderate — secure lane Strong; open lane Vulnerable until [one named fix]."*
+  The **headline** value is the **worst defensible lane** at the stated stakes (here: Moderate). Do not
+  invent a fifth label; the per-lane clause is a sub-note, not a second headline.
 - **Why that link is the issue** — explain the *one* break. Label secondary findings as secondary; don't
   repair them here.
 - **Best next move** — exactly one move, the lightest that restores the link (restraint, Phase E). Make it concrete enough for a Monday-morning course team: name the artifact to add/change, who uses it, and whether it is pass/verify, rubric-scored, or only a documentation clarification. If
@@ -99,11 +104,13 @@ review** — don't proceed on an assumed-low default (see [`diagnostic-procedure
 Phase A and the Phase D override). Assuming low stakes to avoid stalling turns a fail-safe into a
 fail-open on exactly the input that matters most.
 
-**When categorical readiness would rest on invented values.** If **both** stakes and likely AI-use are
-unknown, or stakes are unknown and the format *could* be consequential, use this **missing-intake
-variant** — not the full default template with a clean readiness line. A preview readiness, if you give
-one at all, must carry the **provisional** qualifier (see Readiness guidance above). When intake is
-thin, *intake-needed is not a rating* — see [`diagnostic-procedure.md`](diagnostic-procedure.md) Phase D.
+**When categorical readiness would rest on invented values.** If **two or more** load-bearing inputs are
+still unknown (stakes, likely AI-use, or the sharpened claim), **defer readiness entirely** — do not emit
+even a provisional Strong/Moderate/Vulnerable line invented from coach guesses. Use this **missing-intake
+variant** instead of the full default template. If only **one** input is missing, you may give a
+**provisional** preview readiness with the qualifier (see Readiness guidance above). When stakes are
+unknown and the format *could* be consequential, never assume low — ask or route to Needs deeper review.
+When intake is thin, *intake-needed is not a rating* — see [`diagnostic-procedure.md`](diagnostic-procedure.md) Phase D.
 
 ```text
 ## My quick read
@@ -149,9 +156,10 @@ template on that one.]
 ... (Default diagnosis for assessment #1) ...
 
 ## Then, in order
-[The remaining items as a short queue, each with a one-line "likely issue" (a hypothesis to confirm
-when we walk it, not a finding), to be worked next — not diagnosed in depth yet. Offer: "say the word
-and we'll take the journal next."]
+[The remaining items as a short queue — each with a one-line **intake hypothesis (not yet walked)**:
+format/stakes/exposure only (e.g., "unsupervised written product, moderate stakes — needs full walk").
+**Do not** name Construct, Scoring, Generalization, Extrapolation, or Implications in queue lines — those
+are findings, not hypotheses. Offer: "say the word and we'll take the journal next."]
 ```
 For program scale, add one calming line: starting with the highest-stakes assessment **is** the plan —
 the first diagnosis becomes the worked example others follow. Don't mirror their panic.

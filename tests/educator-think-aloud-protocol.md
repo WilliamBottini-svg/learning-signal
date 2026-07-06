@@ -1,7 +1,7 @@
 # Educator Think-Aloud Protocol (UX Layer 3)
 
 > **Optional but authoritative** when run. Specified in [`v0.3-validation-plan.md`](v0.3-validation-plan.md) Track B Layer 3.
-> Deferred in v0.4.0 ship — Layer 1–2 UX passed on simulated personas only.
+> Layer 3 completed (2026-07-06) — UX SHIP WITH CAVEATS. See [`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md).
 
 ## Purpose
 

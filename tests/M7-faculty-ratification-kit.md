@@ -20,7 +20,7 @@ same source as the skill it grades.
 **Privacy:** Detailed de-identified rater forms and think-aloud transcripts are **not** published in
 this repository. Maintainers store them offline (private `0-admin/` archive in maintainer clones only).
 
-## Optional follow-up (not required for v0.4.0)
+## Optional follow-up (not required for v0.5.0)
 
 | Priority | Case | Why |
 |----------|------|-----|

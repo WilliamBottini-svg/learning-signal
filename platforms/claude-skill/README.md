@@ -28,6 +28,9 @@ Plugin install does not pin a model; use the most capable Claude available in yo
 high-stakes assessment design. Re-trigger smoke cases (restraint, Scoring diagnosis, safety refusal) if
 you change Claude version or skill files.
 
+**Platform note (Critic#7):** some hosts may **ingest pasted content before** the coach's Phase 0 screen
+runs — paste only de-identified assessment descriptions; do not paste real student records or clinical notes.
+
 Evidence: [`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) ·
 [`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md) ·
 [`../../tests/results/weak-tier-verdict-2026-06-25.md`](../../tests/results/weak-tier-verdict-2026-06-25.md)

@@ -4,7 +4,7 @@
 **Harness:** `scripts/run_mode1_eval.py` · `https://<your-gateway>/v1`  
 **Scope:** Phase A0 smoke + Phase A1 gate sweep + Phase A2 golden tier-stress (G01–G03, G17–G19). Track B UX (Layers 1–2) completed separately — see below.
 
-**Consolidated under v0.4.0.** G06 expert-ratified (M7, 2026-07-06); other targets author-derived.
+**Consolidated under v0.5.0.** G06 expert-ratified (M7, 2026-07-06); other targets author-derived.
 
 ---
 
@@ -70,7 +70,7 @@ as a skill gate failure.
 
 ---
 
-## v0.3 / v0.4 sign-off status
+## v0.3 / v0.5 sign-off status
 
 | Track | Status |
 |-------|--------|

@@ -92,8 +92,10 @@ what you won't get to.
 2. **Order by stakes, then exposure.** Highest-**stakes** assessment first; break ties by which is most
    **AI-exposed** (an unsupervised written *product* outranks an observed *performance*).
 3. **Diagnose the first one fully** (Phases A–F). Frame it as the **worked example** the rest will follow.
-4. **Queue the rest** with a one-line "likely issue" each — *a hypothesis to confirm when you walk it,
-   not a finding* — to be diagnosed next on request, not in depth now.
+4. **Queue the rest** with a one-line **intake hypothesis (not yet walked)** each — format/stakes/exposure
+   only (e.g., "unsupervised written product, moderate stakes — needs full walk") — to be diagnosed next
+   on request, not in depth now. **Do not** use link names (Construct, Scoring, Generalization,
+   Extrapolation, Implications) in queue lines; those are walk findings, not pre-walk hypotheses.
 5. **If the user can't or won't pick one**, don't loop — propose the highest-stakes item as the default
    and proceed.
 
@@ -543,7 +545,11 @@ not a clean Strong/Moderate/Vulnerable line invented from coach-supplied guesses
 **Unit of analysis.** Readiness rates the instrument *as brought*, at the unit of **one assessment**, by
 the earliest break — name an intact sub-claim as a *secondary note* rather than inventing a compound
 label. Two-lane / split-construct repairs are **programme-level** recommendations: re-rate each
-resulting component on its own walk, not as a single blended rating. *(Exception: when the **decision
+resulting component on its own walk, not as a single blended rating. When the user brings **both lanes
+at once** (e.g., a secure in-class exam plus a take-home essay in one grade), express readiness in one
+sentence: *"Readiness: [worst defensible headline] — secure lane [rating]; open lane [rating] until
+[fix]."* The headline is the worst defensible lane at stated stakes (see [`response-pattern.md`](response-pattern.md)).
+*(Exception: when the **decision
 itself** rests on a portfolio / programme of instruments rather than one assessment, the unit of the
 **decision** is the aggregate — walk each instrument, then characterize the aggregate signal; see Phase
 A0b. This "one assessment, not blended" rule governs the **repair components of a single instrument**;
@@ -781,6 +787,17 @@ Each shows: claim → evidence → ordered walk → primary diagnosis → first 
   Scoring or Generalization break by ignoring the proctored defense, and *do not* rate Strong without
   running the Construct-then-Scoring check first. *(The take-home mirror of this task — no attribution
   anchor — is Scoring Severed; see UME Case 7 / repair taxonomy AI Exploration.)*
+
+### Example 11 — Two-lane course grade (secure + take-home) — per-lane readiness
+- **Claim:** The student can apply course concepts in writing and under exam conditions. **Evidence:**
+  (Lane A) a proctored in-class short-answer exam (40%); (Lane B) a take-home essay (60%). **AI-use:**
+  none in Lane A; unrestricted and unverifiable in Lane B. **Stakes:** moderate course grade.
+- **Walk (per lane):** Lane A — all links **Intact** → **Strong**. Lane B — Construct **Intact** →
+  Scoring **Severed** (unattributable take-home product) → halt at Scoring for that lane.
+- **Readiness (compound grammar):** *"Moderate — secure lane Strong; open lane Vulnerable until an
+  attributable checkpoint on the essay (e.g., supervised reasoning addendum or brief oral probe)."*
+  Headline = worst defensible lane at stated stakes.
+- **First repair:** fix Lane B attribution — do not redesign the already-sound proctored exam.
 
 ---
 

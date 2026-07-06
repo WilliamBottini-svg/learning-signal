@@ -9,7 +9,7 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> **v0.4.0** — first public release. **G06 expert-ratified (M7, 2026-07-06);** other golden targets remain author-derived. Model-based evals + Layer 3 UX (5 educators, UX SHIP WITH CAVEATS).
+> **v0.5.0** — first public release. **G06 expert-ratified (M7, 2026-07-06);** other golden targets remain author-derived. Model-based evals + Layer 3 UX (5 educators, UX SHIP WITH CAVEATS). Red-team Medium audit: [`tests/results/engine-redteam-remediation-status.md`](tests/results/engine-redteam-remediation-status.md).
 
 ---
 
@@ -101,7 +101,7 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.
 
-### Validation (v0.4.0)
+### Validation (v0.5.0)
 
 Cross-family frontier results (June 2026) live in
 [`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md). The

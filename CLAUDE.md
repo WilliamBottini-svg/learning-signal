@@ -48,4 +48,4 @@ A consistency pass enforces this before release.
 - Agent working agreement: `AGENTS.md`.
 
 ## Status
-v0.4.0 released. See `0-admin/project-tracker.md` for live status, milestones, and the task table.
+v0.5.0 released. See `0-admin/project-tracker.md` for live status, milestones, and the task table.

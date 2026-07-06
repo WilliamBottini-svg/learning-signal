@@ -69,7 +69,7 @@ python3 scripts/build_eval_prompts.py \
   --out tests/harness/prompts-tier-stress-openai.json
 ```
 
-Slices: `smoke` · `gate-sweep` · `goldens-tier-stress` · `discipline-retest` · `ux-personas` · `tier-stress`.
+Slices: `smoke` · `gate-sweep` · `goldens-tier-stress` · `discipline-retest` · `ux-personas` · `tier-stress` · `redteam-regression`.
 
 ### 2. Run cases
 

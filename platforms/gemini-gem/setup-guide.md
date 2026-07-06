@@ -10,7 +10,8 @@ nothing about the diagnostic logic, which is the canonical engine exported into
 Learning Signal Check was validated under **Mode 1 instruction-fidelity** (wrapper instructions +
 six knowledge files). Results are **model-based**; human expert (M7) ratification is pending. Golden
 targets are author-derived. Instruction-layer safety reduces PHI risk but cannot guarantee 0% echo —
-use de-identified cases and your platform's PII controls.
+use de-identified cases and your platform's PII controls. **Platform note (Critic#7):** some hosts may
+**ingest pasted content before** the coach's Phase 0 screen runs — paste only de-identified cases.
 
 Gemini does not let you pin a model on a Gem today; tier guidance applies to **which Gemini model you
 use when previewing** and **what you tell colleagues** about capability expectations.
@@ -108,7 +109,7 @@ If the model's context is **< ~60k tokens** and outputs look generic or truncate
 
    ```
    Exported from core/ commit: 530b492 (run `git -C <repo> rev-parse --short HEAD` to confirm)
-   Gem version: v0.4.0
+   Gem version: v0.5.0
    ```
 
    When `core/` changes: re-export [`gem-instructions.md`](gem-instructions.md), refresh the 6 knowledge

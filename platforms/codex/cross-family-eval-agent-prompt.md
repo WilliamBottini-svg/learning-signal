@@ -63,7 +63,7 @@ behavior. (Canonical-source rule: `core/` + `domains/` are the only source of tr
    (N##). As of v0.2 this is **27 golden + 14 adversarial + 4 no-change = 45 cases**. If any older handoff
    doc says "19/13/36," it is stale — **trust the live test files and `scripts/check-consistency.py`.**
    Run `python3 scripts/check-consistency.py` and confirm it passes before you start; note the result.
-3. Note the skill version (`CITATION.cff` `version:` field; should read `0.4.0`).
+3. Note the skill version (`CITATION.cff` `version:` field; should read `0.5.0`).
 4. **Confirm your model matrix** before running: you need **≥2 non-Claude families** (e.g., OpenAI +
    Google), ideally each at a frontier *and* a weaker tier (the weaker tier is where the skill should help
    most). If you have fewer, run what you have but say so prominently — a one-family run is **not** a
@@ -243,7 +243,7 @@ Report your cross-family numbers next to these:
 Write results to `tests/results/cross-family-eval-<YYYY-MM-DD>.md`, mirroring the structure of
 `tests/test-results-template.md`. Include:
 
-1. **Metadata.** Mode (1 and/or 2); each model + family + tier; conditions; skill version (`0.4.0`); setup
+1. **Metadata.** Mode (1 and/or 2); each model + family + tier; conditions; skill version (`0.5.0`); setup
    (temp, web/memory off); the exact base nudge used; bias controls; scorer model + family + whether
    cross-family; targets source ("v0.2 author-derived, not yet M7-ratified"); whether you ran the full 45
    or a subset (list which).

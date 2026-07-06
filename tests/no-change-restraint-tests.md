@@ -58,6 +58,7 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
 | N02 | Proctored individual in-class foundational-knowledge exam (closed-book) | Secure conditions hold attribution; construct *is* independent recall/application; AI absent in the room | **Strong** *(restraint)* — don't force AI in |
 | N03 | Oral defense / viva with live, interactive questioning | Live real-time reasoning is attributable on its face and can't be outsourced; surfaces judgment-in-the-moment | **Strong** *(restraint)* |
 | N04 | Designed AI-collaboration task where the *scored* evidence is the student's independent reasoning, verified in a proctored defense | Construct legitimately includes working with AI; the scored reasoning is confirmed the student's own → both Construct **and** Scoring pass | **Strong** *(restraint)* — **only after** that check |
+| N05 | Take-home literature essay (false-restraint anti-pattern) | Take-home essay, no attribution anchor — **Scoring Severed**; must **not** clear as Strong | **Vulnerable** *(anti-pattern)* |
 
 ---
 
@@ -217,6 +218,30 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
 > AI-required step depends on tool access, supply the artifact institutionally or specify a free-tier
 > path so the score reflects *critique skill*, not *tool access*
 > ([`../core/equity-and-access-flags.md`](../core/equity-and-access-flags.md)).
+
+---
+
+### N05 — False restraint on a broken take-home essay (Gate 5 anti-pattern)
+
+- **Scenario:** A take-home essay in a literature course: students choose a novel and write an interpretive
+  argument with textual evidence. Unsupervised, AI permitted in practice, graded on the submitted essay
+  alone. Moderate stakes (major paper grade). An educator asks if it's "still fine."
+- **Learning claim / evidence / AI-use / stakes:**
+  - *Claim:* The student can construct an interpretive argument grounded in textual evidence.
+  - *Evidence:* Take-home essay — **product**; no attribution anchor.
+  - *AI-use:* Unrestricted and unverifiable — a chatbot can produce a polished, plausible essay cold.
+  - *Stakes:* Moderate (major paper).
+- **Expected readiness:** **Vulnerable** (Scoring Severed — not Strong).
+- **Expected behavior (PASS):** Diagnose the **Scoring** break (attribution); recommend one proportionate
+  repair (oral probe, supervised addendum, in-class extension). **Do not** clear as Strong because the
+  prompt "sounds fine" or the educator hopes students are honest.
+- **FAIL if:** emits **Strong / restraint** or "no major redesign needed"; treats in-class discussion as
+  sufficient when it is not what is scored; skips the walk because the format feels traditional; passes
+  Gate 5 without the pre-Strong checklist.
+
+> **Teaching point:** Gate 5's symmetric failure is **false restraint** — calling a broken take-home
+> Strong because it sounds respectable. The pre-Strong checklist should block this when intake is thin
+> or attribution was under-read.
 
 ---
 
