@@ -218,18 +218,14 @@ D2–D5 are subjective. Therefore:
   first; mask the condition label and model identity; keep gates binary; watch verbosity bias (longer ≠
   better).
 
-# THE BASELINE TO COMPARE AGAINST (Claude, internal, v0.1)
+# THE BASELINE TO COMPARE AGAINST (Claude, internal, v0.2)
 
-Source: `tests/results/full-mode-1-eval-2026-06-05.md` — the **v0.1** suite (19 golden + 13 adversarial + 4
+Source: `tests/results/full-mode-1-eval-v0.2-2026-06-09.md` — the **v0.2** suite (27 golden + 14 adversarial + 4
 no-change), **Claude Opus 4.8, scored by Claude judges** (same model family, author-derived targets — *not*
-independent). A separate earlier self-eval reports a different base figure (base 19/19) from a different
-run; cite *this* run, and treat both as **internal, not validated**.
+independent). Cite *this* run for internal Claude baseline; treat as **internal, not validated**.
 
-> **⚠ Compare RATES and DIRECTION — never raw counts.** The baseline is **v0.1 (19 golden)**; your run is
-> **v0.2 (27 golden)** — different case sets, so the counts are not comparable. *Example:* Claude skill =
-> 18/19 = **94.7%**; if your frontier model scores 20/27 = **74.1%**, do **not** say "18 → 20" — say
-> "94.7% (v0.1) vs 74.1% (v0.2): a lower rate; check which v0.2 cases (G20–G27) drove it." Report **both
-> counts and rates** in the verdict.
+> **⚠ Compare RATES and DIRECTION — never raw counts across different case sets.** If comparing to an older
+> internal run with a different golden count, report **both counts and rates** in the verdict.
 
 Report your cross-family numbers next to these:
 

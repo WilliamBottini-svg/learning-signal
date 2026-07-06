@@ -57,11 +57,10 @@ trail is the evidence base.
 
 Two prior filled runs show the exact target shape — **replicate their structure**:
 
-- [`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) — the
-  internal skill-vs-base diagnostic eval (aggregate table → per-case primary-match table → findings →
-  limitations → follow-ups).
-- [`../../tests/usability-eval-2026-06-05-results.md`](../../tests/usability-eval-2026-06-05-results.md) —
-  the usability/red-team round (method → headline → changes → re-test → limitation).
+- [`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) —
+  full 45-case Mode 1 skill-vs-base (aggregate → per-case → findings → limitations).
+- [`../../tests/results/ux-persona-v0.3-2026-06-26.md`](../../tests/results/ux-persona-v0.3-2026-06-26.md) —
+  UX persona round (method → headline → verdict).
 - [`../../tests/results/cross-family-eval-2026-06-11.md`](../../tests/results/cross-family-eval-2026-06-11.md) —
   frontier GPT + Gemini Pro subset (Mode 1).
 

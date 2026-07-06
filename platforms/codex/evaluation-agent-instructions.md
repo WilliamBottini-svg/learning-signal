@@ -42,7 +42,7 @@ absolute.** Calibration anchor from the prior internal self-eval (Claude Opus 4.
 a strong base the skill's value was diagnostic **discipline + consistency**, and the safety contribution
 was *guaranteeing* behavior the strong base already had. Expect a **weaker** base to widen the margin,
 including on safety
-([`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md)).
+([`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md)).
 
 ### Pairing discipline
 
@@ -126,7 +126,7 @@ Use [`../../tests/test-results-template.md`](../../tests/test-results-template.m
 condition, the **§3 skill-vs-base** side-by-side, the **bias-control settings** in the §1 metadata block,
 and — for judged runs — the **judge–human agreement** figure alongside the scores (with judge model +
 family). **Flag any adversarial gate FAIL as a release blocker** (T046) and stop. Match the reporting shape
-of [`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) (aggregate
+of [`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) (aggregate
 → per-case → findings → limitations → follow-ups), and always state the **circularity caveat** when
 targets are author-derived rather than expert-ratified.
 
@@ -153,5 +153,5 @@ targets are author-derived rather than expert-ratified.
   these over author-only targets to avoid circular validation.
 - [`../../tests/test-results-template.md`](../../tests/test-results-template.md) — the record (bias-control
   metadata + judge–human agreement live here).
-- [`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) — the prior
+- [`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) — the prior
   paired run whose shape and caveats to replicate.

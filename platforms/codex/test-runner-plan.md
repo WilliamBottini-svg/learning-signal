@@ -43,8 +43,8 @@ Both modes run the **same cases**, the **same scoring**, and the **same recordin
 ## Mode (1) — Instruction-fidelity (DEFAULT, runnable today)
 
 The skill-enabled condition here is **"a fresh model following the skill's own files."** This is exactly
-how the prior internal self-eval was run (see
-[`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md): "skill = the
+how the prior full Mode 1 eval was run (see
+[`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md): "skill = the
 model reading and following `core/`"). Replicate that shape.
 
 ### M1.0 — Fix the run conditions
@@ -83,8 +83,8 @@ knowledge set):
 A **fresh** session of the **same model**, given a **plain generalist prompt and NO skill** — no
 `SKILL.md`, no `references/`, no `core/`. Instruct it to answer as a strong generalist educator,
 **blind to the method and to the answer key**. Record the base prompt **verbatim** in the metadata.
-(Per the prior self-eval, "base" is the same model with the framework removed — see
-[`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) Limitations:
+(Per the prior full Mode 1 eval, "base" is the same model with the framework removed — see
+[`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) Limitations:
 this likely *overstates* base capability, making the skill's measured diagnostic margin **conservative**.)
 
 ### M1.3 — Run the cases **blind** (strip the answer-key fields)
@@ -188,10 +188,10 @@ condition**:
 - recurring failure modes in the **§4 failure-pattern log**.
 
 Save to `tests/results/<Run ID>.md` (create the dir if needed). **Never overwrite a prior run** — the
-dated trail is the regression record. **Match the shape of the two prior filled runs:**
-[`../../tests/self-eval-2026-06-05-results.md`](../../tests/self-eval-2026-06-05-results.md) (aggregate
+dated trail is the regression record. **Match the shape of prior filled runs:**
+[`../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](../../tests/results/full-mode-1-eval-v0.2-2026-06-09.md) (aggregate
 table → per-case primary-match table → findings → limitations → follow-ups) and
-[`../../tests/usability-eval-2026-06-05-results.md`](../../tests/usability-eval-2026-06-05-results.md).
+[`../../tests/results/ux-persona-v0.3-2026-06-26.md`](../../tests/results/ux-persona-v0.3-2026-06-26.md).
 
 ### Skill-vs-base expectation (what to test, not assume)
 

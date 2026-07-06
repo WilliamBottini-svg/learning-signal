@@ -85,8 +85,8 @@ Keystone (5-link ordered chain, halt at earliest break) aligned across all wrapp
 - `tests/golden-test-cases.md`, `adversarial-tests.md`, `no-change-restraint-tests.md`, `scoring-rubric.md`, templates
 - `tests/v0.3-validation-plan.md`
 - `weak-tier-verdict-2026-06-25.md`, `ux-persona-v0.3-2026-06-26.md`, `ux-conformance-2026-06-25.md` (+ `.json`)
-- `full-mode-1-eval-v0.2-2026-06-09.md`, `full-mode-1-eval-2026-06-05.md`, `cross-family-eval-2026-06-11.md`
-- `weak-tier-eval-2026-06-15.md`, `engine-redteam-2026-06-06.md`, `ratification-2026-06-06.md`, `perplexity-review-2026-06-05.md`
+- `full-mode-1-eval-v0.2-2026-06-09.md`, `cross-family-eval-2026-06-11.md`
+- `engine-redteam-2026-06-06.md`, `ratification-2026-06-06.md`
 
 **Proposed cut (superseded per-model gateway run-logs rolled into `weak-tier-verdict-2026-06-25.md`):**
 
