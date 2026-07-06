@@ -94,7 +94,7 @@ Keep these generic in the public repo; fill them where you deploy:
 ## Model tier & validation
 
 Learning Signal Check was validated under **Mode 1 instruction-fidelity**. Results are **model-based**;
-human expert (M7) ratification is pending. For high-stakes UME design coaching, use your Playground's
+human expert (M7) ratification: **G06 complete (2026-07-06)**; other golden targets remain author-derived. For high-stakes UME design coaching, use your Playground's
 **frontier tier** — not the smallest mini/flash model.
 
 | Tier | Model (gateway-tested) | Verdict |
