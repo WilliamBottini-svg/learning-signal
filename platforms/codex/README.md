@@ -108,10 +108,10 @@ gates) is quality and safety *around* that signal. See
 - **Rules:** [`../../AGENTS.md`](../../AGENTS.md) (non-negotiables + canonical-source rule),
   [`../../CLAUDE.md`](../../CLAUDE.md) (architecture + keystone),
   [`../../core/skill-core.md`](../../core/skill-core.md) §7 (the export note).
-- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (28, `G01`–`G28`,
+- **Cases:** [`../../tests/golden-test-cases.md`](../../tests/golden-test-cases.md) (31, `G01`–`G31`,
   with answer key), [`../../tests/adversarial-tests.md`](../../tests/adversarial-tests.md) (14,
   `A01`–`A14`), [`../../tests/no-change-restraint-tests.md`](../../tests/no-change-restraint-tests.md)
-  (4, `N01`–`N04`).
+  (5, `N01`–`N05`).
 - **Scoring & recording:** [`../../tests/scoring-rubric.md`](../../tests/scoring-rubric.md) (D1–D5 +
   binary gates + v0.1 pass bar), [`../../tests/test-results-template.md`](../../tests/test-results-template.md)
   (the run record), [`../../tests/expert-target-template.md`](../../tests/expert-target-template.md)

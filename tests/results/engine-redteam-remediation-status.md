@@ -9,7 +9,9 @@
 | Severity | Total | Fixed / golden-locked | Partially fixed | Documented limitation | Open |
 |----------|-------|----------------------|-----------------|----------------------|------|
 | **High** | 7 | 4 | 2 | 1 | 0 |
-| **Medium** (adjudicated + critic) | 32 | 28 | 1 | 3 | 0 |
+| **Medium** (adjudicated + critic) | 35 | 32 | 0 | 3 | 0 |
+
+> *Medium tallies the 35 rows in the Medium-severity cluster tables below (32 Fixed + 3 Documented; 0 Partial/Open). A3, B7, and C2 are also cross-listed in the Low-severity section as low-materiality / accepted.*
 
 **Bottom line:** Medium remediation complete except documented platform/governance limits (PHI ingest, Critic#10 routing rationale). **G28–G31 + N05** regression-locked via Mode 1 (2026-07-06).
 

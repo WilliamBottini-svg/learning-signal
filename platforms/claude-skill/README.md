@@ -17,7 +17,7 @@ Or from a published marketplace URL once available.
 
 Claude Skill behavior is validated primarily on **Claude frontier** (Fable 5 family, full 45-case Mode 1
 run, June 2026). Verdict: strong internal baseline — **SHIP WITH CAVEATS** pending cross-family judge
-independence and M7 ratification.
+independence and full M7 ratification (**G06 expert-ratified, M7 2026-07-06**; remaining golden targets author-derived).
 
 | Tier | Status |
 |------|--------|

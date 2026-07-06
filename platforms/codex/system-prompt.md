@@ -77,7 +77,7 @@ name/DOB/MRN) and note the incident.
 
 ### 4. Tracker protocol
 
-The tracker is [`0-admin/project-tracker.md`](../../0-admin/project-tracker.md) (gitignored — read it
+The tracker is `0-admin/project-tracker.md` (gitignored — read it
 locally; do not commit it). On completing a task:
 
 - set the relevant task row's **Status → Done** (e.g., a re-run feeding **M6**; a safety blocker feeds
