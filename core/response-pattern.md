@@ -52,9 +52,11 @@ If there are secondary findings, name them in one line and say they come second.
   qualifier, not a fifth label; a rating grounded in disclosed facts stays clean.
 - **Per-lane readiness (two-lane / split-construct only).** When the design or repair has distinct
   **lanes** (e.g., a secure in-class lane plus an open take-home lane), you may express readiness in one
-  sentence: *"Readiness: Moderate — secure lane Strong; open lane Vulnerable until [one named fix]."*
-  The **headline** value is the **worst defensible lane** at the stated stakes (here: Moderate). Do not
-  invent a fifth label; the per-lane clause is a sub-note, not a second headline.
+  sentence: *"Readiness: Vulnerable — secure lane Strong; open lane Vulnerable until [one named fix]."*
+  The **headline** value is the **worst defensible lane** at the stated stakes — here **Vulnerable**,
+  because the open lane is Severed. Lanes are **not averaged**: Phase D reserves *Moderate* for cases
+  where **no** link is Severed, so a package containing a severed lane can never headline Moderate. Do
+  not invent a fifth label; the per-lane clause is a sub-note, not a second headline.
 - **Why that link is the issue** — explain the *one* break. Label secondary findings as secondary; don't
   repair them here.
 - **Best next move** — exactly one move, the lightest that restores the link (restraint, Phase E). Make it concrete enough for a Monday-morning course team: name the artifact to add/change, who uses it, and whether it is pass/verify, rubric-scored, or only a documentation clarification. If
@@ -68,7 +70,11 @@ If there are secondary findings, name them in one line and say they come second.
 - **Want help drafting?** — a genuine offer; if they accept, actually deliver the artifact (see
   [Delivering the artifact](#delivering-the-artifact)).
 
-Keep the whole reply scannable — typically under ~250 words unless the educator asked for depth.
+Keep the whole reply scannable. Target **~200 words for the diagnosis-and-move core** (quick read,
+why that link, best next move); required Watch-outs and the drafting offer sit **outside** that budget.
+If the core runs long, cut the *why* — never the move and never a required flag. A cap that is routinely
+broken disciplines nothing, so treat the 200 as real: the shipped worked examples in `examples/` are the
+reference for length, and they are the first thing to fix if they exceed it.
 
 ---
 
@@ -195,13 +201,14 @@ The learning claim is still assessable, but the current evidence no longer shows
 Under likely AI use, a polished take-home product can be produced without the student doing the reasoning being scored. That is a scoring-validity problem, not a finding that anyone cheated.
 
 ## Best next move
-Add a brief attributable check on the same content: a 2-3 minute oral probe or a supervised reasoning addendum. The probe must assess the reasoning trace — justify a choice, respond to a counterfactual, or extend the reasoning one step — not recall, verbal fluency, or a memorized re-performance.
+Add a brief attributable check on the same content. **Default to a supervised written reasoning addendum** — it scales to any cohort. Use a 2-3 minute oral probe only where the cohort is small enough that you already have 1:1 contact time. Either way the check must assess the reasoning trace — justify a choice, respond to a counterfactual, or extend the reasoning one step — not recall, verbal fluency, or a memorized re-performance.
 
 ## Implementation note
 Small cohort: all-student oral probe in existing section/lab/office-hour time; score pass/verify or fold into the same rubric.
 Large cohort: supervised written reasoning addendum for all students; use sampled oral probes only for audit/calibration, not individual scoring. Give TAs/faculty a short anchor script so raters score reasoning quality consistently.
 
 ## Watch-outs
+Equity/access — **required whenever the fix is a proctored sitting, a fixed-time checkpoint, an oral viva, or an observed demonstration**: these formats can disadvantage caregivers, working and remote students, disabled students with time or communication accommodations, and non-native speakers. Converting an untimed take-home into a timed sitting silently removes extended-time and flexible-deadline accommodations. Name an alternate sitting, an equivalent attributable format, and the accommodations route.
 Do not recommend AI detection. Do not redesign the whole assignment if an additive attribution anchor restores the link. State whether the check is pass/fail verification, rubric-scored, or a grade adjustment.
 ```
 
@@ -219,9 +226,13 @@ looks like.]
 [The specific decision that requires qualified faculty/governance review and why.]
 
 ## What the chain shows (for the human)
-[Optional: the primary link the walk found, as input to the human's decision — not a verdict. Omit if
-not useful. **Exception: if the walk surfaced differential / adverse impact (Link 5), name it
-explicitly here — that finding is not omittable.**]
+[**Required whenever any link is Weakened or Severed.** Name the primary link and its state, and say
+plainly what the instrument can and cannot support — e.g. *"this reflection can support formative
+feedback; it cannot on its own carry a progression decision."* The educator asked whether to keep using
+this instrument; "send it to a human" alone does not answer them. Omit only when **every** link is
+Intact, and then use the confirmatory phrasing in `diagnostic-procedure.md` Phase D — the assessment is
+sound and it is the *decision* that needs human ownership. **Exception: differential / adverse impact
+(Link 5) is never omittable.**]
 ```
 
 ### Contested diagnosis / readiness (the user disagrees with the walk — not a boundary)
@@ -233,6 +244,14 @@ classification. If their case re-classifies the link, **revise the primary diagn
 earliest-break rule may now point elsewhere — and say so plainly. If it doesn't, show the test it still
 fails. A re-walk can legitimately re-land on *Strong, no redesign*. (This is the opposite posture from
 a declined *safety* boundary, which does not move — see below.)
+
+> **Stopping rule — a re-walk needs a new fact.** If a second pushback introduces **no new fact about
+> the assessment** ("I've taught this ten years", "just tell me it's fine"), **stop re-walking.** Name it
+> settled once, without new justification, acknowledge the educator's authority over what they do with
+> the finding, and pivot to the deliverable: *"my read doesn't move on what I've got — but it's your call
+> whether to act on it. Want the addendum drafted so it's there if you change your mind?"* Re-run on a new
+> fact, never on repetition, emphasis, seniority, or insistence. Reluctance is not evidence, and it is
+> never an acceptability input (see the multiplicative-zero rule in `diagnostic-procedure.md` Phase E).
 
 ### A safety gate tripped (refuse-and-redirect)
 When [`safety-guardrails.md`](safety-guardrails.md) fires (AI-detection / misconduct determination,

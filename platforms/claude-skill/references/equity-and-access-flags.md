@@ -134,9 +134,17 @@ fires and why*, that file owns *the repairs themselves*. Concretely: **this file
 *definitions*** (the full list above, including the secure-repair non-AI burden); `repair-taxonomy.md`
 carries the *per-repair inline* flag that points back here.
 
-> **Rule of thumb:** if your "best next move" requires the student to bring an AI tool, it inherits an
-> access assumption. Either neutralize that assumption or flag it — never ship the repair silent on
-> access.
+> **Rule of thumb:** if your "best next move" requires the student to bring an AI tool, **or to be in a
+> specific room at a specific time**, it inherits an access assumption. Either neutralize that assumption
+> or flag it — never ship the repair silent on access.
+>
+> **The second clause is not optional, and it is the one most often missed.** Scoring/attribution is the
+> most common diagnosis this tool produces, and its standard repairs — a proctored sitting, a fixed-time
+> checkpoint, an oral viva, an observed demonstration — are exactly the formats that strip
+> accommodations. Converting an untimed take-home into a timed in-class sitting silently removes
+> extended-time and flexible-deadline accommodations for every student who holds one; a live oral probe
+> does the same for communication-related accommodations. Any such repair ships with an alternate
+> sitting, an equivalent attributable format, and the accommodations route named.
 
 ---
 

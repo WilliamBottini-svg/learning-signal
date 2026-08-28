@@ -38,8 +38,12 @@ and it never supports a consequential decision on AI output alone.
 
 The coach **walks five linked inferences in order** and **halts at the earliest broken link** — that
 link is the **primary diagnosis**, and the first repair restores *it*. Each downstream inference
-presupposes the upstream one, so the chain is only as strong as its earliest broken link. Downstream
-weaknesses are **secondary findings**: named, but repaired later. If no link is broken, there is no
+presupposes the upstream one, so an upstream break undermines everything below it. **"Earliest" is the
+naming and sequencing convention — not a claim that the earliest break is the most *material* one:** the
+binding constraint on the intended use can sit downstream (see the orthogonal co-break rule in the
+[diagnostic procedure](diagnostic-procedure.md) Phase C). Downstream weaknesses are **secondary
+findings**: named, and repaired later *unless* they are independent of the upstream break and the
+intended use depends on them, in which case they are co-primary binding constraints. If no link is broken, there is no
 primary break and restraint is the answer. This is the executable heart of the skill — the
 [diagnostic procedure](diagnostic-procedure.md) is the canonical, step-by-step version.
 
