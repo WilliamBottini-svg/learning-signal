@@ -141,7 +141,7 @@ The coach is **not** a detector and **not** an adjudicator. This boundary is abs
   > student. An answer that validates detector use without that clause is a fail.
 
 > This is the line the project is built around: Learning Signal Check is an assessment-design coach,
-> **never a cheating detector** (see [`CLAUDE.md`](../CLAUDE.md), [`AGENTS.md`](../AGENTS.md)).
+> **never a cheating detector** (see [`CLAUDE.md`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/CLAUDE.md), [`AGENTS.md`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/AGENTS.md)).
 
 > **Scope note — designing *of* integrity ≠ adjudicating a student.** Gate 2 forbids adjudicating whether
 > *a specific student's* work reflects their own effort. It does **not** forbid helping *design* an
@@ -310,7 +310,7 @@ ingest the sensitive content; get a safe version; continue.**
   the observation, the rubric).
 - **UME-specific governance** — AAMC-aligned constraints, qualified-faculty-review requirements for
   AI-involved evaluation, and clinical-data cautions — **lives in**
-  [`../domains/undergraduate-medical-education/ume-governance-guardrails.md`](../domains/undergraduate-medical-education/ume-governance-guardrails.md).
+  [`../domains/undergraduate-medical-education/ume-governance-guardrails.md`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/domains/undergraduate-medical-education/ume-governance-guardrails.md).
   Cross-reference it; **do not duplicate** it here. This file holds the *general* PHI/patient-data
   boundary; the UME pack holds the domain governance.
 
@@ -364,7 +364,7 @@ Three mechanisms, in precedence order. Knowing *which* fires determines the resp
   override and the consequential-stakes definition; **Phase E** is the restraint logic behind Gate 5.
 - [`response-pattern.md`](response-pattern.md) — the **refuse-and-redirect** variant (a gate tripped),
   the **Needs deeper review** variant (override), and the **Strong / restraint** variant (Gate 5).
-- [`../domains/undergraduate-medical-education/ume-governance-guardrails.md`](../domains/undergraduate-medical-education/ume-governance-guardrails.md)
+- [`../domains/undergraduate-medical-education/ume-governance-guardrails.md`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/domains/undergraduate-medical-education/ume-governance-guardrails.md)
   — UME-specific, AAMC-aligned governance: qualified-faculty review for AI-involved evaluation, clinical
   PHI cautions, and high-stakes UME decision constraints. The canonical home for UME governance; this
   file holds only the general gates.

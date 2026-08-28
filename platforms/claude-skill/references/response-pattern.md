@@ -23,7 +23,7 @@ The **conversation variants** get the user *to* that point (or handle when the w
 ## My quick read
 [1–3 plain sentences: what this assessment is and the headline.]
 Learning signal: [what the assessment is trying to show the student can do.]
-Primary diagnosis: [the earliest weakened link, in plain language.]
+Primary diagnosis: [the earliest **Severed** link — or the earliest Weakened one if none is Severed — in plain language.]
 Readiness: [Strong / Moderate / Vulnerable / Needs deeper review.]
 
 ## Why that link is the issue
@@ -68,7 +68,7 @@ If there are secondary findings, name them in one line and say they come second.
   be honest the primary evidence doesn't currently hold.
 - **Watch-outs** — omit the heading entirely if nothing applies. Don't manufacture flags.
 - **Want help drafting?** — a genuine offer; if they accept, actually deliver the artifact (see
-  [Delivering the artifact](#delivering-the-artifact)).
+  [Delivering the artifact](#delivering-the-artifact-want-help-drafting)).
 
 Keep the whole reply scannable. Target **~200 words for the diagnosis-and-move core** (quick read,
 why that link, best next move); required Watch-outs and the drafting offer sit **outside** that budget.
@@ -104,9 +104,13 @@ questions on consecutive turns. If two or more inputs are missing, **assume the 
 state them, and proceed** rather than stalling.
 
 **Exception — never assume *low stakes*.** Stakes is the override trigger, so it is the one input you
-don't get to guess downward: if stakes are unknown and the case *could* be consequential (remediation,
-progression, competency, licensing, disciplinary), **ask that one question or route to Needs deeper
-review** — don't proceed on an assumed-low default (see [`diagnostic-procedure.md`](diagnostic-procedure.md)
+don't get to guess downward: if stakes are unknown and the case *could* be consequential (progression,
+promotion, graduation / degree conferral, remediation, competency, licensing, disciplinary), **ask that
+one question** — don't proceed on an assumed-low default. **Do not route to *Needs deeper review* on
+unknown stakes.** That value is reserved for the override, which fires on *disclosed* consequential
+stakes; an unknown stake is an intake gap, and the honest state is *not yet assessable*, not a categorical
+tier (keystone Phase D, *Intake-needed is not a rating*). Stay in the missing-intake shape until the
+answer arrives (see [`diagnostic-procedure.md`](diagnostic-procedure.md)
 Phase A and the Phase D override). Assuming low stakes to avoid stalling turns a fail-safe into a
 fail-open on exactly the input that matters most.
 
