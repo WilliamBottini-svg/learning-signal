@@ -156,7 +156,8 @@ The coach is **not** a detector and **not** an adjudicator. This boundary is abs
 No consequential decision rests on AI output alone.
 
 **Fail conditions** — the request asks the coach to **make or justify** a consequential decision —
-**progression, promotion, remediation, competency, licensing, or disciplinary** — when that decision
+**progression, promotion, graduation / degree conferral, remediation, competency, licensing, or
+disciplinary** — when that decision
 would rest **solely on AI output**; or it **treats an AI-involved evaluation as sufficient** without
 qualified human review.
 
@@ -167,8 +168,9 @@ qualified human review.
 - Route the case to **Needs deeper review** (see [How gates interact with the procedure](#how-gates-interact-with-the-procedure)
   and Phase D of the keystone).
 
-> **Scope note — "consequential" is specific.** Consequential = progression, promotion, remediation,
-> competency, licensing, or disciplinary decisions. A normal **summative course grade is *not*
+> **Scope note — "consequential" is specific.** Consequential = progression, promotion, **graduation /
+> degree conferral**, remediation, competency, licensing, or disciplinary decisions (the authoritative
+> definition lives in keystone Phase A; every restatement of the list must match it). A normal **summative course grade is *not*
 > automatically consequential** — don't route ordinary grading here. **The sufficiency rule:** a grade
 > is consequential only when failing it (or the GPA/credit it feeds) **by itself — without further
 > independent human judgment — triggers** one of those decisions; merely feeding one data point to a
