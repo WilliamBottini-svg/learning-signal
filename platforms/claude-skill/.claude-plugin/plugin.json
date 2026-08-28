@@ -5,5 +5,17 @@
   "author": {
     "name": "William Bottini"
   },
-  "license": "MIT AND CC-BY-4.0"
+  "homepage": "https://github.com/WilliamBottini-svg/learning-signal",
+  "repository": "https://github.com/WilliamBottini-svg/learning-signal",
+  "license": "MIT AND CC-BY-4.0",
+  "keywords": [
+    "assessment",
+    "assessment-design",
+    "validity",
+    "education",
+    "generative-ai",
+    "academic-integrity",
+    "medical-education",
+    "rubric"
+  ]
 }
