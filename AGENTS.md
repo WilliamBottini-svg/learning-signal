@@ -1,9 +1,29 @@
 # AGENTS.md — working agreement for agents on Learning Signal Check
 
-**Read first:** `0-admin/project-tracker.md` (status + tasks), `CLAUDE.md` (architecture + keystone),
-and the spec `0-admin/learning-signal-check-handoff-plan.md`. *(Note: `0-admin/` is gitignored —
-maintainer-private coordination files. In a public clone those files are absent; `CLAUDE.md` and this
-file carry everything an external contributor needs.)*
+**Read first, in a public clone:** [`CLAUDE.md`](CLAUDE.md) (architecture + keystone), this file
+(non-negotiables + workflow), [`CONTRIBUTING.md`](CONTRIBUTING.md) (how to change content safely), and
+[`RELEASING.md`](RELEASING.md) (how a version is cut). Those four are self-contained — you do not need
+anything else to work on this repository.
+
+*Maintainer-only:* `0-admin/project-tracker.md` (status + tasks) and
+`0-admin/learning-signal-check-handoff-plan.md` (spec) also exist, but `0-admin/` is **gitignored** and
+is absent from every clone. If you cannot see that directory, you are not missing anything required —
+skip the tracker protocol below and put status notes in your PR description instead.
+
+## Orient yourself in five minutes
+
+| Where | What lives there |
+|-------|------------------|
+| `core/` | **The canonical engine.** `skill-core.md` (spine), `diagnostic-procedure.md` (the keystone walk), `repair-taxonomy.md`, `response-pattern.md`, `safety-guardrails.md`, `equity-and-access-flags.md` |
+| `domains/undergraduate-medical-education/` | UME domain pack — canonical for UME specifics |
+| `platforms/` | Exports/wrappers: Claude skill + plugin, ChatGPT, Gemini, Codex, Stanford AI Playground. **Never author here.** |
+| `implementations/` | A local deployment example (placeholders only, no private content) |
+| `tests/` | Golden (`G`), adversarial (`A`) and no-change/restraint (`N`) cases, the scoring rubric, and run results |
+| `references/` | Deeper technical background (validity frameworks, AI detection and academic integrity) |
+| `scripts/` | Stdlib-only checks and the Mode 1 eval harness |
+
+Before you open a PR, `python3 scripts/check-consistency.py` must exit 0. See
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for the full local-check table.
 
 ## Non-negotiables
 1. **Canonical-source rule.** Author content only in `core/` and `domains/`. Everything under
@@ -24,9 +44,14 @@ file carry everything an external contributor needs.)*
 4. **De-identification.** All examples fictionalized. No PHI, no real records, no Stanford-private
    content. Use `[PLACEHOLDER]` for locale-specific values.
 
-## Tracker protocol
-On completing a task: update its row in `0-admin/project-tracker.md` (Status → Done), add a Changelog
-line (`date · agent · what changed`), and note any new follow-ups / open questions for the next agent.
+## Tracker protocol (maintainer clones only)
+If `0-admin/` is present: on completing a task, update its row in `0-admin/project-tracker.md`
+(Status → Done), add a line (`date · agent · what changed`), and note any new follow-ups / open
+questions for the next agent.
+
+**If `0-admin/` is absent** — which is the case in every public clone — record the same information in
+your PR description, and add a user-visible entry to [`CHANGELOG.md`](CHANGELOG.md) under
+`## [Unreleased]` if the change affects behavior, packaging or licensing.
 
 ## Escalate / flag (don't silently proceed)
 High-stakes (progression, remediation, competency, licensing), governance-heavy, clinically sensitive,

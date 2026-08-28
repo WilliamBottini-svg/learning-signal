@@ -72,8 +72,24 @@ files. Tables where they help.
 2. Make the change in the canonical layer; re-export wrappers; keep references byte-identical.
 3. If you changed behavior, add/adjust a test case and reason it through the rubric
    ([`tests/scoring-rubric.md`](tests/scoring-rubric.md)).
-4. Run a quick consistency check (no dangling internal links; references match core).
+4. **Run `python3 scripts/check-consistency.py` before opening a PR — it must exit 0.** It is stdlib-only
+   and takes a second. CI runs the same gate, plus `check-links.py`, `check-versions.py` and
+   `check-secrets.py`; running it locally first saves a review cycle.
 5. Open a PR describing *which inference/behavior* changed and why.
+
+## Checks you can run locally
+
+All stdlib-only; no `pip install` needed (`requirements-dev.txt` covers the one CI-only tool,
+`cffconvert`).
+
+| Command | What it gates |
+|---------|---------------|
+| `python3 scripts/check-consistency.py` | mirror contract, packaged skill, case-ID contiguity, wrapper structure (5 links in order, halting rule, all five Phase 0 gates), links |
+| `python3 scripts/check-links.py` | every relative link and `#anchor` in every tracked Markdown file |
+| `python3 scripts/check-versions.py` | one version string across every manifest and the README banner |
+| `python3 scripts/check-secrets.py` | deny-list scan of `HEAD` **and every git tag** |
+
+Releases follow [`RELEASING.md`](RELEASING.md).
 
 ## Licensing of contributions
 

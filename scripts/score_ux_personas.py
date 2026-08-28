@@ -12,6 +12,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def display_path(path: Path) -> str:
+    """Repo-relative when possible, absolute otherwise (never raises for paths outside the repo)."""
+    try:
+        return str(path.resolve().relative_to(ROOT.resolve()))
+    except ValueError:
+        return str(path)
+
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from eval_lib import load_jsonl
@@ -269,7 +278,7 @@ def render_md(results: list[PersonaScore], inputs: list[Path]) -> str:
     ]
     for p in inputs:
         try:
-            lines.append(f"- `{p.relative_to(ROOT)}`")
+            lines.append(f"- `{display_path(p)}`")
         except ValueError:
             lines.append(f"- `{p}`")
 
@@ -375,7 +384,7 @@ def main() -> int:
     md = render_md(results, resolved)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(md + "\n", encoding="utf-8")
-    print(f"Wrote {out_path.relative_to(ROOT)}")
+    print(f"Wrote {display_path(out_path)}")
     passed = sum(1 for r in results if r.pass_persona)
     print(f"Personas: {passed}/{len(results)} pass · verdict in doc")
     return 0

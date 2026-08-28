@@ -1,5 +1,6 @@
 {
   "name": "learning-signal",
+  "description": "Learning Signal Check — an assessment-design coach that walks the validity chain (construct → scoring → generalization → extrapolation → implications), halts at the earliest broken link, and recommends one proportionate repair. Not a cheating detector.",
   "owner": {
     "name": "William Bottini"
   },
@@ -8,7 +9,6 @@
       "name": "learning-signal-check",
       "source": "./platforms/claude-skill",
       "description": "Diagnose whether an assessment still shows student learning under AI, and repair the earliest broken link in the validity chain. Assessment-design coach; not a cheating detector.",
-      "version": "0.5.0",
       "author": {
         "name": "William Bottini"
       }

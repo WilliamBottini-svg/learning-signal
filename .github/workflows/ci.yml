@@ -1,0 +1,139 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  consistency:
+    name: Structural consistency
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: check-consistency.py
+        run: python3 scripts/check-consistency.py
+
+  links:
+    name: Markdown links and anchors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: check-links.py (no mirror exclusion, #anchors resolved)
+        run: python3 scripts/check-links.py
+
+  version-sync:
+    name: Version sync
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: check-versions.py
+        run: python3 scripts/check-versions.py
+
+  secret-scan:
+    name: Secret scan (HEAD + every tag)
+    runs-on: ubuntu-latest
+    steps:
+      # Full history AND tags: a secret scrubbed from HEAD can still be readable at a published tag,
+      # which is exactly the state this repository is in. A shallow checkout would call it clean.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Confirm tags are present
+        run: |
+          echo "Tags visible to the scanner:"
+          git tag -l || true
+      - name: check-secrets.py
+        run: python3 scripts/check-secrets.py
+
+  scripts-smoke:
+    name: Scripts smoke
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: --help on every script
+        run: |
+          set -euo pipefail
+          status=0
+          for f in scripts/*.py; do
+            case "$f" in
+              */eval_lib.py) echo "skip $f (library, no CLI)"; continue ;;
+            esac
+            printf '%s --help ... ' "$f"
+            if python3 "$f" --help > /dev/null 2>&1; then
+              echo ok
+            else
+              echo FAILED
+              python3 "$f" --help || true
+              status=1
+            fi
+          done
+          exit "$status"
+      - name: build_eval_prompts.py --slice smoke
+        run: python3 scripts/build_eval_prompts.py --slice smoke --out "${RUNNER_TEMP}/prompts-smoke.json"
+      - name: run_mode1_eval.py --dry-run
+        run: |
+          python3 scripts/run_mode1_eval.py \
+            --prompts "${RUNNER_TEMP}/prompts-smoke.json" \
+            --model gpt-5-mini \
+            --output "${RUNNER_TEMP}/dry-run.jsonl" \
+            --dry-run
+      - name: redact_runs.py --check on published run logs
+        run: |
+          shopt -s nullglob
+          logs=(tests/results/*.jsonl tests/results/runs/*.jsonl)
+          if [ ${#logs[@]} -eq 0 ]; then
+            echo "no published run logs to check"
+            exit 0
+          fi
+          python3 scripts/redact_runs.py --check "${logs[@]}"
+
+  citation-validate:
+    name: CITATION.cff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install cffconvert
+        # cffconvert pulls in docopt, whose sdist needs a current setuptools/wheel to build.
+        run: |
+          python3 -m pip install --upgrade pip setuptools wheel
+          python3 -m pip install -r requirements-dev.txt
+      - name: cffconvert --validate
+        run: cffconvert --validate -i CITATION.cff
+
+  plugin-validate:
+    name: Claude plugin manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install the Claude Code CLI (best effort)
+        continue-on-error: true
+        run: npm install -g @anthropic-ai/claude-code
+      - name: claude plugin validate
+        run: |
+          if ! command -v claude > /dev/null 2>&1; then
+            echo "::warning title=Plugin validation skipped::The claude CLI is unavailable on this runner; marketplace.json and plugin.json were not validated."
+            exit 0
+          fi
+          claude --version
+          claude plugin validate .
+          claude plugin validate ./platforms/claude-skill

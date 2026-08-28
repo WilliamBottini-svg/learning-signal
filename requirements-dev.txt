@@ -1,0 +1,11 @@
+# Development / CI dependencies only.
+#
+# The runtime scripts in scripts/ are Python 3.10+ **standard library only** — no pip install is
+# required to run the consistency, link, version, secret, redaction or eval-harness scripts. Nothing
+# here is needed to use Learning Signal Check itself.
+#
+# Install with:  python3 -m pip install --upgrade pip setuptools wheel && python3 -m pip install -r requirements-dev.txt
+# (cffconvert pulls in docopt, whose sdist needs a current setuptools/wheel to build.)
+
+# Validates CITATION.cff against the Citation File Format 1.2.0 schema.
+cffconvert>=2.0.0
