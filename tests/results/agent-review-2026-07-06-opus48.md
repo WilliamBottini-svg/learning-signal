@@ -31,7 +31,7 @@ the security-history thread, the keystone (`core/diagnostic-procedure.md`), the 
 
 | ID | Severity | Blocks | Location | Finding | Suggested fix |
 |----|----------|--------|----------|---------|---------------|
-| SEC-1 | Blocker | **Public flip only** (not the private branch cut) | git **history** blobs — commits `930bd82`, `a2c3f12`, `21c3ca2` (`scripts/eval_lib.py`, `tests/harness/README.md`, deleted `tests/results/gateway-smoke-2026-06-25-*.md`, `tests/results/weak-tier-verdict-2026-06-25.md`), and `8278a59` (`redteam-regression-2026-07-06.jsonl`) | The real internal Stanford AI gateway hostname (`aiapi-prod.*`, referred to here as `[internal gateway host]`) is redacted to `https://<your-gateway>/v1` in tracked HEAD but **persists in prior history blobs** (`git log --all -S 'aiapi-prod'` → 5 commits). On a public flip the entire history becomes readable. The repo was also briefly public on 2026-07-06 then reverted, so treat the token as *potentially already disclosed*. **Scope note:** this is an internal infra **hostname behind authentication, not a credential** — no API key or secret ever entered history (the `Bearer {api_key}` code reads from `os.environ`). Intrinsic severity is therefore moderate; it is a Blocker because (a) the maintainer already chose to treat the hostname as sensitive by redacting HEAD, so consistency demands purging history too, and (b) internal-infra disclosure is generally unwanted by institutional security. | Before the flip (not needed for the private branch): purge the hostname from history — `git filter-repo`/BFG to replace `[internal gateway host]`→placeholder across all history then force-push and re-tag; **or** publish from a fresh single-commit snapshot of HEAD if history isn't needed; **or** make a documented risk-accept decision. Then `git log --all -S 'aiapi-prod'` should return 0 real-hostname hits. Independently rotate any credential ever paired with that gateway given the brief public window (this is already the maintainer's own checklist item). |
+| SEC-1 | Blocker | **Public flip only** (not the private branch cut) | git **history** blobs — commits `930bd82`, `a2c3f12`, `21c3ca2` (`scripts/eval_lib.py`, `tests/harness/README.md`, deleted `tests/results/gateway-smoke-2026-06-25-*.md`, `tests/results/weak-tier-verdict-2026-06-25.md`), and `8278a59` (`redteam-regression-2026-07-06.jsonl`) | The real internal Stanford AI gateway hostname (written throughout this file only as `[internal gateway host]`; the value itself is deliberately not printed, so it cannot be reconstructed from this document) is redacted to `https://<your-gateway>/v1` in tracked HEAD but **persists in prior history blobs** (`git log --all -S '<the hostname prefix>'` → 5 commits). On a public flip the entire history becomes readable. The repo was also briefly public on 2026-07-06 then reverted, so treat the token as *potentially already disclosed*. **Scope note:** this is an internal infra **hostname behind authentication, not a credential** — no API key or secret ever entered history (the `Bearer {api_key}` code reads from `os.environ`). Intrinsic severity is therefore moderate; it is a Blocker because (a) the maintainer already chose to treat the hostname as sensitive by redacting HEAD, so consistency demands purging history too, and (b) internal-infra disclosure is generally unwanted by institutional security. | Before the flip (not needed for the private branch): purge the hostname from history — `git filter-repo`/BFG to replace `[internal gateway host]`→placeholder across all history then force-push and re-tag; **or** publish from a fresh single-commit snapshot of HEAD if history isn't needed; **or** make a documented risk-accept decision. Then the same history search should return 0 real-hostname hits. Independently rotate any credential ever paired with that gateway given the brief public window (this is already the maintainer's own checklist item). |
 
 *No blockers exist for cutting `release/v0.5.x` from `main`.*
 
@@ -81,9 +81,19 @@ release cut. None require reopening `core/` logic.
   institution-specific value (URLs, SSO, contacts, committees, policy links, model tier) is a placeholder
   token. No real Stanford URL/email/SSO endpoint/portal/gateway/contact anywhere. Both preset JSONs carry
   no real endpoints; version fields = `0.5.0`.
-- **Security of tracked HEAD — CLEAN.** No API keys, tokens, emails, `/Users/` paths, or `.stanford.edu`
-  URLs. Eval JSONL logs `gateway_base_url` as `https://<your-gateway>/v1`. **No credential ever entered
-  git history** — only the hostname (SEC-1); keys are read from `os.environ`.
+- **Security of tracked HEAD — no credentials; one hostname string, since removed.** No API keys, tokens,
+  emails, or `/Users/` paths. Eval JSONL logs `gateway_base_url` as `https://<your-gateway>/v1`. **No
+  credential ever entered git history** — keys are read from `os.environ`.
+  **Correction (v0.5.x).** This bullet previously asserted "CLEAN" and named the institutional domain
+  suffix as absent, which was not true of the tree it described: **this file itself** (the SEC-1 row
+  above) printed the internal gateway hostname prefix next to the words "Stanford AI gateway", and the
+  domain suffix appeared as a literal string in this very bullet. A `git grep` for either string
+  therefore returned hits at the time of review. Both literals have now been removed from this file, so
+  a search of tracked HEAD returns no gateway hostname value and no institutional domain string. What remains true and unchanged: the hostname persists in **older git
+  history**, and the **`v0.5.0` tag still carries the unredacted value** — five occurrences in
+  `tests/results/redteam-regression-2026-07-06.jsonl` at that tag (verified by
+  `git grep -c <hostname> v0.5.0`), plus one in `tests/results/release-readiness-review-2026-06-30.md`.
+  Removing that tag is being handled separately.
 - **`secrets/` and `0-admin/` — never committed** (both gitignored; `git log` confirms zero history).
 - **M7 artifact — de-identified.** `tests/results/expert-ratified-targets-2026-07-06.md` is a public
   summary only: experts by role, no names/institutions/identifiers; raw rater forms & transcripts
@@ -92,6 +102,11 @@ release cut. None require reopening `core/` logic.
   `no-change-restraint-tests.md` with diagnoses matching the remediation table; `redteam-regression-2026-07-06`
   shows 5/5 PASS (honestly labeled an author-derived self-consistency spot-check, not external
   validation). No Medium item is genuinely Open/Partial. (Only the *tally* is off — RT-1.)
+  **Update (v0.5.x):** the 5/5 covers **diagnosis only**. Running the repo's own
+  `scripts/score_ux_conformance.py` over the same committed JSONL returns **28/35 = 80.0%** structural
+  conformance against the project's **≥90%** bar (`one_move` fails on 4 of 5 cases; two outputs over the
+  400-word band). That counter-result is now published in
+  [`redteam-regression-2026-07-06.md`](redteam-regression-2026-07-06.md); this review did not run it.
 - **Canonical-source rule — upheld.** No wrapper re-authors/forks the procedure; readiness ratings,
   severity scale, and the 5 gates are consistent across every surface. (MIR-1 is a single mis-pointed
   link, not content drift.)

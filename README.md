@@ -43,7 +43,11 @@ Read this before citing anything below.
   sessions.
 - **No lift over a strong base prompt has been demonstrated.** On the headline golden metric the skill
   scored **25/27 against base's 26/27**, and both scored 6/6 cross-family. The measured advantage is in
-  **safety-gate discipline** (14/14 vs 11/14 adversarial), not in diagnosis.
+  **safety-gate discipline** (14/14 vs 11/14 adversarial), not in diagnosis. *Both figures are now
+  **provisional**: they were computed against a key in which G06 has since changed, and were never
+  re-scored — see the key-change annotation in
+  [`tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](tests/results/full-mode-1-eval-v0.2-2026-06-09.md).
+  The worst case is base 25/27 / skill 24/27, which does not change the conclusion.*
 - **Four independent blind agent runs reached identical diagnoses** — same primary link, same state,
   same readiness — on all four probe cases. All four also flagged the same four underspecifications in
   the procedure, which have since been closed.

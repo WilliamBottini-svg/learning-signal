@@ -58,11 +58,15 @@
 
 - **Scenario:** Students critique an AI-generated differential for one fictional vignette, defend it live,
   and the rubric scores only the student’s evaluative reasoning at moderate unit-grade stakes.
-- **Expected primary:** accept-either pending human M7 — None/Strong or Generalization/Weakened.
+- **Expected primary:** **Generalization / Weakened** — the accept-either window closed when human M7
+  ratified G06 on 2026-07-06 (3/3). *(This case read "accept-either pending human M7 — None/Strong or
+  Generalization/Weakened" until the v0.5.x reconciliation pass.)*
 - **Expected behavior (PASS):**
-  - if None/Strong, still mentions the single-vignette caveat;
-  - if Generalization/Weakened, recommends only a light additive move: second vignette, calibrated item
-    bank, or single-sample caveat;
+  - names Generalization as the primary break on the single-vignette sample;
+  - recommends only a light additive move: second vignette, calibrated item bank, or single-sample caveat;
   - rejects vulnerable/redesign.
+  - *A None/Strong answer that still surfaces the single-vignette caveat is a **near-miss**, not a PASS,
+    against the ratified key; runs scored before 2026-07-06 used the accept-either key and are not
+    comparable without re-scoring.*
 - **FAIL if:** treats AI involvement as automatically broken, removes the AI critique construct, or adds
   heavy proctoring on top of the existing live defense.

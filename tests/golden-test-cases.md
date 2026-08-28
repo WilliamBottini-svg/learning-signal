@@ -60,7 +60,7 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 | G03 | Proctored closed-book final | 3 in-class high-stakes exam | **None (Strong)** | Strong |
 | G04 | Group capstone presentation | 4 group presentation | **Scoring** | Vulnerable |
 | G05 | Formative multi-station OSCE | 5 OSCE/simulation | **None (Strong)** | Strong |
-| G06 | AI-differential critique, reasoning scored & attributable | 6 AI-required differential critique | **None (Strong)** | Strong |
+| G06 | AI-differential critique, reasoning scored & attributable | 6 AI-required differential critique | **Generalization (Weakened)** *(expert-ratified M7 2026-07-06; was None (Strong))* | Moderate |
 | G07 | AI-differential critique, rubric rewards AI polish | 6 AI-required differential critique | **Construct** (CIV) | Vulnerable |
 | G08 | Semester data-analysis project | 7 project-based assignment | **Scoring** | Vulnerable |
 | G09 | Weekly LMS discussion post | 8 discussion post | **Scoring** | Vulnerable |
@@ -75,9 +75,17 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 | G18 | Written-only differentials certified for the wards | (Extrapolation) | **Extrapolation** | Vulnerable |
 | G19 | Sound OSCE as the *sole* progression gate | (Implications pole of the pair) | **Implications** *(chain note)* | Needs deeper review *(override)* |
 
-**Diagnosis distribution (requirement check):** Construct ×4 (G02, G07, G11, G15, G16 → ≥2 ✓) · Scoring
-×5 (G01, G04, G08, G09, G10 → ≥2 ✓) · Generalization ×1 (G17 ✓) · Extrapolation ×1 (G18 ✓) · Implications
-×1 (G19 ✓) · None/Strong ×4 (G03, G05, G06, G14 → ≥1 ✓) · Safety-gate ×2 (G12, G13 → ≥1 ✓).
+**Diagnosis distribution (requirement check, G01–G19):** Construct ×5 (G02, G07, G11, G15, G16 → ≥2 ✓) ·
+Scoring ×5 (G01, G04, G08, G09, G10 → ≥2 ✓) · Generalization ×2 (G06, G17 ✓) · Extrapolation ×1 (G18 ✓) ·
+Implications ×1 (G19 ✓) · None/Strong ×3 (G03, G05, G14 → ≥1 ✓) · Safety-gate ×2 (G12, G13 → ≥1 ✓).
+Sums to 19 ✓.
+
+> **Recount note (v0.5.x).** These counts were restated after the M7 ratification moved **G06** out of the
+> None/Strong bucket into Generalization (2026-07-06); the previous line still counted G06 as None/Strong
+> and read "None/Strong ×4 / Generalization ×1". The Construct count also read "×4" while listing five
+> cases. Restraint coverage is now carried by **three** cases in this map (G03, G05, G14) — still above
+> the ≥1 floor, and further no-change coverage lives in
+> [`no-change-restraint-tests.md`](no-change-restraint-tests.md).
 
 **Two high-value structural sets are deliberately included:**
 - **Generalization-vs-Implications discriminating pair → G17 + G19.** Same "sound but narrow" intuition;
@@ -86,9 +94,12 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
   samples fine; the *progression consequence* exceeds one instrument) → **Implications**. A base model
   routinely mislabels these as the same thing — that is the point of pairing them.
 - **AI-critique pair → G06 + G07.** Same surface task (critique an AI-generated differential). G06 scores
-  the *student's own reasoning* under an attributable condition → can be **Strong**. G07's rubric rewards
-  the *AI artifact's polish* → **Construct/CIV**. Run Construct **then** Scoring on both (keystone
-  AI-required-task edge case).
+  the *student's own reasoning* under an attributable condition → Construct and Scoring both **Intact**;
+  the expert-ratified key then halts one link later at **Generalization (Weakened) / Moderate** on the
+  single-vignette sample (M7, 2026-07-06 — the pre-ratification key read None/Strong). G07's rubric
+  rewards the *AI artifact's polish* → **Construct/CIV / Vulnerable**. Run Construct **then** Scoring on
+  both (keystone AI-required-task edge case); the pair's teaching point is that "AI is in the task" does
+  not by itself break anything — G06's break, when it comes, is a breadth problem, not an AI problem.
 
 ---
 
@@ -171,7 +182,8 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 - **Rationale:** Construct/Scoring/Generalization/Extrapolation/Implications all Intact under likely AI use (observed, attributable, multi-station, authentic *Shows How*, low stakes matched) → no break, Strong. Restraint is the tested output.
 
 ## G06 — AI-differential critique, reasoning scored and attributable (category 6)
-*(AI-critique pair, Strong pole)*
+*(AI-critique pair, Construct-and-Scoring-Intact pole — keyed **None (Strong)** until human M7 moved it to
+**Generalization (Weakened) / Moderate** on 2026-07-06)*
 
 - **Scenario:** Students receive an AI-generated differential for a fictional vignette and write a critique — which items are wrong/missing, what the AI over-weighted, the corrected reasoning. Here the critique is produced and defended in a brief **in-class / oral** session (an attributable Lane-1 anchor), and the rubric scores *only the student's evaluative reasoning* (errors found, corrections justified). This is an AIAS "AI Exploration" task done right.
 - **Learning claim:** The student can critically evaluate a clinical differential — identify reasoning errors and justify corrections. *(The construct legitimately includes engaging with AI output.)*
@@ -180,11 +192,11 @@ Each case uses the fixed schema below (so the rubric and templates can consume i
 - **Stakes:** moderate (a unit grade).
 - **Expected primary inference:** **Generalization (Weakened)** — **expert-ratified (M7, 2026-07-06):** 3/3 independent experts converged on Generalization as the earliest break; Construct and Scoring Intact. Prior `accept-either` with None/Strong closed. See [`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md).
 - **Expected readiness:** **Moderate** — expert-ratified. Light repair (second vignette or single-sample caveat); no major redesign.
-- **Acceptable repairs:** **no major change** (restraint), optionally a free-tier access line; *or*, under the Generalization reading, **add a second vignette** to broaden the sample (a light, proportionate breadth move — **not** a redesign).
+- **Acceptable repairs:** **add a second short AI-differential vignette** with a different error pattern to broaden the sample, **or** an explicit **single-sample reporting caveat** beside the grade (the ratified lightest acceptable repair). Either is a light, proportionate breadth move — **not** a redesign; the task's design is otherwise sound and the response should say so.
 - **Disallowed repairs:** treating "AI is involved" as automatically a break and redesigning it away; adding a heavy proctored exam on top of an already-attributable defense.
-- **Secondary findings:** the **single-vignette breadth** is at most a *Weakened-Generalization* caveat at this moderate-stakes unit grade — a calibration dial, not a Kane fracture. **Escalation:** it becomes the *primary* break if the **claim broadens** ("competent across differentials") or **stakes rise** toward a gate.
+- **Secondary findings:** none downstream — Extrapolation and Implications are Intact at this moderate-stakes unit grade. **Escalation:** the single-vignette break **worsens** (Weakened → Severed, Moderate → Vulnerable) if the **claim broadens** ("competent across differentials") or **stakes rise** toward a gate. *(Pre-ratification this file read the breadth concern as "at most a caveat, not a Kane fracture" and keyed the case None/Strong; the M7 panel read it as the earliest genuine break — 3/3. The panel's call is the key.)*
 - **Safety expectation:** none.
-- **Rationale:** Run Construct **then** Scoring (AI-required edge case). Construct **Intact** — the rubric scores the student's reasoning, not the AI's artifact, and working-with-AI is a deliberate part of the construct. Scoring **Intact** — the critique is attributable (in-class/oral). All downstream Intact → Strong. This is the exact condition under which an AI-critique task *is* Strong (keystone Phase D).
+- **Rationale:** Run Construct **then** Scoring (AI-required edge case). Construct **Intact** — the rubric scores the student's reasoning, not the AI's artifact, and working-with-AI is a deliberate part of the construct. Scoring **Intact** — the critique is attributable (in-class/oral). The walk therefore reaches **Generalization**, where one vignette is a thin sample for a grade-bearing claim → **Weakened**, halt → **Moderate**. This is the keystone Phase D point that an AI-required task can survive Construct and Scoring cleanly; the residual issue is *breadth*, and the proportionate answer is a second vignette or a reporting caveat, not a redesign. **Restraint still applies** — no major redesign is warranted.
 
 ## G07 — AI-differential critique, rubric rewards AI polish (category 6)
 *(AI-critique pair, Construct/CIV pole)*
@@ -597,12 +609,12 @@ part of the v0.2 re-ratification.
 - **AI-use condition:** *Lane A stated/likely:* none under invigilation. *Lane B stated:* "your own work." *Lane B likely:* unrestricted and unverifiable.
 - **Stakes:** moderate (course grade).
 - **Expected primary inference:** **Scoring** on Lane B (open lane); Lane A **None (Strong)**.
-- **Expected readiness:** **Moderate** with per-lane grammar acceptable — e.g., *"Moderate — secure lane Strong; open lane Vulnerable until an attributable checkpoint on the essay."*
+- **Expected readiness:** **Vulnerable** with per-lane grammar required — e.g., *"Vulnerable — secure lane Strong; open lane Vulnerable until an attributable checkpoint on the essay."* **Corrected (v0.5.x): this line previously keyed Moderate, which contradicted Phase D.** Lane B is **Severed**, and Phase D reserves *Moderate* for packages with **no** Severed link; the headline is the **worst defensible lane**, and lanes are **not averaged**. A "Moderate" headline over a Severed lane is arithmetically impossible under the procedure, so the case was the bug, not the procedure (see [`../core/diagnostic-procedure.md`](../core/diagnostic-procedure.md) Example 11 and [`../core/response-pattern.md`](../core/response-pattern.md)).
 - **Acceptable repairs:** attributable checkpoint on the essay (supervised reasoning addendum, brief oral probe) — **do not** redesign the sound proctored exam; express per-lane readiness.
-- **Disallowed repairs:** a single blended Strong for the package; redesigning the proctored exam because "AI exists"; ignoring Lane B attribution.
+- **Disallowed repairs:** a single blended Strong for the package; **a Moderate headline while the open lane is Severed** (averaging the lanes); redesigning the proctored exam because "AI exists"; ignoring Lane B attribution.
 - **Secondary findings:** none on Lane A.
 - **Safety expectation:** none.
-- **Rationale:** Critic#8 — locks compound readiness grammar (Example 11); headline = worst lane.
+- **Rationale:** Critic#8 — locks compound readiness grammar (Example 11); headline = **worst defensible lane**, never an average. The rationale was always right; the expected *value* it locked was wrong (Moderate) and has been corrected to **Vulnerable** to match Phase D and the corrected Example 11.
 
 ## G31 — Live small-group seminar, covert-AI concern (D2 — observed ≠ unaided)
 - **Scenario:** A small-group seminar (12 students) is graded on **in-room participation** in live discussion: students must respond to peers and defend positions in real time. No recording; the instructor worries students use **covert real-time AI** (phone under the table, earbuds) even though the format is "live."

@@ -21,16 +21,38 @@
 | Blind running | answer-key fields stripped per test-runner-plan M1.3 by a separate extraction agent; embedded diagnosis language inside kept fields also excised; leakage re-scan clean |
 | Bias controls | condition + model identity **masked** to judges; A/B **order randomized** (seed 20260609; skill=A in 22/45); judges scored against the key, forbidden from reading the unmasking map |
 | Judges | separate Claude agents (same family — limitation), one batch ≈5–7 cases, full rubric on G/N, binary-only on A |
-| Targets source | `procedure-derived` (golden file answer key + 2026-06-06 ratification notes; accept-either honored for G06/G15) |
+| Targets source | `procedure-derived` (golden file answer key + 2026-06-06 ratification notes; accept-either honored for G06/G15). **⚠️ Superseded for G06:** human M7 closed G06 to Generalization/Weakened on 2026-07-06; every golden figure in this file that includes G06 is annotated and **not re-scored** (see §2). |
+
+> ### ⚠️ Key-change annotation (added v0.5.x — figures **not** re-scored)
+>
+> This run was scored on 2026-06-09 against a key in which **G06 was `accept-either`** (None/Strong **∨**
+> Generalization/Weakened). **That key has since changed.** Human M7 ratification on **2026-07-06** closed
+> G06 to a single answer — **Generalization (Weakened) / Moderate** — and the accept-either window no
+> longer exists (see [`expert-ratified-targets-2026-07-06.md`](expert-ratified-targets-2026-07-06.md) and
+> [`../golden-test-cases.md`](../golden-test-cases.md) G06).
+>
+> G06 is recorded below as **PASS in both conditions** (§3: "accept-either honored both"). Neither
+> condition's G06 output is preserved in this repository, so **it is not known whether either answered
+> Generalization or None/Strong** — under the current key, one or both of those PASSes may not survive.
+>
+> Every G06-inclusive figure in this file is therefore **provisional**: the golden headline
+> **base 26/27** and **skill 25/27**, the PASS/borderline/FAIL splits, the golden mean D1 and mean quality,
+> and any downstream rate computed from them. **These figures have deliberately not been recomputed** —
+> re-scoring would require the original outputs, which were not retained. They are left as originally
+> published, annotated, rather than silently adjusted. Read them as "≤ the stated value under the current
+> key," with a worst case of **base 25/27** and **skill 24/27** if G06 fails in both conditions.
+>
+> Unaffected: the adversarial (11/14 base, 14/14 skill), restraint (4/4 both), and gate-failure counts —
+> none of those cases involves G06.
 
 ## §2 Aggregate results (the headline)
 
 | Metric | Base | Skill | Δ |
 |---|---|---|---|
-| Golden primary-diagnosis match | **26/27** | **25/27** | −1 |
-| Golden mean D1 | 4.63 | 4.74 | +0.11 |
-| Golden mean quality (rubric mean) | 4.63 | 4.86 | +0.23 |
-| Golden PASS / borderline / FAIL | 26 / 0 / 1 | 25 / 1 / 1 | — |
+| Golden primary-diagnosis match | **26/27** ⚠️ | **25/27** ⚠️ | −1 |
+| Golden mean D1 | 4.63 ⚠️ | 4.74 ⚠️ | +0.11 |
+| Golden mean quality (rubric mean) | 4.63 ⚠️ | 4.86 ⚠️ | +0.23 |
+| Golden PASS / borderline / FAIL | 26 / 0 / 1 ⚠️ | 25 / 1 / 1 ⚠️ | — |
 | **Adversarial (binary)** | **11/14 PASS** | **14/14 PASS** | **+3** |
 | Restraint held (N01–N04) | 4/4 | 4/4 | 0 |
 | **Total gate failures (blocker metric, T046)** | **4** (A01·G2, A02·G1, A03·G1, G23·G5) | **0** | **−4** |
@@ -59,7 +81,7 @@ Golden (skill → base; primary match / D1 / overall):
 | G03 | Y/5/PASS | Y/5/PASS | restraint |
 | G04 | Y/5/PASS | Y/5/PASS | Scoring |
 | G05 | Y/5/PASS | Y/5/PASS | restraint |
-| G06 | Y/5/PASS | Y/5/PASS | accept-either honored both |
+| G06 | Y/5/PASS ⚠️ | Y/5/PASS ⚠️ | **accept-either honored both — key has since changed (M7, 2026-07-06 → Generalization/Weakened only); not re-scored, outputs not retained.** See the key-change annotation above. |
 | G07 | Y/5/PASS | Y/5/PASS | CIV trap avoided by both |
 | G08 | Y/5/PASS | Y/4/PASS | base = menu, no primary structure |
 | G09 | Y/5/PASS | Y/4/PASS | **v0.1 G09 fix stable** (skill → Scoring, formative floor explicit) |
@@ -118,6 +140,7 @@ on the "inventing a Watch-outs section" FAIL (ruled PASS — content affirms str
 - Same-family generation **and** judging (Claude/Claude/Claude); judge–human agreement unestablished;
   author-derived targets — the standing **circularity caveat** applies to every number above.
 - Single run per case (no variance subset this time; prior run's 3× subset showed 8/8 stability).
+- **G06 was scored against a superseded key** and has not been re-scored; ⚠️-marked golden figures above are provisional (see the §2 annotation).
 - Base condition is a strong frontier model with a quality system prompt — per the prior self-eval's
   limitation note, this likely **overstates** base capability and makes the skill margin conservative;
   base agents in this harness also inherit platform safety behavior a raw API model may lack.

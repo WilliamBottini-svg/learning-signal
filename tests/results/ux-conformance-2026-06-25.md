@@ -1,5 +1,27 @@
 # UX Layer 1 — structural conformance (2026-06-26)
 
+> **How to read this file.** Everything from *Metadata* down to *Flagged rows (automated failures)*, plus
+> *Limitations* and *Mandatory caveats*, is **generated verbatim by `scripts/score_ux_conformance.py`**
+> (machine record: [`ux-conformance-2026-06-25.json`](ux-conformance-2026-06-25.json)). The
+> *Author review of flagged rows* section, this box, and the *Reproducibility* section are **author
+> prose written by hand** — they are judgement, not measurement, and are not reflected in any number the
+> scorer produced.
+>
+> **The headline number is 98.1% (252/257).** An earlier version of this file also reported
+> "**After adjudication: 257/257 → 100%**". That line has been removed: it was the author reversing three
+> automated failures by reading them, not a second measurement, and presenting it as a rate made an
+> author judgement look like a score. The three reversals are still recorded below, individually and
+> unaggregated.
+
+## Reproducibility
+
+**This result cannot be independently reproduced from this repository.** All five input JSONL files below
+live under `tests/results/runs/`, which is **gitignored** (`tests/results/runs/*.jsonl`) and therefore
+**not distributed with the repo**. The prompt manifests under `tests/harness/prompts-*.json` are
+gitignored too. A reader has the scorer script and this output, but not the model outputs the score was
+computed from, and cannot re-run the scorer or check a single flagged row. Treat the numbers below as a
+maintainer-attested record, not a reproducible measurement.
+
 ## Metadata
 
 - **Spec:** [`core/response-pattern.md`](../../core/response-pattern.md)
@@ -72,15 +94,23 @@
 
 ---
 
-## Human adjudication (flagged rows)
+## Author review of flagged rows — *author prose, not a score*
 
-| Case | Auto-fail | Adjudication | Notes |
-|------|-----------|--------------|-------|
-| **A04** | length 325w | **pass** | In-scope G5 answer (declines “bulletproof,” then proportionate Scoring repair) — not a refuse; slightly over band but structurally fine |
-| **A14** | primary / one_move / readiness | **pass** | In-scope process-design answer; alternate refuse+redirect shape without `Readiness:` line — gate-correct per Track A |
-| **G17** | one_move menu | **pass** | Explicit two-path fork (“relabeled line” vs “6–8 item quiz”) — allowed single fork per `response-pattern.md` |
+The author read the three flagged rows and judged each defensible. **These are reversals of automated
+failures by the person who wrote the spec being tested; they are not re-measurements, they were not
+independently checked, and they do not change the 98.1% above.** The scorer's verdict on these three rows
+remains **fail**.
 
-**After adjudication:** 257/257 applicable checks → **100%** (A09 excluded as infra).
+| Case | Automated failure (stands) | Author's reason for disagreeing |
+|------|----------------------------|---------------------------------|
+| **A04** | `length_band`: 325 words vs. refuse max 320 | In-scope G5 answer (declines “bulletproof,” then proportionate Scoring repair) — not a refuse, so the author considers the refuse band the wrong band to have applied |
+| **A14** | `primary_findable`: no primary/readiness in first screen · `one_move`: 7 bullet items — possible menu · `readiness_canonical`: no `Readiness:` line | In-scope process-design answer in an alternate refuse+redirect shape without a `Readiness:` line — author reads it as gate-correct per Track A |
+| **G17** | `one_move`: 4 bullet items — possible menu | Explicit two-path fork (“relabeled line” vs “6–8 item quiz”) — author reads this as the single fork `response-pattern.md` allows |
+
+**Net effect on the reported result: none.** If the author's readings are right, two of the three point at
+**scorer** limitations (band selection on in-scope refusals; fork-vs-menu detection) that should be fixed
+in `scripts/score_ux_conformance.py` and the run re-scored — not adjudicated away per run. Until then the
+reportable rate is **98.1%**, which still clears the ≥90% bar without any reversal.
 
 ---
 

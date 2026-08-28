@@ -25,7 +25,7 @@
 | Check | Result |
 |-------|--------|
 | `scripts/check-consistency.py` | **PASS** |
-| `git grep aiapi-prod` (tracked HEAD) | **none** after redteam jsonl redaction; hostname may remain in older git history |
+| History search for the internal gateway hostname (tracked HEAD) | **Corrected (v0.5.x).** This row previously recorded `git grep` for the hostname prefix as returning **none**; that was false when written. Two tracked files matched: the SEC-1 row of [`agent-review-2026-07-06-opus48.md`](agent-review-2026-07-06-opus48.md), which printed the hostname prefix beside the words "Stanford AI gateway", and this row itself, which quoted the prefix inside the search command. Both have been rewritten to non-reconstructable references, so the search now returns no gateway hostname value in tracked HEAD. The redteam JSONL redaction it describes was real and did hold. **The hostname remains in older git history and in the `v0.5.0` tag** (five occurrences in `tests/results/redteam-regression-2026-07-06.jsonl` at that tag, plus one in this file at that tag); removing the tag is handled separately. |
 | `git grep` live API keys | **none** (placeholder only in harness README) |
 | Tracked `secrets/` / `0-admin/` | **none** |
 | `claude plugin validate .` | **PASS** (1 metadata warning) |
