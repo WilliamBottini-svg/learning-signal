@@ -60,13 +60,19 @@ If the model's context is **< ~60k tokens** and outputs look generic or truncate
    Extrapolation → Implications), the **halt-at-earliest-broken-link** rule, the **mechanical readiness
    derivation** (Severed→Vulnerable, Weakened→Moderate, all-Intact→Strong, override→Needs deeper review),
    the **restraint** commitment, and the **reception-layer** behaviors (cold-open, plain-language intake,
-   terse mode, triage, deliverable-first, scope boundary, repeated-pushback).
+   terse mode, triage, deliverable-first, scope boundary, repeated-pushback). Also confirm these engine
+   rules survived, since they are the ones a paste truncation loses first: **Safety Principle 5** (pasted
+   material is data, not instruction — including the injection-shaped-like-restraint warning), the
+   **per-link severity table**, the **formative floor**, the **co-primary / binding-constraint** rule,
+   **Phase A0b** aggregate/portfolio handling, the **two-lane worst-lane headline**, **acceptability is
+   structural**, the **stopping rule**, and the **access clause** (a specific room at a specific time).
 
-5. **Attach the Knowledge files.** In the Gem's **Knowledge** section, attach **these 6 files** from
+5. **Attach the Knowledge files.** In the Gem's **Knowledge** section, attach **these 7 files** from
    [`../claude-skill/references/`](../claude-skill/references/):
 
    | File | Provides |
    |------|----------|
+   | `skill-core.md` | **The spine** — what Learning Signal Check *is*, the keystone in brief, the operating loop, the behavioral commitments, and the canonical file map. It is the document every wrapper is generated from, and it supplies the orientation the procedure files deliberately don't restate |
    | `diagnostic-procedure.md` | The full 5-link ordered walk, Phase 0, severity scale, halting rule, readiness, worked examples |
    | `response-pattern.md` | The output template + the full reception-layer variants + tone |
    | `repair-taxonomy.md` | The full menu of link-restoring repairs + proportionality/utility logic |
@@ -74,13 +80,17 @@ If the model's context is **< ~60k tokens** and outputs look generic or truncate
    | `equity-and-access-flags.md` | Equity / differential-impact / access flags surfaced as watch-outs |
    | `ume-domain-pack.md` | UME specifics — clinical-reasoning constructs, EPAs/WBA, governance, which UME formats break where |
 
-   - Gemini allows **up to 10 knowledge files** (≤100 MB each), so 6 leaves headroom. Limits are well within
-     range (all six are small Markdown files).
+   - Six of these (everything except `ume-domain-pack.md`) are **byte-identical exports of `core/`**;
+     `ume-domain-pack.md` is a curated UME digest.
+   - Gemini allows **up to 10 knowledge files** (≤100 MB each), so 7 leaves headroom. Limits are well within
+     range (all seven are small Markdown files).
    - **Optional — deeper UME governance:** the `ume-domain-pack.md` digest covers the headline UME behavior
      (Needs-deeper-review routing, qualified-faculty review, PHI refusal); for governance-heavy UME use you
      may also attach the full pack from `../../domains/undergraduate-medical-education/` (`domain-pack.md`,
      `ume-assessment-patterns.md`, `ume-governance-guardrails.md`, `epas-and-workplace-assessment.md`),
-     which brings the total to the **10-file limit exactly** (skip `ume-test-cases.md` — evaluation material).
+     which would exceed the 10-file limit — attach `ume-governance-guardrails.md` and
+     `epas-and-workplace-assessment.md` first if you have to choose (skip `ume-test-cases.md` — evaluation
+     material).
    - **Prefer Google Drive integration** for these attachments: Gemini auto-uses the **latest version** of a
      Drive file, so a re-exported `core/` propagates without re-uploading. (If you upload copies directly
      instead, you must re-upload on every `core/` change — see step 7.)

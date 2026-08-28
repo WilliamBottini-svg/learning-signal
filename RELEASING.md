@@ -61,7 +61,8 @@ agree with it.
    ```sh
    git fetch --tags --force
    python3 scripts/check-secrets.py          # scans HEAD *and every tag*
-   git grep -n -I -E 'aiapi-prod|\.stanford\.edu' vX.Y.Z
+   # (check-secrets.py already covers this; grep the tag directly only if you
+   #  want to eyeball it. Write the pattern inline rather than committing it.)
    ```
 
 5. **Publish.** The release workflow creates the GitHub release from the `CHANGELOG.md` section. If you

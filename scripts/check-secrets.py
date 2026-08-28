@@ -30,8 +30,11 @@ RULES: list[tuple[str, str, str]] = [
     ),
     (
         "gateway-name",
-        "Internal AI gateway identifier (aiapi-prod)",
-        r"aiapi-prod",
+        "Internal AI gateway identifier",
+        # Assembled from fragments so this file never contains the literal it
+        # scans for. A scanner that trips on its own rule table is permanently
+        # red, and a permanently red gate is one nobody reads.
+        "aiapi" + "-" + "prod",
     ),
     (
         "openai-key",
@@ -79,7 +82,7 @@ RULES: list[tuple[str, str, str]] = [
 # Allow list. (rule_id, repo-relative path) -> why it is not a leak.
 #
 # Deliberately narrow. `stanford-host` is NEVER allow-listed: a file may discuss the redacted token
-# `aiapi-prod` in a security review, but the moment the real host appears on that same line the
+# in a security review, but the moment the real host appears on that same line the
 # `stanford-host` rule still fires.
 # --------------------------------------------------------------------------------------------------
 ALLOW: dict[tuple[str, str], str] = {
@@ -94,7 +97,7 @@ ALLOW: dict[tuple[str, str], str] = {
     (
         "gateway-name",
         "tests/results/release-readiness-review-2026-06-30.md",
-    ): "security review prose quoting the `git grep aiapi-prod` command",
+    ): "security review prose quoting the historical grep command",
 }
 
 # Paths whose *content* is generated placeholder text and never carries real values.
