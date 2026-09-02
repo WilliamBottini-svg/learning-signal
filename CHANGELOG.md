@@ -57,7 +57,10 @@ class size; and if it said **"this is fine"**, was it right.
 
 - Every worked example is medical education. The engine is discipline-neutral; the examples aren't yet.
 - Outputs run long — the target is ~200 words for the core; shipped examples exceed it.
-- The paste block is comprehensive and therefore large (~17k characters). It works; it isn't dainty.
+- The paste block is comprehensive and therefore large — about 4,600 words. A lossless compression
+  attempt recovered only 13%, because most of it is the rule set itself (gates, intake, link
+  definitions, severity table, reply shapes). It works on the free tiers tested; if a weaker model
+  drops rules, that is exactly the report we want.
 - The Claude Code plugin and the Custom GPT / Gem builds are secondary paths. Start with the paste.
 
 Supersedes `v0.5.0`, whose tag carried an unredacted internal hostname and was withdrawn.
