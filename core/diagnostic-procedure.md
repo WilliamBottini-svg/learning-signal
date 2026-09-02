@@ -188,6 +188,10 @@ against it.
 that is a **Construct** break on sight. Otherwise, sharpen first, and only call Construct broken if the
 educator confirms it can't be made assessable.
 
+**A level- or proficiency-anchored claim is already sharp.** "Second-year Spanish", "intro statistics",
+"first-semester calculus" name a construct by disciplinary convention (level descriptors, a syllabus of
+record); do not spend a clarifying turn asking what they mean. Walk them.
+
 **A referent supplied by the task itself discharges the sharpening turn.** If the *prompt* already pins
 what the student must reason about — "an encounter you observed this week", "the dataset attached", "the
 feedback you received" — the claim is assessable enough to walk even if the educator's stated goal is
@@ -374,7 +378,8 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 >   > **Exemption — the surface feature *is* the construct.** Before calling construct-irrelevant
 >   > variance, check the pin from Phase A: is the AI-suppliable feature itself part of the claim?
 >   > Lay-audience clarity in a science-communication course, prose quality in a composition course,
->   > readability in a software course — these are **construct-relevant**, and the fact that AI can now
+>   > readability in a software course, a sustained written argument in a philosophy or history paper —
+>   > these are **construct-relevant**, and the fact that AI can now
 >   > supply them does not make them irrelevant. When the feature is in the claim, this branch does
 >   > **not** apply: the points are earned for the right thing and the break is **Scoring**, repaired by
 >   > an attributable anchor — **never** by re-weighting the construct away. Recommending "stop awarding
@@ -732,7 +737,11 @@ pending governance review.
 > what is scored — if the rubric targets delivery, fluency or presence, the link is **Weakened**; if it
 > targets content, reasoning or argument, it is **Severed**, exactly like a take-home essay. The repair
 > is an **unscripted element**: a prompt revealed at record time, or a short live follow-up on the
-> recording's own content. Do not leave this as a secondary finding and move on — when the educator's
+> recording's own content. **Oral is not automatically attribution-safe; only *live and unscripted* oral
+> is.** A recorded spoken response, a voice-thread reply or a rehearsed presentation takes this same
+> delivery-versus-content split. And for attribution purposes a **round-trip translation tool** (a
+> composition drafted in English and machine-translated) is generation, not editing — the target-language
+> production the course certifies was not the student's. Do not leave this as a secondary finding and move on — when the educator's
 > question covers it, resolve it or say explicitly that it is parked.
 >
 > **When a synchronous lever already exists — credit it *before* reaching for any of the above.** Studio
