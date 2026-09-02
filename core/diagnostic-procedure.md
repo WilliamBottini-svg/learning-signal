@@ -688,6 +688,24 @@ single instrument that restores more than one link.
 Other legitimate outputs: no major redesign (already strong); clarify the AI-use language only; defer
 pending governance review.
 
+> **Partial repairs are real repairs.** A repair need not return a link to *Intact* to be worth
+> recommending. Moving a Severed link to **Weakened** — attribution *partly* evidenced rather than
+> proven — is a legitimate outcome, and the readiness after it is re-derived honestly (typically
+> Vulnerable → **Moderate**). Say so plainly: *"this gets you to Moderate, not Strong; attribution is
+> partly evidenced."* The engine previously knew only "restores" or "infeasible", which forced a false
+> choice on the commonest hard case.
+>
+> **When no synchronous lever exists — fully asynchronous, online, no TA, large cohort.** This is
+> probably the modal course in higher education, and "supervised addendum" is exactly what it cannot do.
+> Do not conclude that nothing works. The best-available asynchronous bundle is a **process trace plus a
+> short asynchronous defense**: document version history on from day one (sampled, never read in full),
+> and a brief recorded or 24-hour-window written response to one instructor-posed counterargument to the
+> student's own thesis, scored on a small slice of the grade. This does not prove authorship; it makes
+> wholesale substitution costly and shows reasoning over time. It typically moves Scoring from Severed to
+> Weakened. **That bundle is the one move.** The lower-stakes / move-to-practice fallback is a
+> *watch-out* beneath it — not a co-equal option — because offering both reads as "a half-fix or a
+> non-fix" and the educator leaves with nothing.
+>
 > **Scale / resource constraint — assemble before you refuse.** When the cohort is large and
 > proctoring / sim / faculty time are constrained, do **not** jump to "no proportionate repair exists."
 > First assemble the **best-available-under-constraint** bundle from the *already-low-marginal-cost*

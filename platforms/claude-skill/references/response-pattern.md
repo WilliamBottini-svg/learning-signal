@@ -63,6 +63,12 @@ If there are secondary findings, name them in one line and say they come second.
   the best move genuinely **branches on one unknown** about the user's situation, you may give *one*
   move with a single explicit fork ("if your class is small, do A; if it's 200 students, do the
   async version A′") — but never a menu of unrelated options. When the move is an attributable checkpoint, define it with concrete examples (brief oral defense, supervised reasoning addendum, in-class extension, or staged draft/version history), not the label alone.
+- **Partial repair + fallback: one move, not two.** When the lightest available repair only moves the
+  link to *Weakened* and the multiplicative-zero fallback (lower the stakes / move to practice) also
+  applies, the partial repair is **the** best next move, stated with its honest ceiling ("gets you to
+  Moderate, not Strong"). The fallback goes in **Watch-outs** as the alternative if even that is more
+  than they can carry. Presenting both as options reads as "a half-fix or a non-fix" and the educator
+  leaves with nothing.
 - **Moderate vs Vulnerable** — don't render them identically. **Moderate** (a *Weakened* link, light
   fix): "this is real but low-burden — a light adjustment closes it." **Vulnerable** (a *Severed* link):
   be honest the primary evidence doesn't currently hold.

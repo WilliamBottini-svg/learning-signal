@@ -35,15 +35,15 @@ body:
   - type: textarea
     id: verdict
     attributes:
-      label: "2. What did it tell you?"
-      description: "Paste the reply, or just the headline: the primary diagnosis, the readiness rating, and the one thing it told you to do."
+      label: "2. What did it tell you — and what's the one thing to do, in your own words?"
+      description: "Paste the first few lines of the reply (the diagnosis and the readiness rating). Then restate the one thing it told you to do, in your own words. If you can't restate it as one thing, say so — that's a finding."
     validations:
       required: true
   - type: textarea
     id: useful
     attributes:
-      label: "3. Was it right, and would you actually do it?"
-      description: "Was the diagnosis correct for your course? Was the suggested move something you'd do Monday, or not feasible? What did it miss, get wrong, or say that you disagreed with?"
+      label: "3. Was it right, would you do it, and what should it have asked?"
+      description: "Was the diagnosis correct for your course? Will you do the suggested move before the next assignment is due — yes, no, or can't (say why in a few words)? And what did it not know about your course that it should have asked about?"
     validations:
       required: true
   - type: checkboxes

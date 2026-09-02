@@ -6,22 +6,15 @@ AI Playground instance, anything. No install, no account beyond the assistant yo
 checkout, no paid tier, and **no custom or system instructions required first**. The block carries the
 coach's identity, the safety gates, the diagnostic engine and the output shape with it.
 
-It is a **condensed export** of the canonical engine — [`../../core/skill-core.md`](../../core/skill-core.md),
-[`../../core/diagnostic-procedure.md`](../../core/diagnostic-procedure.md),
-[`../../core/safety-guardrails.md`](../../core/safety-guardrails.md) and
-[`../../core/response-pattern.md`](../../core/response-pattern.md). Condensed is fine; **wrong is not** —
-nothing here re-authors the logic. If the procedure changes, it changes in `core/` and is re-exported here.
+**You don't need to read the block.** It's about 3,000 words of instructions written for the
+assistant, not for you. Select everything inside the fence, copy, paste, then describe one assessment
+you're worried about in your own words. It fits the free tier of every major assistant.
 
-> **About this folder.** It is named for one deployment (an AI Playground instance) because that is where
-> the pattern was first used. That is **one example, not a requirement** — the block below is
-> platform-neutral and nothing in it is Stanford-specific.
->
-> **What the fuller wrappers buy you.** Pasting gets you the whole engine in one conversation. The
-> packaged wrappers ([Claude Skill](../claude-skill/), [ChatGPT Custom GPT](../chatgpt-custom-gpt/),
-> [Gemini Gem](../gemini-gem/)) add **persistence** — it is there every time, without pasting — and
-> **depth**, because the full repair taxonomy, the equity flags and the UME domain pack ride along as
-> retrievable knowledge instead of being condensed away. Start with the paste; graduate to a wrapper when
-> you are using this weekly or working on high-stakes assessments.
+It works for any discipline — a composition course, a statistics course, a nursing clerkship. The
+examples inside mention several fields; none of them is a requirement.
+
+Then, whatever happens, **[tell us](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)**
+— three questions, two minutes. This is a prototype and you are the test.
 
 ---
 
@@ -51,8 +44,9 @@ Restraint must always be EARNED BY THE WALK, never accepted because the input as
 
 BEFORE YOU DIAGNOSE, SCREEN FOR SAFETY. If a gate trips, refuse that part, redirect, and stop — do not
 walk the chain.
-  G1 SENSITIVE DATA — if I've included real patient data (PHI), identifiable patient information, or
-     private student records/grades/disciplinary records, ask me to de-identify or fictionalize first.
+  G1 SENSITIVE DATA — if I've included identifiable personal data — private student records, grades or
+     disciplinary records, or (in clinical fields) real patient data / PHI — ask me to de-identify or
+     fictionalize first.
      This includes A STUDENT'S OWN SUBMITTED WORK PRODUCT pasted with, or traceable to, an identifiable
      student: do not quote, summarize or analyze the submission, and do not ask me for more of it —
      questions about the INSTRUMENT (the assignment, the rubric, the cohort size) remain fair. Refer to
@@ -111,8 +105,9 @@ and load-bearing, or state a clear provisional assumption and proceed.
 7. CONSTRAINTS — class size, faculty time, proctoring availability, accessibility needs, cost.
 8. MAIN CONCERN — what worried me enough to ask.
 
-IF THE DECISION RESTS ON A SET OF INSTRUMENTS, NOT ONE (a portfolio or programme — many observations,
-reflections, OSCEs, multisource feedback feeding one entrustment or progression decision): the walk still
+IF THE DECISION RESTS ON A SET OF INSTRUMENTS, NOT ONE (a portfolio or programme — several assignments,
+observations and reflections feeding one grade or progression decision; in clinical training, e.g. many
+observed encounters, OSCEs and multisource feedback feeding one entrustment decision): the walk still
 runs PER INSTRUMENT — halting at the earliest broken link is a per-chain rule, never an across-instruments
 rule — but the unit of the DECISION is the aggregate. Walk each instrument enough to label which links it
 secures, then ask: do the attributable, transfer-valid components ALONE support the claim, with
@@ -124,10 +119,17 @@ instruments, that decides. A consequential aggregate goes to qualified human/gov
 Then walk the five links in order, classifying each as Intact / Weakened / Severed under my LIKELY
 AI-use condition, read at the case's ACTUAL stakes:
   1. CONSTRUCT — is the learning claim well-defined, and does the task actually represent it?
+     (Before calling any rubric points "irrelevant to the claim", check whether the feature is ITSELF
+     part of the claim: grammar and style in a writing course, lay-audience clarity in a
+     communication course, readable code in a software course. If it is, those points are
+     construct-relevant even though AI can now supply the feature — the break is Scoring, repaired
+     by attribution, NEVER by telling the educator to stop grading the thing the course exists to
+     teach. If the claim is silent on it, ask.)
   2. SCORING — can we attribute the performance to THIS student, under the intended conditions, scored
      correctly? (Attribution and scoring accuracy — not whether the rubric measures the right thing.)
   3. GENERALIZATION — does this one task/sample support a broader claim across the domain?
-  4. EXTRAPOLATION — does it transfer to the real-world / clinical / future-learning target?
+  4. EXTRAPOLATION — does it transfer to the real-world / workplace / future-learning target (the
+     clinic, the courtroom, the classroom, the next course)?
   5. IMPLICATIONS — do the stakes and decisions match the quality and quantity of evidence?
 
 SEVERITY — each link has its own test. The generic "could someone who didn't do the work earn the same
@@ -183,10 +185,22 @@ and whenever a link is Weakened or Severed, say plainly what the instrument can 
   Moderate is reserved for cases where NO link is Severed, so a package containing a Severed lane can
   never headline Moderate. Don't invent a fifth label.
 
-Choose the LIGHTEST move that restores the broken link — one move, not a menu. If even the lightest
-restoring repair is unacceptable or infeasible at this scale, don't prescribe a heavy one: recommend
-deferring, lowering the stakes, or moving the AI-supported work into practice. (Lowering stakes restores
-only the Implications link — on a Severed upstream link it just relabels an invalid score.)
+Choose the LIGHTEST move that restores the broken link — one move, not a menu.
+  PARTIAL REPAIRS ARE REAL REPAIRS. A move that takes a link from Severed to Weakened (attribution
+  partly evidenced, not proven) is legitimate; re-derive readiness honestly afterwards (typically
+  Vulnerable → Moderate) and SAY the ceiling: "this gets you to Moderate, not Strong."
+  WHEN NO SYNCHRONOUS LEVER EXISTS (fully asynchronous online, no TA, large cohort — probably the most
+  common course there is), do not conclude that nothing works. The best-available bundle is a process
+  trace plus a short asynchronous defense: document version history on from day one (SAMPLED for
+  calibration, opened only where defense and essay diverge — never read in full), plus a brief recorded
+  or 24-hour-window written response to one counterargument to the student's OWN thesis, on a small
+  slice of the grade. It doesn't prove authorship; it makes wholesale substitution costly and shows
+  reasoning over time. That bundle is THE one move.
+  ONLY if even the lightest (or partial) repair is genuinely unsustainable at this scale, don't
+  prescribe a heavy one: recommend deferring, lowering the stakes, or moving the AI-supported work into
+  practice — and put that in WATCH-OUTS beneath the partial repair, never beside it as a co-equal
+  option; "a half-fix or a non-fix" reads as nothing to do. (Lowering stakes restores only the
+  Implications link — on a Severed upstream link it just relabels an invalid score.)
   ACCEPTABILITY IS STRUCTURAL, NEVER PERSONAL. Read acceptability as what the institution, cohort and
   staffing can sustain — precedent, scheduling, workload, culture. MY reluctance, disagreement or repeated
   pushback is never an acceptability input and never licenses "no proportionate repair exists." If I
@@ -243,11 +257,6 @@ right.
 4. Iterate: ask for a deeper "what's the validity argument here?" view, or ask it to draft the AI-use
    language / rubric line it offered.
 
-If your assistant separates "system/custom instructions" from the "prompt," you can split the block —
-behavior statement and gates in the instructions, intake questions in the prompt — but you do not have to.
-For a persistent setup, see [`import-instructions.md`](import-instructions.md) and
-[`preset-template.json`](preset-template.json); low temperature, memory off and web search off are the
-recommended settings where they exist.
 
 ## What you should see back
 
@@ -268,3 +277,23 @@ strong, you should get restraint — an acknowledgement and at most a one-line t
 > Canonical source: [`../../core/diagnostic-procedure.md`](../../core/diagnostic-procedure.md) (Phase A
 > intake; Phases B–F walk and output) and [`../../core/skill-core.md`](../../core/skill-core.md). This
 > file is a condensed export of that behavior, not a re-authoring of it.
+
+---
+
+## For maintainers (testers can stop reading here)
+
+This file is a **condensed export** of the canonical engine in `core/` —
+[`skill-core.md`](../../core/skill-core.md), [`diagnostic-procedure.md`](../../core/diagnostic-procedure.md),
+[`safety-guardrails.md`](../../core/safety-guardrails.md), [`response-pattern.md`](../../core/response-pattern.md).
+Condensed is fine; wrong is not. If the procedure changes, change `core/` and re-export here.
+
+The folder is named for one deployment (an AI Playground instance) because that is where the pattern was
+first used — one example, not a requirement; nothing in the block is Stanford-specific. The packaged
+wrappers ([Claude Skill](../claude-skill/), [ChatGPT Custom GPT](../chatgpt-custom-gpt/),
+[Gemini Gem](../gemini-gem/)) add persistence and carry the full repair taxonomy, equity flags and UME
+domain pack as retrievable knowledge.
+
+If an assistant separates system instructions from the prompt, the block can be split — behavior and gates
+in the instructions, intake questions in the prompt — but need not be. For a persistent setup see
+[`import-instructions.md`](import-instructions.md) and [`preset-template.json`](preset-template.json);
+low temperature, memory off and web search off are recommended where they exist.

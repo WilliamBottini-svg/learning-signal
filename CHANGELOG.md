@@ -18,9 +18,47 @@ _Nothing yet._
 
 ## [0.6.0] — 2026-09-02
 
-**Prototype release for testers.** This version is released to find educators willing to run it on a
-real assessment and report back. It has been red-teamed and made internally consistent; it has not been
-validated by educators at scale. Run reports: open a `tester-run` issue.
+**Prototype release for testers.** This version exists to find educators willing to run Learning Signal
+Check on one real assessment and say what happened. It has been red-teamed, blind-replicated, and made
+internally consistent. It has **not** been validated by educators at scale — that is what you are for.
+
+### Try it (60 seconds)
+
+Paste the block from `platforms/stanford-ai-playground/prompt-template.md` into any chat assistant —
+ChatGPT free tier, Claude, Gemini, Copilot — and describe one assessment you're worried about. No
+install, no account, no repo. Then **[report the run](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)**:
+three questions, two minutes. Wrong answers are the most useful kind.
+
+What we most want to know: did it halt at the **right link**; was the **one move feasible** at your
+class size; and if it said **"this is fine"**, was it right.
+
+### What changed since the last tag
+
+- **The engine is now deterministic in text, not just in practice.** Four blind agent runs on four probe
+  cases agreed 16/16 but were each forced into the same four unguided calls; those are closed, and two
+  further blind runs against the patched engine reproduced every verdict from the text alone.
+- **Fourteen contradictions fixed** in `core/`, including a two-lane readiness headline that was
+  arithmetically wrong in three files and the answer key, a boundary rule contradicted by its own worked
+  example, and a "Severed" definition that only worked at one of five links.
+- **Prompt-injection resistance is now specified**, not just tested. It existed in no executable file.
+- **Sycophancy channel closed.** Acceptability is structural, never a user's reluctance, and repeated
+  pushback with no new fact no longer triggers a re-walk.
+- **Every platform wrapper re-synced** to `core/`. Four of five were running a materially older engine;
+  the ChatGPT Instructions field was 3,287 characters over its cap and could not have been pasted.
+- **The evidence is stated honestly.** Author-derived targets, one externally ratified case, no
+  demonstrated lift over a strong base prompt, and a published 80.0% structural-conformance result
+  against the project's own 90% bar. Session provenance is recorded; IRB status is marked as an open
+  placeholder.
+- **CI exists**: consistency, links, versions, secrets (over every tag), scripts, citation, plugin
+  manifest. The release workflow re-runs all of it against the tag.
+- **A feedback loop exists**: the "Report a run" issue form.
+
+### Known limitations, so you aren't surprised
+
+- Every worked example is medical education. The engine is discipline-neutral; the examples aren't yet.
+- Outputs run long — the target is ~200 words for the core; shipped examples exceed it.
+- The paste block is comprehensive and therefore large (~17k characters). It works; it isn't dainty.
+- The Claude Code plugin and the Custom GPT / Gem builds are secondary paths. Start with the paste.
 
 Supersedes `v0.5.0`, whose tag carried an unredacted internal hostname and was withdrawn.
 
