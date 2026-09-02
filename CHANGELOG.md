@@ -14,7 +14,15 @@ where history is thin, the entry is thin. Release dates are the `date-released` 
 
 ## [Unreleased]
 
-Commits on `main` after the `v0.5.0` tag (`953d64b`).
+_Nothing yet._
+
+## [0.6.0] — 2026-09-02
+
+**Prototype release for testers.** This version is released to find educators willing to run it on a
+real assessment and report back. It has been red-teamed and made internally consistent; it has not been
+validated by educators at scale. Run reports: open a `tester-run` issue.
+
+Supersedes `v0.5.0`, whose tag carried an unredacted internal hostname and was withdrawn.
 
 ### Added
 

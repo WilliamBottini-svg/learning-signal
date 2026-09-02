@@ -1,0 +1,62 @@
+name: "Report a run"
+description: "You tried Learning Signal Check on a real assessment. Tell us what happened — two minutes, three questions."
+title: "Run: [what you tested, in five words]"
+labels: ["tester-run"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing a prototype. Three questions, two minutes. Wrong answers are the most useful kind.
+
+        **Before you paste anything:** remove student names, grades, records, and anything that could identify a patient or a person. Describe the assessment; don't upload it.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Where did you run it?
+      options:
+        - Pasted the block into ChatGPT
+        - Pasted the block into Claude
+        - Pasted the block into Gemini
+        - Pasted the block into Copilot or another assistant
+        - Claude Code plugin
+        - ChatGPT Custom GPT (built from this repo)
+        - Gemini Gem (built from this repo)
+        - Something else (say what in the last box)
+    validations:
+      required: true
+  - type: textarea
+    id: assessment
+    attributes:
+      label: "1. What did you test?"
+      description: "Two or three sentences, de-identified. Discipline, format, roughly how much it counts, and what you wanted it to show students can do."
+      placeholder: "Intro sociology, 1,500-word take-home essay, 20% of the grade. Supposed to show they can apply two course theories to a real case."
+    validations:
+      required: true
+  - type: textarea
+    id: verdict
+    attributes:
+      label: "2. What did it tell you?"
+      description: "Paste the reply, or just the headline: the primary diagnosis, the readiness rating, and the one thing it told you to do."
+    validations:
+      required: true
+  - type: textarea
+    id: useful
+    attributes:
+      label: "3. Was it right, and would you actually do it?"
+      description: "Was the diagnosis correct for your course? Was the suggested move something you'd do Monday, or not feasible? What did it miss, get wrong, or say that you disagreed with?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: deid
+    attributes:
+      label: De-identification
+      options:
+        - label: "I removed student names, grades, records, and anything identifying a person or patient."
+          required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Use of this report
+      options:
+        - label: "This report may be quoted, de-identified, in the project's test results and write-ups."
+          required: false

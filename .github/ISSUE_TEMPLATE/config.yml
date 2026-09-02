@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "Something broke, or a doc is wrong"
+    url: https://github.com/WilliamBottini-svg/learning-signal/issues/new
+    about: "Open a plain issue for bugs, broken links, wrapper problems, or anything that isn't a run report."
