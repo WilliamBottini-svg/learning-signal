@@ -48,7 +48,8 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
 
    - **Current evidence — also ask about live/ongoing ungraded interaction.** Whether any live or ongoing
      interaction with the student's work already exists that isn't graded but bears on attribution —
-     seminar discussion, drafts, check-ins, office hours, studio/lab/clinical contact hours. Treat it as a
+     seminar discussion, drafts, check-ins, office hours, one-to-one advisor or supervisor meetings,
+     studio/lab/clinical contact hours. Treat it as a
      **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student
      **evenly** (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to
      *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is
@@ -64,6 +65,9 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      claim as a stated assumption, and treat the vague goal as **one soft input, not a blocker**. Only when
      *neither* the claim nor the task supplies a referent do you stop and ask — otherwise every reflective
      task stalls in intake and the walk never reaches the attribution question that is usually the real break.
+   - **A level- or proficiency-anchored claim is already sharp.** "Second-year Spanish," "intro
+     statistics," "first-semester calculus" name a construct by disciplinary convention — don't spend a
+     clarifying turn asking what they mean; walk them.
 
    - **Stakes ladder.** One of *formative · low · moderate · high · consequential*. "Consequential" =
      progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or
@@ -71,7 +75,10 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single
      component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative
      (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the
-     sufficiency rule below. These are **anchors, not thresholds — state which you used, in one clause**
+     sufficiency rule below. **A built-in revise-and-resubmit loop is not "remediation"** — when a fail's
+     ordinary consequence is a required redraft on the same path (no separate decision, no sanction, no
+     change of programme), the case is **high**, not consequential; "remediation" means a distinct
+     decision or programme the result *triggers*, not a mandatory second attempt. These are **anchors, not thresholds — state which you used, in one clause**
      (*"15%, one of several: I'm reading that as low"*) — the anchor is what moved the bar, and a careful
      educator will otherwise ask why a small weight still produced Vulnerable. **Recurring components**
      (weekly homework, eight lab reports, ten problem sets) anchor on the **category weight**, not the
@@ -140,7 +147,8 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      attribution → **Scoring**. **No** → the task measures the wrong thing (or the rubric rewards
      AI-suppliable polish) → **Construct**. Low stakes / completion grading change the *repair severity*,
      not the link. **When a construct-relevant feature is now AI-suppliable** (clarity, prose quality,
-     readable code), name the choice the educator faces in **one sentence** — certify it unaided through
+     readable code, a sustained written argument in a philosophy or history paper), name the choice the
+     educator faces in **one sentence** — certify it unaided through
      the attributable component, or accept AI-assisted work and shift weight toward what the defense
      shows — **then give one move that holds under either answer** (usually the attributable anchor,
      which serves both). Never render it as option (a) / option (b); it is a construct-definition choice,
@@ -208,7 +216,14 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      seminar discussion, clinical groups, in-person critique or rounds), **credit it first** — that's real
      Scoring evidence already. The vulnerability narrows to whatever is produced *outside* that window;
      anchor that piece to the contact already available rather than adding a new instrument. **Never hand
-     a studio course the asynchronous-online bundle.**
+     a studio course the asynchronous-online bundle.** **Say what the lever proves, not only what
+     readiness it yields** — defending a design choice in an advisor meeting confirms the *design* is the
+     student's; it does not confirm they wrote the literature synthesis. Name that split in the ceiling
+     line. **The second reader:** crediting a lever assumes the person with the live interaction is the
+     one grading. When a co-grader has none (a second reader, an external examiner, a moderation panel),
+     the lever's outcome must **travel with the artifact** — a one-line attestation of what was defended
+     and whether it held, attached to the submission and visible to every grader. Scoring credit does not
+     transfer to a grader who never saw the evidence.
    - **CODE bridge.** For code or computational work, the process trace is the **commit / version history**
      the submission pipeline already captures — timing, incremental structure, no new tooling, **free** —
      and the defense becomes a short justification of **one** design or algorithmic choice, or of what
@@ -222,7 +237,11 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      argument, it is **Severed**, exactly like a take-home essay. The repair is an **unscripted
      element** — a prompt revealed at record time, or a short live follow-up on the recording's own
      content. A secondary finding the educator's question covers is resolved with its own move, or
-     explicitly parked in one clause — never dropped.
+     explicitly parked in one clause — never dropped. **Oral is not automatically attribution-safe —
+     only *live and unscripted* oral is.** A recorded spoken response, a voice-thread reply, or a
+     rehearsed presentation takes this same delivery-vs-content split. And a **round-trip translation**
+     (drafted in English, then machine-translated) is generation, not editing — the target-language
+     production the course certifies was not the student's.
    - **Numeric-homework bundle.** For auto-graded numeric problem sets (unlimited-attempt platforms), the
      platform becomes ungraded, unlimited-attempt **practice**; the graded attributable signal moves to a
      short synchronous closed-book in-section quiz on the same skill, worth roughly the homework's prior

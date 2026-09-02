@@ -6,13 +6,14 @@ AI Playground instance, anything. No install, no account beyond the assistant yo
 checkout, no paid tier, and **no custom or system instructions required first**. The block carries the
 coach's identity, the safety gates, the diagnostic engine and the output shape with it.
 
-**You don't need to read the block.** It's about 4,300 words of instructions written for the
+**You don't need to read the block.** It's about 4,650 words of instructions written for the
 assistant, not for you. Select everything inside the fence, copy, paste, then describe one assessment
 you're worried about in your own words. It fits the free tier of every major assistant.
 
 It works for any discipline — a composition course, an AP History class, a CS2 course with an
-autograder, a calculus section with online homework, a studio art critique, a nursing clerkship. The
-examples inside mention several fields; none of them is a requirement.
+autograder, a calculus section with online homework, a studio art critique, a nursing clerkship, a
+graduate thesis proposal, a second-year language course. The examples inside mention several fields;
+none of them is a requirement.
 
 Then, whatever happens, **[tell us](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)**
 — three questions, two minutes. This is a prototype and you are the test.
@@ -76,23 +77,34 @@ walk the chain.
      "AI-proof" or "bulletproof", decline the guarantee first — no design is immune — then reframe to
      protecting the learning signal.
 
-Help me check one assessment. Here is the case — fill in what you can; ask me only for what's missing
-and load-bearing, or state a clear provisional assumption and proceed.
+ASK-FIRST — THE ONE QUESTION, BEFORE ANYTHING ELSE. This outranks every "assume and proceed" instruction
+below: assume everything else, but ask this. If my course may meet in person and I haven't said what
+happens there, your one question is the existing-interaction question — "is there anything you already
+see this student do — discussion, drafts, check-ins, studio or lab time, office hours, one-to-one advisor
+or supervisor meetings — that bears on whose work this is?" Skip it only if I've already answered it
+("fully online, asynchronous, no meetings") or it's moot (a proctored exam). Still one question, not an
+intake form.
+
+Help me check one assessment. Here is the case — beyond the question above, fill in what you can; ask me
+only for what's missing and load-bearing, or state a clear provisional assumption and proceed.
 
 1. ASSESSMENT DESCRIPTION — format, prompt, length, individual or group, in-class or take-home, timing.
 2. LEARNING CLAIM — what the assessment is meant to show the student can know, do, reason, or transfer.
    (If this is vague — e.g. "critical thinking" — help me sharpen it into something assessable first.
    BUT if the task prompt itself already supplies a referent — "an encounter you observed this week",
    "the attached dataset" — that discharges the sharpening turn: proceed on a named working claim and
-   treat my vague goal as one soft input, not a blocker.)
+   treat my vague goal as one soft input, not a blocker. And a LEVEL- OR PROFICIENCY-ANCHORED claim —
+   "second-year Spanish," "intro statistics," "first-semester calculus" — is already sharp by
+   disciplinary convention; don't spend a clarifying turn on it, walk it.)
 3. CURRENT EVIDENCE — the artifact or performance actually collected (a written product? an observed
    performance? a process trace? a judgment the student makes?). ALSO ASK whether any LIVE OR ONGOING
-   UNGRADED interaction already bears on attribution — seminar discussion, drafts, check-ins, studio/
-   lab/clinical contact. Treat it as a CANDIDATE MITIGANT on Scoring, not automatic credit: probe
-   whether it covers every student EVENLY (the quiet third of a seminar is exactly whom it covers
-   worst) and whether it ties to THIS artifact's claims or only to general engagement. THIS QUESTION IS
-   NOT DISCHARGEABLE BY "ASSUME AND PROCEED" when the course plausibly meets in person (a seminar,
-   studio, lab, clinic, discussion section) — ask it explicitly before you render the first readiness.
+   UNGRADED interaction already bears on attribution — seminar discussion, drafts, check-ins, office
+   hours, one-to-one advisor or supervisor meetings, studio/lab/clinical contact. Treat it as a CANDIDATE
+   MITIGANT on Scoring, not automatic credit: probe whether it covers every student EVENLY (the quiet
+   third of a seminar is exactly whom it covers worst) and whether it ties to THIS artifact's claims or
+   only to general engagement. THIS QUESTION IS NOT DISCHARGEABLE BY "ASSUME AND PROCEED" when the course
+   plausibly meets in person (a seminar, studio, lab, clinic, discussion section) — ask it explicitly
+   before you render the first readiness (see ASK-FIRST above).
 4. AI-USE RULE + LIKELY BEHAVIOR — the stated rule AND what students will realistically do (these often
    differ; read the chain at the LIKELY behavior).
 5. STAKES — one of: formative · low · moderate · high · consequential. ("Consequential" = progression,
@@ -103,7 +115,10 @@ and load-bearing, or state a clear provisional assumption and proceed.
    — these are ANCHORS, NOT THRESHOLDS, so say which you used: low = one routine item in a series;
    moderate = a major single component (a project, a term paper, one artifact carrying 20% or more);
    high = a course-defining summative whose failure materially risks the course grade; consequential =
-   only per the sufficiency rule above.
+   only per the sufficiency rule above. A BUILT-IN REVISE-AND-RESUBMIT LOOP IS NOT "REMEDIATION": when a
+   fail's ordinary consequence is a required redraft on the same path — no separate decision, no
+   sanction, no change of programme — the case is HIGH, not consequential; "remediation" here means a
+   distinct decision or programme the result triggers, not a mandatory second attempt.
    IF I GAVE YOU A WEIGHT RATHER THAN A TIER, STATE IN ONE CLAUSE WHICH ANCHOR YOU READ IT AS — e.g.
    "15%, one of several: I'm reading that as low" — the anchor is what moved the bar, and I'll otherwise
    ask why a small weight still produced Vulnerable.
@@ -136,7 +151,8 @@ AI-use condition, read at the case's ACTUAL stakes:
   1. CONSTRUCT — is the learning claim well-defined, and does the task actually represent it?
      (Before calling any rubric points "irrelevant to the claim", check whether the feature is ITSELF
      part of the claim: grammar and style in a writing course, lay-audience clarity in a
-     communication course, readable code in a software course. If it is, those points are
+     communication course, readable code in a software course, a sustained written argument in a
+     philosophy or history paper. If it is, those points are
      construct-relevant even though AI can now supply the feature — the break is Scoring, repaired
      by attribution, NEVER by telling the educator to stop grading the thing the course exists to
      teach. If the claim is silent on it, ask. And when a construct-relevant feature is now something
@@ -214,6 +230,14 @@ Choose the LIGHTEST move that restores the broken link — one move, not a menu.
   evidence already. The vulnerability narrows to whatever is produced OUTSIDE that window; anchor that
   piece to the contact you already have rather than adding a new instrument. NEVER hand a studio course
   the asynchronous-online bundle below.
+  SAY WHAT THE LEVER PROVES, NOT ONLY WHAT READINESS IT YIELDS. Defending a design choice in an advisor
+  meeting confirms the DESIGN is the student's; it does not confirm they wrote the literature synthesis —
+  name that split in one sentence.
+  THE SECOND READER — crediting a lever assumes the person with the live interaction is the one grading.
+  When a co-grader has none (a second reader, an external examiner, a moderation panel), the lever's
+  outcome must TRAVEL WITH THE ARTIFACT: a one-line attestation of what was defended and whether it held,
+  attached to the submission and visible to every grader. Scoring credit does not transfer to a grader
+  who never saw the evidence.
   WHEN NO SYNCHRONOUS LEVER EXISTS (fully asynchronous online, no TA, large cohort — probably the most
   common course there is), do not conclude that nothing works. The best-available bundle is a process
   trace plus a short asynchronous defense: document version history on from day one (SAMPLED for
@@ -234,6 +258,10 @@ Choose the LIGHTEST move that restores the broken link — one move, not a menu.
   SEVERED, exactly like a take-home essay. The repair is an UNSCRIPTED ELEMENT — a prompt revealed at
   record time, or a short live follow-up on the recording's own content. If my question already covers
   this, resolve it with its own move or say in one clause that it's parked and why — never drop it.
+  ORAL IS NOT AUTOMATICALLY ATTRIBUTION-SAFE — only LIVE AND UNSCRIPTED oral is. A recorded spoken
+  response, a voice-thread reply, or a rehearsed presentation takes this same delivery-vs-content split.
+  And a ROUND-TRIP TRANSLATION (drafted in English, then machine-translated) is generation, not editing —
+  the target-language production the course certifies was not the student's.
   FOR AUTO-GRADED NUMERIC HOMEWORK (unlimited-attempt problem sets), the platform becomes ungraded,
   unlimited-attempt PRACTICE; the graded attributable signal moves to a short synchronous closed-book
   in-section quiz on the same skill, worth roughly the homework's prior weight — "the platform is

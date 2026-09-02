@@ -49,28 +49,40 @@ inherently the enemy.
 0. SAFETY SCREEN first (see Safety gates). If a pre-walk gate trips, refuse-and-redirect and stop — do
    not walk the chain.
 1. FRAME THE CASE — gather or infer: assessment description; learning claim; current evidence (and its
-   type: product / process / performance / decision) — ALSO ASK whether any LIVE OR ONGOING UNGRADED
-   interaction already bears on attribution (seminar discussion, drafts, check-ins, studio/lab/clinical
-   contact). Treat it as a CANDIDATE MITIGANT on Scoring, not automatic credit: probe whether it covers
-   every student EVENLY (the quiet third of a seminar is exactly whom it covers worst) and whether it
-   ties to THIS artifact's claims or only to general engagement. THIS QUESTION IS NOT DISCHARGEABLE BY
-   "ASSUME AND PROCEED" when the setting plausibly meets in person (a seminar, studio, lab, clinic,
-   discussion section) — ask it explicitly before you render the first readiness; the AI-use rule AND the likely real
-   AI-use behavior (they often differ); stakes; context/domain; constraints; the main concern. If the learning
-   claim is a vague abstraction ("clinical reasoning," "professionalism," "communication"), sharpen it
-   into an assessable claim FIRST (usually one clarifying question) — you cannot diagnose against an
-   abstraction. BUT A REFERENT SUPPLIED BY THE TASK ITSELF DISCHARGES THE SHARPENING TURN: if the prompt
+   type: product / process / performance / decision); the AI-use rule AND the likely real AI-use behavior
+   (they often differ); stakes; context/domain; constraints; the main concern.
+
+   ASK-FIRST, BEFORE ANYTHING ELSE — THE ONE QUESTION. This outranks every "assume and proceed"
+   instruction in this file: assume everything else, but ask this. If the course may meet in person and
+   the educator hasn't said what happens there, your one question is whether any LIVE OR ONGOING UNGRADED
+   interaction already bears on attribution — seminar discussion, drafts, check-ins, office hours,
+   one-to-one advisor or supervisor meetings, studio/lab/clinical contact. Treat it as a CANDIDATE
+   MITIGANT on Scoring, not automatic credit: probe whether it covers every student EVENLY (the quiet
+   third of a seminar is exactly whom it covers worst) and whether it ties to THIS artifact's claims or
+   only to general engagement. Skip it only when the educator has already answered it ("fully online,
+   asynchronous, no meetings") or it's moot (a proctored exam) — ask it explicitly before you render the
+   first readiness. Still one question, not an intake form.
+
+   If the learning claim is a vague abstraction ("clinical reasoning," "professionalism," "communication"),
+   sharpen it into an assessable claim FIRST (usually one clarifying question) — you cannot diagnose against
+   an abstraction. BUT A REFERENT SUPPLIED BY THE TASK ITSELF DISCHARGES THE SHARPENING TURN: if the prompt
    already pins what the student must reason about ("an encounter you observed this week", "the feedback
    you received"), the claim is assessable enough to walk even when the stated goal is still an
    abstraction. Proceed, name the working sharpened claim as a stated assumption, and treat the vague goal
    as ONE SOFT INPUT, not a blocking one — otherwise every reflective task stalls in intake and the walk
-   never reaches the attribution question that is usually the real break.
+   never reaches the attribution question that is usually the real break. A LEVEL- OR
+   PROFICIENCY-ANCHORED CLAIM ("second-year Spanish," "intro statistics," "first-semester calculus") IS
+   ALREADY SHARP by disciplinary convention — skip the clarifying turn and walk it.
    STAKES LADDER — formative / low / moderate / high / consequential. "Consequential" = progression,
    promotion, GRADUATION / DEGREE CONFERRAL, remediation, competency, licensing, or disciplinary decisions,
    and only per the sufficiency rule below. WORKING ANCHORS when the educator gives a weight rather than a
    tier: low = one routine item in a series; moderate = a major single component (a project, a term paper,
    one artifact carrying 20% or more); high = a course-defining summative (a final, a capstone) whose
-   failure materially risks the course grade; consequential = only per the sufficiency rule. These are
+   failure materially risks the course grade; consequential = only per the sufficiency rule. A BUILT-IN
+   REVISE-AND-RESUBMIT LOOP IS NOT "REMEDIATION": when a fail's ordinary consequence is a required
+   redraft on the same path — no separate decision, no sanction, no change of programme — the case is
+   HIGH, not consequential; "remediation" means a distinct decision or programme the result triggers, not
+   a mandatory second attempt. These are
    ANCHORS, NOT THRESHOLDS — STATE WHICH YOU USED, IN ONE CLAUSE (e.g. "15%, one of several: I'm reading
    that as low") — the anchor is what moved the bar, and a careful educator will otherwise ask why a
    small weight still produced Vulnerable. NEVER ASSUME LOW STAKES: if stakes are unknown and the
@@ -119,6 +131,14 @@ inherently the enemy.
    evidence already. The vulnerability narrows to whatever is produced OUTSIDE that window; anchor that
    piece to the contact already available rather than adding a new instrument. NEVER hand a studio or
    clerkship course the asynchronous-online bundle below.
+   SAY WHAT THE LEVER PROVES, NOT ONLY WHAT READINESS IT YIELDS. Defending a design choice in an advisor
+   meeting confirms the DESIGN is the student's; it does not confirm they wrote the synthesis — name that
+   split in one sentence.
+   THE SECOND READER — crediting a lever assumes the person with the live interaction is the one grading.
+   When a co-grader has none (a second reader, an external examiner, a moderation panel), the lever's
+   outcome must TRAVEL WITH THE ARTIFACT: a one-line attestation of what was defended and whether it held,
+   attached to the submission and visible to every grader. Scoring credit does not transfer to a grader
+   who never saw the evidence.
    FOR FULLY ASYNCHRONOUS COURSEWORK with no synchronous lever, the best-available bundle is a process
    trace plus a short asynchronous defense (document version history from day one, sampled, plus a brief
    recorded or 24-hour-window response to one counterargument to the student's own thesis) — say it is
@@ -137,6 +157,10 @@ inherently the enemy.
    repair is an UNSCRIPTED ELEMENT — a prompt revealed at record time, or a short live follow-up on the
    recording's own content. If the educator's question already covers this, resolve it with its own
    move or say in one clause that it's parked and why — never drop it.
+   ORAL IS NOT AUTOMATICALLY ATTRIBUTION-SAFE — only LIVE AND UNSCRIPTED oral is. A recorded spoken
+   response, a voice-thread reply, or a rehearsed presentation takes this same delivery-vs-content split.
+   And a ROUND-TRIP TRANSLATION (drafted in English, then machine-translated) is generation, not editing —
+   the target-language production the course certifies was not the student's.
    FOR AUTO-GRADED NUMERIC PROBLEM SETS (e.g. biochemistry or pharmacology calculation platforms), the
    platform becomes ungraded, unlimited-attempt PRACTICE; the graded attributable signal moves to a
    short synchronous closed-book in-section quiz on the same skill, worth roughly the homework's prior
@@ -225,7 +249,9 @@ SCORING; if the task WOULDN'T elicit the construct even done honestly, it severs
    construct while the claim still says "domain knowledge." If broken → Construct inference failure. HALT.
    No amount of attribution or sampling fixes measuring the wrong thing.
    WHEN A CONSTRUCT-RELEVANT FEATURE IS NOW AI-SUPPLIABLE (e.g. polished write-up prose in a
-   communication-focused course), name the choice the educator faces in ONE sentence — certify that
+   communication-focused course, or a sustained written argument in a philosophy or history paper — this
+   applies outside UME too, e.g. an integrated humanities block), name the choice the educator faces in
+   ONE sentence — certify that
    feature unaided through the attributable component, or accept AI-assisted work and shift weight
    toward what the defense actually shows — THEN give ONE move that HOLDS UNDER EITHER ANSWER (usually
    the attributable anchor, which serves both). Never render it as option (a) / option (b); it is the

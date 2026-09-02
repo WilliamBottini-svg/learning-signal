@@ -110,9 +110,13 @@ The keystone is **identical across every platform**. It is:
   (ACCESS if it fixes time/place/format; local policy if it records/logs/proctors/requires disclosure —
   the fallback lives here, never beside the move) · "Want help drafting?" · prototype note. Repeat quick
   read/why ONLY if the diagnosis changed;
-- the **ask-first bind** — the live-ungraded-interaction intake question is NOT dischargeable by "assume
-  and proceed" when the course plausibly meets in person; it is asked before the first readiness, not
-  folded into a stated assumption;
+- the **ask-first bind (2026-09 pass, structural — the most important placement check)** — Phase A's quick
+  selector is an ORDERED list, and the existing-interaction question is its FIRST applicable entry: if the
+  course may meet in person and the educator hasn't said what happens there, that is the one question
+  asked, and it is NOT dischargeable by "assume and proceed" — it must appear, in every wrapper's document
+  order, BEFORE AND ABOVE any "assume and proceed" / "state a provisional assumption" language, not after
+  it; skip only when already answered or moot (a proctored exam); the example list includes one-to-one
+  advisor or supervisor meetings;
 - the **per-section caps** are **≤60 words** for the quick read (not ≤40) — the first-use readiness gloss
   is exempt, and coach-supplied assumptions (the stakes anchor, the likely AI-use reading) fold into ONE
   clause inside the quick read, never a separate "working assumptions" paragraph; the partial-repair
@@ -136,7 +140,27 @@ The keystone is **identical across every platform**. It is:
 - the **two-audiences + Gate-4-scope rule** — in drafted deliverables, ACCESS travels INTO student-facing
   text while the local-policy check stays instructor-facing beside it; Gate 4 fires on recording,
   logs/version history, proctoring tech, or required disclosure — a new graded component (a scored oral
-  probe) is not by itself "data collection."
+  probe) is not by itself "data collection";
+- **construct-relevant examples (2026-09 pass)** now include a sustained written argument in a philosophy
+  or history paper, alongside grammar/clarity/readable code — AI-suppliable but still part of the claim,
+  so the break is Scoring, never Construct;
+- **oral is not automatically attribution-safe (2026-09 pass)** — only LIVE AND UNSCRIPTED oral is; a
+  recorded spoken response, a voice-thread reply, or a rehearsed presentation takes the same
+  delivery-vs-content split as a recorded performance. A round-trip translation (drafted in English, then
+  machine-translated) is generation, not editing — the target-language production the course certifies
+  was not the student's;
+- **level- or proficiency-anchored claims are already sharp (2026-09 pass)** — "second-year Spanish,"
+  "intro statistics," "first-semester calculus" name a construct by disciplinary convention; no clarifying
+  turn;
+- **the ceiling line names what the lever proves, not only the readiness it yields (2026-09 pass)** —
+  defending a design choice confirms the design is the student's, not that they wrote the synthesis; say
+  the split;
+- **the second reader (2026-09 pass)** — when a co-grader has no access to the live interaction, the
+  lever's outcome must travel with the artifact as a one-line attestation visible to every grader; Scoring
+  credit does not transfer to a grader who never saw the evidence;
+- **a built-in revise-and-resubmit loop is HIGH, not consequential (2026-09 pass)** — "remediation" in the
+  consequential list means a distinct decision or programme the result triggers, not a mandatory second
+  attempt.
 
 **Drift check by grep.** Each bullet above is greppable. A condensed wrapper that omits one of these is
 **drift**, not concision — report it for repair-at-source. The wrappers to check are listed in Task C.
