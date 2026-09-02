@@ -25,7 +25,7 @@ def build() -> str:
     words = len(block.split())
     html = TPL.read_text(encoding="utf-8")
     html = html.replace("__PROMPT_JSON__", json.dumps(block))
-    html = html.replace("__WORDS__", f"{words:,}")
+    html = html.replace("__WORDS__", f"{round(words, -2):,}")  # "about 3,700", not "about 3,674"
     return html
 
 def main() -> int:
