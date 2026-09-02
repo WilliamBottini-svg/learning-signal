@@ -82,7 +82,29 @@ The keystone is **identical across every platform**. It is:
 - the **equity access clause** (a repair requiring an AI tool *or* the student to be in a specific room at
   a specific time inherits an access assumption);
 - the **Gate 4 local-policy clause on the recommended repair** and the **Gate 2 carve-out's required
-  false-positive-harm clause**.
+  false-positive-harm clause**;
+- the **prototype-feedback line placement** (2026-09 pass) — on the **first full diagnosis** and any
+  **later reply giving a new or revised move**; never on a clarification, a rebuttal, or a drafting
+  deliverable;
+- the **weight-to-stakes-anchor clause** — when the educator gives a weight rather than a tier, state
+  **in one clause** which anchor you read it as;
+- the **revised-move required-clause checklist** — every revised move re-runs ACCESS / the Gate 4
+  local-policy clause / the one-move rule / the stated ceiling, attached to the *move*, not the first
+  reply;
+- the **per-section word caps** — quick read ≤40 words; why ≤3 sentences naming the one shared root
+  cause; move ≤100 words; a move needing more is two moves, cut to one;
+- the **live/ongoing ungraded-interaction intake ask** (Phase A "current evidence") — a candidate Scoring
+  mitigant, probed for **evenness** (the quiet third) and tie to the artifact's claims;
+- **Phase E's synchronous-lever-first credit** (credit an existing studio/lab/seminar/clinical lever
+  before any async bundle; never hand a studio course the async bundle), the **CODE bridge** (the process
+  trace is the free commit/version-history the pipeline already captures), the **numeric-homework
+  practice/quiz bundle** ("the platform is practice; the quiz is the grade" — zeroing the weight is not a
+  repair), and **recurring cost stated per term, not per instance**;
+- **pushback on the move vs. pushback on the diagnosis** — a new constraint ("200 students", "fully
+  online", "no TA") re-sizes the move and keeps the diagnosis, with the smaller move's ceiling stated;
+  bare reluctance re-sizes nothing;
+- the **access-clause route name** — disability-services accommodations in higher ed; IEP / 504 plans in
+  K-12.
 
 **Drift check by grep.** Each bullet above is greppable. A condensed wrapper that omits one of these is
 **drift**, not concision — report it for repair-at-source. The wrappers to check are listed in Task C.

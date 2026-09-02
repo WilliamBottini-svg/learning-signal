@@ -60,6 +60,12 @@ button.copy.done{background:var(--ok);color:#fff}
 .ask ol{margin:8px 0 0;padding-left:20px;color:var(--ink-2)}
 .ask li{margin-bottom:8px}
 .report{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:8px;border:1.5px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.install{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 4px}
+.install a{display:block;padding:12px 14px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--ink-2)}
+.install a b{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+.install a span{font-size:13px;line-height:1.4}
+.install a:hover{border-color:var(--accent)}
+@media (max-width:420px){.install{grid-template-columns:1fr}}
 details{margin-top:28px;border-top:1px solid var(--rule);padding-top:14px}
 summary{cursor:pointer;color:var(--ink-3);font-size:14px}
 pre{white-space:pre-wrap;word-break:break-word;font:12.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;background:var(--sunk);padding:14px;border-radius:8px;max-height:320px;overflow:auto;color:var(--ink-2)}
@@ -96,6 +102,16 @@ footer p{margin-bottom:8px}
   </div>
 </div>
 <p class="note">Works for any discipline — composition, AP History, a CS course with an autograder, calculus homework, studio critique, a nursing clerkship. Nothing to install and no account beyond the assistant you already use.</p>
+
+<h2>Prefer it installed?</h2>
+<p>Pasting is for trying it. Installing keeps it there every time — and people who use it twice write better reports.</p>
+<div class="install">
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/releases/latest"><b>Claude.ai</b><span>Download the skill zip, upload under Settings → Skills. Free tier works.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#claude-code"><b>Claude Code</b><span>Two slash commands.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#chatgpt"><b>ChatGPT</b><span>Published GPT — link coming. Free tier can use it.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#gemini"><b>Gemini</b><span>Shared Gem — link coming. No Google account needed.</span></a>
+</div>
+<p class="note">Full instructions for every platform: <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md">INSTALL.md</a>. Whichever way you run it, the report form asks which one.</p>
 
 <h2>Then tell us what happened</h2>
 <p>You're the test. Wrong answers are the most useful kind. Three questions, two minutes:</p>
