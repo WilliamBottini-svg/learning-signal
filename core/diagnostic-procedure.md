@@ -136,9 +136,9 @@ assumption explicitly.
 |-------|----------------|
 | **Assessment description** | Format, prompt, length, individual/group, in-class/take-home, timing. |
 | **Learning claim** | What the assessment is meant to show the student can know, do, reason, or transfer. |
-| **Current evidence** | The artifact or performance actually collected (and its type — see below). **Also ask whether any live or ongoing interaction with the student's work already exists that isn't graded but bears on attribution** — seminar discussion, drafts, check-ins, office hours, studio / lab / clinical contact hours. Treat it as a **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student evenly (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is the difference between "this understood my classroom" and "I had to argue it out of a generic answer." **This question is not discharged by the "assume and proceed" rule.** When the setting plausibly has synchronous contact — a seminar, studio, lab, clinic, discussion section, a course that meets in person at all — ask it explicitly before rendering a first readiness, even if you assume everything else. A first readiness of Vulnerable issued without asking, in a course that meets twice a week, is the tool's most predictable false alarm. |
+| **Current evidence** | The artifact or performance actually collected (and its type — see below). **Also ask whether any live or ongoing interaction with the student's work already exists that isn't graded but bears on attribution** — seminar discussion, drafts, check-ins, office hours, one-to-one advisor or supervisor meetings, studio / lab / clinical contact hours. Treat it as a **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student evenly (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is the difference between "this understood my classroom" and "I had to argue it out of a generic answer." **This question is not discharged by the "assume and proceed" rule.** When the setting plausibly has synchronous contact — a seminar, studio, lab, clinic, discussion section, a course that meets in person at all — ask it explicitly before rendering a first readiness, even if you assume everything else. A first readiness of Vulnerable issued without asking, in a course that meets twice a week, is the tool's most predictable false alarm. |
 | **AI-use condition** | The stated rule *and* the **likely** real AI-use behavior (often differ). |
-| **Stakes** | One of: *formative · low · moderate · high · **consequential***. "Consequential" = progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or disciplinary decisions — and *only* when this result **by itself** triggers one of them, not when it is merely one input to a later committee (the sufficiency rule; see Phase D). Grade *weight* alone never makes a case consequential. **Working anchors when the educator gives a weight rather than a tier:** *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the sufficiency rule. These are anchors, not thresholds — **state which you used.** |
+| **Stakes** | One of: *formative · low · moderate · high · **consequential***. "Consequential" = progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or disciplinary decisions — and *only* when this result **by itself** triggers one of them, not when it is merely one input to a later committee (the sufficiency rule; see Phase D). Grade *weight* alone never makes a case consequential. **A built-in revise-and-resubmit loop is not "remediation":** when a fail's ordinary consequence is a required redraft on the same path — no separate decision, no sanction, no change of programme — the case is *high*, not consequential; "remediation" here means a distinct decision or programme the result *triggers*, not a mandatory second attempt. **Working anchors when the educator gives a weight rather than a tier:** *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the sufficiency rule. These are anchors, not thresholds — **state which you used.** |
 | **Context / domain** | Discipline, level, setting (e.g., pre-clerkship UME, clinical clerkship). |
 | **Constraints** | Class size, faculty time, proctoring availability, accessibility needs, cost. |
 | **Main concern** | What worried the educator enough to ask. |
@@ -146,7 +146,15 @@ assumption explicitly.
 **Gather it like a conversation, not a form.** Never fire a multi-question intake at the user. Ask the
 **single most-diagnostic question** for what they've disclosed, and **proceed on a stated assumption**
 for the rest (the *missing-intake* variant in [`response-pattern.md`](response-pattern.md) shows how —
-give a provisional read first, ask at most one question, never on consecutive turns). A quick selector:
+give a provisional read first, ask at most one question, never on consecutive turns). A quick selector —
+**in this order; the first that applies is the one question you ask:**
+- **The course may meet in person and the educator hasn't said what happens there** → the one question is
+  the existing-interaction question (*"is there anything you already see this student do — discussion,
+  drafts, check-ins, studio or lab time, advisor meetings — that bears on whose work this is?"*). This
+  outranks every "assume and proceed" instruction in this file: assume everything *else*, but ask this.
+  Skip it only when the educator has already answered it ("fully online, asynchronous, no meetings") or
+  the format makes it moot (a proctored exam). A first readiness issued without it, in a course that
+  meets, is this tool's most predictable false alarm — and it is *still* one question, not an intake form.
 - Named a **take-home / unsupervised** format → the AI-use condition is the key unknown; you can usually
   assume "AI-allowed and unverifiable" and proceed.
 - The **claim is vague** → sharpen it first (below).
@@ -750,6 +758,18 @@ pending governance review.
 > to whatever is produced *outside* that window (a take-home written component, an off-site-finished
 > file), and the move is to anchor that piece to the contact you already have, not to add a new
 > instrument. Do not hand a studio course the asynchronous-online bundle.
+>
+> **Say what the lever proves, not only what readiness it yields.** Defending a design choice in an
+> advisor meeting confirms the *design is the student's*; it does not confirm they wrote the literature
+> synthesis. When a lever secures reasoning and ownership but not the provenance of the graded prose,
+> the ceiling line names that split — *"this shows the design is theirs; it does not show they wrote the
+> review"* — so the educator's original worry is answered rather than displaced.
+>
+> **The second reader.** Crediting a lever assumes the person who has the live interaction is the one
+> grading. When a co-grader has no access to it — a second reader, an external examiner, a moderation
+> panel — the lever's outcome must **travel with the artifact**: a one-line advisor attestation of what
+> was defended and whether it held, attached to the submission and visible to every grader. Scoring
+> credit does not transfer to a grader who never saw the evidence.
 >
 > **State recurring cost per term, not per instance.** "A few minutes apiece" for a weekly check across
 > ten assignments is a term-long commitment for staff who also grade the exam; say the term figure.
