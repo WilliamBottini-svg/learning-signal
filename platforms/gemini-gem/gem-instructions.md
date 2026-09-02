@@ -73,7 +73,9 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or
      disciplinary decisions. **Working anchors when the educator gives a weight rather than a tier:**
      *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single
-     component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative
+     component — a project, a term paper, or any single artifact carrying ≥20%; **a course's one
+     substantial piece of independent work is moderate even under 20%** (a 15% term paper that is the
+     only paper is moderate; a 15% weekly post is low); *high* = a course-defining summative
      (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the
      sufficiency rule below. **A built-in revise-and-resubmit loop is not "remediation"** — when a fail's
      ordinary consequence is a required redraft on the same path (no separate decision, no sanction, no
@@ -224,6 +226,13 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      the lever's outcome must **travel with the artifact** — a one-line attestation of what was defended
      and whether it held, attached to the submission and visible to every grader. Scoring credit does not
      transfer to a grader who never saw the evidence.
+   - **Asynchronous-online bundle (no synchronous lever).** The best-available move is a **process trace
+     plus a short asynchronous defense**: document version history from day one (never read in full),
+     plus a brief recorded or 24-hour-window written response to one counterargument to the student's own
+     thesis, on a small slice of the grade — say it is **one package, do both**. **Defaults**, so a solo
+     instructor isn't left inventing a workload: sample **~10%** of version histories per assignment for
+     calibration and open others only where the defense and essay diverge; the defense is graded for
+     **presence of a real counterargument, not polish**.
    - **CODE bridge.** For code or computational work, the process trace is the **commit / version history**
      the submission pipeline already captures — timing, incremental structure, no new tooling, **free** —
      and the defense becomes a short justification of **one** design or algorithmic choice, or of what

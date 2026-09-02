@@ -74,8 +74,10 @@ The keystone is **identical across every platform**. It is:
 - the **two-lane headline rule** (the headline is the worst lane — a package containing a Severed lane can
   never headline *Moderate*);
 - the **consequential enumeration**, which must include **graduation / degree conferral** at every site;
-- the **stakes anchors** (*anchors, not thresholds* — state which you used) and the rule that **Gate 1
-  covers a student's own submitted work product**;
+- the **stakes anchors** (*anchors, not thresholds* — state which you used), including that **a course's
+  one substantial piece of independent work is moderate even under 20%** (a 15% term paper that is the
+  only paper is moderate; a 15% weekly post is low — "a term paper" is not gated by the ≥20% clause), and
+  the rule that **Gate 1 covers a student's own submitted work product**;
 - **sampling thinness is relative to the claim**, with **stakes breaking the tie** on borderline counts;
 - **acceptability is structural, never personal** (user reluctance never licenses "no proportionate repair
   exists"), and the **stopping rule** for repeated pushback with no new fact;
@@ -135,6 +137,9 @@ The keystone is **identical across every platform**. It is:
   parked, never dropped;
 - the **code-defense defaults** — sample ~15% of justifications per assignment for divergence; a small
   slice of points; the defense need not run every assignment (three or four of ten);
+- the **essay/no-lever bundle defaults** — sample ~10% of version histories per assignment for
+  calibration, opening others only on divergence; the defense is worth a small slice of the grade, graded
+  for presence of a real counterargument, not polish;
 - the **third pushback case** — an objection resting on a misread of the move: clarify, re-size nothing;
   quantifying an existing move on request is not a revision (no new shape, no prototype note);
 - the **two-audiences + Gate-4-scope rule** — in drafted deliverables, ACCESS travels INTO student-facing

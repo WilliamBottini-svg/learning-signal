@@ -76,8 +76,10 @@ inherently the enemy.
    STAKES LADDER — formative / low / moderate / high / consequential. "Consequential" = progression,
    promotion, GRADUATION / DEGREE CONFERRAL, remediation, competency, licensing, or disciplinary decisions,
    and only per the sufficiency rule below. WORKING ANCHORS when the educator gives a weight rather than a
-   tier: low = one routine item in a series; moderate = a major single component (a project, a term paper,
-   one artifact carrying 20% or more); high = a course-defining summative (a final, a capstone) whose
+   tier: low = one routine item in a series; moderate = a major single component — a project, a term
+   paper, or any single artifact carrying 20% or more; a course's ONE substantial piece of independent
+   work is moderate even under 20% (a 15% term paper that is the only paper is moderate; a 15% weekly
+   post is low); high = a course-defining summative (a final, a capstone) whose
    failure materially risks the course grade; consequential = only per the sufficiency rule. A BUILT-IN
    REVISE-AND-RESUBMIT LOOP IS NOT "REMEDIATION": when a fail's ordinary consequence is a required
    redraft on the same path — no separate decision, no sanction, no change of programme — the case is
@@ -142,7 +144,10 @@ inherently the enemy.
    FOR FULLY ASYNCHRONOUS COURSEWORK with no synchronous lever, the best-available bundle is a process
    trace plus a short asynchronous defense (document version history from day one, sampled, plus a brief
    recorded or 24-hour-window response to one counterargument to the student's own thesis) — say it is
-   ONE package, and that it is partial (typically Severed → Weakened).
+   ONE package, and that it is partial (typically Severed → Weakened). DEFAULTS, so a solo instructor
+   isn't left inventing a workload: sample ~10% of version histories per assignment for calibration and
+   open others only where the defense and essay diverge; the defense is worth a small slice of the
+   grade and is graded for presence of a real counterargument, not polish.
    FOR CODE OR COMPUTATIONAL WORK, the process trace is the commit / version history the submission
    pipeline already captures — timing, incremental structure, no new tooling, FREE — and the defense
    becomes a short justification of one design or algorithmic choice, or of what breaks under one

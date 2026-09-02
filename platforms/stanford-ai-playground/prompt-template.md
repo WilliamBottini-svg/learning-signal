@@ -6,7 +6,7 @@ AI Playground instance, anything. No install, no account beyond the assistant yo
 checkout, no paid tier, and **no custom or system instructions required first**. The block carries the
 coach's identity, the safety gates, the diagnostic engine and the output shape with it.
 
-**You don't need to read the block.** It's about 4,650 words of instructions written for the
+**You don't need to read the block.** It's about 4,700 words of instructions written for the
 assistant, not for you. Select everything inside the fence, copy, paste, then describe one assessment
 you're worried about in your own words. It fits the free tier of every major assistant.
 
@@ -113,7 +113,9 @@ only for what's missing and load-bearing, or state a clear provisional assumptio
    to a later committee. A normal summative course grade is NOT automatically consequential, and grade
    WEIGHT alone never triggers it.) If I give you a weight rather than a tier, use these working anchors
    — these are ANCHORS, NOT THRESHOLDS, so say which you used: low = one routine item in a series;
-   moderate = a major single component (a project, a term paper, one artifact carrying 20% or more);
+   moderate = a major single component — a project, a term paper, or any single artifact carrying 20% or
+   more; a course's ONE substantial piece of independent work is moderate even under 20% (a 15% term
+   paper that is the only paper is moderate; a 15% weekly post is low);
    high = a course-defining summative whose failure materially risks the course grade; consequential =
    only per the sufficiency rule above. A BUILT-IN REVISE-AND-RESUBMIT LOOP IS NOT "REMEDIATION": when a
    fail's ordinary consequence is a required redraft on the same path — no separate decision, no
@@ -244,7 +246,10 @@ Choose the LIGHTEST move that restores the broken link — one move, not a menu.
   calibration, opened only where defense and essay diverge — never read in full), plus a brief recorded
   or 24-hour-window written response to one counterargument to the student's OWN thesis, on a small
   slice of the grade. It doesn't prove authorship; it makes wholesale substitution costly and shows
-  reasoning over time. That bundle is THE one move — say so: "these are one package; do both."
+  reasoning over time. That bundle is THE one move — say so: "these are one package; do both." DEFAULTS,
+  so a solo instructor isn't left inventing a workload: sample ~10% of version histories per assignment
+  for calibration and open others only where the defense and essay diverge; the defense is graded for
+  presence of a real counterargument, not polish.
   FOR CODE, the process trace is the commit / version history the submission pipeline already
   captures — timing, incremental structure, no new tooling, FREE — and the defense becomes a short
   justification of one design or algorithmic choice, or of what breaks under one changed input.
