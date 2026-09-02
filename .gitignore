@@ -39,3 +39,6 @@ __pycache__/
 
 # Transient scorer output
 .tmp-*
+
+# release asset build output
+dist/
