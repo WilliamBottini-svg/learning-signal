@@ -42,6 +42,13 @@ def build_claude_skill(out: Path, v: str) -> Path:
     # of references/ beside SKILL.md and we rewrite that one prefix.
     p = out / f"learning-signal-check-claude-skill-{v}.zip"
     skill = SKILL_MD.read_text(encoding="utf-8").replace("](../../references/", "](references/")
+    # claude.ai caps the frontmatter description at 200 characters; the plugin keeps the
+    # long triggering description, the upload zip gets a generated short one.
+    short = ("Checks whether an assessment still shows student learning when AI is available, "
+             "halts at the earliest broken validity link, recommends one proportionate fix. "
+             "Not a cheating detector.")
+    assert len(short) <= 200, len(short)
+    skill = re.sub(r"description:\s*>-\n(?:[ \t]+.*\n)+", f"description: {short}\n", skill, count=1)
     with zipfile.ZipFile(p, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("learning-signal-check/SKILL.md", skill)
         for f in sorted(REFS.glob("*.md")):
