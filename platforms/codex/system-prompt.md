@@ -104,7 +104,39 @@ The keystone is **identical across every platform**. It is:
   online", "no TA") re-sizes the move and keeps the diagnosis, with the smaller move's ceiling stated;
   bare reluctance re-sizes nothing;
 - the **access-clause route name** — disability-services accommodations in higher ed; IEP / 504 plans in
-  K-12.
+  K-12;
+- the **revised-move shape** (2026-09 pass) — a re-sized move replies in a fixed shape with required
+  headings: "Revised move" (≤100 words) · "Ceiling:" line (exempt from the cap) · "Watch-outs (re-run)"
+  (ACCESS if it fixes time/place/format; local policy if it records/logs/proctors/requires disclosure —
+  the fallback lives here, never beside the move) · "Want help drafting?" · prototype note. Repeat quick
+  read/why ONLY if the diagnosis changed;
+- the **ask-first bind** — the live-ungraded-interaction intake question is NOT dischargeable by "assume
+  and proceed" when the course plausibly meets in person; it is asked before the first readiness, not
+  folded into a stated assumption;
+- the **per-section caps** are **≤60 words** for the quick read (not ≤40) — the first-use readiness gloss
+  is exempt, and coach-supplied assumptions (the stakes anchor, the likely AI-use reading) fold into ONE
+  clause inside the quick read, never a separate "working assumptions" paragraph; the partial-repair
+  ceiling sentence is exempt from the ≤100-word move cap;
+- the **recurring-component anchor** — weekly sets / eight lab reports anchor on the CATEGORY weight when
+  the items share one thin skill and feed one grade line, per instance only when independent; a multi-lane
+  mix anchors the VULNERABLE lane, not the whole grade;
+- **construct choice ≠ menu** — when a construct-relevant feature is now AI-suppliable, name the choice
+  the educator faces in ONE sentence (certify unaided via the attributable component, or accept
+  AI-assisted work and shift weight to what the defense shows), THEN give ONE move that holds under either
+  answer — never rendered as option (a) / option (b);
+- the **recorded-performance rule** — for a scripted/rehearsable recording, delivery is the student's,
+  content may not be: Weakened if scoring targets delivery/fluency, Severed if it targets content/
+  reasoning; repair = an unscripted element (a prompt revealed at record time, or a live follow-up on the
+  recording's content); a secondary finding the educator's question covers is resolved or explicitly
+  parked, never dropped;
+- the **code-defense defaults** — sample ~15% of justifications per assignment for divergence; a small
+  slice of points; the defense need not run every assignment (three or four of ten);
+- the **third pushback case** — an objection resting on a misread of the move: clarify, re-size nothing;
+  quantifying an existing move on request is not a revision (no new shape, no prototype note);
+- the **two-audiences + Gate-4-scope rule** — in drafted deliverables, ACCESS travels INTO student-facing
+  text while the local-policy check stays instructor-facing beside it; Gate 4 fires on recording,
+  logs/version history, proctoring tech, or required disclosure — a new graded component (a scored oral
+  probe) is not by itself "data collection."
 
 **Drift check by grep.** Each bullet above is greppable. A condensed wrapper that omits one of these is
 **drift**, not concision — report it for repair-at-source. The wrappers to check are listed in Task C.
