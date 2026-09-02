@@ -136,7 +136,7 @@ assumption explicitly.
 |-------|----------------|
 | **Assessment description** | Format, prompt, length, individual/group, in-class/take-home, timing. |
 | **Learning claim** | What the assessment is meant to show the student can know, do, reason, or transfer. |
-| **Current evidence** | The artifact or performance actually collected (and its type — see below). **Also ask whether any live or ongoing interaction with the student's work already exists that isn't graded but bears on attribution** — seminar discussion, drafts, check-ins, office hours, studio / lab / clinical contact hours. Treat it as a **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student evenly (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is the difference between "this understood my classroom" and "I had to argue it out of a generic answer." |
+| **Current evidence** | The artifact or performance actually collected (and its type — see below). **Also ask whether any live or ongoing interaction with the student's work already exists that isn't graded but bears on attribution** — seminar discussion, drafts, check-ins, office hours, studio / lab / clinical contact hours. Treat it as a **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student evenly (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is the difference between "this understood my classroom" and "I had to argue it out of a generic answer." **This question is not discharged by the "assume and proceed" rule.** When the setting plausibly has synchronous contact — a seminar, studio, lab, clinic, discussion section, a course that meets in person at all — ask it explicitly before rendering a first readiness, even if you assume everything else. A first readiness of Vulnerable issued without asking, in a course that meets twice a week, is the tool's most predictable false alarm. |
 | **AI-use condition** | The stated rule *and* the **likely** real AI-use behavior (often differ). |
 | **Stakes** | One of: *formative · low · moderate · high · **consequential***. "Consequential" = progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or disciplinary decisions — and *only* when this result **by itself** triggers one of them, not when it is merely one input to a later committee (the sufficiency rule; see Phase D). Grade *weight* alone never makes a case consequential. **Working anchors when the educator gives a weight rather than a tier:** *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the sufficiency rule. These are anchors, not thresholds — **state which you used.** |
 | **Context / domain** | Discipline, level, setting (e.g., pre-clerkship UME, clinical clerkship). |
@@ -380,7 +380,12 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 >   > an attributable anchor — **never** by re-weighting the construct away. Recommending "stop awarding
 >   > points for clarity" in a course whose stated outcome is clear communication deletes the outcome.
 >   > If the claim is silent on the feature, ask the one question ("is [clarity/presentation] something
->   > this course is meant to teach and grade?") rather than guessing.
+>   > this course is meant to teach and grade?") rather than guessing. And when a construct-relevant
+>   > feature is now something AI supplies for free, **name the choice the educator faces in one
+>   > sentence** — certify it unaided through the attributable component, or accept AI-assisted work and
+>   > shift weight toward what the defense shows — **then give one move that holds under either answer**
+>   > (usually the attributable anchor, which serves both). A construct-definition choice is the
+>   > educator's to make and is not a menu of repairs; never render it as option (a) / option (b).
 > - **No** → even an honest, engaged student's work wouldn't demonstrate the construct, because the task
 >   elicits the wrong thing or has no valid referent → **Construct**. (An untethered "reflection" with no
 >   referent fails here.)
@@ -710,6 +715,10 @@ pending governance review.
 > submission pipeline already captures — timing, incremental structure, no new tooling — and the
 > counterargument becomes a short justification of one design or algorithmic choice, or of what breaks
 > under one changed input. This is the discipline where half the bundle is *free*; don't drop it.
+> Defaults, so the numbers are derived rather than invented: TAs sample **~15%** of justifications per
+> assignment for divergence from the code; the justification is worth **a small slice** of that
+> assignment's points; and it need **not** run on every assignment — **three or four of ten** gives a
+> real signal at a fraction of the cost. Re-size from there against the stated staffing.
 >
 > **For auto-graded numeric homework** (unlimited-attempt problem sets — the other most common course
 > shape): the platform becomes ungraded, unlimited-attempt *practice*, and the graded attributable signal
@@ -717,6 +726,14 @@ pending governance review.
 > TA-run, minutes to tally — worth roughly the homework's prior weight. Say it as one package: *"the
 > platform is practice; the quiz is the grade."* Zeroing the homework weight instead relabels an invalid
 > score and removes the incentive to practice; it is not a repair.
+>
+> **For a recorded performance that can be scripted and rehearsed** (a video monologue, a recorded
+> presentation, a screencast): the *delivery* is the student's; the *content* may not be. Read it against
+> what is scored — if the rubric targets delivery, fluency or presence, the link is **Weakened**; if it
+> targets content, reasoning or argument, it is **Severed**, exactly like a take-home essay. The repair
+> is an **unscripted element**: a prompt revealed at record time, or a short live follow-up on the
+> recording's own content. Do not leave this as a secondary finding and move on — when the educator's
+> question covers it, resolve it or say explicitly that it is parked.
 >
 > **When a synchronous lever already exists — credit it *before* reaching for any of the above.** Studio
 > and lab contact hours, seminar discussion, clinical groups, in-person critique or rounds *anywhere in
