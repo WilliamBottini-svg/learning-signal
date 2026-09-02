@@ -22,6 +22,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: check-consistency.py
         run: python3 scripts/check-consistency.py
+      - name: build-claude-skill --check
+        run: python3 scripts/build-claude-skill.py --check
+      - name: build-site --check
+        run: python3 scripts/build-site.py --check
 
   links:
     name: Markdown links and anchors
