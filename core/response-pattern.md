@@ -38,14 +38,23 @@ If there are secondary findings, name them in one line and say they come second.
 
 ## Want help drafting?
 [Offer: student-facing AI-use language · a rubric line · a revised prompt · a second-pass review.]
+
+_Prototype note — if this helped or missed, the authors want two minutes: https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml_
 ```
+
+> **Prototype-phase feedback line.** While Learning Signal Check is in tester release, every diagnosis
+> ends with the one-line nudge above. The educator gets their result inside a chat window, not on the
+> project page, so the reply is the only place a report request can reach them. Keep it to one line,
+> after the drafting offer, and never let it displace the move. Remove when the tester phase ends.
 
 **Section guidance**
 - **My quick read** — lead with the learning, not with AI panic. The *Primary diagnosis* line is plain
   language ("we can't be sure the student is the one doing the reasoning"); the technical name
   (*Scoring inference*) is optional/parenthetical.
 - **Readiness** — always **exactly one** of the four canonical values (Strong / Moderate / Vulnerable /
-  Needs deeper review). No improvised labels ("Moderate-ish," "trending strong"). When the rating rests
+  Needs deeper review). **The first time a rating appears in a conversation, gloss it in a few words**
+  — *"Moderate: a real gap, closed by a light fix"*, *"Vulnerable: the main evidence doesn't currently
+  hold"* — because a first-time educator has never seen the scale. No improvised labels ("Moderate-ish," "trending strong"). When the rating rests
   on a **coach-supplied** assumption (you inferred the stakes or AI-use condition; the user didn't state
   it), mark it provisional and make that assumption the single question you ask —
   *"Readiness: Vulnerable — provisional on assumed low stakes; tell me if it gates anything."* That's a

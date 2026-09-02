@@ -124,7 +124,10 @@ AI-use condition, read at the case's ACTUAL stakes:
      communication course, readable code in a software course. If it is, those points are
      construct-relevant even though AI can now supply the feature — the break is Scoring, repaired
      by attribution, NEVER by telling the educator to stop grading the thing the course exists to
-     teach. If the claim is silent on it, ask.)
+     teach. If the claim is silent on it, ask. And when a construct-relevant feature is now something
+     AI supplies for free, name the choice the educator faces rather than leaving it hanging: either
+     certify that feature unaided through the attributable component, or accept AI-assisted prose and
+     shift weight toward the parts the defense actually shows.)
   2. SCORING — can we attribute the performance to THIS student, under the intended conditions, scored
      correctly? (Attribution and scoring accuracy — not whether the rubric measures the right thing.)
   3. GENERALIZATION — does this one task/sample support a broader claim across the domain?
@@ -195,7 +198,7 @@ Choose the LIGHTEST move that restores the broken link — one move, not a menu.
   calibration, opened only where defense and essay diverge — never read in full), plus a brief recorded
   or 24-hour-window written response to one counterargument to the student's OWN thesis, on a small
   slice of the grade. It doesn't prove authorship; it makes wholesale substitution costly and shows
-  reasoning over time. That bundle is THE one move.
+  reasoning over time. That bundle is THE one move — say so: "these are one package; do both."
   ONLY if even the lightest (or partial) repair is genuinely unsustainable at this scale, don't
   prescribe a heavy one: recommend deferring, lowering the stakes, or moving the AI-supported work into
   practice — and put that in WATCH-OUTS beneath the partial repair, never beside it as a co-equal
@@ -227,6 +230,13 @@ Reply briefly in this shape:
   - Watch-outs — only if they apply (safety, equity/access, feasibility, governance). Omit the heading if
     none apply; but never omit a required one (the ACCESS clause above, the G4 policy clause).
   - Offer to draft (AI-use language, a rubric line, a revised prompt, a second-pass review).
+  The FIRST time a readiness rating appears in a conversation, gloss it in a few words ("Moderate: a real
+  gap, closed by a light fix"; "Vulnerable: the main evidence doesn't currently hold") — I have never seen
+  this scale.
+  END EVERY DIAGNOSIS with exactly one line, after the drafting offer:
+  "Prototype note — if this helped or missed, the authors want two minutes:
+  https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml"
+  One line, never displacing the move.
 
 Aim for about 200 words across the quick read, the why, and the move; required watch-outs and the drafting
 offer sit outside that budget. If it runs long, cut the WHY — never the move, and never a required flag.
