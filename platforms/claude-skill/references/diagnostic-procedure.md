@@ -136,7 +136,7 @@ assumption explicitly.
 |-------|----------------|
 | **Assessment description** | Format, prompt, length, individual/group, in-class/take-home, timing. |
 | **Learning claim** | What the assessment is meant to show the student can know, do, reason, or transfer. |
-| **Current evidence** | The artifact or performance actually collected (and its type — see below). |
+| **Current evidence** | The artifact or performance actually collected (and its type — see below). **Also ask whether any live or ongoing interaction with the student's work already exists that isn't graded but bears on attribution** — seminar discussion, drafts, check-ins, office hours, studio / lab / clinical contact hours. Treat it as a **candidate mitigant on Scoring, not automatic credit**: probe whether it covers every student evenly (the quiet third of a seminar is exactly whom it covers worst) and whether it ties to *this artifact's* claims or only to general engagement. Asking here, before the first diagnosis, is the difference between "this understood my classroom" and "I had to argue it out of a generic answer." |
 | **AI-use condition** | The stated rule *and* the **likely** real AI-use behavior (often differ). |
 | **Stakes** | One of: *formative · low · moderate · high · **consequential***. "Consequential" = progression, promotion, **graduation / degree conferral**, remediation, competency, licensing, or disciplinary decisions — and *only* when this result **by itself** triggers one of them, not when it is merely one input to a later committee (the sufficiency rule; see Phase D). Grade *weight* alone never makes a case consequential. **Working anchors when the educator gives a weight rather than a tier:** *low* = one routine item in a series (a weekly post, one of many memos); *moderate* = a major single component (a project, a term paper, one artifact carrying ≥20%); *high* = a course-defining summative (a final, a capstone) whose failure materially risks the course grade; *consequential* = only per the sufficiency rule. These are anchors, not thresholds — **state which you used.** |
 | **Context / domain** | Discipline, level, setting (e.g., pre-clerkship UME, clinical clerkship). |
@@ -702,9 +702,31 @@ pending governance review.
 > and a brief recorded or 24-hour-window written response to one instructor-posed counterargument to the
 > student's own thesis, scored on a small slice of the grade. This does not prove authorship; it makes
 > wholesale substitution costly and shows reasoning over time. It typically moves Scoring from Severed to
-> Weakened. **That bundle is the one move.** The lower-stakes / move-to-practice fallback is a
-> *watch-out* beneath it — not a co-equal option — because offering both reads as "a half-fix or a
-> non-fix" and the educator leaves with nothing.
+> Weakened. **That bundle is the one move — say so: "these are one package; do both."** The lower-stakes /
+> move-to-practice fallback is a *watch-out* beneath it — not a co-equal option — because offering both
+> reads as "a half-fix or a non-fix" and the educator leaves with nothing.
+>
+> **For code or computational work,** the process trace is the commit / version history the course's
+> submission pipeline already captures — timing, incremental structure, no new tooling — and the
+> counterargument becomes a short justification of one design or algorithmic choice, or of what breaks
+> under one changed input. This is the discipline where half the bundle is *free*; don't drop it.
+>
+> **For auto-graded numeric homework** (unlimited-attempt problem sets — the other most common course
+> shape): the platform becomes ungraded, unlimited-attempt *practice*, and the graded attributable signal
+> moves to a short synchronous closed-book check on the same skill — a five-question in-section quiz,
+> TA-run, minutes to tally — worth roughly the homework's prior weight. Say it as one package: *"the
+> platform is practice; the quiz is the grade."* Zeroing the homework weight instead relabels an invalid
+> score and removes the incentive to practice; it is not a repair.
+>
+> **When a synchronous lever already exists — credit it *before* reaching for any of the above.** Studio
+> and lab contact hours, seminar discussion, clinical groups, in-person critique or rounds *anywhere in
+> the programme* are real Scoring evidence already. Say so on the first pass; the vulnerability narrows
+> to whatever is produced *outside* that window (a take-home written component, an off-site-finished
+> file), and the move is to anchor that piece to the contact you already have, not to add a new
+> instrument. Do not hand a studio course the asynchronous-online bundle.
+>
+> **State recurring cost per term, not per instance.** "A few minutes apiece" for a weekly check across
+> ten assignments is a term-long commitment for staff who also grade the exam; say the term figure.
 >
 > **Scale / resource constraint — assemble before you refuse.** When the cohort is large and
 > proctoring / sim / faculty time are constrained, do **not** jump to "no proportionate repair exists."

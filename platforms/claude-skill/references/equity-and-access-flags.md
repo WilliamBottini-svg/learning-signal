@@ -107,7 +107,9 @@ Variants — pick the one matching the trigger:
 > **Secure-repair burden:** The attribution fix here (a proctored sitting / fixed-time checkpoint / oral
 > viva) may not be equally feasible for every student — caregivers, disabled students, non-native
 > speakers, or remote/working students can be disadvantaged by the *format*, not the learning. Offer a
-> flexible window, an alternative attributable format, or an accommodation path.
+> flexible window, an alternative attributable format, or an accommodation path. Name the route the
+> educator actually has: **disability-services accommodations in higher education; IEP / 504 plans in
+> K-12** — a teacher who never sees those words will assume the tool does not know her students exist.
 
 Keep it to **one short flag**. It names the risk and points at a mitigation — it does not lecture.
 
