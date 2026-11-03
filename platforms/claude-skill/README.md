@@ -1,8 +1,22 @@
 # Claude Skill — Learning Signal Check
 
-Installable Claude Code plugin and Claude.ai skill export. Behavior is defined in
-[`SKILL.md`](SKILL.md); the five procedure files in [`references/`](references/) are verbatim exports
-of [`../../core/`](../../core/).
+Installable Claude Code plugin and Claude.ai skill export. Behavior is authored in
+[`SKILL.md`](SKILL.md); [`references/`](references/) holds **seven** knowledge files — **six**
+(`skill-core.md`, `diagnostic-procedure.md`, `response-pattern.md`, `repair-taxonomy.md`,
+`safety-guardrails.md`, `equity-and-access-flags.md`) are **byte-identical exports** of
+[`../../core/`](../../core/), and `ume-domain-pack.md` is a curated UME digest. `skill-core.md` is the
+**spine** — the document every wrapper is generated from; it supplies orientation (identity, keystone,
+operating loop, commitments, file map) that the procedure files deliberately don't restate.
+
+**The packaged copy is what loads.** `skills/learning-signal-check/SKILL.md` is **generated** from the
+root [`SKILL.md`](SKILL.md) by [`../../scripts/build-claude-skill.py`](../../scripts/build-claude-skill.py)
+(relative hrefs re-based, prose untouched) — a root `SKILL.md` is ignored once a `skills/` directory
+exists. Edit the root file, then:
+
+```bash
+python3 scripts/build-claude-skill.py          # regenerate
+python3 scripts/build-claude-skill.py --check  # CI gate: non-zero on drift
+```
 
 ## Install (Claude Code)
 

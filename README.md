@@ -9,7 +9,44 @@ the learning signal is weakened.
 It is an assessment-**design** coach. It is **not** an AI-proofing tool, and it is **not** a
 cheating detector.
 
-> **v0.5.0** — first public release. **G06 expert-ratified (M7, 2026-07-06);** other golden targets remain author-derived. Model-based evals + Layer 3 UX (5 educators, UX SHIP WITH CAVEATS). Red-team Medium audit: [`tests/results/engine-redteam-remediation-status.md`](tests/results/engine-redteam-remediation-status.md).
+> **This is a prototype, released to find testers.** It has been red-teamed and made internally
+> consistent; it has **not** been validated by educators at scale. That is what you are for.
+> Try it on one real assessment, then [tell us what happened](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)
+> — three questions, two minutes. The evidence base, stated without flattery, is under
+> [Validation](#validation--where-the-evidence-actually-stands-v060).
+
+---
+
+## Try it in 60 seconds
+
+No install, no account, no plugin. Open **any** chat assistant — ChatGPT (free tier is fine), Claude,
+Gemini, Copilot — and paste in the block from
+[`platforms/stanford-ai-playground/prompt-template.md`](platforms/stanford-ai-playground/prompt-template.md),
+then describe one assessment you're worried about. That's it.
+
+It is self-contained: the safety screen, the five-link walk, the halting rule and the output shape all
+travel in the paste. You do not need the repo, the knowledge files, or a paid tier to get a real answer.
+
+The fuller setups below buy you two things the paste-block can't: **persistence** (a saved assistant you
+don't rebuild each time) and **depth** (the full repair taxonomy and the medical-education pack as
+retrievable knowledge). Start with the paste. Set up a wrapper once it has earned the twenty minutes.
+
+## Then tell us what happened
+
+Every run report is useful, and the ones where it was **wrong** are the most useful. Three questions:
+what you tested, what it said, whether you'd actually do it.
+
+**→ [Report a run](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)**
+
+The three things we most want to know from testers right now:
+
+1. **Did it halt at the right link?** When it named the earliest broken link, was that the real
+   problem in your course, or was the real problem somewhere it didn't look?
+2. **Was the one move feasible?** Not "good advice" — could you do it next week, at your class size,
+   with your time?
+3. **Did it ever say "this is fine" and was it right?** Restraint is the behavior we're least sure of.
+   If it cleared an assessment you think is weak, or flagged one you know is strong, that's the report
+   we most need.
 
 ---
 
@@ -101,25 +138,47 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.
 
-### Validation (v0.5.0)
+### Validation — where the evidence actually stands (v0.6.0)
 
-Cross-family frontier results (June 2026) live in
-[`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md). The
-**v0.3 validation program** — weak-tier coverage, output-UX validation, and manual Cursor runs — is
-specified in [`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md) and **executed** (see
-[`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md),
-[`tests/results/ux-persona-v0.3-2026-06-26.md`](tests/results/ux-persona-v0.3-2026-06-26.md)). Pre-stripped blind prompts for manual
-runs: [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md). **Automated Mode 1 runs**
-via Stanford AI Gateway: [`tests/harness/README.md`](tests/harness/README.md) (`scripts/run_mode1_eval.py`).
+Read this before citing anything below.
 
-**Honesty caveat:** Model-based eval results cover instruction-fidelity and cross-family robustness.
-**G06 is expert-ratified** (human M7, 2026-07-06); remaining golden targets are author-derived. Layer 3
-educator think-aloud: UX SHIP WITH CAVEATS (5 educators). Summary:
-[`tests/results/expert-ratified-targets-2026-07-06.md`](tests/results/expert-ratified-targets-2026-07-06.md)
-(session records not published). Faculty kit:
-[`tests/M7-faculty-ratification-kit.md`](tests/M7-faculty-ratification-kit.md). The skill refuses unsafe
-requests and routes PHI — but a hard guarantee of 0% PHI echo requires a platform PII boundary, not
-instruction alone.
+- **Validation to date is predominantly model-based.** The golden targets were derived by one author
+  applying the same procedure being tested, so pass rates measure **instruction-following, not
+  pedagogical correctness**.
+- **G06 is the one externally ratified case** (three raters, unanimous on the primary, 2026-07-06).
+  Session records are held offline and available on request; see the provenance block in
+  [`tests/results/expert-ratified-targets-2026-07-06.md`](tests/results/expert-ratified-targets-2026-07-06.md).
+  The remaining 30 golden targets are author-derived.
+- **Layer 3 educator think-aloud: 5 educators, "UX ship with caveats."** Same provenance caveat — the
+  protocol and the results were committed together, so the git history alone does not evidence the
+  sessions.
+- **No lift over a strong base prompt has been demonstrated.** On the headline golden metric the skill
+  scored **25/27 against base's 26/27**, and both scored 6/6 cross-family. The measured advantage is in
+  **safety-gate discipline** (14/14 vs 11/14 adversarial), not in diagnosis. *Both figures are now
+  **provisional**: they were computed against a key in which G06 has since changed, and were never
+  re-scored — see the key-change annotation in
+  [`tests/results/full-mode-1-eval-v0.2-2026-06-09.md`](tests/results/full-mode-1-eval-v0.2-2026-06-09.md).
+  The worst case is base 25/27 / skill 24/27, which does not change the conclusion.*
+- **Four independent blind agent runs reached identical diagnoses** — same primary link, same state,
+  same readiness — on all four probe cases. All four also flagged the same four underspecifications in
+  the procedure, which have since been closed.
+- **One regression slice reproduces end-to-end from committed files**, on any OpenAI-compatible endpoint
+  (no institutional gateway required). Structural conformance on that slice is **80.0%** against the
+  project's own ≥90% bar — see [`tests/results/redteam-regression-2026-07-06.md`](tests/results/redteam-regression-2026-07-06.md).
+- A hard guarantee of 0% PHI echo requires a **platform PII boundary**, not instruction alone.
+
+---
+
+Underlying artifacts: cross-family frontier results in
+[`tests/results/cross-family-eval-2026-06-11.md`](tests/results/cross-family-eval-2026-06-11.md); the
+**v0.3 validation program** (weak-tier coverage, output-UX validation, manual runs) in
+[`tests/v0.3-validation-plan.md`](tests/v0.3-validation-plan.md) with results in
+[`tests/results/weak-tier-verdict-2026-06-25.md`](tests/results/weak-tier-verdict-2026-06-25.md) and
+[`tests/results/ux-persona-v0.3-2026-06-26.md`](tests/results/ux-persona-v0.3-2026-06-26.md); blind
+prompts for manual runs in [`tests/cursor-manual-run-prompts.md`](tests/cursor-manual-run-prompts.md);
+the automated harness in [`tests/harness/README.md`](tests/harness/README.md); the faculty kit in
+[`tests/M7-faculty-ratification-kit.md`](tests/M7-faculty-ratification-kit.md). Tester run reports
+are collected as [`tester-run` issues](https://github.com/WilliamBottini-svg/learning-signal/issues?q=label%3Atester-run).
 
 ### Minimum model tiers (summary)
 
@@ -143,6 +202,15 @@ programmatic assessment (van der Vleuten 1996; van der Vleuten & Schuwirth 2005)
 Scale (Perkins, Furze, Roe & MacVaugh); the University of Sydney two-lane model; TEQSA and QAA
 assessment-reform guidance; and the AAMC principles for the responsible use of AI in and for medical
 education. Full citations live in [`references/`](references/).
+
+**Closest prior work, stated plainly.** Dawson, Bearman, Dollinger & Boud, *"Validity matters more than
+cheating"* (*Assessment & Evaluation in Higher Education*, 2024) already argued the reframe this project
+rests on: an assessment matters because it licenses an inference, and AI threatens that inference whether
+or not cheating occurred. Cook, Brydges, Ginsburg & Hatala (*Medical Education*, 2015) already
+operationalized Kane's framework as a step-by-step validity-argument walk for this audience. **This
+project does not claim the reframe.** What is its own is the *executable* form: an ordered, halting
+diagnostic that names one primary broken link and one proportionate repair, and a disciplined restraint
+mechanism that returns "no major redesign needed" when the chain holds.
 
 ## Contributing
 

@@ -24,6 +24,11 @@ from eval_lib import (
     sleep_between,
 )
 
+# Placeholder written in place of the real endpoint when redaction is requested. Redaction is an
+# explicit *publish* step (this flag, or scripts/redact_runs.py) — never a silent default: a run log
+# that names an endpoint which was never called is a falsified record.
+REDACTED_GATEWAY = "https://<your-gateway>/v1"
+
 
 def load_dotenv(path: Path) -> None:
     if not path.exists():
@@ -85,6 +90,15 @@ def main() -> int:
     parser.add_argument("--delay", type=float, default=1.0, help="Seconds between API calls")
     parser.add_argument("--resume", action="store_true", help="Skip case_id+condition already in output")
     parser.add_argument("--dry-run", action="store_true", help="Print plan without calling the API")
+    parser.add_argument(
+        "--redact-gateway",
+        action="store_true",
+        help=(
+            "Write the placeholder endpoint into run records instead of the endpoint actually called. "
+            "Use only when the log is being produced for publication; scripts/redact_runs.py can do "
+            "the same to an existing log."
+        ),
+    )
     parser.add_argument("--limit", type=int, default=0, help="Max bundles to run (0 = all)")
     args = parser.parse_args()
 
@@ -101,6 +115,13 @@ def main() -> int:
         print(f"Gateway: {base_url}")
         print(f"Model: {args.model}")
         print(f"Bundles planned: {len(bundles)} (resume skips {len(done)} existing)")
+
+    if args.redact_gateway:
+        gateway_recorded = REDACTED_GATEWAY
+        print(f"Recording endpoint as {REDACTED_GATEWAY} (--redact-gateway)")
+    else:
+        # The endpoint actually used. Empty on --dry-run because nothing is called.
+        gateway_recorded = base_url or None
 
     run_id = args.output.stem
     ran = 0
@@ -159,7 +180,7 @@ def main() -> int:
                 else "frontier"
             ),
             "harness": "stanford-ai-gateway-mode1",
-            "gateway_base_url": "https://<your-gateway>/v1",
+            "gateway_base_url": gateway_recorded,
             "skill_version_commit": git_short_sha(),
             "prompts_manifest": rel_to_root(args.prompts),
             "turn_count": len(user_turns),

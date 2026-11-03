@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (must already exist)"
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  # Everything CI runs, re-run against the tag ref. actions/checkout resolves github.ref, which for a
+  # tag push is the tag itself — so these jobs test the exact tree that will be published, not main.
+  verify-tag:
+    name: Re-run CI against the tag
+    uses: ./.github/workflows/ci.yml
+
+  tag-metadata:
+    name: Tag matches declared version
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Tag name equals plugin.json version
+        run: |
+          set -euo pipefail
+          tag="${{ github.event.inputs.tag || github.ref_name }}"
+          declared="$(python3 -c "import json;print(json.load(open('platforms/claude-skill/.claude-plugin/plugin.json'))['version'])")"
+          echo "tag=${tag} declared=v${declared}"
+          if [ "${tag}" != "v${declared}" ]; then
+            echo "::error title=Version mismatch::Tag ${tag} does not match plugin.json version v${declared}. See RELEASING.md."
+            exit 1
+          fi
+      - name: CHANGELOG has a section for this release
+        run: |
+          set -euo pipefail
+          tag="${{ github.event.inputs.tag || github.ref_name }}"
+          version="${tag#v}"
+          if ! grep -qE "^## \[${version}\]" CHANGELOG.md; then
+            echo "::error title=Missing changelog entry::CHANGELOG.md has no '## [${version}]' section."
+            exit 1
+          fi
+          echo "CHANGELOG.md documents ${version}"
+
+  publish:
+    name: Publish GitHub release
+    needs: [verify-tag, tag-metadata]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Extract the changelog section for this tag
+        id: notes
+        run: |
+          set -euo pipefail
+          tag="${{ github.event.inputs.tag || github.ref_name }}"
+          version="${tag#v}"
+          awk -v v="${version}" '
+            $0 ~ "^## \\[" v "\\]" { capture = 1; next }
+            capture && /^## \[/ { exit }
+            capture { print }
+          ' CHANGELOG.md > release-notes.md
+          echo "Release notes:"
+          cat release-notes.md
+      - name: Build install bundles
+        run: python3 scripts/build-release-assets.py --out dist
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="${{ github.event.inputs.tag || github.ref_name }}"
+          if gh release view "${tag}" > /dev/null 2>&1; then
+            echo "Release ${tag} already exists; updating notes."
+            gh release edit "${tag}" --notes-file release-notes.md
+            gh release upload "${tag}" dist/* --clobber
+          else
+            gh release create "${tag}" --title "${tag}" --notes-file release-notes.md --verify-tag dist/*
+          fi

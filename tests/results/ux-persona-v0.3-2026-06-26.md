@@ -1,5 +1,14 @@
 # UX Layer 2 — persona usability (2026-06-26)
 
+## Reproducibility
+
+**This result cannot be independently reproduced from this repository.** Both input JSONL files listed
+below live under `tests/results/runs/`, which is **gitignored** (`tests/results/runs/*.jsonl`) and is
+therefore **not distributed with the repo**; the prompt manifests under `tests/harness/prompts-*.json`
+are gitignored too. A reader has the scorer and this summary, but not the transcripts the scores were
+assigned from — including the "author spot-check" quotes below, which cannot be checked against source.
+Treat everything here as a maintainer-attested record, not a reproducible measurement.
+
 ## Metadata
 
 - **Plan:** [`v0.3-validation-plan.md`](../v0.3-validation-plan.md) Track B Layer 2
@@ -63,11 +72,15 @@
 
 ## Limitations
 
-- Simulated personas via API harness — not human educator testing (Layer 3 deferred).
-- Heuristic rubric; borderline scores deserve author read of saved transcripts in JSONL.
+- Simulated personas via API harness — not human educator testing. *(This line read "Layer 3 deferred",
+  accurate on 2026-06-26; Layer 3 was subsequently recorded on 2026-07-06 —
+  [`educator-think-aloud-2026-07-06.md`](educator-think-aloud-2026-07-06.md), read its provenance block
+  before citing it.)*
+- Heuristic rubric; borderline scores deserve author read of saved transcripts in JSONL — **which are not published** (see *Reproducibility* above).
 - Compare to June 5 baseline: novice 2→4, terse 2→5 after reception-layer hardening.
 
 ## Mandatory caveats
 
-Mode 1 API harness; not live Custom GPT / Gem deployment.
+Mode 1 API harness; not live Custom GPT / Gem deployment. Input JSONLs gitignored — **not independently
+reproducible from this repository**.
 

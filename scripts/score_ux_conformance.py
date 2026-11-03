@@ -75,6 +75,18 @@ LENGTH_REFUSE_MAX = 320
 LENGTH_NDR_MAX = 450
 
 
+
+def display_path(path: Path) -> str:
+    """Repo-relative when possible, absolute otherwise.
+
+    ``Path.relative_to`` raises ``ValueError`` for anything outside the repository, which used to crash
+    the scorer whenever ``--out``/``--inputs``/``--json`` pointed at a scratch directory.
+    """
+    try:
+        return str(path.resolve().relative_to(ROOT.resolve()))
+    except ValueError:
+        return str(path)
+
 @dataclass
 class CheckResult:
     check_id: str
@@ -366,10 +378,7 @@ def render_markdown(
         "",
     ]
     for p in inputs:
-        try:
-            lines.append(f"- `{p.relative_to(ROOT)}`")
-        except ValueError:
-            lines.append(f"- `{p}`")
+        lines.append(f"- `{display_path(p)}`")
     lines += [
         "",
         f"**Rows scored:** {len(rows_scored)}"
@@ -484,7 +493,7 @@ def main() -> int:
             if row.get("condition") != "skill":
                 continue
             row = dict(row)
-            row["_source"] = str(path.relative_to(ROOT))
+            row["_source"] = display_path(path)
             all_rows.append(row)
 
     for row in dedupe_rows(all_rows):
@@ -506,21 +515,23 @@ def main() -> int:
 
     agg = aggregate(rows_scored)
     md = render_markdown(rows_scored, agg, resolved_inputs, excluded)
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(md + "\n", encoding="utf-8")
-    print(f"Wrote {args.out.relative_to(ROOT)}")
+    out_path = args.out if args.out.is_absolute() else ROOT / args.out
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(md + "\n", encoding="utf-8")
+    print(f"Wrote {display_path(out_path)}")
     print(f"Conformance: {agg['passed']}/{agg['applicable']} ({agg['pct']:.1f}%) — {len(agg['failures'])} flagged rows")
 
     if args.json:
         json_path = args.json if args.json.is_absolute() else ROOT / args.json
+        json_path.parent.mkdir(parents=True, exist_ok=True)
         payload = {
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "aggregate": {k: v for k, v in agg.items() if k != "failures"},
             "failures": agg["failures"],
-            "inputs": [str(p.relative_to(ROOT)) for p in resolved_inputs],
+            "inputs": [display_path(p) for p in resolved_inputs],
         }
         json_path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
-        print(f"Wrote {json_path.relative_to(ROOT)}")
+        print(f"Wrote {display_path(json_path)}")
 
     return 0
 

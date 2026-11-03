@@ -13,8 +13,8 @@ type: software
 authors:
   - given-names: William
     family-names: Bottini
-version: 0.5.0
-date-released: "2026-07-06"
+version: 0.6.0
+date-released: "2026-11-03"
 license:
   - MIT
   - CC-BY-4.0

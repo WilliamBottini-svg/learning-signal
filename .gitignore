@@ -36,3 +36,9 @@ tests/results/faculty-validation-*/
 # Python
 __pycache__/
 *.py[cod]
+
+# Transient scorer output
+.tmp-*
+
+# release asset build output
+dist/

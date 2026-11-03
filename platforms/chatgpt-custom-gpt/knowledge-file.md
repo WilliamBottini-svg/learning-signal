@@ -7,18 +7,19 @@ the public description, and the privacy rules. It is **not** a generated bundle:
 canonical export files as-is.
 
 ChatGPT Custom GPTs allow **up to 20 Knowledge files** with RAG retrieval, so there is no need to
-concatenate. Upload the six reference files **individually** — they are already verbatim exports of
+concatenate. Upload the seven reference files **individually** — six are already verbatim exports of
 `core/`, kept byte-identical for retrieval.
 
 ---
 
-## What to upload as Knowledge (the 6 files)
+## What to upload as Knowledge (7 reference files + 1 wrapper file = 8)
 
-Upload these six files from [`../claude-skill/references/`](../claude-skill/references/) **as-is** — they
+Upload these seven files from [`../claude-skill/references/`](../claude-skill/references/) **as-is** — they
 are the GPT's Knowledge base and the source of truth the ≤8,000-char Instructions field offloads to:
 
 | Upload | What it gives the GPT |
 |--------|------------------------|
+| [`skill-core.md`](../claude-skill/references/skill-core.md) | **The spine** — the document every wrapper is generated from: identity and purpose, audience, the keystone in brief, the operating loop with its canonical sources, the behavioral commitments, the canonical file map, and the export note. It is the orientation layer the procedure files deliberately don't restate; without it a retrieval hit on `diagnostic-procedure.md` alone gives the GPT the machine with no statement of what the machine is for. |
 | [`diagnostic-procedure.md`](../claude-skill/references/diagnostic-procedure.md) | **The keystone.** The full 5-link ordered walk, Phase 0 screen, severity scale, halting rule, readiness derivation, restraint, worked examples. |
 | [`response-pattern.md`](../claude-skill/references/response-pattern.md) | The output template + the **reception layer**: default, cold-open onboarding, missing-intake, terse mode, multi-assessment triage, deliverable-first, Strong/restraint, Needs-deeper-review, refuse-and-redirect, and the out-of-scope scope boundary. |
 | [`repair-taxonomy.md`](../claude-skill/references/repair-taxonomy.md) | The full menu of link-restoring repairs, indexed by link, with proportionality/utility logic. |
@@ -26,10 +27,17 @@ are the GPT's Knowledge base and the source of truth the ≤8,000-char Instructi
 | [`equity-and-access-flags.md`](../claude-skill/references/equity-and-access-flags.md) | Equity, differential-impact, and access/accommodation flags surfaced as watch-outs. |
 | [`ume-domain-pack.md`](../claude-skill/references/ume-domain-pack.md) | UME specialization — clinical-reasoning constructs, Miller's pyramid, EPAs/WBA, programmatic assessment, AAMC governance, PHI restriction, and which UME formats break where. |
 
-These files in `references/` are themselves **verbatim exports of the repo's `core/`** (the single source
-of truth). **Re-upload them whenever `core/` changes** — this Knowledge set is build output, never
-hand-edited. If you edit anything, edit `core/`, re-export to `references/`, and re-upload here. (See the
-canonical-source rule in [`../../AGENTS.md`](../../AGENTS.md) §1.)
+Then upload **one wrapper-owned file** from this folder:
+
+| Upload | What it gives the GPT |
+|--------|------------------------|
+| [`wrapper-rule-card.md`](wrapper-rule-card.md) | The **pre-emit checklist in full**: per-link severity tests, the formative floor, the co-primary / binding-constraint rule, aggregate-vs-two-lane, the two-lane worst-lane headline, sampling thinness, acceptability-is-structural, the stopping rule, and the access clause. It exists only because the Instructions field caps at 8,000 characters — that field **names** each rule and defers here for the statement. A **condensed export** of `core/`, never independent authoring; regenerate it whenever `core/` changes. |
+
+Six of the seven `references/` files (all but `ume-domain-pack.md`, a curated UME digest) are **verbatim
+exports of the repo's `core/`** (the single source of truth). **Re-upload them whenever `core/`
+changes** — this Knowledge set is build output, never hand-edited. If you edit anything, edit `core/`,
+re-export to `references/`, and re-upload here. (See the canonical-source rule in
+[`../../AGENTS.md`](../../AGENTS.md) §1.)
 
 **Optional — deeper UME governance.** The `ume-domain-pack.md` digest is sufficient for the *headline*
 UME behavior (Needs-deeper-review routing, qualified-faculty review, PHI refusal). For
@@ -51,10 +59,12 @@ material), or any file containing real records.
 2. **Name + description.** Name it `Learning Signal Check`. Paste the **Description** below into the
    "Description" field (≤1,500 chars).
 3. **Paste the Instructions.** Copy the field content from
-   [`instructions.md`](instructions.md) (everything below its `---` separator — verified ≤8,000 chars)
-   into the "Instructions" field.
-4. **Upload Knowledge.** Under "Knowledge," upload the **six files** listed above from
-   `../claude-skill/references/`. Confirm all six attach.
+   [`instructions.md`](instructions.md) (everything below its `---` separator — verified ≤8,000 chars;
+   re-measure after any edit) into the "Instructions" field.
+4. **Upload Knowledge.** Under "Knowledge," upload the **seven files** listed above from
+   `../claude-skill/references/`, plus [`wrapper-rule-card.md`](wrapper-rule-card.md) from this folder —
+   **eight** in total. Confirm all eight attach. The rule card is not optional: the Instructions field
+   defers to it by name for the pre-emit checklist.
 5. **Set conversation starters.** Paste the six lines from
    [`conversation-starters.md`](conversation-starters.md) into the "Conversation starters" slots (pin the
    cold-open starter first).

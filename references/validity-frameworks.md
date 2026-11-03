@@ -22,6 +22,36 @@ The **Severed / Weakened / Intact** banding and the **earliest-broken-link halti
 
 ## Sources (working bibliography)
 
+### Closest prior work (read these first)
+
+- **Dawson, P., Bearman, M., Dollinger, M., & Boud, D.** "Validity matters more than cheating,"
+  **Assessment & Evaluation in Higher Education, 2024**. <https://doi.org/10.1080/02602938.2024.2386662>
+  — **The reframe this project rests on, published first and by this field's most-cited authors:** an
+  assessment matters because it licenses an inference about competence, and generative AI threatens that
+  inference whether or not any cheating occurred. Learning Signal Check does **not** claim this argument.
+  Its contribution is the *executable* form — an ordered, halting diagnostic that yields one primary
+  broken link and one proportionate repair — plus the restraint mechanism. Cite Dawson et al. for the
+  premise; cite this project only for the operationalization.
+- **Cook, D. A., Brydges, R., Ginsburg, S., & Hatala, R.** "A contemporary approach to validity
+  arguments: a practical guide to Kane's framework," **Medical Education, 2015**.
+  <https://pubmed.ncbi.nlm.nih.gov/25989405/> — Kane's framework already operationalized as a
+  step-by-step validity-argument walk for exactly this audience. The step structure here is downstream of
+  this paper; what differs is the halting rule, the severity banding, and the conversational form.
+
+### Guidance and regulatory sources
+
+- **TEQSA** (Australia). *Assessment reform for the age of artificial intelligence* (2023) and the Gen AI
+  knowledge hub. <https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/assessment-reform-age-artificial-intelligence>
+  — the "assessment reform, not detection" posture the engine shares.
+- **QAA** (UK). Advice and resources on generative AI, and the QAA AI toolkit.
+  <https://www.qaa.ac.uk/sector-resources/generative-artificial-intelligence/qaa-advice-and-resources>
+- **AAMC.** *Principles for the Responsible Use of Artificial Intelligence in and for Medical Education*
+  (2025). <https://www.aamc.org/about-us/mission-areas/medical-education/principles-ai-use> — the source
+  paraphrased in `domains/undergraduate-medical-education/ume-governance-guardrails.md`. **Verify any
+  paraphrase against the current AAMC text before relying on it**; the wording there is not quoted.
+
+### Measurement foundations
+
 - **Kane, M. T.** Argument-based validity / the interpretation-use argument. Kane, *Validation*, in
   R. L. Brennan (Ed.), **Educational Measurement (4th ed., 2006)**; and Kane, "Validating the
   Interpretations and Uses of Test Scores," **Journal of Educational Measurement, 2013**. The IUA

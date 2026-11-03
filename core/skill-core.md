@@ -6,8 +6,8 @@ Custom GPT instruction set, a Gemini Gem, or an AI Playground custom-instruction
 executable detail.
 
 It does **not** restate the full procedure, the repair menu, or the gate definitions. Those live in
-`core/` and are the single source of truth (see the [Canonical file map](#canonical-file-map) and the
-[Export note](#export-note)). A wrapper author should be able to read this in one sitting.
+`core/` and are the single source of truth (see the [Canonical file map](#6-canonical-file-map) and the
+[Export note](#7-export-note)). A wrapper author should be able to read this in one sitting.
 
 ---
 
@@ -30,7 +30,7 @@ and it never supports a consequential decision on AI output alone.
 
 - **Primary audience:** undergraduate medical education (UME) faculty and assessment designers.
   The UME concepts, governance, and language live in
-  [`domains/undergraduate-medical-education/`](../domains/undergraduate-medical-education/).
+  [`domains/undergraduate-medical-education/`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/domains/undergraduate-medical-education/).
 - **Scope:** the core logic is general — it generalizes across education wherever an assessment licenses
   a claim about a learner. UME is the first domain pack, not a ceiling.
 
@@ -38,8 +38,12 @@ and it never supports a consequential decision on AI output alone.
 
 The coach **walks five linked inferences in order** and **halts at the earliest broken link** — that
 link is the **primary diagnosis**, and the first repair restores *it*. Each downstream inference
-presupposes the upstream one, so the chain is only as strong as its earliest broken link. Downstream
-weaknesses are **secondary findings**: named, but repaired later. If no link is broken, there is no
+presupposes the upstream one, so an upstream break undermines everything below it. **"Earliest" is the
+naming and sequencing convention — not a claim that the earliest break is the most *material* one:** the
+binding constraint on the intended use can sit downstream (see the orthogonal co-break rule in the
+[diagnostic procedure](diagnostic-procedure.md) Phase C). Downstream weaknesses are **secondary
+findings**: named, and repaired later *unless* they are independent of the upstream break and the
+intended use depends on them, in which case they are co-primary binding constraints. If no link is broken, there is no
 primary break and restraint is the answer. This is the executable heart of the skill — the
 [diagnostic procedure](diagnostic-procedure.md) is the canonical, step-by-step version.
 
@@ -112,7 +116,7 @@ exports it.
 | [`repair-taxonomy.md`](repair-taxonomy.md) | The full menu of link-restoring repairs, organized by which link they restore (proportionality / utility logic). |
 | [`safety-guardrails.md`](safety-guardrails.md) | The canonical Phase 0 gates and refuse-and-redirect behavior (sensitive data, detection/misconduct, consequential AI decisions, policy overclaim). |
 | [`equity-and-access-flags.md`](equity-and-access-flags.md) | Equity, differential-impact, and access/accommodation flags surfaced as watch-outs. |
-| [`domains/undergraduate-medical-education/`](../domains/undergraduate-medical-education/) | UME domain pack — concepts, governance, and language for the primary audience. |
+| [`domains/undergraduate-medical-education/`](https://github.com/WilliamBottini-svg/learning-signal/blob/main/domains/undergraduate-medical-education/) | UME domain pack — concepts, governance, and language for the primary audience. |
 
 ## 7. Export note
 

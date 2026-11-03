@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning Signal Check</title>
+<meta name="description" content="Does this assignment still show you what a student can do, if they used AI to make it? Paste one block into any chat assistant and find out.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F5F6F7; --surface:#FFFFFF; --sunk:#EDEFF1;
+  --ink:#15191C; --ink-2:#3D474E; --ink-3:#6A757D; --rule:#DCE0E4;
+  --accent:#0F5B61; --accent-ink:#FFFFFF; --accent-soft:#E2EEEE;
+  --ok:#2C6A4E; --ok-soft:#E2EFE8;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#121618; --surface:#191E21; --sunk:#0D1113;
+    --ink:#E7EBEC; --ink-2:#AFB9BE; --ink-3:#7D888E; --rule:#2A3134;
+    --accent:#59B4B8; --accent-ink:#0D1113; --accent-soft:#132D2F;
+    --ok:#77C09A; --ok-soft:#16281F;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#121618; --surface:#191E21; --sunk:#0D1113;
+  --ink:#E7EBEC; --ink-2:#AFB9BE; --ink-3:#7D888E; --rule:#2A3134;
+  --accent:#59B4B8; --accent-ink:#0D1113; --accent-soft:#132D2F;
+  --ok:#77C09A; --ok-soft:#16281F;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px 72px}
+h1,h2{font-family:Newsreader,Georgia,"Times New Roman",serif;text-wrap:balance;margin:0;font-weight:500;letter-spacing:-.015em}
+h1{font-size:clamp(34px,8vw,48px);line-height:1.08;margin-top:52px}
+h2{font-size:24px;margin-top:44px}
+p{margin:0 0 14px}
+.lede{font-family:Newsreader,Georgia,serif;font-size:21px;line-height:1.45;color:var(--ink-2);margin:16px 0 26px}
+.eyebrow{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);margin-top:40px}
+.eyebrow b{color:var(--accent);font-weight:500}
+a{color:var(--accent)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 6px}
+.steps li{position:relative;padding-left:40px;margin-bottom:12px;color:var(--ink-2)}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font:600 13px/26px "IBM Plex Mono",monospace;text-align:center}
+.steps li strong{color:var(--ink)}
+.cta{display:flex;flex-direction:column;gap:10px;margin:26px 0 10px}
+button.copy{appearance:none;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);font:600 18px/1 "IBM Plex Sans",sans-serif;padding:18px 22px;width:100%;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:transform .06s}
+button.copy:active{transform:scale(.985)}
+button.copy:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+button.copy.done{background:var(--ok);color:#fff}
+.open{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.open a{display:block;text-align:center;padding:11px 6px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink-2);text-decoration:none;font-size:13.5px;font-weight:500}
+.open a:hover{border-color:var(--accent);color:var(--accent)}
+.note{font-size:13.5px;color:var(--ink-3);margin-top:12px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--paper);padding:12px 18px;border-radius:10px;font-size:14.5px;max-width:calc(100% - 40px);text-align:center;transition:all .25s;pointer-events:none;z-index:9}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.ask{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:18px 20px;margin-top:14px}
+.ask ol{margin:8px 0 0;padding-left:20px;color:var(--ink-2)}
+.ask li{margin-bottom:8px}
+.report{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:8px;border:1.5px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.install{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 4px}
+.install a{display:block;padding:12px 14px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);text-decoration:none;color:var(--ink-2)}
+.install a b{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+.install a span{font-size:13px;line-height:1.4}
+.install a:hover{border-color:var(--accent)}
+@media (max-width:420px){.install{grid-template-columns:1fr}}
+details{margin-top:28px;border-top:1px solid var(--rule);padding-top:14px}
+summary{cursor:pointer;color:var(--ink-3);font-size:14px}
+pre{white-space:pre-wrap;word-break:break-word;font:12.5px/1.5 "IBM Plex Mono",ui-monospace,monospace;background:var(--sunk);padding:14px;border-radius:8px;max-height:320px;overflow:auto;color:var(--ink-2)}
+footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--rule);font-size:13.5px;color:var(--ink-3)}
+footer p{margin-bottom:8px}
+@media (prefers-reduced-motion:reduce){.toast,button.copy{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Does this assignment still show you what a student can do — if they used AI to make it?</h1>
+<p class="lede">Learning Signal Check walks your assessment through five questions, stops at the first one that fails, and tells you the one thing to change. Sometimes the answer is "nothing." It is not a cheating detector.</p>
+
+<div class="eyebrow"><b>Prototype</b> · we're looking for testers</div>
+
+<h2>Try it in sixty seconds</h2>
+<ol class="steps">
+  <li><strong>Copy the prompt.</strong> One tap. It's about __WORDS__ words written for the assistant, not for you.</li>
+  <li><strong>Paste it</strong> into any chat assistant — ChatGPT, Claude, Gemini, Copilot. The free tier is fine.</li>
+  <li><strong>Describe one assessment</strong> you're worried about, in your own words.</li>
+</ol>
+
+<div class="cta">
+  <button class="copy" id="copy" type="button" aria-live="polite">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+    <span id="copy-label">Copy the prompt</span>
+  </button>
+  <div class="open" aria-label="Open an assistant in a new tab">
+    <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>
+    <a href="https://claude.ai/new" target="_blank" rel="noopener">Claude</a>
+    <a href="https://gemini.google.com/app" target="_blank" rel="noopener">Gemini</a>
+    <a href="https://copilot.microsoft.com/" target="_blank" rel="noopener">Copilot</a>
+  </div>
+</div>
+<p class="note">Works for any discipline — composition, AP History, a CS course with an autograder, calculus homework, studio critique, a second-year language course, a graduate thesis proposal, a nursing clerkship. Nothing to install and no account beyond the assistant you already use.</p>
+
+<h2>Prefer it installed?</h2>
+<p>Pasting is for trying it. Installing keeps it there every time — and people who use it twice write better reports.</p>
+<div class="install">
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/releases/latest"><b>Claude.ai</b><span>Download the skill zip, upload under Settings → Skills. Free tier works.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#claude-code"><b>Claude Code</b><span>Two slash commands.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#chatgpt"><b>ChatGPT</b><span>Published GPT — link coming. Free tier can use it.</span></a>
+  <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md#gemini"><b>Gemini</b><span>Shared Gem — link coming. No Google account needed.</span></a>
+</div>
+<p class="note">Full instructions for every platform: <a href="https://github.com/WilliamBottini-svg/learning-signal/blob/main/INSTALL.md">INSTALL.md</a>. Whichever way you run it, the report form asks which one.</p>
+
+<h2>Then tell us what happened</h2>
+<p>You're the test. Wrong answers are the most useful kind. Three questions, two minutes:</p>
+<div class="ask">
+  <ol>
+    <li><strong>What did you test?</strong> Two sentences, no student names.</li>
+    <li><strong>What did it tell you</strong> — and, in your own words, what's the one thing to do?</li>
+    <li><strong>Was it right, and would you actually do it?</strong> What should it have asked about your course?</li>
+  </ol>
+  <a class="report" href="https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml">Report a run →</a>
+</div>
+
+<details>
+  <summary>Copy button not working? The prompt, in full.</summary>
+  <pre id="raw"></pre>
+</details>
+
+<footer>
+  <p>An assessment-design coach, not a cheating detector. It never claims to detect AI use and never supports a consequential decision on AI output alone.</p>
+  <p>Open source, MIT + CC BY 4.0 · <a href="https://github.com/WilliamBottini-svg/learning-signal">Source, method and evidence on GitHub</a></p>
+</footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var PROMPT = __PROMPT_JSON__;
+  var btn = document.getElementById('copy'), lbl = document.getElementById('copy-label'), toast = document.getElementById('toast');
+  document.getElementById('raw').textContent = PROMPT;
+  function say(msg, ok){ toast.textContent = msg; toast.classList.add('show'); if(ok){btn.classList.add('done'); lbl.textContent='Copied — now paste it';} setTimeout(function(){toast.classList.remove('show')}, 3200); setTimeout(function(){btn.classList.remove('done'); lbl.textContent='Copy the prompt';}, 4200); }
+  function fallback(){
+    var ta = document.createElement('textarea'); ta.value = PROMPT; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.top='-1000px';
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, PROMPT.length);
+    var ok=false; try{ ok = document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta); return ok;
+  }
+  btn.addEventListener('click', function(){
+    // The write must be issued synchronously inside the gesture: Safari rejects it after any await.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(PROMPT).then(function(){ say('Copied. Paste it into your assistant and describe one assessment.', true); },
+        function(){ if(fallback()) say('Copied. Paste it into your assistant and describe one assessment.', true); else say('Couldn’t copy automatically — open the full prompt below and copy it by hand.'); });
+    } else if (fallback()) { say('Copied. Paste it into your assistant and describe one assessment.', true); }
+    else { say('Couldn’t copy automatically — open the full prompt below and copy it by hand.'); }
+  });
+})();
+</script>
+</body>
+</html>
