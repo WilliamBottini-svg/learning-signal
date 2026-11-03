@@ -5,6 +5,12 @@ the state of the project as of 2026-10-08, what was done in the last working ses
 machinery works, what is still open, and the exact recipes for continuing. It is written for an agent;
 the maintainer is William Bottini (they/them), who reads these sessions in the Claude app.
 
+> **Update 2026-11-03.** The maintainer **accepted** the hostname-in-history risk instead of purging it;
+> the decision and its reasoning are in `RELEASING.md` → "Accepted risk". Deleting the `v0.5.0` tag
+> clears the secret-scan gate but does not remove the string from `main`'s history. That is understood
+> and accepted. Release dates in `CHANGELOG.md` and `CITATION.cff` moved to 2026-11-03, the day v0.6.0
+> is tagged. §1 and §5.1 below are otherwise unchanged from 2026-10-08.
+
 ---
 
 ## 1. Where things stand

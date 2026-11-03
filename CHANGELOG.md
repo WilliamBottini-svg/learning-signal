@@ -16,7 +16,7 @@ where history is thin, the entry is thin. Release dates are the `date-released` 
 
 _Nothing yet._
 
-## [0.6.0] — 2026-09-02
+## [0.6.0] — 2026-11-03
 
 **Prototype release for testers.** This version exists to find educators willing to run Learning Signal
 Check on one real assessment and say what happened. It has been red-teamed, blind-replicated, and made
@@ -108,11 +108,14 @@ Supersedes `v0.5.0`, whose tag carried an unredacted internal hostname and was w
 ### Security
 
 - Gateway hostname redacted from eval artifacts in `HEAD` (`82dc420`) — **after** the `v0.5.0` tag was
-  cut, so the tag tree still contains it. See the security note in `RELEASING.md`.
+  cut, so the tag tree still contained it. The `v0.5.0` tag and GitHub release were withdrawn. The
+  hostname remains in a few historical commits on `main`; this is an accepted, documented risk (it is an
+  authenticated endpoint, not a credential). See "Accepted risk" in `RELEASING.md`.
 
 ## [0.5.0] — 2026-07-06
 
-Tagged `v0.5.0` at `953d64b`. First public release.
+Tagged `v0.5.0` at `953d64b`. The tag and its GitHub release were withdrawn on 2026-11-03; see Security
+under 0.6.0.
 
 ### Added
 

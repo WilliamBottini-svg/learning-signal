@@ -78,19 +78,31 @@ A tag is immutable in practice once anyone has fetched it. Do not quietly re-poi
   vX.Y.Z`), the content purged from history with `git filter-repo`, and every affected ref force-pushed
   and re-tagged. Rotate any credential that was ever paired with the exposed system.
 
-## Known release blocker
+## Accepted risk: an internal hostname remains in git history
 
-`scripts/check-secrets.py` currently **fails on the `v0.5.0` tag**. The tag tree still contains the real
-internal gateway hostname in `tests/results/redteam-regression-2026-07-06.jsonl`; the redaction commit
-(`82dc420`) landed *after* the tag was cut, so `HEAD` is clean and the tag is not. This must be resolved
-— by purging history and re-tagging, or by an explicitly documented risk acceptance — before the
-repository is made public. Prior security reviews reached the same conclusion
-(`tests/results/agent-review-2026-07-06-opus48.md`, finding SEC-1) and note that the hostname is an
-authenticated internal endpoint rather than a credential.
+**Decision (maintainer, 2026-11-03): accepted, not purged.**
 
-The secret scan is the **only** remaining blocker. `check-consistency.py`, `check-links.py` and
-`check-versions.py` all pass on the current tree — but note that `check-secrets.py` scans tags, so this
-blocker cannot be cleared by any change to `main`.
+The `v0.5.0` tag tree contained a real internal AI-gateway hostname in
+`tests/results/redteam-regression-2026-07-06.jsonl`. The redaction commit (`82dc420`) landed *after* the
+tag was cut. The `v0.5.0` tag and its GitHub release are withdrawn before `v0.6.0` is tagged, which is
+what clears `scripts/check-secrets.py`.
+
+Withdrawing the tag does **not** remove the hostname. The tagged commit is an ancestor of `main`, so a
+handful of commits from June–July 2026 still contain it and stay readable in the history of a public
+repository. `check-secrets.py` scans the tree at each ref tip, not every historical commit, so a passing
+scan does not mean the string is gone.
+
+Why this is accepted rather than purged:
+
+- It is an **authenticated** internal endpoint, not a credential. No API key ever entered history; the
+  harness reads keys from the environment. Prior security reviews reached the same severity call
+  (`tests/results/agent-review-2026-07-06-opus48.md`, finding SEC-1).
+- The credential that was paired with that endpoint is rotated by the maintainer, outside the repository.
+- Purging would rewrite every commit ID that this file, `CHANGELOG.md` and the evidence documents cite.
+
+If this decision is ever reversed, follow "Secret or private content inside the tag" above: `git
+filter-repo` with a replace-text rule, force-push every affected ref with branch protection lifted
+temporarily, and re-tag.
 
 ## Redacting eval run logs before publishing them
 
