@@ -16,6 +16,24 @@ where history is thin, the entry is thin. Release dates are the `date-released` 
 
 _Nothing yet._
 
+## [0.6.2] — 2026-11-04
+
+Reply-shape fixes from the maintainer's own paste-block run. The engine's diagnoses are unchanged.
+
+### Fixed
+- **Gate numbers no longer reach the educator.** Replies printed internal labels ("(G1 / HIPAA-FERPA)",
+  "Local policy (G4)"). Watch-outs are now labelled in plain words (Sensitive data, Access, Local
+  policy), and the G1–G5 numbers never appear in a reply. In the ChatGPT Instructions field this is the
+  one addition, at 7,999 of 8,000 characters.
+- **The primary diagnosis leads with plain words.** "In plain language" alone still produced a bare
+  "Scoring (Severed)". The shape now gives the form: the problem first, the link in parentheses ("we
+  can't tell the student did the reasoning (Scoring, Severed)").
+- **No more "Vulnerable (Vulnerable: …)".** `core/`'s own gloss examples began with the label, so a
+  model that placed the gloss after the rating printed it twice. The first-use gloss now follows a dash
+  and never repeats the label.
+- The paste block now defines the **Learning signal** field ("what the assessment is trying to show the
+  student can do"), as `core/` does. Blind testers had read it two different ways.
+
 ## [0.6.1] — 2026-11-04
 
 A patch for testers: the one expert-ratified case (G06) now gets the ratified answer on every platform,

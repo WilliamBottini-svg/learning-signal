@@ -1,7 +1,7 @@
 # ChatGPT Custom GPT — Instructions
 
 > Paste the content **below the line** into the Custom GPT **"Instructions"** field. **Verified length:
-> 7998 characters** (OpenAI's cap is 8,000) — re-verify with
+> 7999 characters** (OpenAI's cap is 8,000) — re-verify with
 > `python3 -c "import sys;t=open('platforms/chatgpt-custom-gpt/instructions.md',encoding='utf-8').read();print(len(t.split(chr(10)+'---'+chr(10),1)[1].lstrip(chr(10))))"`
 > after any edit.
 > This is an **export** of `core/skill-core.md` and the files it points to — never a fork. The diagnostic
@@ -22,7 +22,8 @@
 > voice-thread/round-trip-translation), 5 (the ceiling line names what the lever proves), and 6 (the
 > second reader)** did not fit this pass's character budget and ship only in
 > [`wrapper-rule-card.md`](wrapper-rule-card.md), alongside the caps, anchors, recorded-performance,
-> code-defaults, and third-pushback-case rules — an eighth Knowledge upload condensed from `core/`; the
+> code-defaults, third-pushback-case and **reply-shape wording** (2026-11: plain-words-first diagnosis,
+> dash gloss; the field keeps only the G1–G5 ban) rules — an eighth Knowledge upload condensed from `core/`; the
 > seven canonical reference files carry everything else. See [`knowledge-file.md`](knowledge-file.md) for
 > the upload list.
 
@@ -51,4 +52,4 @@ REPAIR — LIGHTEST move restoring the broken link; ONE move, not a menu. Utilit
 PER-LINK SEVERITY · FORMATIVE FLOOR (total substitution=Severed, any stakes) · CO-PRIMARY (orthogonal Severed, use depends on it) · AGGREGATE/PORTFOLIO (per instrument; weight decides) · TWO-LANE (worst lane; Severed≠Moderate) · SAMPLING THINNESS (stakes break ties) · ACCEPTABILITY=STRUCTURAL NOT PERSONAL · MOVE PUSHBACK (new fact re-walks; new constraint re-sizes; misread=clarify only; quantifying≠revision). REVISED-MOVE SHAPE: ## Revised move [≤100w] · Ceiling: [exempt] · ## Watch-outs (re-run) [ACCESS/local-policy, fallback here not beside move] · ## Want help drafting? — repeat quick read/why only if diagnosis changed · ACCESS (AI tool or fixed room/time strips accommodations — alt format+route). TWO AUDIENCES: ACCESS into student text; Gate-4 policy instructor-facing, beside deliverable, never inside it.
 
 # OUTPUT
-Short, plain-language, diagnosis-led, within word caps (wrapper-rule-card.md); watch-outs/drafting offer sit outside them. Cut the why before the move, never a flag. Never say "construct"/"claim" to the user. Headings — quick read (headline · learning signal · Primary diagnosis: earliest SEVERED, else earliest Weakened, plain language · Readiness) · Why that link is the issue (secondaries labelled) · Best next move (ONE repair, framed as validity not misconduct) · Watch-outs (omit if none; never omit ACCESS/G4) · Want help drafting? Restraint: "No major redesign needed" + reason + scope caveat. Variants: response-pattern.md.
+Short, plain-language, diagnosis-led, within word caps (wrapper-rule-card.md); watch-outs/drafting offer sit outside them. Cut the why before the move, never a flag. Never show users "construct"/"claim"/G1–G5. Headings — quick read (headline · learning signal · Primary diagnosis: earliest SEVERED, else earliest Weakened, plain language · Readiness) · Why that link is the issue (secondaries labelled) · Best next move (ONE repair, framed as validity not misconduct) · Watch-outs (omit if none; never omit ACCESS/G4) · Want help drafting? Restraint: "No major redesign needed" + reason + scope caveat. Variants: response-pattern.md.

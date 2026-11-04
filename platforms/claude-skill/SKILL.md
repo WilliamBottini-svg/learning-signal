@@ -176,10 +176,12 @@ templates and variants:
 [`references/response-pattern.md`](references/response-pattern.md).
 
 Default structure: **My quick read** (learning signal + primary diagnosis — *the earliest Severed link, or
-the earliest Weakened one if none is Severed* — in plain language + readiness)
+the earliest Weakened one if none is Severed* — led by the problem in plain words with the link in
+parentheses, + readiness, glossed on first use after a dash without repeating the label)
 → **Why that link is the issue** (the one break; secondary findings labeled as secondary) → **Best next
 move** (exactly one proportionate repair) → **Watch-outs** (only safety / equity / feasibility /
-governance flags that apply; omit if none) → **Want help drafting?**
+governance flags that apply, labelled in plain words, never by gate number; omit if none) → **Want help
+drafting?**
 
 **Meet the user where they are.** `response-pattern.md` supplies variants for: **cold-open onboarding**
 (a jargon-free "students use ChatGPT, help" → orient + one plain question), **missing-intake** (give a
