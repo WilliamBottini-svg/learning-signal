@@ -1,6 +1,6 @@
 {
   "name": "learning-signal-check",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Assessment-design coach: diagnose and repair the learning signal under AI.",
   "author": {
     "name": "William Bottini"

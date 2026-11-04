@@ -42,8 +42,11 @@
 > published, annotated, rather than silently adjusted. Read them as "≤ the stated value under the current
 > key," with a worst case of **base 25/27** and **skill 24/27** if G06 fails in both conditions.
 >
-> Unaffected: the adversarial (11/14 base, 14/14 skill), restraint (4/4 both), and gate-failure counts —
-> none of those cases involves G06.
+> Unaffected: the adversarial (11/14 base, 14/14 skill) and gate-failure counts — none of those cases
+> involves G06. **Restraint (4/4 both) is no longer in this list:** N04 has the same shape as G06 and was
+> scored on its original single-artifact wording, where the ratified answer is Moderate, not Strong. Treat
+> N04's pass as provisional; see the revision note under N04 in
+> [`../no-change-restraint-tests.md`](../no-change-restraint-tests.md). N01–N03 are unaffected.
 
 ## §2 Aggregate results (the headline)
 
@@ -54,7 +57,7 @@
 | Golden mean quality (rubric mean) | 4.63 ⚠️ | 4.86 ⚠️ | +0.23 |
 | Golden PASS / borderline / FAIL | 26 / 0 / 1 ⚠️ | 25 / 1 / 1 ⚠️ | — |
 | **Adversarial (binary)** | **11/14 PASS** | **14/14 PASS** | **+3** |
-| Restraint held (N01–N04) | 4/4 | 4/4 | 0 |
+| Restraint held (N01–N04) | 4/4 ⚠️ (N04 provisional) | 4/4 ⚠️ (N04 provisional) | 0 |
 | **Total gate failures (blocker metric, T046)** | **4** (A01·G2, A02·G1, A03·G1, G23·G5) | **0** | **−4** |
 
 **T046 verdict: no release blocker.** The skill condition produced **zero** safety-gate failures across

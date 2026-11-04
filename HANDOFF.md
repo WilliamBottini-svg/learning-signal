@@ -11,6 +11,17 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 > and accepted. Release dates in `CHANGELOG.md` and `CITATION.cff` moved to 2026-11-03, the day v0.6.0
 > is tagged. §1 and §5.1 below are otherwise unchanged from 2026-10-08.
 
+> **Update 2026-11-04 (v0.6.1).** The G06 single-artifact rule (Example 10, N04 widened to two artifacts;
+> single artifact = Generalization Weakened → Moderate) reached the paste block only partly: its Link 3
+> tie-break still read a single sample at course stakes as "adequate, with a caveat". `core/` now states
+> that **one fixed stimulus is not a "small count"**, propagated to all six wrappers. It is scoped on
+> purpose so it does not flip N03, Example 7, G20 or G24, which stay the open M7 question (ambiguity
+> item 5). Three blind sonnet runs on the paste block matched every key: G06 shape → Moderate
+> (Generalization Weakened), N04 two-artifact → Strong, single-case viva → Strong. The
+> 2026-09-11 pass-2 review now lives in `0-admin/` (gitignored), per its own finding B-1. The repo
+> stays **private**. The maintainer shares with colleagues by sending the release files directly, so the
+> in-chat run-report link 404s for them, and feedback comes back by email for now.
+
 ---
 
 ## 1. Where things stand
@@ -19,11 +30,11 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 |---|---|
 | Branch | `claude/project-review-release-6qnxw8`, **26 commits ahead of `origin/main`**, pushed, working tree clean |
 | Open PR | **None.** The branch has never been opened as a PR. The maintainer merges, or you open one on request. |
-| Declared version | `0.6.0` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
+| Declared version | `0.6.1` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
 | Last tag | `v0.5.0` — **still on the remote, and it is the one release blocker** (see §5.1) |
 | Gates | `check-consistency`, `check-links`, `check-versions`, `build-claude-skill --check`, `build-site --check` all exit 0; `check-secrets` passes on working tree and HEAD and **fails on the `v0.5.0` tag by design** |
-| Paste block | 4,719 words / 29,908 chars — the canonical zero-install prompt |
-| ChatGPT Instructions field | 7,997 / 8,000 chars — at the ceiling; new rules go to `wrapper-rule-card.md` |
+| Paste block | 4,812 words / 30,480 chars — the canonical zero-install prompt |
+| ChatGPT Instructions field | 7,998 / 8,000 chars — at the ceiling; new rules go to `wrapper-rule-card.md` |
 | Persona loop | **Converged.** Four waves, nineteen runs, zero wrong diagnoses; wave 4 yielded only line edits |
 
 ### What the maintainer decided (do not relitigate)
@@ -217,6 +228,12 @@ doctoral qualifying exam.
 - Recorded *oral* responses that are asynchronous and scriptable (voice-thread homework) rely on the
   general recorded-performance branch; no worked example.
 - No calibration-sample size stated for the essay bundle beyond "~10%" (added wave 4).
+- **Reproduced 2026-11-04 (3/3 blind runs):** the ASK-FIRST "moot (a proctored exam)" exemption collides
+  with "not dischargeable when the course plausibly meets in person" when the assessment is itself an
+  in-class sitting inside such a course; testers split on asking. Rating unaffected in all three runs.
+- **Reproduced 2026-11-04 (2/3):** the WEAKENED definition ("thin but adequate for the claim as worded")
+  and the stakes tie-break ("adequate, with a single-sample caveat", read as Intact) label the same
+  situation differently. A borderline two-sample case can land on either Strong or Moderate.
 
 ### Block size
 ~4,700 words. A lossless compression attempt recovered only 13% — most of the block is the rule set

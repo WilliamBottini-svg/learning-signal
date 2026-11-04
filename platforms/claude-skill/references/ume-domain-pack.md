@@ -236,7 +236,7 @@ stakes). Any consequential use triggers Needs deeper review regardless of link.
 | **Reflective portfolio / writing** | Reflect on a *specific observed* behavior + next action | **Construct** (untethered) *or* **Scoring** (tethered) | **Vulnerable → Moderate** | Re-anchor to a referent (untethered); else oral check |
 | **Group presentation / TBL product** | Each student can synthesize / apply | **Scoring** — individual attribution indeterminable | **Moderate–Vulnerable** | Individual-accountability component |
 | **Journal club / EBM appraisal** | Critically appraise & apply evidence | **Construct** or **Extrapolation** — depends what's scored | **Moderate** | Re-weight to judgment, or live appraisal |
-| **"Critique this AI-generated note/differential"** | Evaluate reasoning & catch errors | **Construct + Scoring** — is the *scored* evidence the student's own reasoning? | **Strong *if confirmed*, else Moderate** | Confirm scored = student reasoning; light oral |
+| **"Critique this AI-generated note/differential"** | Evaluate reasoning & catch errors | **Construct + Scoring** — is the *scored* evidence the student's own reasoning? | **Strong *if confirmed* on more than one artifact, else Moderate** | Confirm scored = student reasoning; light oral; a single artifact is Moderate (G06) |
 | **WBA / EPA observation** | Be entrusted to perform an activity | **None** per observation (Extrapolation/Implications-oriented) | **Strong** (single obs ≠ a gate) | None per-observation; aggregate for decisions |
 | **Research project / scholarly paper** | Conduct & report scholarly work | **Scoring + Generalization** — attribution; one artifact | **Vulnerable** | Oral defense / process trail; then triangulate |
 

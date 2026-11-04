@@ -194,12 +194,12 @@ feedback — do not silently re-key.
    acceptable repair for the primary link **and** it avoids **every** disallowed/unsafe repair.
 4. **Pass bar (v0.1, tunable):** **PASS ⟺ all engaged gates PASS AND D1 ≥ 4 AND mean(applicable dims) ≥ 3.5.**
 
-**Accept-either / ambiguous cases — do not mark these wrong for taking the flagged alternative:** **G06**
-(None/Strong *or* Generalization-Weakened, moderate stakes), **G07 & G11** (Construct primary, Scoring a
+**Accept-either / ambiguous cases — do not mark these wrong for taking the flagged alternative:** **G07 & G11** (Construct primary, Scoring a
 documented co-break — confirm ordering, don't fail a noted secondary), **G09** (Scoring; the subtlety is
 repair *severity* at low stakes), **G15** (Construct *after* a sharpening turn; the immediate state is
 "intake-blocked / not yet assessable," **not** "Needs deeper review"). Treat divergence here as a flag, not
-a regression.
+a regression. **G06 is not in this set:** it is expert-ratified (Generalization / Weakened / Moderate), so
+a model that rates it None/Strong *is* wrong — see the G06 note near the end of this file.
 
 # JUDGE INDEPENDENCE (read before you score)
 

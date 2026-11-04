@@ -78,7 +78,10 @@ The keystone is **identical across every platform**. It is:
   one substantial piece of independent work is moderate even under 20%** (a 15% term paper that is the
   only paper is moderate; a 15% weekly post is low — "a term paper" is not gated by the ≥20% clause), and
   the rule that **Gate 1 covers a student's own submitted work product**;
-- **sampling thinness is relative to the claim**, with **stakes breaking the tie** on borderline counts;
+- **sampling thinness is relative to the claim**, with **stakes breaking the tie** on borderline counts —
+  but **one fixed stimulus** (a single vignette or artifact whose content bounds what the student can
+  show) is not a borderline count: it is **Weakened** at moderate stakes (golden G06), while a single case
+  probed by unscripted live questioning or an iterative trail stays on the claim-breadth reading;
 - **acceptability is structural, never personal** (user reluctance never licenses "no proportionate repair
   exists"), and the **stopping rule** for repeated pushback with no new fact;
 - the **equity access clause** (a repair requiring an AI tool *or* the student to be in a specific room at

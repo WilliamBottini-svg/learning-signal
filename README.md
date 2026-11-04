@@ -13,7 +13,7 @@ cheating detector.
 > consistent; it has **not** been validated by educators at scale. That is what you are for.
 > Try it on one real assessment, then [tell us what happened](https://github.com/WilliamBottini-svg/learning-signal/issues/new?template=report-a-run.yml)
 > — three questions, two minutes. The evidence base, stated without flattery, is under
-> [Validation](#validation--where-the-evidence-actually-stands-v060).
+> [Validation](#validation--where-the-evidence-actually-stands-v061).
 
 ---
 
@@ -138,7 +138,7 @@ Learning Signal Check ships as portable wrappers that all run the same core diag
   suite (skill-vs-base), score against the rubric, and keep the wrapper exports consistent — runnable
   with only the repo.
 
-### Validation — where the evidence actually stands (v0.6.0)
+### Validation — where the evidence actually stands (v0.6.1)
 
 Read this before citing anything below.
 

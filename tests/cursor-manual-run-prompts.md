@@ -314,7 +314,7 @@ I'm reviewing an assessment for whether it still shows what students can do if t
 ```text
 I'm reviewing an assessment for whether it still shows what students can do if they might use AI.
 
-**Scenario:** A deliberately AI-using task: students are given an AI-generated artifact for a fictional case (e.g., an AI-drafted differential or analysis) and must critically evaluate it. The scored evidence is the student's independent evaluative reasoning, captured in a short proctored / in-class defense on a fresh AI-generated artifact ("defend two errors you flagged and your correction"). The rubric rewards the critique (errors found, corrections justified), not the polish of the AI artifact.
+**Scenario:** A deliberately AI-using task: students are given an AI-generated artifact for a fictional case (e.g., an AI-drafted differential or analysis) and must critically evaluate it. The scored evidence is the student's independent evaluative reasoning, captured in a short proctored / in-class defense on two fresh AI-generated artifacts that fail in different ways ("pick one error you flagged in each and defend your correction"). The rubric rewards the critique (errors found, corrections justified), not the polish of the AI artifact.
 
 **Learning claim:** The student can critically evaluate an AI-generated artifact — identify reasoning errors and justify corrections. (The construct legitimately includes working with AI.)
 

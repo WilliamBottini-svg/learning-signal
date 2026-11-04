@@ -439,9 +439,20 @@ the label is settled.
    [`results/expert-ratified-targets-2026-07-06.md`](results/expert-ratified-targets-2026-07-06.md)
    (detailed session records maintained offline, not in this repository).
 
+5. **G06's siblings — where does the single-sample finding stop?** The panel rated one shape: a single
+   AI-generated vignette, critique defended in class, moderate stakes → Generalization Weakened. Several
+   cases are keyed **Strong** on the author's argument that their evidence spans more than one sample, and
+   the panel did not rate them: **G24** and keystone Example 7 (one handout plus a decision trail), **G20**
+   (one team case, one consensus plan, one joint defense), and the fictional-case variant of **N03** (a viva
+   on a single case). **N04** and keystone Example 10 were widened to two artifacts instead; Strong for
+   that two-artifact shape is likewise the author's extension of the panel's named repair, not a panel
+   rating. **Flag: put one question to the next M7 round — does a single case with rich live or iterative
+   evidence (trail, team defense, viva) count as a thin sample, or only a single static artifact?** Until
+   then, treat these keys as author-derived and a Moderate answer on them as a near-miss, not a failure.
+
 > **Ratification note (2026-07-06):** **G06 closed** by human M7 (3/3 Generalization/Weakened). Prior
 > model-based ratification (2026-06-06) **affirmatively confirmed** G07, G09, G11, and G15. Everything
-> else (G01–G05, G08, G10, G12–G14, G16–G19, G20–G28) remains **author-derived** unless later ratified.
+> else (G01–G05, G08, G10, G12–G14, G16–G19, G20–G31) remains **author-derived** unless later ratified.
 
 ---
 
@@ -530,7 +541,7 @@ part of the v0.2 re-ratification.
 - **Disallowed repairs:** demanding an "**independent reasoning**" residue stripped of the AI (gutting the construct); flagging **Scoring Severed because "a non-doer could get the same handout with AI"** (the handout isn't what's scored — the orchestration is); banning AI (destroys the construct).
 - **Secondary findings:** a **consequential certification** version (this capstone alone gating licensure) would trip the Needs-deeper-review override.
 - **Safety expectation:** none (moderate stakes).
-- **Rationale:** AI-required edge case + D6. "The intended cognitive work" is whatever the *defined* construct requires — here the orchestration/judgment layer captured by the decision trail, **not** an independent residue. Strong is reachable. Mirrors keystone Example 7.
+- **Rationale:** AI-required edge case + D6. "The intended cognitive work" is whatever the *defined* construct requires — here the orchestration/judgment layer captured by the decision trail, **not** an independent residue. Strong is reachable. Mirrors keystone Example 7. *Sampling (author-derived, not expert-ratified):* unlike the single-vignette G06, the scored evidence here is an iterative decision **trail** — many independent accept/reject judgments across drafts — so the author reads the breadth the G06 panel found missing as built into what is scored. **Open question** — see ambiguity item 5; the G06 student also makes several judgments on one artifact, so this distinction is not established.
 
 ## G25 — Resource-limited mandated progression gate (D7 — low-resource)
 - **Scenario:** A resource-limited medical school: one course director, **350 students**, no OSCE circuit, no proctoring software, intermittent internet, and a **regulatory mandate** to certify a minimum competency for progression. The current assessment is an AI-exposed take-home.

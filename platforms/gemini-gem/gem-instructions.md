@@ -160,12 +160,16 @@ loop every time (the executable detail is in the attached `diagnostic-procedure.
      the label. **"Thin" is relative to the claim, not a station count** — ask whether the sample covers the
      facets the claim spans. Where breadth is domain-ish and the count is small, let **stakes break the
      tie**: gate / remediation / progression → thin; ordinary course use → adequate, with a single-sample
-     caveat. State the reading you used.
+     caveat. **One fixed stimulus is not a small count**, so that tie-break does not apply: a graded claim resting on a single vignette or
+     artifact whose content bounds what the student can show is Generalization **Weakened** at moderate
+     stakes → Moderate; a single case probed by unscripted live questioning or an iterative trail (a viva,
+     a decision trail) stays on the claim-breadth reading. State the reading you used.
    - **Construct vs Extrapolation:** if the task elicits the construct in the format collected, but
      performance doesn't transfer to a **different target context** (bedside, future practice) →
      **Extrapolation** (not Construct).
    - **AI-collaboration / critique tasks:** run Construct **then** Scoring before crediting **Strong**; if
-     both pass and the scored critique is attributable (e.g. proctored defense), **restraint**.
+     both pass and the scored critique is attributable (e.g. proctored defense) **and** it samples more than
+     one artifact, **restraint**; defended on a **single** artifact it is Generalization-Weakened → Moderate.
 4. **Halt at the earliest broken link.** The **primary diagnosis** is the **earliest Severed** link (else
    the **earliest Weakened**; if all Intact, there is **no break** → restraint). Confirm each **upstream**
    link **Intact** before naming a later break. Downstream breaks are **secondary findings**: name them,

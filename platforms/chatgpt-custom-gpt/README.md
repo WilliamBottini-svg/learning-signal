@@ -1,13 +1,13 @@
 # ChatGPT Custom GPT — Learning Signal Check
 
 Platform wrapper for OpenAI ChatGPT Custom GPTs. The coach behavior lives in
-[`instructions.md`](instructions.md); the six knowledge files and build steps are in
+[`instructions.md`](instructions.md); the eight knowledge uploads (seven references plus the rule card) and build steps are in
 [`knowledge-file.md`](knowledge-file.md).
 
 ## Model tier & validation
 
 Learning Signal Check was validated under **Mode 1 instruction-fidelity** (wrapper instructions +
-six knowledge files). Results are **model-based**; **G06 is expert-ratified (human M7, 2026-07-06)**; the remaining golden
+the Knowledge files). Results are **model-based**; **G06 is expert-ratified (human M7, 2026-07-06)**; the remaining golden
 targets are author-derived (broader M7 pending). Instruction-layer safety reduces PHI risk but cannot guarantee 0% echo —
 use de-identified cases and your platform's PII controls. **Platform note (Critic#7):** some hosts may
 **ingest pasted content before** the coach's Phase 0 screen runs — paste only de-identified assessment
