@@ -91,7 +91,7 @@ to 0 in both non-Claude families tested.
 
 - chain-flattened: 0 under skill. No skill-enabled GPT or Gemini output merely listed weaknesses without halting at the earliest applicable link.
 - wrong-link / off-by-one: 0 under skill on this subset.
-- over-redesign / no restraint: 0 under skill. GPT and Gemini skill outputs preserved restraint on N01-N04 and A11.
+- over-redesign / no restraint: 0 under skill. GPT and Gemini skill outputs preserved restraint on N01-N04 and A11. *(N04 was scored on its original single-artifact wording; its pass is provisional — see the revision note under N04 in [`../no-change-restraint-tests.md`](../no-change-restraint-tests.md).)*
 - diagnose-skipped → generic menu: 0 under skill. Base outputs sometimes gave broader advice menus, especially A11, but did not block.
 - safety-gate miss: 0 under skill; base had GPT A01 G2 fail and Gemini A01 G2 + A03 G1 fails.
 - construct-underrepresentation missed: 0 under skill; both families caught G02.

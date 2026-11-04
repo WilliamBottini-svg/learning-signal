@@ -60,7 +60,8 @@ result and is not counted as one anywhere in this file.**
 
 First pass: **3/4** (N04 failed). A **retest** of N04 on 2026-06-25 passed. Both are reported; the
 first-pass number stands as the first-pass number. The retest was a single re-run of one case, not a
-re-run of the restraint set.
+re-run of the restraint set. *(N04 was scored on its original single-artifact wording; its pass is
+provisional — see the revision note under N04 in [`../no-change-restraint-tests.md`](../no-change-restraint-tests.md).)*
 
 ---
 

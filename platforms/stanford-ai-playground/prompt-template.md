@@ -6,7 +6,7 @@ AI Playground instance, anything. No install, no account beyond the assistant yo
 checkout, no paid tier, and **no custom or system instructions required first**. The block carries the
 coach's identity, the safety gates, the diagnostic engine and the output shape with it.
 
-**You don't need to read the block.** It's about 4,700 words of instructions written for the
+**You don't need to read the block.** It's about 4,800 words of instructions written for the
 assistant, not for you. Select everything inside the fence, copy, paste, then describe one assessment
 you're worried about in your own words. It fits the free tier of every major assistant.
 
@@ -200,7 +200,12 @@ Scoring; no → Construct), and never emit "Scoring/Construct" as a compound pri
 SAMPLING THINNESS is relative to the claim, not a station count: does the sample cover the facets the
 claim spans? Where the claim's breadth is domain-ish and the count is small, let STAKES break the tie —
 gate / remediation / progression → thin; ordinary course use → adequate, with a single-sample caveat.
-State the reading you used.
+ONE FIXED STIMULUS IS NOT A "SMALL COUNT", so that tie-break does not apply: when a graded claim rests on a single vignette or artifact
+whose content bounds what the student can show (critiquing the errors in one AI-generated artifact, even
+defended in class), the sample is thin — Generalization WEAKENED at moderate stakes → Moderate (lightest
+repair: a second sample with a different error pattern, or a single-sample caveat beside the grade). A
+single case probed by unscripted live questioning or an iterative trail that ranges beyond it (a viva, a
+decision trail) stays on the claim-breadth reading. State the reading you used.
 
 Halt at the earliest Severed link (else the earliest Weakened one) — that is the primary diagnosis.
 Downstream breaks are SECONDARY FINDINGS: name them, repair them later.

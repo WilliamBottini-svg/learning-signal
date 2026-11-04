@@ -538,6 +538,16 @@ the rubric measures the right thing (that — the rubric's *content* — is Cons
 > OSCE on a domain-ish claim is *thin* when it gates progression and *adequate* at a moderate-stakes
 > course decision (Example 3). Where breadth is domain-ish and the count is small, let stakes break the
 > tie — gate/remediation/progression → thin; ordinary course use → adequate, with a single-sample caveat.
+>
+> **One fixed stimulus is not a "small count."** When a graded claim rests on a **single vignette or
+> artifact whose content bounds what the student can show** — critiquing the errors in one AI-generated
+> artifact, even when the critique is defended live — the tie-break above does not apply. Use the
+> thin-sampling calibration: **Weakened** at moderate stakes (→ Moderate; lightest repair: a second sample
+> with a different error pattern, or a single-sample caveat beside the grade). This is the expert-ratified
+> shape (golden G06). It does **not** decide a single case probed by **unscripted live questioning or an
+> iterative trail** that ranges beyond the case's fixed content (a viva, a decision trail, a team defense —
+> N03, Example 7, G20, G24): read those on claim breadth as above. That boundary is an open question for
+> the next expert round (`tests/golden-test-cases.md`, ambiguity item 5).
 
 ---
 
@@ -592,8 +602,8 @@ Readiness is **derived from the walk**, never assigned by vibe.
 
 | Rating | When | Examples |
 |--------|------|----------|
-| **Strong** | No link broken under likely AI use (all Intact). | Observed OSCE; proctored individual exam; oral defense; AI-critique task **after confirming the *scored* evidence is the student's own judgment / orchestration, not the AI artifact**. |
-| **Moderate** | Earliest break is **Weakened** (no link Severed); a light, low-burden repair restores it. | Oral presentation with unclear AI-use expectations; group project with unclear individual accountability. |
+| **Strong** | No link broken under likely AI use (all Intact). | Observed OSCE; proctored individual exam; oral defense; AI-critique task **after confirming the *scored* evidence is the student's own judgment / orchestration, not the AI artifact** *and* that it samples more than one artifact, with different error patterns. |
+| **Moderate** | Earliest break is **Weakened** (no link Severed); a light, low-burden repair restores it. | Oral presentation with unclear AI-use expectations; group project with unclear individual accountability; an otherwise sound AI-critique defended on a **single** artifact (Example 10, G06). |
 | **Vulnerable** | Earliest break is **Severed**. | Unsupervised take-home essay/quiz; generic reflection; unscaffolded case write-up. |
 | **Needs deeper review** | **Override** — see below. | Remediation, progression, promotion, graduation / degree conferral, competency/licensing, patient data, disciplinary allegations. *(A high grade-weight alone does not belong here — the trigger is the decision type, not the size of the grade.)* |
 
@@ -971,17 +981,27 @@ Each shows: claim → evidence → ordered walk → primary diagnosis → first 
 ### Example 10 — Designed AI-collaboration task with proctored defense (restraint after Construct + Scoring)
 - **Claim:** Student can **critically evaluate** an AI-generated artifact (errors found, corrections
   justified). **Evidence:** the student's evaluative reasoning, scored from a **proctored / in-class
-  defense** on a *fresh* AI-generated artifact — not the take-home artifact. **AI-use:** required by
-  design (artifact under critique is AI-made). **Stakes:** moderate (unit grade).
+  defense** on **two** *fresh* AI-generated artifacts that fail in different ways — not the take-home
+  artifact. **AI-use:** required by design (artifact under critique is AI-made). **Stakes:** moderate
+  (unit grade).
 - **Walk (run Construct then Scoring before crediting Strong):** Construct **Intact** — what is scored is
   the student's independent evaluative reasoning, not the AI artifact's polish; working with AI is part of
   the construct. → Scoring **Intact** — the scored critique is attributable (proctored defense). →
-  Generalization / Extrapolation / Implications **Intact**.
+  Generalization **Intact** — two artifacts with different error patterns are the breadth a graded claim
+  needs. → Extrapolation / Implications **Intact**.
 - **Primary:** none. **Readiness:** Strong.
 - **Output:** restraint — no major redesign; at most one lightweight clarification. *Do not* manufacture a
-  Scoring or Generalization break by ignoring the proctored defense, and *do not* rate Strong without
-  running the Construct-then-Scoring check first. *(The take-home mirror of this task — no attribution
-  anchor — is Scoring Severed; see UME Case 7 / repair taxonomy AI Exploration.)*
+  Scoring break by ignoring the proctored defense, or a Generalization break by ignoring the second
+  artifact, and *do not* rate Strong without running the Construct-then-Scoring check first. *(The
+  take-home mirror of this task — no attribution anchor — is Scoring Severed; see UME Case 7 / repair
+  taxonomy AI Exploration.)*
+- **The breadth is load-bearing.** The same task on a **single** fresh artifact keeps Construct and
+  Scoring Intact, but one artifact is a thin sample for a grade-bearing claim → **Generalization
+  Weakened → Moderate** (lightest repair: a second artifact, or a single-sample caveat beside the grade;
+  see the thin-sampling calibration under Link 3). That single-artifact shape is the expert-ratified
+  golden **G06**. The panel rated only that shape; Strong for the two-artifact version is the author's
+  extension of the panel's own named repair (a second artifact with a different error pattern), not a
+  panel rating.
 
 ### Example 11 — Two-lane course grade (secure + take-home) — per-lane readiness
 - **Claim:** The student can apply course concepts in writing and under exam conditions. **Evidence:**

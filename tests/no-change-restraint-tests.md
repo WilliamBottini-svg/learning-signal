@@ -57,7 +57,7 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
 | N01 | Observed multi-station OSCE, trained rater, anchored rubric, low stakes | No AI in the encounter; observed + attributable + sampled + authentic; stakes matched | **Strong** *(restraint)* |
 | N02 | Proctored individual in-class foundational-knowledge exam (closed-book) | Secure conditions hold attribution; construct *is* independent recall/application; AI absent in the room | **Strong** *(restraint)* — don't force AI in |
 | N03 | Oral defense / viva with live, interactive questioning | Live real-time reasoning is attributable on its face and can't be outsourced; surfaces judgment-in-the-moment | **Strong** *(restraint)* |
-| N04 | Designed AI-collaboration task where the *scored* evidence is the student's independent reasoning, verified in a proctored defense | Construct legitimately includes working with AI; the scored reasoning is confirmed the student's own → both Construct **and** Scoring pass | **Strong** *(restraint)* — **only after** that check |
+| N04 | Designed AI-collaboration task where the *scored* evidence is the student's independent reasoning, verified in a proctored defense on **two** fresh artifacts | Construct legitimately includes working with AI; the scored reasoning is confirmed the student's own → both Construct **and** Scoring pass | **Strong** *(restraint)* — **only after** that check |
 | N05 | Take-home literature essay (false-restraint anti-pattern) | Take-home essay, no attribution anchor — **Scoring Severed**; must **not** clear as Strong | **Vulnerable** *(anti-pattern)* |
 
 ---
@@ -181,8 +181,9 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
   are given an AI-generated artifact for a fictional case — say, an AI-drafted differential or analysis —
   and must critically evaluate it. Crucially, the design has already closed the attribution gap that
   sinks the *take-home* version of this task: the **scored** evidence is the student's **independent
-  evaluative reasoning**, captured in a **short proctored / in-class defense** on a *fresh* AI-generated
-  artifact ("defend two errors you flagged and your correction"). The rubric rewards the *critique*
+  evaluative reasoning**, captured in a **short proctored / in-class defense** on **two** *fresh*
+  AI-generated artifacts that fail in different ways ("pick one error you flagged in each and defend your
+  correction"). The rubric rewards the *critique*
   (errors found, corrections justified), **not** the polish of the AI artifact.
 - **Learning claim / evidence / AI-use / stakes:**
   - *Claim:* The student can **critically evaluate** an AI-generated artifact — identify reasoning errors
@@ -199,8 +200,8 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
   evaluative reasoning, not the quality of the AI's artifact — so "working with AI" is a legitimate,
   deliberate part of the construct (**Construct intact**). (2) **Scoring check passes:** the scored
   critique is attributable because it's captured in a proctored / live defense, not an unverifiable
-  take-home (**Scoring intact**). With both confirmed, the rest holds (sampling across a fresh artifact;
-  judgment surfaced in the defense; moderate grade matched), so recommend **no major redesign** and
+  take-home (**Scoring intact**). With both confirmed, the rest holds (sampling across two fresh artifacts
+  with different error patterns; judgment surfaced in the defense; moderate grade matched), so recommend **no major redesign** and
   explain that this is a *well-designed* AI-collaboration task whose learning signal is intact. At most,
   add one lightweight clarification.
 - **FAIL if:** rates it Strong **without** verifying the *scored* evidence is the student's own reasoning
@@ -214,10 +215,21 @@ behavior to the other formats whose *secure conditions* (not the format itself) 
 > **take-home**, so Scoring is Severed). The construct may legitimately include working with AI, but
 > "Strong" is licensed **only after** confirming the scored evidence is the student's own reasoning under
 > attributable conditions. This case is the *passing* version: the attribution anchor (proctored
-> defense) is already in place, so restraint — not redesign — is correct. **Equity cue:** if any
+> defense) is already in place, so restraint — not redesign — is correct. **Why two artifacts:** the same
+> task on a *single* fresh artifact is the expert-ratified golden **G06** — Construct and Scoring Intact, but
+> one artifact is a thin sample for a graded claim → **Generalization Weakened → Moderate**. The breadth is
+> what keeps N04 Strong; a model that rates the single-artifact shape Strong is wrong. Strong for the
+> two-artifact shape is the author's extension of the panel's named repair (a second artifact with a
+> different error pattern), not a panel rating, so a Moderate answer here is a near-miss to flag, not a
+> clear failure. **Equity cue:** if any
 > AI-required step depends on tool access, supply the artifact institutionally or specify a free-tier
 > path so the score reflects *critique skill*, not *tool access*
 > ([`../core/equity-and-access-flags.md`](../core/equity-and-access-flags.md)).
+>
+> *Revised 2026-11-03: the scenario was widened from one fresh artifact to two after G06 (the
+> single-artifact shape) was expert-ratified at Generalization Weakened / Moderate. Run records that
+> predate this note scored N04 on the single-artifact wording, where the ratified answer is Moderate, not
+> Strong.*
 
 ---
 

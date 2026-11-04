@@ -16,6 +16,34 @@ where history is thin, the entry is thin. Release dates are the `date-released` 
 
 _Nothing yet._
 
+## [0.6.1] — 2026-11-04
+
+A patch for testers: the one expert-ratified case (G06) now gets the ratified answer on every platform,
+including the paste block, which is the front door.
+
+### Changed
+- **One fixed stimulus is not a "small count."** The Link 3 tie-break ("ordinary course use → adequate, with
+  a single-sample caveat") let a graded claim resting on a single vignette or artifact read as adequate,
+  so the paste block, both `SKILL.md` files and the Stanford deployment still rated the G06 shape Strong.
+  `core/` now says that one fixed stimulus, a single vignette or artifact whose content bounds what the
+  student can show, is Generalization Weakened at moderate stakes (→ Moderate). The sentence is propagated
+  to all six wrappers in their own voice. It deliberately does **not** decide a single case probed by
+  unscripted live questioning or an iterative trail (N03, Example 7, G20, G24). Those keys are unchanged
+  and remain the open M7 question (ambiguity item 5).
+- **Single-artifact AI-critique is Moderate, not Strong.** Keystone Example 10 and no-change case N04 now
+  use *two* fresh AI-generated artifacts (still Strong); the Phase D readiness table, the UME patterns,
+  Case 7 and digest, the Gemini wrapper and the ChatGPT rule card state that the same task defended on a
+  *single* artifact is Generalization Weakened → Moderate, matching the expert-ratified golden G06. Strong
+  for the two-artifact shape is the author's extension of the panel's named repair, not a panel rating.
+- `platforms/codex/cross-family-eval-agent-prompt.md` no longer lists G06 as an accept-either case.
+- Run records that scored N04 on its old single-artifact wording are annotated as provisional.
+
+### Added
+- `scripts/check-consistency.py` enforces the ChatGPT Instructions 8,000-character cap and that the
+  file's declared "Verified length" matches the measured paste body.
+- Open question for the next M7 round recorded in `tests/golden-test-cases.md` (ambiguity item 5): whether
+  G24, G20 and the fictional-case N03 are also thin single samples.
+
 ## [0.6.0] — 2026-11-03
 
 **Prototype release for testers.** This version exists to find educators willing to run Learning Signal

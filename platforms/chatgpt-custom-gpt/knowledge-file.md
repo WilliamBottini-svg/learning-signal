@@ -105,7 +105,7 @@ A **published** Custom GPT exposes its **Knowledge files to all users** (they ca
 extracted), and on consumer plans **chat content may be used to improve models.** Therefore:
 
 - **Never upload PHI, identifiable patient data, or real student records / grades / disciplinary records**
-  as Knowledge or paste them into chat. The six Knowledge files are built **only** from the de-identified,
+  as Knowledge or paste them into chat. The eight Knowledge files are built **only** from the de-identified,
   fictionalized `core/` and domain content — which contain none. Keep it that way.
 - The coach also enforces this at runtime (Gate G1: it refuses sensitive data and asks for a
   de-identified or fictional case). The upload-time rule above is the **belt-and-braces** complement to

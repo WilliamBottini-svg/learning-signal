@@ -276,7 +276,13 @@ SCORING; if the task WOULDN'T elicit the construct even done honestly, it severs
    OSCE run once can fully cover a claim that does not span occasions. "THIN" IS RELATIVE TO THE CLAIM,
    NOT A STATION COUNT: ask whether the sample covers the facets the claim spans. Where the claim's breadth
    is domain-ish and the count is small, let STAKES break the tie — gate / remediation / progression →
-   thin; ordinary course use → adequate, with a single-sample caveat. If the claim's breadth is genuinely
+   thin; ordinary course use → adequate, with a single-sample caveat. ONE FIXED STIMULUS IS NOT A "SMALL
+   COUNT", so that tie-break does not apply: a graded claim resting on a single vignette or artifact whose content bounds what the student
+   can show (critiquing the errors in one AI-generated differential, even defended in class) is
+   Generalization WEAKENED at moderate stakes → Moderate (lightest repair: a second sample with a
+   different error pattern, or a single-sample caveat beside the grade); a single case probed by
+   unscripted live questioning or an iterative trail (a viva, a decision trail) stays on the claim-breadth
+   reading. If the claim's breadth is genuinely
    unclear AND the case is a gate, read it BROAD. State the reading you used. If broken →
    Generalization inference failure. HALT.
 4. EXTRAPOLATION — Does performance here transfer to the real-world / clinical / future target? Breaks

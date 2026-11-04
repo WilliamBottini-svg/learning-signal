@@ -27,6 +27,12 @@ the security-history thread, the keystone (`core/diagnostic-procedure.md`), the 
 > applied and verified** — `check-consistency.py` PASS, `claude plugin validate` ✔, targeted re-greps
 > clean. The tables below are retained as the review-time record.
 
+> **Update (2026-11-03):** the fresh-snapshot plan above was **superseded**. The maintainer instead
+> **accepted** the hostname-in-history risk and keeps the history; the decision and its reasoning are in
+> [`../../RELEASING.md`](../../RELEASING.md) → "Accepted risk". Because history is retained, the commit
+> hashes cited in this file still resolve. SEC-1 therefore stands as a documented, accepted finding rather
+> than an open blocker.
+
 ## Blockers (must fix before the action noted)
 
 | ID | Severity | Blocks | Location | Finding | Suggested fix |
@@ -143,9 +149,12 @@ These are correctly disclosed in the repo and should **stay disclosed**, not "fi
    single-commit snapshot, or a documented risk-accept? Given the hostname is behind auth and not a
    credential, accept-with-note is defensible — but inconsistent with having already redacted HEAD.
    Recommendation: purge, since it's a one-time cost and removes the question permanently.
+   *Answered 2026-11-03: documented risk-accept — see `RELEASING.md` → "Accepted risk".*
 2. **Credential rotation:** was any key ever paired with `[internal gateway host]` during the brief
-   2026-07-06 public window, and has `secrets/secrets.toml` been rotated (your handoff checklist #1)?
+   2026-07-06 public window, and has the gateway credential been rotated?
    Confirm before the flip regardless of the SEC-1 choice.
+   *Status 2026-11-03: rotation is a maintainer action performed outside the repository and is not
+   verifiable from it; `RELEASING.md` → "Accepted risk" records it as the maintainer's responsibility.*
 3. **Should-fix scope for the branch cut:** clear the four visible ones (REL-1, REL-2, MIR-1, HYG-1)
    before cutting `release/v0.5.x`, or fold all seven into `v0.5.1`? (Recommend the former for a
    portfolio flip.)

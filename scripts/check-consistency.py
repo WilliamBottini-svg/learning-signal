@@ -262,6 +262,31 @@ def check_wrapper_structure(failures: list[str]) -> None:
         )
 
 
+def check_chatgpt_instructions_length(failures: list[str]) -> None:
+    """The Custom GPT Instructions field caps at 8,000 characters. The file once claimed to fit while
+    measuring 11,288, so the cap and the figure in its own header are enforced, not trusted."""
+    print("\n== ChatGPT Instructions length ==")
+    path = "platforms/chatgpt-custom-gpt/instructions.md"
+    target = ROOT / path
+    if not target.exists():
+        check(False, f"{path} exists", failures)
+        return
+    text = target.read_text(encoding="utf-8")
+    parts = text.split("\n---\n", 1)
+    if len(parts) != 2:
+        check(False, f"{path}: has a '---' separator before the paste body", failures)
+        return
+    length = len(parts[1].lstrip("\n"))  # the same measurement the file's header documents
+    check(length <= 8000, f"{path}: paste body is {length} chars (cap 8000)", failures)
+    declared = re.search(r"Verified length:\s*>?\s*(\d[\d,]*)\s*characters", text)
+    check(
+        bool(declared) and int(declared.group(1).replace(",", "")) == length,
+        f"{path}: header's 'Verified length' matches the measured {length}",
+        failures,
+        "" if declared else "no 'Verified length: N characters' line in the header",
+    )
+
+
 def check_packaged_skill(failures: list[str]) -> None:
     """The plugin loads the PACKAGED skill. Its trigger surface must match the root wrapper."""
     print("\n== Packaged Claude skill ==")
@@ -338,6 +363,7 @@ def main() -> int:
     check_json(failures)
     check_case_ids(failures)
     check_wrapper_structure(failures)
+    check_chatgpt_instructions_length(failures)
     check_packaged_skill(failures)
     check_markdown_links(failures)
 

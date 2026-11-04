@@ -229,7 +229,12 @@ canonical text. **Run this list before you emit.**
   only per the sufficiency rule. These are **anchors, not thresholds** — state which you used.
 - **Sampling thinness is relative to the claim**, not a station count. Where breadth is domain-ish and the
   count small, let **stakes break the tie** — gate / remediation / progression → thin; ordinary course use
-  → adequate with a single-sample caveat. State the reading you used.
+  → adequate with a single-sample caveat. **One fixed stimulus is not a small count**, so that tie-break does not apply: a graded claim
+  resting on a single vignette or artifact whose content bounds what the student can show (critiquing the
+  errors in one AI-generated artifact, even defended live) is Generalization **Weakened** at moderate
+  stakes → Moderate (lightest repair: a second sample with a different error pattern, or a single-sample
+  caveat). A single case probed by unscripted live questioning or an iterative trail (a viva, a decision
+  trail) stays on the claim-breadth reading. State the reading you used.
 - **A referent supplied by the task prompt discharges the sharpening turn.** If the prompt already pins
   what the student must reason about ("an encounter you observed this week"), proceed on a named working
   claim rather than stalling a reflective task in intake.
