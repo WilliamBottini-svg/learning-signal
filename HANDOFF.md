@@ -22,6 +22,15 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 > stays **private**. The maintainer shares with colleagues by sending the release files directly, so the
 > in-chat run-report link 404s for them, and feedback comes back by email for now.
 
+> **Update 2026-11-04 (v0.6.2).** The maintainer's own paste-block run (a self-paced practice module)
+> showed three reply-shape defects, all present in every wrapper: internal gate labels in the reply
+> ("(G1 / HIPAA-FERPA)", "Local policy (G4)"); a bare "Scoring (Severed)" as the primary diagnosis; and
+> "Vulnerable (Vulnerable: …)", caused by `core/`'s own gloss examples leading with the label. Fixed in
+> `core/response-pattern.md` and propagated. The ChatGPT field carries only the G1–G5 ban, at 7,999/8,000;
+> the rest is in the rule card. The run's Severed call on ungraded practice is the formative floor working
+> as written. Whether "Vulnerable" is the right *headline* for practice nobody grades is an open
+> maintainer decision, not a defect.
+
 ---
 
 ## 1. Where things stand
@@ -30,11 +39,11 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 |---|---|
 | Branch | `claude/project-review-release-6qnxw8`, **26 commits ahead of `origin/main`**, pushed, working tree clean |
 | Open PR | **None.** The branch has never been opened as a PR. The maintainer merges, or you open one on request. |
-| Declared version | `0.6.1` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
+| Declared version | `0.6.2` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
 | Last tag | `v0.5.0` — **still on the remote, and it is the one release blocker** (see §5.1) |
 | Gates | `check-consistency`, `check-links`, `check-versions`, `build-claude-skill --check`, `build-site --check` all exit 0; `check-secrets` passes on working tree and HEAD and **fails on the `v0.5.0` tag by design** |
-| Paste block | 4,812 words / 30,480 chars — the canonical zero-install prompt |
-| ChatGPT Instructions field | 7,998 / 8,000 chars — at the ceiling; new rules go to `wrapper-rule-card.md` |
+| Paste block | 4,889 words / 30,942 chars — the canonical zero-install prompt |
+| ChatGPT Instructions field | 7,999 / 8,000 chars — at the ceiling; new rules go to `wrapper-rule-card.md` |
 | Persona loop | **Converged.** Four waves, nineteen runs, zero wrong diagnoses; wave 4 yielded only line edits |
 
 ### What the maintainer decided (do not relitigate)
@@ -234,6 +243,11 @@ doctoral qualifying exam.
 - **Reproduced 2026-11-04 (2/3):** the WEAKENED definition ("thin but adequate for the claim as worded")
   and the stakes tie-break ("adequate, with a single-sample caveat", read as Intact) label the same
   situation differently. A borderline two-sample case can land on either Strong or Moderate.
+- **Seen once, 2026-11-04 (v0.6.2 verification runs):** (a) secondary findings in *Why* still appear as
+  bare link names ("Construct, Weakened"), because the plain-words rule covers only the primary diagnosis
+  line; (b) the recorded-performance repair has no default reveal window or LMS mechanism (the tester
+  invented 60 min / 90 s), unlike the code and essay bundles; (c) "fully online" alone may or may not
+  meet ASK-FIRST's skip condition ("fully online, asynchronous, no meetings").
 
 ### Block size
 ~4,700 words. A lossless compression attempt recovered only 13% — most of the block is the rule set

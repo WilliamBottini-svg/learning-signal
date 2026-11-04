@@ -126,6 +126,10 @@ The keystone is **identical across every platform**. It is:
   is exempt, and coach-supplied assumptions (the stakes anchor, the likely AI-use reading) fold into ONE
   clause inside the quick read, never a separate "working assumptions" paragraph; the partial-repair
   ceiling sentence is exempt from the ≤100-word move cap;
+- the **reply-shape wording**: the primary diagnosis leads with the problem in plain words, link in
+  parentheses (a bare "Scoring (Severed)" fails); the first-use readiness gloss follows a dash and never
+  repeats the label; watch-outs are labelled in plain words, and the G1–G5 gate numbers never appear in
+  a reply;
 - the **recurring-component anchor** — weekly sets / eight lab reports anchor on the CATEGORY weight when
   the items share one thin skill and feed one grade line, per instance only when independent; a multi-lane
   mix anchors the VULNERABLE lane, not the whole grade;
