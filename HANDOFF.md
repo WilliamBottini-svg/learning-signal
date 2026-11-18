@@ -37,11 +37,12 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 
 | Item | State |
 |---|---|
-| Branch | `claude/project-review-release-6qnxw8`, **26 commits ahead of `origin/main`**, pushed, working tree clean |
-| Open PR | **None.** The branch has never been opened as a PR. The maintainer merges, or you open one on request. |
+| Branch | `main` is the release line. Feature work goes on a branch → PR → merge; v0.6.0–v0.6.2 all landed that way (PRs #2–#4) |
+| Visibility | **Public** as of 2026-11-18 — required for anyone to see the front page, the report form, the downloads or the plugin |
 | Declared version | `0.6.2` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
-| Last tag | `v0.5.0` — **still on the remote, and it is the one release blocker** (see §5.1) |
-| Gates | `check-consistency`, `check-links`, `check-versions`, `build-claude-skill --check`, `build-site --check` all exit 0; `check-secrets` passes on working tree and HEAD and **fails on the `v0.5.0` tag by design** |
+| Tags / Releases | `v0.6.0`, `v0.6.1`, `v0.6.2`. `v0.5.0` withdrawn. v0.6.1/v0.6.2 Releases were published by re-running `release.yml` (workflow_dispatch) once the repo was public — see §6 |
+| Front page | GitHub Pages from `main` `/docs` → https://williambottini-svg.github.io/learning-signal/ |
+| Gates | `check-consistency`, `check-links`, `check-versions`, `build-claude-skill --check`, `build-site --check`, `check-secrets` (HEAD + every tag) all pass |
 | Paste block | 4,889 words / 30,942 chars — the canonical zero-install prompt |
 | ChatGPT Instructions field | 7,999 / 8,000 chars — at the ceiling; new rules go to `wrapper-rule-card.md` |
 | Persona loop | **Converged.** Four waves, nineteen runs, zero wrong diagnoses; wave 4 yielded only line edits |
@@ -260,27 +261,19 @@ is one engine. If a weaker model drops rules, that is a report we want.
 
 ## 5. Open items — who owns each
 
-### 5.1 Maintainer only (cannot be done from a cloud session)
-1. **Delete the leaked tag and release** (approved; the session got HTTP 403 on ref deletion and the
-   GitHub MCP server has no delete-release tool):
-   ```
-   gh release delete v0.5.0 --repo WilliamBottini-svg/learning-signal --yes
-   git push --delete origin v0.5.0
-   ```
-   `check-secrets.py` scans every tag, so **v0.6.0 mechanically cannot release until this is done.**
-2. **Merge the branch** to `main` (or ask the agent to open a PR), then **tag `v0.6.0`** on `main`.
-   `release.yml` does the rest. Re-run against the tag before publishing is automatic.
-3. **Enable GitHub Pages**: Settings → Pages → branch `main`, folder `/docs`.
-   URL becomes `https://williambottini-svg.github.io/learning-signal/`. INSTALL.md and README already
-   link to it.
-4. **Publish a public Gemini Gem** from the Gem kit in the release assets (recipients need no Google
-   account). Hand the link to the agent → goes on the front page install card and INSTALL.md.
-5. **GPT Store listing** — only if an Edu/Business workspace is available; since August 2026 personal
+### 5.1 Maintainer only
+Done: v0.5.0 tag withdrawn; PRs merged; repository made public; Pages enabled. Still open:
+1. **Publish a public Gemini Gem** from the Gem kit in the release assets (recipients need no Google
+   account). Hand the link to the agent → front page install card (`docs/_template.html`, then
+   `scripts/build-site.py`) and `INSTALL.md`.
+2. **GPT Store listing** — only if an Edu/Business workspace is available; since August 2026 personal
    accounts cannot create new GPTs or publish. Free users can *use* a published one. Same hand-off.
-6. **Optional**: a Google Form mirroring the three questions, for testers without GitHub accounts.
-7. **Decide**: should the prototype feedback line appear in the Stanford institutional deployment file
-   (`implementations/stanford-medicine-ume/…`)? It was propagated there because the rule has no
-   per-deployment exception; a propagation agent flagged it as a judgment call.
+3. **Optional**: a Google Form mirroring the three questions, for testers without GitHub accounts.
+4. **Decide**: should the prototype feedback line appear in the Stanford institutional deployment file
+   (`implementations/stanford-medicine-ume/…`)? Propagated there because the rule has no
+   per-deployment exception; flagged as a judgment call.
+5. **Optional housekeeping**: delete the merged branches `claude/v0.6.1-single-sample` and
+   `claude/v0.6.2-reply-shape` (cloud sessions cannot delete refs).
 
 ### 5.2 Decisions the maintainer wanted to talk through (ask; do not do unilaterally)
 - **README's role** once Pages is live: proposed cut to one line + Pages link + one line on what the
@@ -320,6 +313,16 @@ is one engine. If a weaker model drops rules, that is a report we want.
   on their own — ask explicitly whether the block licensed that.
 
 ---
+
+- **A private repo silently breaks everything outward-facing.** The repo was private through v0.6.2:
+  the front page, report form, downloads and plugin install were invisible to testers, Pages could not
+  be enabled, and once the free Actions minutes ran out every CI and Release job died in ~2 seconds
+  with `runner_id: 0` and no log (HTTP 404 on logs). That is not a code failure — check visibility
+  and Actions billing before debugging. Releases that failed that way are re-published with
+  `release.yml`'s `workflow_dispatch` (input `tag`).
+- **Cloud sessions cannot change repository settings** (visibility, Pages) — the proxy refuses
+  "repository settings writes" even with an admin token — and cannot delete refs. Hand those to the
+  maintainer as one-click steps.
 
 ## 7. Artifacts the maintainer has (private pages, not in the repo)
 - **Review record** — "The Earliest Broken Link": the original adversarial review, annotated with

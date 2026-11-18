@@ -43,9 +43,11 @@ A consistency pass enforces this before release.
   AI output alone.
 
 ## Key paths
-- Spec: `0-admin/learning-signal-check-handoff-plan.md` (gitignored).
-- Tracker: `0-admin/project-tracker.md` (gitignored) — read first, update on completion.
+- **Handoff and live status: `HANDOFF.md`** — read first.
+- Front door: `docs/index.html`, built from the paste block by `scripts/build-site.py`; served by GitHub Pages.
+- Maintainer-only, gitignored, absent from every clone: `0-admin/` (spec + tracker). Not required.
 - Agent working agreement: `AGENTS.md`.
 
 ## Status
-v0.5.0 released. See `0-admin/project-tracker.md` for live status, milestones, and the task table.
+v0.6.2 is the current release — a prototype, published to find testers. Live state, open items and
+the recipes for continuing are in `HANDOFF.md`.
