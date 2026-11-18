@@ -40,7 +40,7 @@ the maintainer is William Bottini (they/them), who reads these sessions in the C
 | Branch | `main` is the release line. Feature work goes on a branch → PR → merge; v0.6.0–v0.6.2 all landed that way (PRs #2–#4) |
 | Visibility | **Public** as of 2026-11-18 — required for anyone to see the front page, the report form, the downloads or the plugin |
 | Declared version | `0.6.2` (`plugin.json` authoritative; `CITATION.cff`, README, CHANGELOG agree; `check-versions.py` passes) |
-| Tags / Releases | `v0.6.0`, `v0.6.1`, `v0.6.2`. `v0.5.0` withdrawn. v0.6.1/v0.6.2 Releases were published by re-running `release.yml` (workflow_dispatch) once the repo was public — see §6 |
+| Tags / Releases | Tags `v0.6.0`, `v0.6.1`, `v0.6.2`; `v0.5.0` withdrawn. Releases: v0.6.0 and **v0.6.2 (latest, with bundles)**. v0.6.2 was published by re-running `release.yml` (workflow_dispatch) once the repo was public — see §6. v0.6.1 is superseded and deliberately has no Release: publishing it now would make it "latest" and point `releases/latest` (linked from the front page) at an older version |
 | Front page | GitHub Pages from `main` `/docs` → https://williambottini-svg.github.io/learning-signal/ |
 | Gates | `check-consistency`, `check-links`, `check-versions`, `build-claude-skill --check`, `build-site --check`, `check-secrets` (HEAD + every tag) all pass |
 | Paste block | 4,889 words / 30,942 chars — the canonical zero-install prompt |
