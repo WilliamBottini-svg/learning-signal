@@ -19,10 +19,13 @@ cheating detector.
 
 ## Try it in 60 seconds
 
-No install, no account, no plugin. Open **any** chat assistant — ChatGPT (free tier is fine), Claude,
-Gemini, Copilot — and paste in the block from
-[`platforms/stanford-ai-playground/prompt-template.md`](platforms/stanford-ai-playground/prompt-template.md),
-then describe one assessment you're worried about. That's it.
+**→ [https://williambottini-svg.github.io/learning-signal/](https://williambottini-svg.github.io/learning-signal/)** — tap **Copy the prompt**, paste it into **any** chat assistant
+(ChatGPT free tier is fine, or Claude, Gemini, Copilot), then describe one assessment you're worried
+about. No install, no account, no plugin. That's it.
+
+The same prompt lives in
+[`platforms/stanford-ai-playground/prompt-template.md`](platforms/stanford-ai-playground/prompt-template.md)
+if you'd rather copy it from GitHub.
 
 It is self-contained: the safety screen, the five-link walk, the halting rule and the output shape all
 travel in the paste. You do not need the repo, the knowledge files, or a paid tier to get a real answer.
